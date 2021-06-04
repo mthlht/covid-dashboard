@@ -102,9 +102,21 @@ function showData(data) {
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
+    // Formateur de date en XX mois XXXX
+    const formatTimeToTitle = d3.timeFormat("%d %b %Y");
+
+    // Date à afficher dans le titre
+    // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
+    const actualDate = new Date(dataIncid[0].date);
+    const formerDate = new Date(dataIncid[0].date).getDate() - 7;
+
+    // Foramtage des dates à afficher
+    const actualDateToTitle = formatTimeToTitle(actualDate);
+    const formerDateToTitle = formatTimeToTitle(formerDate);
+
     // Écriture du sous-titre
     const subtitle = d3.select('#fra-reg-graph02 .graph-subtitle')
-        .html('depuis mars 2020')
+        .html('entre le ' + formerDateToTitle + ' et le ' + actualDateToTitle)
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
