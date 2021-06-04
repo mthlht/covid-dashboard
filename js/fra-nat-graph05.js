@@ -77,7 +77,7 @@ function showData(data) {
 
     // Écriture du titre
     const title = d3.select('#fra-nat-graph05 .graph-title')
-        .html("Evolution du nombre de nouveaux décès Covid-19 à l'hôpital")
+        .html("Evolution du nombre de nouveaux décès Covid à l'hôpital")
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
