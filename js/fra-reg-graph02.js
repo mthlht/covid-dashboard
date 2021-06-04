@@ -108,8 +108,10 @@ function showData(data) {
     // Date à afficher dans le titre
     // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
     const actualDate = new Date(dataIncid[0].date);
+    // Soustraction de 7 jours à la date (attention modification de l'objet en place)
     const formerDate = actualDate.setDate(actualDate.getDate() - 7);
 
+    // Rajout des 7 jours à l'objet modifié en place
     actualDate.setDate(actualDate.getDate() + 7);
 
     // Foramtage des dates à afficher
