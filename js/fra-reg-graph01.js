@@ -102,9 +102,19 @@ function showData(data) {
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
+    // Formateur de date en XX mois XXXX
+    const formatTimeToTitle = d3.timeFormat("%d %b %Y");
+
+    // Date à afficher dans le titre
+    // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
+    const actualDate = new Date(dataIncid[0].date);
+
+    // Foramtage de la date à afficher
+    const dateToTitle = formatTimeToTitle(actualDate);
+
     // Écriture du sous-titre
     const subtitle = d3.select('#fra-reg-graph01 .graph-subtitle')
-        .html('depuis mars 2020')
+        .html('au ' + dateToTitle)
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
@@ -113,7 +123,7 @@ function showData(data) {
         .html("Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>")
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
-    
+
     // Adaptation du padding à chaque resize de la fenêtre du navigateur
     d3.select(window).on("resize", () => {
 
@@ -175,7 +185,7 @@ function showData(data) {
         legCells = [0, 50, 100, 150]
 
     };
-    
+
     // échelle de couleur
     const divScale = d3.scaleDiverging(t => d3.interpolateRdBu(1 - t))
         .domain([0, 50, maxValColor]);
@@ -279,7 +289,7 @@ function showData(data) {
 
 
             });
-        
+
         // efface le contenu du groupe g lorsque la souris ne survole plus le polygone
         polygons
             .on("mouseout", function () {

@@ -1,6 +1,6 @@
 Promise.all([
-    d3.json("https://raw.githubusercontent.com/mthlht/covid-dashboard/main/data/carto_ftv_dep.geojson"),
-    d3.csv("https://raw.githubusercontent.com/mthlht/covid-dashboard/main/data/incid_dep.csv")
+    d3.json("data/carto_ftv_dep.geojson"),
+    d3.csv("data/incid_dep.csv")
 ]).then(showData);
 
 function showData(data) {
