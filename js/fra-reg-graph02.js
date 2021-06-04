@@ -108,7 +108,9 @@ function showData(data) {
     // Date à afficher dans le titre
     // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
     const actualDate = new Date(dataIncid[0].date);
-    const formerDate = new Date(dataIncid[0].date).getDate() - 7;
+    const formerDate = actualDate.setDate(actualDate.getDate() - 7);
+
+    actualDate.setDate(actualDate.getDate() + 7);
 
     // Foramtage des dates à afficher
     const actualDateToTitle = formatTimeToTitle(actualDate);
