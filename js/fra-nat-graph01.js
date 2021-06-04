@@ -1,4 +1,4 @@
-d3.csv("../data/spf_fra_data.csv").then(showData);
+d3.csv("/covid-dashboard/data/spf_fra_data.csv").then(showData);
 
 function showData(data) {
 
