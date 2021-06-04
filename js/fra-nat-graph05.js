@@ -25,8 +25,8 @@ function showData(data) {
 
         let newData = {
             "date": new Date(d.date), // ATTENTION À TRANSPOSER EN FORMAT DATE
-            "new_cases": +d.new_cases, // ATTENTION STRING A TRANSPOSER EN FLOAT
-            "roll_cases": +d.roll_cases // ATTENTION STRING A TRANSPOSER EN FLOAT
+            "new_dc": +d.new_dc, // ATTENTION STRING A TRANSPOSER EN FLOAT
+            "roll_dc": +d.roll_dc // ATTENTION STRING A TRANSPOSER EN FLOAT
         }
 
         return newData
@@ -34,7 +34,7 @@ function showData(data) {
     });
 
     // Filtre les données uniquement à partir du 1er septembre
-    const tidyData = tempData.filter(d => d.date >= new Date("2020-09-01"))
+    const tidyData = tempData.filter(d => isNaN(d.roll_dc) === false)
 
     //---------------------------------------------------------------------------------------
 
@@ -48,7 +48,7 @@ function showData(data) {
     const leg = 40;
 
     // création du canevas pour le Graphique
-    const svg = d3.select('#fra-nat-graph01 .graph')
+    const svg = d3.select('#fra-nat-graph05 .graph')
         .append("svg")
         .attr("viewBox", [0, 0, width + marginH * 2, height + leg + marginV * 2])
         .attr("preserveAspectRatio", "xMinYMid");
@@ -76,19 +76,19 @@ function showData(data) {
     let paddingTitles = svgSizeInNav / totalDims * marginH;
 
     // Écriture du titre
-    const title = d3.select('#fra-nat-graph01 .graph-title')
-        .html('Evolution du nombre de contaminations au Covid-19')
+    const title = d3.select('#fra-nat-graph05 .graph-title')
+        .html("Evolution du nombre de nouveaux décès Covid-19 à l'hôpital")
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
     // Écriture du sous-titre
-    const subtitle = d3.select('#fra-nat-graph01 .graph-subtitle')
-        .html('depuis mars 2020')
+    const subtitle = d3.select('#fra-nat-graph05 .graph-subtitle')
+        .html('depuis septembre 2020')
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
     // Écriture
-    const caption = d3.select('#fra-nat-graph01 .graph-caption')
+    const caption = d3.select('#fra-nat-graph05 .graph-caption')
         .html("Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>")
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
@@ -126,7 +126,7 @@ function showData(data) {
 
     // échelle linéaire pour l'axe des Y
     const scaleY = d3.scaleLinear()
-        .domain([0, d3.max(tidyData, d => d.new_cases)])
+        .domain([0, d3.max(tidyData, d => d.new_dc)])
         .range([height, 0]);
 
     // échelee temporelle pour l'axe des X
@@ -146,7 +146,7 @@ function showData(data) {
             .ticks(4)
             .tickFormat(d3.timeFormat("%b %Y")))
         .selectAll('text')
-        .style("fill", "grey") // couleur du texte
+        .style("fill", "grey"); // couleur du texte
 
     // Axe des Y
     const yAxis = g => g
@@ -156,7 +156,7 @@ function showData(data) {
             .tickFormat(d => d.toLocaleString('fr-FR'))) // formatage grands nombre avec espace entre milliers
         .call(g => g.select(".domain").remove()) // supprime la ligne de l'axe
         .selectAll('text')
-        .style("fill", "grey") // couleur du texte
+        .style("fill", "grey"); // couleur du texte
 
     //---------------------------------------------------------------------------------------
 
@@ -183,8 +183,8 @@ function showData(data) {
         .data(tidyData)
         .join('rect')
         .attr("x", d => scaleT(d.date))
-        .attr("y", d => scaleY(d.new_cases))
-        .attr("height", d => scaleY(0) - scaleY(d.new_cases))
+        .attr("y", d => scaleY(d.new_dc))
+        .attr("height", d => scaleY(0) - scaleY(d.new_dc))
         .attr("width", scaleX.bandwidth()) // width des barres avec l'échelle d'épaiseur
         .attr("fill", "#0072B2")
         .attr("opacity", 0.6);
@@ -196,7 +196,7 @@ function showData(data) {
     // générateur de la ligne avec les échelles
     let lineGenerator = d3.line()
         .x(d => scaleT(d.date))
-        .y(d => scaleY(d.roll_cases));
+        .y(d => scaleY(d.roll_dc));
 
     // projection de la ligne
     svgPlot.append("path")
@@ -218,7 +218,7 @@ function showData(data) {
     // création cercle
     svgPlot.append("circle")
         .attr("cx", scaleT(maxDate.setDate(maxDate.getDate())))
-        .attr("cy", scaleY(maxVal[0].roll_cases))
+        .attr("cy", scaleY(maxVal[0].roll_dc))
         .attr("r", 4)
         .attr("stroke", "#ffffff")
         .attr("stroke-width", 0.8)
@@ -228,8 +228,8 @@ function showData(data) {
 
     svgPlot.append("text")
         .attr("x", width + 8)
-        .attr("y", scaleY(maxVal[0].roll_cases))
-        .text(Math.round(maxVal[0].roll_cases).toLocaleString('fr-FR'))
+        .attr("y", scaleY(maxVal[0].roll_dc))
+        .text(Math.round(maxVal[0].roll_dc).toLocaleString('fr-FR'))
         .style("fill", "#D55E00");
 
     //---------------------------------------------------------------------------------------
@@ -287,7 +287,7 @@ function showData(data) {
 
             // stockage dans deux deux variables des positions x et y de la barre survolée
             let xPosition = +scaleT(d.date);
-            let yPosition = +scaleY(d.new_cases);
+            let yPosition = +scaleY(d.new_dc);
             const largeurBande = scaleX.bandwidth();
 
             // format de la date affichée dans le tooltip
@@ -314,7 +314,7 @@ function showData(data) {
             tooltip.append("text")
                 .attr("x", 5)
                 .attr("y", 32)
-                .text(`Moyenne lissée: ${Math.round(d.roll_cases).toLocaleString('fr-FR')}`)
+                .text(`Moyenne lissée: ${Math.round(d.roll_dc).toLocaleString('fr-FR')}`)
                 .attr("font-size", "10px")
                 .attr("font-weight", "bold")
 
@@ -322,7 +322,7 @@ function showData(data) {
             tooltip.append("text")
                 .attr("x", 5)
                 .attr("y", 44)
-                .text(`Nombre par jour: ${d.new_cases.toLocaleString('fr-FR')}`)
+                .text(`Nombre par jour: ${d.new_dc.toLocaleString('fr-FR')}`)
                 .attr("font-size", "10px")
 
 

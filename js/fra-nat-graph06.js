@@ -1,4 +1,4 @@
-d3.csv("../data/spf_fra_incid_age.csv").then(showData);
+d3.csv("https://raw.githubusercontent.com/mthlht/covid-dashboard/main/data/spf_fra_incid_age.csv").then(showData);
 
 function showData(data) {
 
@@ -53,57 +53,75 @@ function showData(data) {
     const width = 500;
     const height = 200;
     const marginH = 80;
-    const marginV = 40;
-    const title = 40;
+    const marginV = 20;
     const leg = 40;
-    const caption = 10;
 
-    // création du canevas englobant (titre, légende, graphique, source)
-    const svg = d3.select('#linechart')
+    // création du canevas pour le Graphique
+    const svg = d3.select('#fra-nat-graph06 .graph')
         .append("svg")
-        .attr("viewBox", [0, 0, width + marginH * 2, height + title + leg + caption + marginV * 2]);
-
-    // création d'un groupe g pour le Titre
-    const svgTitle = svg.append("g")
-        .attr("transform", `translate(${marginH}, ${marginV})`);
+        .attr("viewBox", [0, 0, width + marginH * 2, height + leg + marginV * 2])
+        .attr("preserveAspectRatio", "xMinYMid");
 
     // création d'un groupe g pour la Légende
     const svgLegend = svg.append("g")
-        .attr("transform", `translate(${marginH}, ${title + marginV})`);
+        .attr("transform", `translate(${marginH}, ${marginV})`);
 
     // création d'un groupe g pour le Graphique
     const svgPlot = svg.append("g")
-        .attr("transform", `translate(${marginH}, ${title + marginV + leg})`);
-
-    // création d'un groupe g pour la Source
-    const svgCaption = svg.append("g")
-        .attr("transform", `translate(${marginH}, ${title + marginV * 2 + leg + height})`);
+        .attr("transform", `translate(${marginH}, ${marginV + leg})`);
 
     //---------------------------------------------------------------------------------------
 
-    // Titre Graphique
+    // Écriture titraille graphique
 
-    // Le titre du graph
-    svgTitle.append("text")
-        .attr("x", 0)
-        .attr("y", 0)
-        .attr("font-size", "24px")
-        .attr("font-weight", "bold")
-        .text("Incidence par classe d'âge");
+    // Stockage de la taille du graphique dans le navigateur à l'ouverture de la page
+    let svgSizeInNav = svg.node().getBoundingClientRect().right - svg.node().getBoundingClientRect().left;
 
-    // Un sous-titre
-    svgTitle.append("text")
-        .attr("x", 0)
-        .attr("y", 26)
-        .attr("font-size", "16px")
-        .text("depuis janvier 2021");
+    // Stockage du total des dimensions du graphique
+    let totalDims = width + marginH * 2;
 
-    // Source
-    svgCaption.append("text")
-        .attr("x", 0)
-        .attr("y", 0)
-        .attr("font-size", "14px")
-        .text("Source. Santé publique France - Crédits. franceinfo");
+    // Définition du padding à appliquer aux titres, sous-titres, source
+    // pour une titraille toujours alignée avec le graphique
+    let paddingTitles = svgSizeInNav / totalDims * marginH;
+
+    // Écriture du titre
+    const title = d3.select('#fra-nat-graph06 .graph-title')
+        .html("Evolution du taux d'incidence par classe d'âge")
+        .style('padding-right', paddingTitles + "px")
+        .style('padding-left', paddingTitles + "px");
+
+    // Écriture du sous-titre
+    const subtitle = d3.select('#fra-nat-graph06 .graph-subtitle')
+        .html('depuis janvier 2021')
+        .style('padding-right', paddingTitles + "px")
+        .style('padding-left', paddingTitles + "px");
+
+    // Écriture
+    const caption = d3.select('#fra-nat-graph06 .graph-caption')
+        .html("Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>")
+        .style('padding-right', paddingTitles + "px")
+        .style('padding-left', paddingTitles + "px");
+
+    // Adaptation du padding à chaque resize de la fenêtre du navigateur
+    d3.select(window).on("resize", () => {
+
+        let svgSizeInNavTemp = svg.node().getBoundingClientRect().right - svg.node().getBoundingClientRect().left;
+
+        let paddingTitlesTemp = svgSizeInNavTemp / totalDims * marginH;
+
+        title
+            .style('padding-right', paddingTitlesTemp + "px")
+            .style('padding-left', paddingTitlesTemp + "px");
+
+        subtitle
+            .style('padding-right', paddingTitlesTemp + "px")
+            .style('padding-left', paddingTitlesTemp + "px");
+
+        caption
+            .style('padding-right', paddingTitlesTemp + "px")
+            .style('padding-left', paddingTitlesTemp + "px");
+
+    });
 
     //---------------------------------------------------------------------------------------
 
@@ -123,16 +141,16 @@ function showData(data) {
     //---------------------------------------------------------------------------------------
 
     // Création de l'échelle de couleurs
-    
+
     // array pour les labels dans le bon ordre d'afficahge
     const labelsLegend = ['moins de 10 ans', 'de 10 à 19 ans', 'de 20 à 29 ans',
         'de 30 à 49 ans', 'de 50 à 59 ans', 'de 60 à 89 ans', '90 ans et plus'];
-    
+
     // liste des couleurs à utiliser (couleurs adaptées au daltonisme)
     // source. https://jfly.uni-koeln.de/color/
     const okabeIto = ['#E69F00', '#56B4E9', '#009E73', '#F0E442', '#0072B2',
         '#D55E00', '#CC79A7'];
-    
+
     // échelle de couleurs pour les labels
     const scaleC = d3.scaleOrdinal()
         .domain(labelsLegend)
@@ -141,7 +159,7 @@ function showData(data) {
     //---------------------------------------------------------------------------------------
 
     // Création des axes
-    
+
     // Axe des X
     const xAxis = g => g
         .attr("transform", `translate(0, ${height})`)
@@ -165,12 +183,12 @@ function showData(data) {
     //---------------------------------------------------------------------------------------
 
     // Line Chart
-    
+
     // générateur de la ligne avec les échelles
     const lineGenerator = d3.line()
         .x(d => scaleT(d.date))
         .y(d => scaleY(d.incid));
-    
+
     // projection des lignes
     svgPlot.selectAll("g")
         .data(dataLine)
@@ -184,7 +202,7 @@ function showData(data) {
     //---------------------------------------------------------------------------------------
 
     // Légende
-    
+
     // Création d'un groupe g par élément de la légende (ici 7 éléments répartis sur 2 lignes)
     const legend = svgLegend.selectAll(".legend")
         .data(labelsLegend)
@@ -198,7 +216,7 @@ function showData(data) {
                 }
             })
         .attr("class", "legend");
-    
+
     // Création d'un rectangle couleur par groupe g
     legend.append('rect')
         .attr("width", 20)
@@ -211,11 +229,11 @@ function showData(data) {
         .attr("y", 5)
         .text(d => d)
         .attr("font-size", "12px");
-    
+
     //---------------------------------------------------------------------------------------
 
     // Annotations - affichage des dernières valeurs
-    
+
     // stocakge valeur date la plus récente du dataset
     const maxDate = d3.max(tidyData, d => d.date);
 
