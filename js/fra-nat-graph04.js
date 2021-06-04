@@ -84,7 +84,7 @@ function showData(data) {
 
     // Écriture du sous-titre
     const subtitle = d3.select('#fra-nat-graph04 .graph-subtitle')
-        .html('depuis septembre 2019')
+        .html('depuis septembre 2020')
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 

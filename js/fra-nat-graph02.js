@@ -1,4 +1,4 @@
-d3.csv("https://raw.githubusercontent.com/mthlht/covid-dashboard/main/data/spf_fra_data.csv").then(showData);
+d3.csv("https://raw.githubusercontent.com/mthlht/covid-dashboard/main/data/spf_fra_test.csv").then(showData);
 
 function showData(data) {
 
@@ -84,7 +84,7 @@ function showData(data) {
 
     // Écriture du sous-titre
     const subtitle = d3.select('#fra-nat-graph02 .graph-subtitle')
-        .html('depuis septembre 2019')
+        .html('depuis septembre 2020')
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
