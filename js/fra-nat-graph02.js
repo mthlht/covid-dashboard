@@ -1,4 +1,4 @@
-d3.csv("https://raw.githubusercontent.com/mthlht/covid-dashboard/main/data/spf_fra_test.csv").then(showData);
+d3.csv("data/spf_fra_test.csv").then(showData);
 
 function showData(data) {
 
