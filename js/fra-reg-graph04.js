@@ -25,7 +25,7 @@ function showData(data) {
 
         let newData = {
             "date": new Date(d.date), // ATTENTION À TRANSPOSER EN FORMAT DATE
-            "tx_rea": +d.tx_rea, // ATTENTION STRING A TRANSPOSER EN FLOAT
+            "tot_hosp_7j": +d.tot_hosp_7j, // ATTENTION STRING A TRANSPOSER EN FLOAT
             "reg_nom": d.reg_nom
         }
 
@@ -33,7 +33,9 @@ function showData(data) {
 
     });
 
-    const tidyData = tempData.sort((a, b) => d3.ascending(a.tx_rea, b.tx_rea))
+    const tidyData = tempData.sort((a, b) => d3.ascending(a.tot_hosp_7j, b.tot_hosp_7j))
+
+    console.log(data)
 
 
 
@@ -51,7 +53,7 @@ function showData(data) {
     const widthRatio = width - marginHratio;
 
     // création du canevas pour le Graphique
-    const svg = d3.select('#fra-reg-graph03 .graph')
+    const svg = d3.select('#fra-reg-graph04 .graph')
         .append("svg")
         .attr("viewBox", [0, 0, width + marginH*2, height + marginV * 2])
         .attr("preserveAspectRatio", "xMinYMid");
@@ -75,8 +77,8 @@ function showData(data) {
     let paddingTitles = svgSizeInNav / totalDims * marginH;
 
     // Écriture du titre
-    const title = d3.select('#fra-reg-graph03 .graph-title')
-        .html("Taux d'occupation des réanimations par région")
+    const title = d3.select('#fra-reg-graph04 .graph-title')
+        .html("Nouvelles hospitalisatons de patients Covid par région depuis une semaine")
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
@@ -91,14 +93,14 @@ function showData(data) {
     const dateToTitle = formatTimeToTitle(actualDate);
 
     // Écriture du sous-titre
-    const subtitle = d3.select('#fra-reg-graph03 .graph-subtitle')
+    const subtitle = d3.select('#fra-reg-graph04 .graph-subtitle')
         .html("au " + dateToTitle)
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
     // Écriture
-    const caption = d3.select('#fra-reg-graph03 .graph-caption')
-        .html("Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>, <a href='https://data.drees.solidarites-sante.gouv.fr/explore/dataset/707_bases-administratives-sae/information/' target='_blank'>Drees</a>")
+    const caption = d3.select('#fra-reg-graph04 .graph-caption')
+        .html("Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>")
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
@@ -135,7 +137,7 @@ function showData(data) {
 
     // échelle linéaire pour l'axe des Y
     const scaleX = d3.scaleLinear()
-        .domain([0, 100])
+        .domain([0, d3.max(tidyData, d => d.tot_hosp_7j)])
         .range([0, widthRatio]);
 
     //---------------------------------------------------------------------------------------
@@ -170,7 +172,7 @@ function showData(data) {
         .join('rect')
         .attr("y", (d, i) => scaleY(i))
         .attr("x", scaleX(0))
-        .attr("width", d => scaleX(d.tx_rea))
+        .attr("width", d => scaleX(d.tot_hosp_7j))
         .attr("height", scaleY.bandwidth()) // width des barres avec l'échelle d'épaiseur
         .attr("fill", "#0072B2")
         .attr("opacity", 0.6);
@@ -186,9 +188,9 @@ function showData(data) {
         .attr("y", (d, i) => {
             return scaleY(i) + (scaleY.bandwidth()/1.5)
         })
-        .attr("x", d => (scaleX(d.tx_rea) >= 40) ? scaleX(d.tx_rea)-40 : scaleX(d.tx_rea)+4 )
-        .text(d => Math.round(d.tx_rea)+"%")
-        .attr("fill", d => (scaleX(d.tx_rea) >= 40) ? "#ffffff" : "grey")
+        .attr("x", d => (scaleX(d.tot_hosp_7j) >= 40) ? scaleX(d.tot_hosp_7j)-40 : scaleX(d.tot_hosp_7j)+4 )
+        .text(d => Math.round(d.tot_hosp_7j))
+        .attr("fill", d => (scaleX(d.tot_hosp_7j) >= 40) ? "#ffffff" : "grey")
         .attr("font-size", (scaleY.bandwidth()*0.5)+"px");
 
 
