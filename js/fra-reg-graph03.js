@@ -76,7 +76,7 @@ function showData(data) {
 
     // Écriture du titre
     const title = d3.select('#fra-reg-graph03 .graph-title')
-        .html("Taux d'occupation des réanimations par région")
+        .html("Taux d'occupation des réanimations par des patients Covid par région")
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
