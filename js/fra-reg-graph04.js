@@ -188,9 +188,9 @@ function showData(data) {
         .attr("y", (d, i) => {
             return scaleY(i) + (scaleY.bandwidth()/1.5)
         })
-        .attr("x", d => (scaleX(d.tot_hosp_7j) >= 40) ? scaleX(d.tot_hosp_7j)-40 : scaleX(d.tot_hosp_7j)+4 )
+        .attr("x", d => (scaleX(d.tot_hosp_7j) >= 38) ? scaleX(d.tot_hosp_7j)-38 : scaleX(d.tot_hosp_7j)+4 )
         .text(d => Math.round(d.tot_hosp_7j))
-        .attr("fill", d => (scaleX(d.tot_hosp_7j) >= 40) ? "#ffffff" : "grey")
+        .attr("fill", d => (scaleX(d.tot_hosp_7j) >= 38) ? "#ffffff" : "grey")
         .attr("font-size", (scaleY.bandwidth()*0.5)+"px");
 
 
