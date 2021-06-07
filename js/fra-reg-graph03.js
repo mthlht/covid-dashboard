@@ -42,25 +42,22 @@ function showData(data) {
 
     // Création du canevas SVG
 
-    const width = 420;
-    const height = 200;
-    const marginHL = 150;
-    const marginHR = 80;
+    const width = 500;
+    const height = 500;
+    const marginH = 80;
     const marginV = 20;
+
+    const marginHratio = marginH * 3;
 
     // création du canevas pour le Graphique
     const svg = d3.select('#fra-reg-graph03 .graph')
         .append("svg")
-        .attr("viewBox", [0, 0, width + marginHL + marginHR, height + marginV * 2])
+        .attr("viewBox", [0, 0, width + marginH*2, height + marginV * 2])
         .attr("preserveAspectRatio", "xMinYMid");
-
-    // création d'un groupe g pour la Légende
-    const svgLegend = svg.append("g")
-        .attr("transform", `translate(${marginHL}, ${marginV})`);
 
     // création d'un groupe g pour le Graphique
     const svgPlot = svg.append("g")
-        .attr("transform", `translate(${marginHL}, ${marginV})`);
+        .attr("transform", `translate(${marginHratio}, ${marginV})`);
 
     //---------------------------------------------------------------------------------------
 
@@ -70,27 +67,27 @@ function showData(data) {
     let svgSizeInNav = svg.node().getBoundingClientRect().right - svg.node().getBoundingClientRect().left;
 
     // Stockage du total des dimensions du graphique
-    let totalDims = width + marginHL + marginHR;
+    let totalDims = width + marginH*2;
 
     // Définition du padding à appliquer aux titres, sous-titres, source
     // pour une titraille toujours alignée avec le graphique
-    let paddingTitles = svgSizeInNav / totalDims * marginHL;
+    let paddingTitles = svgSizeInNav / totalDims * marginH;
 
     // Écriture du titre
     const title = d3.select('#fra-reg-graph03 .graph-title')
-        .html('Proportions de patients en soin intensif par rapport aux lits disponibles en réanimation')
+        .html("Taux d'occupation des réanimations par région")
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
     // Écriture du sous-titre
     const subtitle = d3.select('#fra-reg-graph03 .graph-subtitle')
-        .html('')
+        .html("d'après le nombre de patients en soins intensifs rapporté au nombre de lits en réanimation")
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
     // Écriture
     const caption = d3.select('#fra-reg-graph03 .graph-caption')
-        .html("Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>")
+        .html("Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>, <a href='https://data.drees.solidarites-sante.gouv.fr/explore/dataset/707_bases-administratives-sae/information/' target='_blank'>Drees</a>")
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
@@ -149,6 +146,7 @@ function showData(data) {
             .tickSizeOuter(0))
         .call(g => g.select(".domain").remove()) // supprime la ligne de l'axe
         .selectAll('text')
+        .style("font-size", (scaleY.bandwidth()*0.5)+"px")
         .style("fill", "grey"); // couleur du texte
 
 
@@ -163,7 +161,8 @@ function showData(data) {
         .attr("x", scaleX(0))
         .attr("width", d => scaleX(d.tx_rea))
         .attr("height", scaleY.bandwidth()) // width des barres avec l'échelle d'épaiseur
-        .attr("fill", "#0072B2");
+        .attr("fill", "#0072B2")
+        .attr("opacity", 0.6);
 
 
     //---------------------------------------------------------------------------------------
@@ -174,12 +173,12 @@ function showData(data) {
         .data(tidyData)
         .join('text')
         .attr("y", (d, i) => {
-            return scaleY(i) + (scaleY.bandwidth()*0.85)
+            return scaleY(i) + (scaleY.bandwidth()/1.5)
         })
-        .attr("x", d => scaleX(d.tx_rea) - 100)
+        .attr("x", d => (scaleX(d.tx_rea) >= 40) ? scaleX(d.tx_rea)-40 : scaleX(d.tx_rea)+4 )
         .text(d => Math.round(d.tx_rea)+"%")
-        .attr("fill", "#ffffff")
-        .attr("font-size", (scaleY.bandwidth()*0.9)+"px")
+        .attr("fill", d => (scaleX(d.tx_rea) >= 40) ? "#ffffff" : "grey")
+        .attr("font-size", (scaleY.bandwidth()*0.5)+"px");
 
 
     //---------------------------------------------------------------------------------------
