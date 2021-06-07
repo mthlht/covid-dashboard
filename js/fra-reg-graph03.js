@@ -196,7 +196,6 @@ function showData(data) {
         .attr("color", "transparent");
 
 
-
 }
 
 
