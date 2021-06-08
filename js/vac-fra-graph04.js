@@ -1,4 +1,4 @@
-d3.csv("data/spf_fra_incid_age.csv").then(showData);
+d3.csv("data/spf_fra_vacc_name.csv").then(showData);
 
 function showData(data) {
 
@@ -20,30 +20,27 @@ function showData(data) {
 
     // Traitement des données
 
-    // Sélection des variables nécessaires pour le graphique
-    const tempData = data.map(d => {
+     // Sélection des variables nécessaires pour le graphique
+     const tidyData = data.map(d => {
 
         let data = {
-            "date": new Date(d.date), // ATTENTION À TRANSPOSER EN FORMAT DATE
-            "age_label": d.age_label,
-            "incid": +d.incid // ATTENTION STRING A TRANSPOSER EN FLOAT
+            "date": new Date(d.jour), // ATTENTION À TRANSPOSER EN FORMAT DATE
+            "vaccin": d.vaccin_name,
+            "roll": +d.roll // ATTENTION STRING A TRANSPOSER EN FLOAT
         }
 
         return data
 
     });
 
-    // Filtre les données uniquement à partir du 1er janvier 2021
-    const tidyData = tempData.filter(d => d.date >= new Date("2021-01-01"));
-
     // Stockage dans un array des labels de chaque courbe
-    const arrayLabels = [... new Set(tidyData.map(d => d.age_label))];
+    const arrayLabels = [... new Set(tidyData.map(d => d.vaccin))];
 
     // Création d'un array d'arrays d'objets adapté à la projection des lignes
     // avec les données groupées par label (courbe) chacune dans un array d'objets différent
     const dataLine = arrayLabels.map(d => {
         let label = d;
-        return tidyData.filter(d => d.age_label === label);
+        return tidyData.filter(d => d.vaccin === label);
     });
 
     //---------------------------------------------------------------------------------------
@@ -57,7 +54,7 @@ function showData(data) {
     const leg = 40;
 
     // création du canevas pour le Graphique
-    const svg = d3.select('#fra-nat-graph06 .graph')
+    const svg = d3.select('#vac-fra-graph04 .graph')
         .append("svg")
         .attr("viewBox", [0, 0, width + marginH * 2, height + leg + marginV * 2])
         .attr("preserveAspectRatio", "xMinYMid");
@@ -85,19 +82,19 @@ function showData(data) {
     let paddingTitles = svgSizeInNav / totalDims * marginH;
 
     // Écriture du titre
-    const title = d3.select('#fra-nat-graph06 .graph-title')
-        .html("Evolution du taux d'incidence par classe d'âge")
+    const title = d3.select('#vac-fra-graph04 .graph-title')
+        .html("Evolution du nombre d'injections par jour selon le type de vaccin")
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
     // Écriture du sous-titre
-    const subtitle = d3.select('#fra-nat-graph06 .graph-subtitle')
+    const subtitle = d3.select('#vac-fra-graph04 .graph-subtitle')
         .html('depuis janvier 2021')
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
     // Écriture
-    const caption = d3.select('#fra-nat-graph06 .graph-caption')
+    const caption = d3.select('#vac-fra-graph04 .graph-caption')
         .html("Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>")
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
@@ -129,7 +126,7 @@ function showData(data) {
 
     // échelle linéaire pour l'axe des Y
     const scaleY = d3.scaleLinear()
-        .domain([0, d3.max(tidyData, d => d.incid)])
+        .domain([0, d3.max(tidyData, d => d.roll)])
         .range([height, 0]);
 
     // échelee temporelle pour l'axe des X
@@ -143,8 +140,7 @@ function showData(data) {
     // Création de l'échelle de couleurs
 
     // array pour les labels dans le bon ordre d'afficahge
-    const labelsLegend = ['moins de 10 ans', 'de 10 à 19 ans', 'de 20 à 29 ans',
-        'de 30 à 49 ans', 'de 50 à 59 ans', 'de 60 à 89 ans', '90 ans et plus'];
+    const labelsLegend = arrayLabels;
 
     // liste des couleurs à utiliser (couleurs adaptées au daltonisme)
     // source. https://jfly.uni-koeln.de/color/
@@ -187,7 +183,7 @@ function showData(data) {
     // générateur de la ligne avec les échelles
     const lineGenerator = d3.line()
         .x(d => scaleT(d.date))
-        .y(d => scaleY(d.incid));
+        .y(d => scaleY(d.roll));
 
     // projection des lignes
     svgPlot.selectAll("g")
@@ -196,7 +192,7 @@ function showData(data) {
         .append("path")
         .attr("d", d => lineGenerator(d))
         .attr("fill", "none") // ATTENTION A BIEN METTRE FILL NONE
-        .attr("stroke", d => scaleC(d[0].age_label))
+        .attr("stroke", d => scaleC(d[0].vaccin))
         .attr("stroke-width", 3);
 
     //---------------------------------------------------------------------------------------
@@ -225,10 +221,10 @@ function showData(data) {
 
     // écriture label par groupe g
     legend.append('text')
-        .attr("x", 22)
+        .attr("x", 26)
         .attr("y", 5)
         .text(d => d)
-        .attr("font-size", "12px");
+        .attr("font-size", "14px");
 
     //---------------------------------------------------------------------------------------
 
@@ -243,7 +239,7 @@ function showData(data) {
     const labels = lastValues.map(d => {
         return {
             fx: 0,
-            targetY: scaleY(d.incid)
+            targetY: scaleY(d.roll)
         };
     });
 
@@ -259,7 +255,7 @@ function showData(data) {
 
     // Ajout d'une valeur y dans chaque objet de l'array lastValues
     labels.sort((a, b) => a.y - b.y);
-    lastValues.sort((a, b) => b.incid - a.incid);
+    lastValues.sort((a, b) => b.roll - a.roll);
     lastValues.forEach((d, i) => d.y = labels[i].y);
 
     // Ajout des valeurs sur le graphique
@@ -269,8 +265,8 @@ function showData(data) {
         .append('text')
         .attr("x", width + 8)
         .attr("y", d => d.y)
-        .text(d => Math.round(d.incid))
-        .style("fill", d => scaleC(d.age_label));
+        .text(d => Math.round(d.roll).toLocaleString("fr-FR"))
+        .style("fill", d => scaleC(d.vaccin));
 
     //---------------------------------------------------------------------------------------
 
