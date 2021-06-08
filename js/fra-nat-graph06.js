@@ -250,8 +250,8 @@ function showData(data) {
     // Simulation de force sur les noeuds
     const force = d3.forceSimulation()
         .nodes(labels)
-        .force('collide', d3.forceCollide(7))
-        .force('y', d3.forceY(d => d.targetY).strength(1))
+        .force('collide', d3.forceCollide(8))
+        .force('y', d3.forceY(d => d.targetY).strength(0.03))
         .stop();
 
     // Execute la simulation
