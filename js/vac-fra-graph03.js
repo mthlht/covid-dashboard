@@ -38,6 +38,7 @@ function showData(data) {
     // Filtre les données uniquement à partir du 1er janvier
     const tidyData = tempData.filter(d => d.date >= new Date("2021-01-01"));
 
+    // Données spécifique au line chart qui filtre les valeurs manquantes des 7 premiers jours
     const dataToLine = tidyData.filter(d => isNaN(d.roll_dose) === false);
 
 
@@ -166,7 +167,7 @@ function showData(data) {
     // Échelle de couleurs
     const scaleC = d3.scaleOrdinal()
         .domain(["n_dose1", "n_dose2"])
-        .range(["#0072B2", "#D55E00"]);
+        .range(["#56B4E9", "#0072B2"]);
 
     //---------------------------------------------------------------------------------------
 
@@ -201,7 +202,6 @@ function showData(data) {
         .data(series)
         .join("g")
         .attr("fill", d => scaleC(d.key))
-        .attr("opacity", d => (scaleC(d.key) == "#0072B2" ? 0.6 : 1))
         .selectAll("rect")
         .data(d => d)
         .join("rect")
@@ -212,12 +212,55 @@ function showData(data) {
 
     //---------------------------------------------------------------------------------------
 
+    // Création du Line Chart
+
+    // générateur de la ligne avec les échelles
+    let lineGenerator = d3.line()
+        .x(d => scaleT(d.date))
+        .y(d => scaleY(d.roll_dose));
+
+    // projection de la ligne
+    svgPlot.append("path")
+        .attr("d", lineGenerator(dataToLine))
+        .attr("fill", "none")
+        .attr("stroke", "#D55E00")
+        .attr("stroke-width", 3);
+
+    //---------------------------------------------------------------------------------------
+
+    // Cercle de la dernière valeur
+
+    // stocakge valeur date la plus récente du dataset
+    const maxDate = d3.max(tidyData, d => d.date);
+
+    // stockage valeur correspondante à la dernière date
+    const maxVal = tidyData.filter(d => d.date == maxDate);
+
+    // création cercle
+    svgPlot.append("circle")
+        .attr("cx", scaleT(maxDate.setDate(maxDate.getDate())))
+        .attr("cy", scaleY(maxVal[0].roll_dose))
+        .attr("r", 4)
+        .attr("stroke", "#ffffff")
+        .attr("stroke-width", 0.8)
+        .attr("fill", "#D55E00");
+
+    // Ajoute texte de la valeur du cercle
+
+    svgPlot.append("text")
+        .attr("x", width + 8)
+        .attr("y", scaleY(maxVal[0].roll_dose))
+        .text(Math.round(maxVal[0].roll_dose).toLocaleString('fr-FR'))
+        .style("fill", "#D55E00");
+
+    //---------------------------------------------------------------------------------------
+
     // Légende
 
     // Objet contenant les informations à afficher dans la légende : text, couleur, opacité
     const legendeValues = [
-        { "label": "Premières doses", "col": "#0072B2", "op": 0.6 },
-        { "label": "Deuxièmes doses", "col": "#D55E00", "op": 1 }
+        { "label": "Premières doses", "col": "#56B4E9", "op": 1 },
+        { "label": "Deuxièmes doses", "col": "#0072B2", "op": 1 }
     ];
 
     // Création d'un groupe g par élément de la légende (ici deux infos)
@@ -243,12 +286,6 @@ function showData(data) {
         .attr("y", 10)
         .text(d => d.label.toLocaleString('fr-FR'))
         .attr("font-size", "14px");
-
-
-
-
-
-
 
 
 
