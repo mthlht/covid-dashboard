@@ -50,7 +50,7 @@ function showData(data) {
 
     // variables d'ajustement du graphique pour les noms des régions
     const marginHratio = marginH * 0.2; // uniquement utilisée pour le widthRatio
-    const widthRatio = width - marginHratio; // uniquement utilisée pour l'échelle scaleX
+    const widthRatio = width - marginHratio; // utilisée pour l'échelle scaleX et l'affichage des dernières valeurs
 
     // création du canevas pour le Graphique
     const svg = d3.select('#vac-fra-graph01 .graph')
@@ -234,13 +234,13 @@ function showData(data) {
     // Affichage des dernières valeurs
 
     svgPlot.append("text")
-        .attr("x", widthRatio + 8)
+        .attr("x", widthRatio + 8) // variable widthRatio
         .attr("y", scaleY(maxVal[0].cum_dose2))
         .text(Math.round(maxVal[0].cum_dose2 / 1000000, 2) + ' millions')
         .style("fill", "#D55E00");
 
     svgPlot.append("text")
-        .attr("x", widthRatio + 8)
+        .attr("x", widthRatio + 8) // variable widthRatio
         .attr("y", scaleY(maxVal[0].cum_dose1))
         .text(Math.round(maxVal[0].cum_dose1 / 1000000, 2) + ' millions')
         .style("fill", "#0072B2");
