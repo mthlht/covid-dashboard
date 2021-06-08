@@ -33,10 +33,8 @@ function showData(data) {
 
     });
 
-    const tidyData = tempData.sort((a, b) => d3.ascending(a.tot_hosp_7j, b.tot_hosp_7j))
-
-    console.log(data)
-
+    // Tri des variables dans l'ordre décroissant
+    const tidyData = tempData.sort((a, b) => d3.ascending(a.tot_hosp_7j, b.tot_hosp_7j));
 
 
     //---------------------------------------------------------------------------------------
@@ -49,8 +47,9 @@ function showData(data) {
     const marginH = 80;
     const marginV = 20;
 
-    const marginHratio = marginH * 2.5;
-    const widthRatio = width - marginHratio;
+    // variables d'ajustement du graphique pour les noms des régions
+    const marginHratio = marginH * 2.5; // uniquement utilisée pour la création de svgPlot
+    const widthRatio = width - marginHratio; // uniquement utilisée pour l'échelle scaleX
 
     // création du canevas pour le Graphique
     const svg = d3.select('#fra-reg-graph04 .graph')
@@ -129,16 +128,16 @@ function showData(data) {
 
     // Création des échelles
 
-    // échelle pour l'épaisseur des barres du bar chart
+    // échelle linéaire pour l'axe des X
+    const scaleX = d3.scaleLinear()
+        .domain([0, d3.max(tidyData, d => d.tot_hosp_7j)])
+        .range([0, widthRatio]);
+
+    // échelle pour l'épaisseur des barres des barres et les placement sur l'axe Y
     const scaleY = d3.scaleBand()
         .domain(d3.range(tidyData.length))
         .range([height, 0])
         .padding(0.1);
-
-    // échelle linéaire pour l'axe des Y
-    const scaleX = d3.scaleLinear()
-        .domain([0, d3.max(tidyData, d => d.tot_hosp_7j)])
-        .range([0, widthRatio]);
 
     //---------------------------------------------------------------------------------------
 
@@ -188,8 +187,10 @@ function showData(data) {
         .attr("y", (d, i) => {
             return scaleY(i) + (scaleY.bandwidth()/1.5)
         })
+        // écriture à l'intérieur ou à l'extérieur des barres
         .attr("x", d => (scaleX(d.tot_hosp_7j) >= 38) ? scaleX(d.tot_hosp_7j)-38 : scaleX(d.tot_hosp_7j)+4 )
         .text(d => Math.round(d.tot_hosp_7j))
+        // en blanc si à l'intérieur des barres, en gris si à l'extérieur
         .attr("fill", d => (scaleX(d.tot_hosp_7j) >= 38) ? "#ffffff" : "grey")
         .attr("font-size", (scaleY.bandwidth()*0.5)+"px");
 

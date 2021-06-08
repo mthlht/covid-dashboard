@@ -33,12 +33,10 @@ function showData(data) {
 
     });
 
-    const tidyData = tempData.sort((a, b) => d3.ascending(a.tx_rea, b.tx_rea))
-
-
+    // Tri des variables dans l'ordre décroissant
+    const tidyData = tempData.sort((a, b) => d3.ascending(a.tx_rea, b.tx_rea));
 
     //---------------------------------------------------------------------------------------
-
 
     // Création du canevas SVG
 
@@ -47,8 +45,9 @@ function showData(data) {
     const marginH = 80;
     const marginV = 20;
 
-    const marginHratio = marginH * 2.5;
-    const widthRatio = width - marginHratio;
+    // variables d'ajustement du graphique pour les noms des régions
+    const marginHratio = marginH * 2.5; // uniquement utilisée pour la création de svgPlot
+    const widthRatio = width - marginHratio; // uniquement utilisée pour l'échelle scaleX
 
     // création du canevas pour le Graphique
     const svg = d3.select('#fra-reg-graph03 .graph')
@@ -96,7 +95,7 @@ function showData(data) {
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
-    // Écriture
+    // Écriture du caption
     const caption = d3.select('#fra-reg-graph03 .graph-caption')
         .html("Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>, <a href='https://data.drees.solidarites-sante.gouv.fr/explore/dataset/707_bases-administratives-sae/information/' target='_blank'>Drees</a>")
         .style('padding-right', paddingTitles + "px")
@@ -127,16 +126,16 @@ function showData(data) {
 
     // Création des échelles
 
-    // échelle pour l'épaisseur des barres du bar chart
+    // échelle linéaire pour l'axe des X
+    const scaleX = d3.scaleLinear()
+        .domain([0, 100]) // graphique en pourcentages, donc minimum à 0 et max à 100
+        .range([0, widthRatio]);
+
+    // échelle pour l'épaisseur des barres des barres et les placement sur l'axe Y
     const scaleY = d3.scaleBand()
         .domain(d3.range(tidyData.length))
         .range([height, 0])
         .padding(0.1);
-
-    // échelle linéaire pour l'axe des Y
-    const scaleX = d3.scaleLinear()
-        .domain([0, 100])
-        .range([0, widthRatio]);
 
     //---------------------------------------------------------------------------------------
 
@@ -186,8 +185,10 @@ function showData(data) {
         .attr("y", (d, i) => {
             return scaleY(i) + (scaleY.bandwidth()/1.5)
         })
-        .attr("x", d => (scaleX(d.tx_rea) >= 40) ? scaleX(d.tx_rea)-40 : scaleX(d.tx_rea)+4 )
+        // écriture à l'intérieur ou à l'extérieur des barres
+        .attr("x", d => (scaleX(d.tx_rea) >= 40) ? scaleX(d.tx_rea)-40 : scaleX(d.tx_rea)+4 ) 
         .text(d => Math.round(d.tx_rea)+"%")
+        // en blanc si à l'intérieur des barres, en gris si à l'extérieur
         .attr("fill", d => (scaleX(d.tx_rea) >= 40) ? "#ffffff" : "grey")
         .attr("font-size", (scaleY.bandwidth()*0.5)+"px");
 
@@ -198,13 +199,12 @@ function showData(data) {
 
     // Placement X
     svgPlot.append("g")
-        .call(xAxis)
-        .attr("color", "grey"); // mise en gris des ticks de l'axe des X
+        .call(xAxis);
 
     // Placement Y
     svgPlot.append("g")
         .call(yAxis)
-        .attr("color", "transparent");
+        .attr("color", "transparent"); // les ticks de l'axe X sont transparents
 
 
 }

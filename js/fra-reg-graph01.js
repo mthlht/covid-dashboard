@@ -118,7 +118,7 @@ function showData(data) {
         .style('padding-right', paddingTitles + "px")
         .style('padding-left', paddingTitles + "px");
 
-    // Écriture
+    // Écriture du caption
     const caption = d3.select('#fra-reg-graph01 .graph-caption')
         .html("Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>")
         .style('padding-right', paddingTitles + "px")
@@ -283,9 +283,6 @@ function showData(data) {
                 tooltip.append("text")
                     .attr("y", 50)
                     .text(`entre le ${instantT7} et le ${instantT}`);
-
-
-
 
 
             });
