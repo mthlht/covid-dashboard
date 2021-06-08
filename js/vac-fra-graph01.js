@@ -35,7 +35,7 @@ function showData(data) {
     });
 
     // Filtre les données uniquement à partir du 1er janvier
-    const tidyData = tempData.filter(d => d.date >= new Date("2021-01-01"))
+    const tidyData = tempData.filter(d => d.date >= new Date("2021-01-01"));
 
     //---------------------------------------------------------------------------------------
 
@@ -152,7 +152,7 @@ function showData(data) {
         .attr("transform", `translate(0, 0)`)
         .call(d3.axisLeft(scaleY)
             .ticks(5) // Nombre de ticks
-            .tickFormat(d => d/1000000 + 'M')) // formatage grands nombre avec espace entre milliers
+            .tickFormat(d => d / 1000000 + 'M')) // formatage grands nombre avec espace entre milliers
         .call(g => g.select(".domain").remove()) // supprime la ligne de l'axe
         .selectAll('text')
         .style("fill", "grey") // couleur du texte
