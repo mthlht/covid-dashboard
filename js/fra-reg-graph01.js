@@ -138,13 +138,13 @@ Promise.all([
     legCells = [0, 50, 150, 250, 400, 600];
   } else if (quantile > 250) {
     maxValColor = 400;
-    legCells = [0, 50, 150, 250, 400];
+    legCells = [0, 25, 50, 150, 250, 400];
   } else if (quantile > 150) {
     maxValColor = 250;
-    legCells = [0, 50, 150, 250];
+    legCells = [0, 25, 50, 150, 250];
   } else {
     maxValColor = 150;
-    legCells = [0, 50, 100, 150];
+    legCells = [0, 25, 50, 100, 150];
   }
 
   // échelle de couleur

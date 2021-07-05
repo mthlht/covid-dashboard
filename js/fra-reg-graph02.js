@@ -188,10 +188,13 @@ Promise.all([
   // Dans un premier temps la fonction range10s est lancé avec 10 comme diviseur
   let legCells = range10s(minIncidEvol, maxIncidEvol, 10).map((d) => d / 100);
 
-  // Si le diviseur par 10 renvoie un trop grand nombre de valeur alors le diviseur passe à 20
-  if (legCells.length > 10) {
-    legCells = range10s(minIncidEvol, maxIncidEvol, 20).map((d) => d / 100);
-  }
+  // Si le diviseur par 10 renvoie un trop grand nombre de valeurs alors calcule une nouvelle répartition
+  let i = 10;
+
+  while (legCells.length > 10) {
+    i = i + 10
+    legCells = range10s(minIncidEvol, maxIncidEvol, i).map((d) => d / 100);
+  };
 
   // paramètres de la legende à l'aide de la variable legCells définie avec l'échelled de couleur
   const legend = d3
