@@ -1,214 +1,199 @@
-d3.csv("data/hosp_reg.csv").then(showData);
+d3.csv("data/hosp_reg.csv").then(data => {
+  const graphCfg = {
+    target: `#fra-reg-graph03`,
+    title: `Taux d'occupation des réanimations par des patients Covid par région`,
+    subtitle: `au [[autoDate]]`,
+    caption: `Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>, <a href='https://data.drees.solidarites-sante.gouv.fr/explore/dataset/707_bases-administratives-sae/information/' target='_blank'>Drees</a>`,
+    // size: {
+    //   tooltip: {
+    //     font: 20,
+    //   },
+    // },
+    type: 'square',
+    device: window.screenDevice,
+  }
 
-function showData(data) {
+  // Traitement des données
 
-    // Mise en français des objets dates
-    const localeT = {
-        "dateTime": "%A %e %B %Y à %X",
-        "date": "%d/%m/%Y",
-        "time": "%H:%M:%S",
-        "periods": ["AM", "PM"],
-        "days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
-        "shortDays": ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."],
-        "months": ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"],
-        "shortMonths": ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."]
+  // Sélection des variables nécessaires pour le graphique
+  const tempData = data.map((d) => {
+    return {
+      date: new Date(d.date), // ATTENTION À TRANSPOSER EN FORMAT DATE
+      tx_rea: +d.tx_rea, // ATTENTION STRING A TRANSPOSER EN FLOAT
+      reg_nom: d.reg_nom,
     };
+  });
 
-    d3.timeFormatDefaultLocale(localeT);
+  // Tri des variables dans l'ordre décroissant
+  const tidyData = tempData.sort((a, b) => d3.ascending(a.tx_rea, b.tx_rea));
 
-    //---------------------------------------------------------------------------------------
+  //---------------------------------------------------------------------------------------
 
-    // Traitement des données
+  // Création du canevas SVG
 
-    // Sélection des variables nécessaires pour le graphique
-    const tempData = data.map(d => {
+  const width = graphCfg?.size?.svg?.width || commonGraph.size[graphCfg.type][graphCfg.device].svg.width;
+  const height = graphCfg?.size?.svg?.height || commonGraph.size[graphCfg.type][graphCfg.device].svg.height;
+  const marginH = graphCfg?.size?.margin?.horizontal || commonGraph.size[graphCfg.type][graphCfg.device].margin.horizontal;
+  const marginV = graphCfg?.size?.margin?.vertical || commonGraph.size[graphCfg.type][graphCfg.device].margin.vertical;
 
-        let newData = {
-            "date": new Date(d.date), // ATTENTION À TRANSPOSER EN FORMAT DATE
-            "tx_rea": +d.tx_rea, // ATTENTION STRING A TRANSPOSER EN FLOAT
-            "reg_nom": d.reg_nom
-        }
+  const viewBox = {
+    width: width + marginH * 2,
+    height: height + marginV * 2
+  }
 
-        return newData
+  // variables d'ajustement du graphique pour les noms des régions
+  const marginHratio = marginH * 2.5; // uniquement utilisée pour la création de svgPlot
+  const widthRatio = width - marginHratio; // uniquement utilisée pour l'échelle scaleX
 
-    });
+  // création du canevas pour le Graphique
+  const svg = d3
+    .select(graphCfg.target)
+    .select('.grph-content')
+    .insert('svg', ':first-child')
+    .attr("viewBox", [0, 0, viewBox.width, viewBox.height])
+    .attr("preserveAspectRatio", "xMinYMid");
 
-    // Tri des variables dans l'ordre décroissant
-    const tidyData = tempData.sort((a, b) => d3.ascending(a.tx_rea, b.tx_rea));
+  // création d'un groupe g pour le Graphique
+  const svgPlot = svg
+    .append("g")
+    .attr("transform", `translate(${marginH + marginHratio}, ${marginV})`);
 
-    //---------------------------------------------------------------------------------------
+  //---------------------------------------------------------------------------------------
 
-    // Création du canevas SVG
+  // Écriture titraille graphique
 
-    const width = 500;
-    const height = 500;
-    const marginH = 80;
-    const marginV = 20;
+  // Définition du padding à appliquer aux titres, sous-titres, source
+  // pour une titraille toujours alignée avec le graphique
+  const padding = marginH / viewBox.width * 100
+  const paddingTxt = `0 ${ padding }%`
 
-    // variables d'ajustement du graphique pour les noms des régions
-    const marginHratio = marginH * 2.5; // uniquement utilisée pour la création de svgPlot
-    const widthRatio = width - marginHratio; // uniquement utilisée pour l'échelle scaleX
+  document.documentElement.style.setProperty('--gutter-size', `${ padding }%`)
 
-    // création du canevas pour le Graphique
-    const svg = d3.select('#fra-reg-graph03 .graph')
-        .append("svg")
-        .attr("viewBox", [0, 0, width + marginH*2, height + marginV * 2])
-        .attr("preserveAspectRatio", "xMinYMid");
+  // Écriture du titre
+  d3.select(graphCfg.target)
+    .select('.grph-title')
+    .html(graphCfg.title)
+    .style("padding", paddingTxt)
 
-    // création d'un groupe g pour le Graphique
-    const svgPlot = svg.append("g")
-        .attr("transform", `translate(${marginH + marginHratio}, ${marginV})`);
+  // Date à afficher dans le titre
+  // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
+  const formatTimeToTitle = d3.timeFormat("%d %b %Y");
+  const actualDate = new Date(tidyData[0].date);
+  const dateToTitle = formatTimeToTitle(actualDate);
 
-    //---------------------------------------------------------------------------------------
+  // Écriture du sous-titre
+  d3.select(graphCfg.target)
+    .select('.grph-title')
+    .append('span')
+    .attr('class', 'grph-date')
+    .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${ dateToTitle }`))
 
-    // Écriture titraille graphique
+  // Écriture de la source
+  d3.select(graphCfg.target)
+    .select('.grph-caption')
+    .html(graphCfg.caption)
+    .style("padding", paddingTxt)
 
-    // Stockage de la taille du graphique dans le navigateur à l'ouverture de la page
-    let svgSizeInNav = svg.node().getBoundingClientRect().right - svg.node().getBoundingClientRect().left;
+  //---------------------------------------------------------------------------------------
 
-    // Stockage du total des dimensions du graphique
-    let totalDims = width + marginH*2;
+  // Création des échelles
 
-    // Définition du padding à appliquer aux titres, sous-titres, source
-    // pour une titraille toujours alignée avec le graphique
-    let paddingTitles = svgSizeInNav / totalDims * marginH;
+  // échelle linéaire pour l'axe des X
+  const scaleX = d3
+    .scaleLinear()
+    .domain([0, 100]) // graphique en pourcentages, donc minimum à 0 et max à 100
+    .range([0, widthRatio]);
 
-    // Écriture du titre
-    const title = d3.select('#fra-reg-graph03 .graph-title')
-        .html("Taux d'occupation des réanimations par des patients Covid par région")
-        .style('padding-right', paddingTitles + "px")
-        .style('padding-left', paddingTitles + "px");
+  // échelle pour l'épaisseur des barres des barres et les placement sur l'axe Y
+  const scaleY = d3
+    .scaleBand()
+    .domain(d3.range(tidyData.length))
+    .range([height, 0])
+    .padding(0.2);
 
-    // Formateur de date en XX mois XXXX
-    const formatTimeToTitle = d3.timeFormat("%d %b %Y");
+  //---------------------------------------------------------------------------------------
 
-    // Date à afficher dans le titre
-    // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
-    const actualDate = new Date(tidyData[0].date);
+  // Création des axes
 
-    // Foramtage de la date à afficher
-    const dateToTitle = formatTimeToTitle(actualDate);
+  // Axe des X
+  const xAxis = (g) =>
+    g
+      .attr("transform", `translate(0, ${height})`)
+      .call(d3.axisLeft(scaleX).ticks(0))
+      .call((g) => g.select(".domain").remove()); // supprime la ligne de l'axe
 
-    // Écriture du sous-titre
-    const subtitle = d3.select('#fra-reg-graph03 .graph-subtitle')
-        .html("au " + dateToTitle)
-        .style('padding-right', paddingTitles + "px")
-        .style('padding-left', paddingTitles + "px");
+  // Axe des Y
+  const yAxis = (g) =>
+    g
+      .attr("transform", `translate(0, 0)`)
+      .call(
+        d3
+          .axisLeft(scaleY)
+          .tickFormat((i) => tidyData[i].reg_nom)
+          .tickSizeOuter(0)
+      )
+      .call((g) => g.select(".domain").remove()) // supprime la ligne de l'axe
+      .selectAll("text")
+      .style("font-size", scaleY.bandwidth() * 0.5 + "px")
+      .style("fill", "grey"); // couleur du texte
 
-    // Écriture du caption
-    const caption = d3.select('#fra-reg-graph03 .graph-caption')
-        .html("Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>, <a href='https://data.drees.solidarites-sante.gouv.fr/explore/dataset/707_bases-administratives-sae/information/' target='_blank'>Drees</a>")
-        .style('padding-right', paddingTitles + "px")
-        .style('padding-left', paddingTitles + "px");
+  //---------------------------------------------------------------------------------------
 
-    // Adaptation du padding à chaque resize de la fenêtre du navigateur
-    d3.select(window).on("resize", () => {
+  // Création du Bar Chart
+  const rectFill = svgPlot
+    .append("g")
+    .selectAll("rect")
+    .data(tidyData)
+    .join("rect")
+    .attr("y", (d, i) => scaleY(i))
+    .attr("x", scaleX(0))
+    .attr("width", (d) => scaleX(d.tx_rea))
+    .attr("height", scaleY.bandwidth()) // width des barres avec l'échelle d'épaiseur
+    .attr("fill", "#0072B2")
+    .attr("opacity", 0.6);
 
-        let svgSizeInNavTemp = svg.node().getBoundingClientRect().right - svg.node().getBoundingClientRect().left;
+  const rectFrame = svgPlot
+    .append("g")
+    .selectAll("rect")
+    .data(tidyData)
+    .join("rect")
+    .attr("y", (d, i) => scaleY(i))
+    .attr("x", (d) => scaleX(0))
+    .attr("width", (d) => scaleX(100))
+    .attr("height", scaleY.bandwidth()) // width des barres avec l'échelle d'épaiseur
+    .attr("fill", "transparent")
+    .attr("stroke-width", "2px")
+    .attr("stroke", "grey")
+    .attr("opacity", 1);
 
-        let paddingTitlesTemp = svgSizeInNavTemp / totalDims * marginH;
+  //---------------------------------------------------------------------------------------
 
-        title
-            .style('padding-right', paddingTitlesTemp + "px")
-            .style('padding-left', paddingTitlesTemp + "px");
+  // Création des labels
 
-        subtitle
-            .style('padding-right', paddingTitlesTemp + "px")
-            .style('padding-left', paddingTitlesTemp + "px");
+  const text = svgPlot
+    .selectAll("text")
+    .data(tidyData)
+    .join("text")
+    .attr("y", (d, i) => {
+      return scaleY(i) + scaleY.bandwidth() / 1.5;
+    })
+    // écriture à l'intérieur ou à l'extérieur des barres
+    .attr("x", (d) =>
+      scaleX(d.tx_rea) >= 40 ? scaleX(d.tx_rea) - 40 : scaleX(d.tx_rea) + 4
+    )
+    .text((d) => Math.round(d.tx_rea) + "%")
+    // en blanc si à l'intérieur des barres, en gris si à l'extérieur
+    .attr("fill", (d) => scaleX(d.tx_rea) >= 40 ? "#ffffff" : "grey")
+    .attr("font-size", scaleY.bandwidth() * 0.5 + "px");
 
-        caption
-            .style('padding-right', paddingTitlesTemp + "px")
-            .style('padding-left', paddingTitlesTemp + "px");
+  //---------------------------------------------------------------------------------------
 
-    });
+  // Placement des axes
 
-    //---------------------------------------------------------------------------------------
+  // Placement X
+  svgPlot.append("g").call(xAxis);
 
-    // Création des échelles
-
-    // échelle linéaire pour l'axe des X
-    const scaleX = d3.scaleLinear()
-        .domain([0, 100]) // graphique en pourcentages, donc minimum à 0 et max à 100
-        .range([0, widthRatio]);
-
-    // échelle pour l'épaisseur des barres des barres et les placement sur l'axe Y
-    const scaleY = d3.scaleBand()
-        .domain(d3.range(tidyData.length))
-        .range([height, 0])
-        .padding(0.1);
-
-    //---------------------------------------------------------------------------------------
-
-    // Création des axes
-
-    // Axe des X
-    const xAxis = g => g
-        .attr("transform", `translate(0, ${height})`)
-        .call(d3.axisLeft(scaleX)
-            .ticks(0))
-        .call(g => g.select(".domain").remove()); // supprime la ligne de l'axe
-
-    // Axe des Y
-    const yAxis = g => g
-        .attr("transform", `translate(0, 0)`)
-        .call(d3.axisLeft(scaleY)
-            .tickFormat((i) => tidyData[i].reg_nom)
-            .tickSizeOuter(0))
-        .call(g => g.select(".domain").remove()) // supprime la ligne de l'axe
-        .selectAll('text')
-        .style("font-size", (scaleY.bandwidth()*0.5)+"px")
-        .style("fill", "grey"); // couleur du texte
-
-
-    //---------------------------------------------------------------------------------------
-
-    // Création du Bar Chart
-
-    const rect = svgPlot.selectAll("rect")
-        .data(tidyData)
-        .join('rect')
-        .attr("y", (d, i) => scaleY(i))
-        .attr("x", scaleX(0))
-        .attr("width", d => scaleX(d.tx_rea))
-        .attr("height", scaleY.bandwidth()) // width des barres avec l'échelle d'épaiseur
-        .attr("fill", "#0072B2")
-        .attr("opacity", 0.6);
-
-
-    //---------------------------------------------------------------------------------------
-
-    // Création des labels
-
-    const text = svgPlot.selectAll("text")
-        .data(tidyData)
-        .join('text')
-        .attr("y", (d, i) => {
-            return scaleY(i) + (scaleY.bandwidth()/1.5)
-        })
-        // écriture à l'intérieur ou à l'extérieur des barres
-        .attr("x", d => (scaleX(d.tx_rea) >= 40) ? scaleX(d.tx_rea)-40 : scaleX(d.tx_rea)+4 ) 
-        .text(d => Math.round(d.tx_rea)+"%")
-        // en blanc si à l'intérieur des barres, en gris si à l'extérieur
-        .attr("fill", d => (scaleX(d.tx_rea) >= 40) ? "#ffffff" : "grey")
-        .attr("font-size", (scaleY.bandwidth()*0.5)+"px");
-
-
-    //---------------------------------------------------------------------------------------
-
-    // Placement des axes
-
-    // Placement X
-    svgPlot.append("g")
-        .call(xAxis);
-
-    // Placement Y
-    svgPlot.append("g")
-        .call(yAxis)
-        .attr("color", "transparent"); // les ticks de l'axe X sont transparents
-
-
-}
-
-
-
-
+  // Placement Y
+  svgPlot.append("g").call(yAxis).attr("color", "transparent"); // les ticks de l'axe X sont transparents
+  
+});

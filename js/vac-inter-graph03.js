@@ -1,11 +1,11 @@
-d3.csv("data/vacc_age.csv").then(data => {
+d3.csv("data/owid_top10_vac_world.csv").then(showData);
+
+function showData(data) {
   const graphCfg = {
-    target: `#vac-fra-graph05`,
-    title: `Pourcentage de personnes ayant reçu au moins une première dose par classe d'âge`,
-    subtitle: `au [[autoDate]]`,
+    target: `#vac-inter-graph03`,
+    title: `Les 10 pays du monde qui vaccinent le plus`,
+    subtitle: `en pourcentage de la population ayant reçu au moins une injection, au [[autoDate]]`,
     caption: `Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>, <a href='https://data.drees.solidarites-sante.gouv.fr/explore/dataset/707_bases-administratives-sae/information/' target='_blank'>Drees</a>`,
-    type: 'square',
-    device: window.screenDevice,
   }
 
   // Traitement des données
@@ -13,26 +13,25 @@ d3.csv("data/vacc_age.csv").then(data => {
   // Sélection des variables nécessaires pour le graphique
   const tempData = data.map((d) => {
     let newData = {
-      date: new Date(d.jour), // ATTENTION À TRANSPOSER EN FORMAT DATE
-      tx_rea: +d.couv_tot_dose1, // ATTENTION STRING A TRANSPOSER EN FLOAT
-      age: +d.age, // ATTENTION STRING A TRANSPOSER EN FLOAT
-      reg_nom: d.label_age,
+      date: new Date(d.date), // ATTENTION À TRANSPOSER EN FORMAT DATE
+      tx_vacc: +d.people_vaccinated_per_hundred, // ATTENTION STRING A TRANSPOSER EN FLOAT
+      pays: d.name_fr,
     };
 
     return newData;
   });
 
   // Tri des variables dans l'ordre décroissant
-  const tidyData = tempData.sort((a, b) => d3.ascending(a.age, b.age));
+  const tidyData = tempData.sort((a, b) => d3.ascending(a.tx_vacc, b.tx_vacc));
 
   //---------------------------------------------------------------------------------------
 
   // Création du canevas SVG
 
-  const width = graphCfg?.size?.svg?.width || commonGraph.size[graphCfg.type][graphCfg.device].svg.width;
-  const height = graphCfg?.size?.svg?.height || commonGraph.size[graphCfg.type][graphCfg.device].svg.height;
-  const marginH = graphCfg?.size?.margin?.horizontal || commonGraph.size[graphCfg.type][graphCfg.device].margin.horizontal;
-  const marginV = graphCfg?.size?.margin?.vertical || commonGraph.size[graphCfg.type][graphCfg.device].margin.vertical;
+  const width = 500;
+  const height = 500;
+  const marginH = 80;
+  const marginV = 20;
 
   const viewBox = {
     width: width + marginH * 2,
@@ -62,34 +61,32 @@ d3.csv("data/vacc_age.csv").then(data => {
 
   // Définition du padding à appliquer aux titres, sous-titres, source
   // pour une titraille toujours alignée avec le graphique
-  const padding = marginH / viewBox.width * 100
-  const paddingTxt = `0 ${ padding }%`
-
-  document.documentElement.style.setProperty('--gutter-size', `${ padding }%`)
+  const paddingTxt = `0 ${ marginH / viewBox.width * 100 }%`
 
   // Écriture du titre
   d3.select(graphCfg.target)
     .select('.grph-title')
     .html(graphCfg.title)
-    .style("padding", paddingTxt)
+    .style("padding", paddingTxt);
 
   // Date à afficher dans le titre
   // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
   const formatTimeToTitle = d3.timeFormat("%d %b %Y");
-  const actualDate = new Date(tidyData[0].date);
+  const dateMax = d3.max(tidyData, d => d.date);
+  const actualDate = new Date(dateMax);
   const dateToTitle = formatTimeToTitle(actualDate);
 
   // Écriture du sous-titre
   d3.select(graphCfg.target)
     .select('.grph-subtitle')
     .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${ dateToTitle }`))
-    .style("padding", paddingTxt)
+    .style("padding", paddingTxt);
 
   // Écriture de la source
   d3.select(graphCfg.target)
     .select('.grph-caption')
     .html(graphCfg.caption)
-    .style("padding", paddingTxt)
+    .style("padding", paddingTxt);
 
   //---------------------------------------------------------------------------------------
 
@@ -126,7 +123,7 @@ d3.csv("data/vacc_age.csv").then(data => {
       .call(
         d3
           .axisLeft(scaleY)
-          .tickFormat((i) => tidyData[i].reg_nom)
+          .tickFormat((i) => tidyData[i].pays)
           .tickSizeOuter(0)
       )
       .call((g) => g.select(".domain").remove()) // supprime la ligne de l'axe
@@ -145,9 +142,9 @@ d3.csv("data/vacc_age.csv").then(data => {
     .join("rect")
     .attr("y", (d, i) => scaleY(i))
     .attr("x", scaleX(0))
-    .attr("width", (d) => scaleX(d.tx_rea))
+    .attr("width", (d) => scaleX(d.tx_vacc))
     .attr("height", scaleY.bandwidth()) // width des barres avec l'échelle d'épaiseur
-    .attr("fill", "#0072B2")
+    .attr("fill", d => d.pays === 'France' ? '#D55E00' : '#0072B2') // orange pour la France et bleu pour les autres pays
     .attr("opacity", 0.6);
 
   const rectFrame = svgPlot
@@ -177,11 +174,11 @@ d3.csv("data/vacc_age.csv").then(data => {
     })
     // écriture à l'intérieur ou à l'extérieur des barres
     .attr("x", (d) =>
-      scaleX(d.tx_rea) >= 50 ? scaleX(d.tx_rea) - 50 : scaleX(d.tx_rea) + 4
+      scaleX(d.tx_vacc) >= 50 ? scaleX(d.tx_vacc) - 50 : scaleX(d.tx_vacc) + 4
     )
-    .text((d) => Math.round(d.tx_rea) + "%")
+    .text((d) => Math.round(d.tx_vacc) + "%")
     // en blanc si à l'intérieur des barres, en gris si à l'extérieur
-    .attr("fill", (d) => (scaleX(d.tx_rea) >= 50 ? "#ffffff" : "grey"))
+    .attr("fill", (d) => (scaleX(d.tx_vacc) >= 50 ? "#ffffff" : "grey"))
     .attr("font-size", scaleY.bandwidth() * 0.4 + "px");
 
   //---------------------------------------------------------------------------------------
@@ -193,4 +190,4 @@ d3.csv("data/vacc_age.csv").then(data => {
 
   // Placement Y
   svgPlot.append("g").call(yAxis).attr("color", "transparent"); // les ticks de l'axe X sont transparents
-});
+}

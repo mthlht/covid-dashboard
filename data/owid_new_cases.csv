@@ -1,968 +1,1446 @@
 iso_code,name_fr,continent,date,new_cases_smoothed_per_million
-ARG,Argentine,South America,2020-01-01,NA
-ARG,Argentine,South America,2020-01-02,NA
-ARG,Argentine,South America,2020-01-03,NA
-ARG,Argentine,South America,2020-01-04,NA
-ARG,Argentine,South America,2020-01-05,NA
-ARG,Argentine,South America,2020-01-06,NA
-ARG,Argentine,South America,2020-01-07,NA
-ARG,Argentine,South America,2020-01-08,NA
-ARG,Argentine,South America,2020-01-09,NA
-ARG,Argentine,South America,2020-01-10,NA
-ARG,Argentine,South America,2020-01-11,NA
-ARG,Argentine,South America,2020-01-12,NA
-ARG,Argentine,South America,2020-01-13,NA
-ARG,Argentine,South America,2020-01-14,NA
-ARG,Argentine,South America,2020-01-15,NA
-ARG,Argentine,South America,2020-01-16,NA
-ARG,Argentine,South America,2020-01-17,NA
-ARG,Argentine,South America,2020-01-18,NA
-ARG,Argentine,South America,2020-01-19,NA
-ARG,Argentine,South America,2020-01-20,NA
-ARG,Argentine,South America,2020-01-21,NA
-ARG,Argentine,South America,2020-01-22,NA
-ARG,Argentine,South America,2020-01-23,NA
-ARG,Argentine,South America,2020-01-24,NA
-ARG,Argentine,South America,2020-01-25,NA
-ARG,Argentine,South America,2020-01-26,NA
-ARG,Argentine,South America,2020-01-27,NA
-ARG,Argentine,South America,2020-01-28,NA
-ARG,Argentine,South America,2020-01-29,NA
-ARG,Argentine,South America,2020-01-30,NA
-ARG,Argentine,South America,2020-01-31,NA
-ARG,Argentine,South America,2020-02-01,NA
-ARG,Argentine,South America,2020-02-02,NA
-ARG,Argentine,South America,2020-02-03,NA
-ARG,Argentine,South America,2020-02-04,NA
-ARG,Argentine,South America,2020-02-05,NA
-ARG,Argentine,South America,2020-02-06,NA
-ARG,Argentine,South America,2020-02-07,NA
-ARG,Argentine,South America,2020-02-08,NA
-ARG,Argentine,South America,2020-02-09,NA
-ARG,Argentine,South America,2020-02-10,NA
-ARG,Argentine,South America,2020-02-11,NA
-ARG,Argentine,South America,2020-02-12,NA
-ARG,Argentine,South America,2020-02-13,NA
-ARG,Argentine,South America,2020-02-14,NA
-ARG,Argentine,South America,2020-02-15,NA
-ARG,Argentine,South America,2020-02-16,NA
-ARG,Argentine,South America,2020-02-17,NA
-ARG,Argentine,South America,2020-02-18,NA
-ARG,Argentine,South America,2020-02-19,NA
-ARG,Argentine,South America,2020-02-20,NA
-ARG,Argentine,South America,2020-02-21,NA
-ARG,Argentine,South America,2020-02-22,NA
-ARG,Argentine,South America,2020-02-23,NA
-ARG,Argentine,South America,2020-02-24,NA
-ARG,Argentine,South America,2020-02-25,NA
-ARG,Argentine,South America,2020-02-26,NA
-ARG,Argentine,South America,2020-02-27,NA
-ARG,Argentine,South America,2020-02-28,NA
-ARG,Argentine,South America,2020-02-29,NA
-ARG,Argentine,South America,2020-03-01,NA
-ARG,Argentine,South America,2020-03-02,NA
-ARG,Argentine,South America,2020-03-03,NA
-ARG,Argentine,South America,2020-03-04,NA
-ARG,Argentine,South America,2020-03-05,NA
-ARG,Argentine,South America,2020-03-06,NA
-ARG,Argentine,South America,2020-03-07,NA
-ARG,Argentine,South America,2020-03-08,0.038
-ARG,Argentine,South America,2020-03-09,0.038
-ARG,Argentine,South America,2020-03-10,0.051
-ARG,Argentine,South America,2020-03-11,0.057
-ARG,Argentine,South America,2020-03-12,0.057
-ARG,Argentine,South America,2020-03-13,0.092
-ARG,Argentine,South America,2020-03-14,0.082
-ARG,Argentine,South America,2020-03-15,0.104
-ARG,Argentine,South America,2020-03-16,0.139
-ARG,Argentine,South America,2020-03-17,0.161
-ARG,Argentine,South America,2020-03-18,0.19
-ARG,Argentine,South America,2020-03-19,0.247
-ARG,Argentine,South America,2020-03-20,0.307
-ARG,Argentine,South America,2020-03-21,0.392
-ARG,Argentine,South America,2020-03-22,0.699
-ARG,Argentine,South America,2020-03-23,0.774
-ARG,Argentine,South America,2020-03-24,1.008
-ARG,Argentine,South America,2020-03-25,0.974
-ARG,Argentine,South America,2020-03-26,1.28
-ARG,Argentine,South America,2020-03-27,1.457
-ARG,Argentine,South America,2020-03-28,1.682
-ARG,Argentine,South America,2020-03-29,1.514
-ARG,Argentine,South America,2020-03-30,1.64
-ARG,Argentine,South America,2020-03-31,2.108
-ARG,Argentine,South America,2020-04-01,2.108
-ARG,Argentine,South America,2020-04-02,1.994
-ARG,Argentine,South America,2020-04-03,2.137
-ARG,Argentine,South America,2020-04-04,2.405
-ARG,Argentine,South America,2020-04-05,2.232
-ARG,Argentine,South America,2020-04-06,2.32
-ARG,Argentine,South America,2020-04-07,1.814
-ARG,Argentine,South America,2020-04-08,2.089
-ARG,Argentine,South America,2020-04-09,2.092
-ARG,Argentine,South America,2020-04-10,2.244
-ARG,Argentine,South America,2020-04-11,1.656
-ARG,Argentine,South America,2020-04-12,2.184
-ARG,Argentine,South America,2020-04-13,2.067
-ARG,Argentine,South America,2020-04-14,2.051
-ARG,Argentine,South America,2020-04-15,2.301
-ARG,Argentine,South America,2020-04-16,2.453
-ARG,Argentine,South America,2020-04-17,2.194
-ARG,Argentine,South America,2020-04-18,2.475
-ARG,Argentine,South America,2020-04-19,2.203
-ARG,Argentine,South America,2020-04-20,2.317
-ARG,Argentine,South America,2020-04-21,2.383
-ARG,Argentine,South America,2020-04-22,2.216
-ARG,Argentine,South America,2020-04-23,2.731
-ARG,Argentine,South America,2020-04-24,2.965
-ARG,Argentine,South America,2020-04-25,3.23
-ARG,Argentine,South America,2020-04-26,3.328
-ARG,Argentine,South America,2020-04-27,3.357
-ARG,Argentine,South America,2020-04-28,3.464
-ARG,Argentine,South America,2020-04-29,3.607
-ARG,Argentine,South America,2020-04-30,3.139
-ARG,Argentine,South America,2020-05-01,2.924
-ARG,Argentine,South America,2020-05-02,2.848
-ARG,Argentine,South America,2020-05-03,2.816
-ARG,Argentine,South America,2020-05-04,2.794
-ARG,Argentine,South America,2020-05-05,2.823
-ARG,Argentine,South America,2020-05-06,2.917
-ARG,Argentine,South America,2020-05-07,2.981
-ARG,Argentine,South America,2020-05-08,3.411
-ARG,Argentine,South America,2020-05-09,3.461
-ARG,Argentine,South America,2020-05-10,3.954
-ARG,Argentine,South America,2020-05-11,4.397
-ARG,Argentine,South America,2020-05-12,4.877
-ARG,Argentine,South America,2020-05-13,5.282
-ARG,Argentine,South America,2020-05-14,5.573
-ARG,Argentine,South America,2020-05-15,5.904
-ARG,Argentine,South America,2020-05-16,6.413
-ARG,Argentine,South America,2020-05-17,6.429
-ARG,Argentine,South America,2020-05-18,6.616
-ARG,Argentine,South America,2020-05-19,7.099
-ARG,Argentine,South America,2020-05-20,7.599
-ARG,Argentine,South America,2020-05-21,8.841
-ARG,Argentine,South America,2020-05-22,10.02
-ARG,Argentine,South America,2020-05-23,11.215
-ARG,Argentine,South America,2020-05-24,12.669
-ARG,Argentine,South America,2020-05-25,13.456
-ARG,Argentine,South America,2020-05-26,13.968
-ARG,Argentine,South America,2020-05-27,14.698
-ARG,Argentine,South America,2020-05-28,15.08
-ARG,Argentine,South America,2020-05-29,15.077
-ARG,Argentine,South America,2020-05-30,15.365
-ARG,Argentine,South America,2020-05-31,15.093
-ARG,Argentine,South America,2020-06-01,15.131
-ARG,Argentine,South America,2020-06-02,16.092
-ARG,Argentine,South America,2020-06-03,16.863
-ARG,Argentine,South America,2020-06-04,17.369
-ARG,Argentine,South America,2020-06-05,17.758
-ARG,Argentine,South America,2020-06-06,18.352
-ARG,Argentine,South America,2020-06-07,18.785
-ARG,Argentine,South America,2020-06-08,19.613
-ARG,Argentine,South America,2020-06-09,20.362
-ARG,Argentine,South America,2020-06-10,21.238
-ARG,Argentine,South America,2020-06-11,22.682
-ARG,Argentine,South America,2020-06-12,24.424
-ARG,Argentine,South America,2020-06-13,26.156
-ARG,Argentine,South America,2020-06-14,27.762
-ARG,Argentine,South America,2020-06-15,28.969
-ARG,Argentine,South America,2020-06-16,29.706
-ARG,Argentine,South America,2020-06-17,30.234
-ARG,Argentine,South America,2020-06-18,32.042
-ARG,Argentine,South America,2020-06-19,34.156
-ARG,Argentine,South America,2020-06-20,34.482
-ARG,Argentine,South America,2020-06-21,35.427
-ARG,Argentine,South America,2020-06-22,38.392
-ARG,Argentine,South America,2020-06-23,41.23
-ARG,Argentine,South America,2020-06-24,45.197
-ARG,Argentine,South America,2020-06-25,47.245
-ARG,Argentine,South America,2020-06-26,49.856
-ARG,Argentine,South America,2020-06-27,52.28
-ARG,Argentine,South America,2020-06-28,54.202
-ARG,Argentine,South America,2020-06-29,54.8
-ARG,Argentine,South America,2020-06-30,54.768
-ARG,Argentine,South America,2020-07-01,54.828
-ARG,Argentine,South America,2020-07-02,55.264
-ARG,Argentine,South America,2020-07-03,55.135
-ARG,Argentine,South America,2020-07-04,55.732
-ARG,Argentine,South America,2020-07-05,56.522
-ARG,Argentine,South America,2020-07-06,57.461
-ARG,Argentine,South America,2020-07-07,59.727
-ARG,Argentine,South America,2020-07-08,62.689
-ARG,Argentine,South America,2020-07-09,65.594
-ARG,Argentine,South America,2020-07-10,67.244
-ARG,Argentine,South America,2020-07-11,69.959
-ARG,Argentine,South America,2020-07-12,70.648
-ARG,Argentine,South America,2020-07-13,72.124
-ARG,Argentine,South America,2020-07-14,74.229
-ARG,Argentine,South America,2020-07-15,76.227
-ARG,Argentine,South America,2020-07-16,76.145
-ARG,Argentine,South America,2020-07-17,79.783
-ARG,Argentine,South America,2020-07-18,79.069
-ARG,Argentine,South America,2020-07-19,84.044
-ARG,Argentine,South America,2020-07-20,86.952
-ARG,Argentine,South America,2020-07-21,92.322
-ARG,Argentine,South America,2020-07-22,97.209
-ARG,Argentine,South America,2020-07-23,105.079
-ARG,Argentine,South America,2020-07-24,108.161
-ARG,Argentine,South America,2020-07-25,113.19
-ARG,Argentine,South America,2020-07-26,113.067
-ARG,Argentine,South America,2020-07-27,115.82
-ARG,Argentine,South America,2020-07-28,117.701
-ARG,Argentine,South America,2020-07-29,117.255
-ARG,Argentine,South America,2020-07-30,118.045
-ARG,Argentine,South America,2020-07-31,119.423
-ARG,Argentine,South America,2020-08-01,120.773
-ARG,Argentine,South America,2020-08-02,124.515
-ARG,Argentine,South America,2020-08-03,124.307
-ARG,Argentine,South America,2020-08-04,127.003
-ARG,Argentine,South America,2020-08-05,131.763
-ARG,Argentine,South America,2020-08-06,135.354
-ARG,Argentine,South America,2020-08-07,140.263
-ARG,Argentine,South America,2020-08-08,143.085
-ARG,Argentine,South America,2020-08-09,140.911
-ARG,Argentine,South America,2020-08-10,148.955
-ARG,Argentine,South America,2020-08-11,149.749
-ARG,Argentine,South America,2020-08-12,151.38
-ARG,Argentine,South America,2020-08-13,151.332
-ARG,Argentine,South America,2020-08-14,147.801
-ARG,Argentine,South America,2020-08-15,149.474
-ARG,Argentine,South America,2020-08-16,151.942
-ARG,Argentine,South America,2020-08-17,143.054
-ARG,Argentine,South America,2020-08-18,142.412
-ARG,Argentine,South America,2020-08-19,139.346
-ARG,Argentine,South America,2020-08-20,141.644
-ARG,Argentine,South America,2020-08-21,147.315
-ARG,Argentine,South America,2020-08-22,150.779
-ARG,Argentine,South America,2020-08-23,150.409
-ARG,Argentine,South America,2020-08-24,163.546
-ARG,Argentine,South America,2020-08-25,169.649
-ARG,Argentine,South America,2020-08-26,181.841
-ARG,Argentine,South America,2020-08-27,187.78
-ARG,Argentine,South America,2020-08-28,199.026
-ARG,Argentine,South America,2020-08-29,203.676
-ARG,Argentine,South America,2020-08-30,209.476
-ARG,Argentine,South America,2020-08-31,211.36
-ARG,Argentine,South America,2020-09-01,216.838
-ARG,Argentine,South America,2020-09-02,218.048
-ARG,Argentine,South America,2020-09-03,224.123
-ARG,Argentine,South America,2020-09-04,220.858
-ARG,Argentine,South America,2020-09-05,223.052
-ARG,Argentine,South America,2020-09-06,222.416
-ARG,Argentine,South America,2020-09-07,222.119
-ARG,Argentine,South America,2020-09-08,226.933
-ARG,Argentine,South America,2020-09-09,231.125
-ARG,Argentine,South America,2020-09-10,230.742
-ARG,Argentine,South America,2020-09-11,233.344
-ARG,Argentine,South America,2020-09-12,236.037
-ARG,Argentine,South America,2020-09-13,242.58
-ARG,Argentine,South America,2020-09-14,244.773
-ARG,Argentine,South America,2020-09-15,244.346
-ARG,Argentine,South America,2020-09-16,242.497
-ARG,Argentine,South America,2020-09-17,245.013
-ARG,Argentine,South America,2020-09-18,246.398
-ARG,Argentine,South America,2020-09-19,241.657
-ARG,Argentine,South America,2020-09-20,239.681
-ARG,Argentine,South America,2020-09-21,236.119
-ARG,Argentine,South America,2020-09-22,236.545
-ARG,Argentine,South America,2020-09-23,239.551
-ARG,Argentine,South America,2020-09-24,241.973
-ARG,Argentine,South America,2020-09-25,245.209
-ARG,Argentine,South America,2020-09-26,251.446
-ARG,Argentine,South America,2020-09-27,252.742
-ARG,Argentine,South America,2020-09-28,262.303
-ARG,Argentine,South America,2020-09-29,266.887
-ARG,Argentine,South America,2020-09-30,272.472
-ARG,Argentine,South America,2020-10-01,274.16
-ARG,Argentine,South America,2020-10-02,279.59
-ARG,Argentine,South America,2020-10-03,279.211
-ARG,Argentine,South America,2020-10-04,275.503
-ARG,Argentine,South America,2020-10-05,273.717
-ARG,Argentine,South America,2020-10-06,277.709
-ARG,Argentine,South America,2020-10-07,284.205
-ARG,Argentine,South America,2020-10-08,288.798
-ARG,Argentine,South America,2020-10-09,290.1
-ARG,Argentine,South America,2020-10-10,294.161
-ARG,Argentine,South America,2020-10-11,302.557
-ARG,Argentine,South America,2020-10-12,297.126
-ARG,Argentine,South America,2020-10-13,292.591
-ARG,Argentine,South America,2020-10-14,287.802
-ARG,Argentine,South America,2020-10-15,292.992
-ARG,Argentine,South America,2020-10-16,297.566
-ARG,Argentine,South America,2020-10-17,301.03
-ARG,Argentine,South America,2020-10-18,301.779
-ARG,Argentine,South America,2020-10-19,312.709
-ARG,Argentine,South America,2020-10-20,322.293
-ARG,Argentine,South America,2020-10-21,333.021
-ARG,Argentine,South America,2020-10-22,330.584
-ARG,Argentine,South America,2020-10-23,327.967
-ARG,Argentine,South America,2020-10-24,323.093
-ARG,Argentine,South America,2020-10-25,318.958
-ARG,Argentine,South America,2020-10-26,314.944
-ARG,Argentine,South America,2020-10-27,308.531
-ARG,Argentine,South America,2020-10-28,294.617
-ARG,Argentine,South America,2020-10-29,284.951
-ARG,Argentine,South America,2020-10-30,277.558
-ARG,Argentine,South America,2020-10-31,270.531
-ARG,Argentine,South America,2020-11-01,262.174
-ARG,Argentine,South America,2020-11-02,255.492
-ARG,Argentine,South America,2020-11-03,248.655
-ARG,Argentine,South America,2020-11-04,238.312
-ARG,Argentine,South America,2020-11-05,231.463
-ARG,Argentine,South America,2020-11-06,226.428
-ARG,Argentine,South America,2020-11-07,221.029
-ARG,Argentine,South America,2020-11-08,216.989
-ARG,Argentine,South America,2020-11-09,212.94
-ARG,Argentine,South America,2020-11-10,212.409
-ARG,Argentine,South America,2020-11-11,213.13
-ARG,Argentine,South America,2020-11-12,213.329
-ARG,Argentine,South America,2020-11-13,213.56
-ARG,Argentine,South America,2020-11-14,214.922
-ARG,Argentine,South America,2020-11-15,215.915
-ARG,Argentine,South America,2020-11-16,214.574
-ARG,Argentine,South America,2020-11-17,210.288
-ARG,Argentine,South America,2020-11-18,208.556
-ARG,Argentine,South America,2020-11-19,205.187
-ARG,Argentine,South America,2020-11-20,198.072
-ARG,Argentine,South America,2020-11-21,193.874
-ARG,Argentine,South America,2020-11-22,189.256
-ARG,Argentine,South America,2020-11-23,177.788
-ARG,Argentine,South America,2020-11-24,166.861
-ARG,Argentine,South America,2020-11-25,161.365
-ARG,Argentine,South America,2020-11-26,158.033
-ARG,Argentine,South America,2020-11-27,152.464
-ARG,Argentine,South America,2020-11-28,149.17
-ARG,Argentine,South America,2020-11-29,153.115
-ARG,Argentine,South America,2020-11-30,157.733
-ARG,Argentine,South America,2020-12-01,160.492
-ARG,Argentine,South America,2020-12-02,157.142
-ARG,Argentine,South America,2020-12-03,152.672
-ARG,Argentine,South America,2020-12-04,149.679
-ARG,Argentine,South America,2020-12-05,146.844
-ARG,Argentine,South America,2020-12-06,140.035
-ARG,Argentine,South America,2020-12-07,132.048
-ARG,Argentine,South America,2020-12-08,118.055
-ARG,Argentine,South America,2020-12-09,111.006
-ARG,Argentine,South America,2020-12-10,108.999
-ARG,Argentine,South America,2020-12-11,109.672
-ARG,Argentine,South America,2020-12-12,109.903
-ARG,Argentine,South America,2020-12-13,110.788
-ARG,Argentine,South America,2020-12-14,116.677
-ARG,Argentine,South America,2020-12-15,127.332
-ARG,Argentine,South America,2020-12-16,132.199
-ARG,Argentine,South America,2020-12-17,133.249
-ARG,Argentine,South America,2020-12-18,132.901
-ARG,Argentine,South America,2020-12-19,134.548
-ARG,Argentine,South America,2020-12-20,136.312
-ARG,Argentine,South America,2020-12-21,138.812
-ARG,Argentine,South America,2020-12-22,142.479
-ARG,Argentine,South America,2020-12-23,147.988
-ARG,Argentine,South America,2020-12-24,124.832
-ARG,Argentine,South America,2020-12-25,136.486
-ARG,Argentine,South America,2020-12-26,129.905
-ARG,Argentine,South America,2020-12-27,132.794
-ARG,Argentine,South America,2020-12-28,137.102
-ARG,Argentine,South America,2020-12-29,148.193
-ARG,Argentine,South America,2020-12-30,158.242
-ARG,Argentine,South America,2020-12-31,194.863
-ARG,Argentine,South America,2021-01-01,173.973
-ARG,Argentine,South America,2021-01-02,178.8
-ARG,Argentine,South America,2021-01-03,181.499
-ARG,Argentine,South America,2021-01-04,184.679
-ARG,Argentine,South America,2021-01-05,191.443
-ARG,Argentine,South America,2021-01-06,196.741
-ARG,Argentine,South America,2021-01-07,203.85
-ARG,Argentine,South America,2021-01-08,233.138
-ARG,Argentine,South America,2021-01-09,251.525
-ARG,Argentine,South America,2021-01-10,257.606
-ARG,Argentine,South America,2021-01-11,259.13
-ARG,Argentine,South America,2021-01-12,259.108
-ARG,Argentine,South America,2021-01-13,256.844
-ARG,Argentine,South America,2021-01-14,255.109
-ARG,Argentine,South America,2021-01-15,251.904
-ARG,Argentine,South America,2021-01-16,245.187
-ARG,Argentine,South America,2021-01-17,243.468
-ARG,Argentine,South America,2021-01-18,241.827
-ARG,Argentine,South America,2021-01-19,236.637
-ARG,Argentine,South America,2021-01-20,234.7
-ARG,Argentine,South America,2021-01-21,228.726
-ARG,Argentine,South America,2021-01-22,223.735
-ARG,Argentine,South America,2021-01-23,221.933
-ARG,Argentine,South America,2021-01-24,214.875
-ARG,Argentine,South America,2021-01-25,212.956
-ARG,Argentine,South America,2021-01-26,207.481
-ARG,Argentine,South America,2021-01-27,203.47
-ARG,Argentine,South America,2021-01-28,197.386
-ARG,Argentine,South America,2021-01-29,194.494
-ARG,Argentine,South America,2021-01-30,189.879
-ARG,Argentine,South America,2021-01-31,189.702
-ARG,Argentine,South America,2021-02-01,186.655
-ARG,Argentine,South America,2021-02-02,184.398
-ARG,Argentine,South America,2021-02-03,179.192
-ARG,Argentine,South America,2021-02-04,177.359
-ARG,Argentine,South America,2021-02-05,172.731
-ARG,Argentine,South America,2021-02-06,172.029
-ARG,Argentine,South America,2021-02-07,167.867
-ARG,Argentine,South America,2021-02-08,163.252
-ARG,Argentine,South America,2021-02-09,157.243
-ARG,Argentine,South America,2021-02-10,152.638
-ARG,Argentine,South America,2021-02-11,147.643
-ARG,Argentine,South America,2021-02-12,143.778
-ARG,Argentine,South America,2021-02-13,141.808
-ARG,Argentine,South America,2021-02-14,143.664
-ARG,Argentine,South America,2021-02-15,137.674
-ARG,Argentine,South America,2021-02-16,125.691
-ARG,Argentine,South America,2021-02-17,120.397
-ARG,Argentine,South America,2021-02-18,121.535
-ARG,Argentine,South America,2021-02-19,123.858
-ARG,Argentine,South America,2021-02-20,123.501
-ARG,Argentine,South America,2021-02-21,121.807
-ARG,Argentine,South America,2021-02-22,128.628
-ARG,Argentine,South America,2021-02-23,139.608
-ARG,Argentine,South America,2021-02-24,146.306
-ARG,Argentine,South America,2021-02-25,148.086
-ARG,Argentine,South America,2021-02-26,139.226
-ARG,Argentine,South America,2021-02-27,137.725
-ARG,Argentine,South America,2021-02-28,136.015
-ARG,Argentine,South America,2021-03-01,133.616
-ARG,Argentine,South America,2021-03-02,131.011
-ARG,Argentine,South America,2021-03-03,129.974
-ARG,Argentine,South America,2021-03-04,127.439
-ARG,Argentine,South America,2021-03-05,136.315
-ARG,Argentine,South America,2021-03-06,134.39
-ARG,Argentine,South America,2021-03-07,133.612
-ARG,Argentine,South America,2021-03-08,134.877
-ARG,Argentine,South America,2021-03-09,136.944
-ARG,Argentine,South America,2021-03-10,136.432
-ARG,Argentine,South America,2021-03-11,138.872
-ARG,Argentine,South America,2021-03-12,138.739
-ARG,Argentine,South America,2021-03-13,143.221
-ARG,Argentine,South America,2021-03-14,145.671
-ARG,Argentine,South America,2021-03-15,149.167
-ARG,Argentine,South America,2021-03-16,152.1
-ARG,Argentine,South America,2021-03-17,154.031
-ARG,Argentine,South America,2021-03-18,154.423
-ARG,Argentine,South America,2021-03-19,155.406
-ARG,Argentine,South America,2021-03-20,157.139
-ARG,Argentine,South America,2021-03-21,158.197
-ARG,Argentine,South America,2021-03-22,158.947
-ARG,Argentine,South America,2021-03-23,162.645
-ARG,Argentine,South America,2021-03-24,162.632
-ARG,Argentine,South America,2021-03-25,162.348
-ARG,Argentine,South America,2021-03-26,177.444
-ARG,Argentine,South America,2021-03-27,188.545
-ARG,Argentine,South America,2021-03-28,198.584
-ARG,Argentine,South America,2021-03-29,222.647
-ARG,Argentine,South America,2021-03-30,225.015
-ARG,Argentine,South America,2021-03-31,249.53
-ARG,Argentine,South America,2021-04-01,269.102
-ARG,Argentine,South America,2021-04-02,259.512
-ARG,Argentine,South America,2021-04-03,259.658
-ARG,Argentine,South America,2021-04-04,268.34
-ARG,Argentine,South America,2021-04-05,267.244
-ARG,Argentine,South America,2021-04-06,301.115
-ARG,Argentine,South America,2021-04-07,320.027
-ARG,Argentine,South America,2021-04-08,349.274
-ARG,Argentine,South America,2021-04-09,394.247
-ARG,Argentine,South America,2021-04-10,422.805
-ARG,Argentine,South America,2021-04-11,439.58
-ARG,Argentine,South America,2021-04-12,457.818
-ARG,Argentine,South America,2021-04-13,477.197
-ARG,Argentine,South America,2021-04-14,487.052
-ARG,Argentine,South America,2021-04-15,491.212
-ARG,Argentine,South America,2021-04-16,508.097
-ARG,Argentine,South America,2021-04-17,507.149
-ARG,Argentine,South America,2021-04-18,510.326
-ARG,Argentine,South America,2021-04-19,513.563
-ARG,Argentine,South America,2021-04-20,520.339
-ARG,Argentine,South America,2021-04-21,522.789
-ARG,Argentine,South America,2021-04-22,529.797
-ARG,Argentine,South America,2021-04-23,524.777
-ARG,Argentine,South America,2021-04-24,531.418
-ARG,Argentine,South America,2021-04-25,527.451
-ARG,Argentine,South America,2021-04-26,522.179
-ARG,Argentine,South America,2021-04-27,510.642
-ARG,Argentine,South America,2021-04-28,503.644
-ARG,Argentine,South America,2021-04-29,499.968
-ARG,Argentine,South America,2021-04-30,482.697
-ARG,Argentine,South America,2021-05-01,467.784
-ARG,Argentine,South America,2021-05-02,456.348
-ARG,Argentine,South America,2021-05-03,447.267
-ARG,Argentine,South America,2021-05-04,449.615
-ARG,Argentine,South America,2021-05-05,450.756
-ARG,Argentine,South America,2021-05-06,444.539
-ARG,Argentine,South America,2021-05-07,444.956
-ARG,Argentine,South America,2021-05-08,449.767
-ARG,Argentine,South America,2021-05-09,450.361
-ARG,Argentine,South America,2021-05-10,454.979
-ARG,Argentine,South America,2021-05-11,454.151
-ARG,Argentine,South America,2021-05-12,455.403
-ARG,Argentine,South America,2021-05-13,463.131
-ARG,Argentine,South America,2021-05-14,478.338
-ARG,Argentine,South America,2021-05-15,489.227
-ARG,Argentine,South America,2021-05-16,504.298
-ARG,Argentine,South America,2021-05-17,540.013
-ARG,Argentine,South America,2021-05-18,570.252
-ARG,Argentine,South America,2021-05-19,618.225
-ARG,Argentine,South America,2021-05-20,647.788
-ARG,Argentine,South America,2021-05-21,673.407
-ARG,Argentine,South America,2021-05-22,707.234
-ARG,Argentine,South America,2021-05-23,733.947
-ARG,Argentine,South America,2021-05-24,714.89
-BRA,Brésil,South America,2020-02-26,NA
-BRA,Brésil,South America,2020-02-27,NA
-BRA,Brésil,South America,2020-02-28,NA
-BRA,Brésil,South America,2020-02-29,NA
-BRA,Brésil,South America,2020-03-01,NA
-BRA,Brésil,South America,2020-03-02,0.001
-BRA,Brésil,South America,2020-03-03,0.001
-BRA,Brésil,South America,2020-03-04,0.002
-BRA,Brésil,South America,2020-03-05,0.002
-BRA,Brésil,South America,2020-03-06,0.008
-BRA,Brésil,South America,2020-03-07,0.007
-BRA,Brésil,South America,2020-03-08,0.012
-BRA,Brésil,South America,2020-03-09,0.015
-BRA,Brésil,South America,2020-03-10,0.019
-BRA,Brésil,South America,2020-03-11,0.023
-BRA,Brésil,South America,2020-03-12,0.032
-BRA,Brésil,South America,2020-03-13,0.093
-BRA,Brésil,South America,2020-03-14,0.093
-BRA,Brésil,South America,2020-03-15,0.095
-BRA,Brésil,South America,2020-03-16,0.118
-BRA,Brésil,South America,2020-03-17,0.195
-BRA,Brésil,South America,2020-03-18,0.224
-BRA,Brésil,South America,2020-03-19,0.382
-BRA,Brésil,South America,2020-03-20,0.431
-BRA,Brésil,South America,2020-03-21,0.585
-BRA,Brésil,South America,2020-03-22,0.93
-BRA,Brésil,South America,2020-03-23,1.159
-BRA,Brésil,South America,2020-03-24,1.294
-BRA,Brésil,South America,2020-03-25,1.466
-BRA,Brésil,South America,2020-03-26,1.589
-BRA,Brésil,South America,2020-03-27,1.764
-BRA,Brésil,South America,2020-03-28,1.938
-BRA,Brésil,South America,2020-03-29,1.821
-BRA,Brésil,South America,2020-03-30,1.784
-BRA,Brésil,South America,2020-03-31,2.332
-BRA,Brésil,South America,2020-04-01,2.878
-BRA,Brésil,South America,2020-04-02,3.4
-BRA,Brésil,South America,2020-04-03,3.79
-BRA,Brésil,South America,2020-04-04,4.339
-BRA,Brésil,South America,2020-04-05,4.62
-BRA,Brésil,South America,2020-04-06,5.096
-BRA,Brésil,South America,2020-04-07,5.59
-BRA,Brésil,South America,2020-04-08,6.273
-BRA,Brésil,South America,2020-04-09,6.753
-BRA,Brésil,South America,2020-04-10,7.112
-BRA,Brésil,South America,2020-04-11,6.967
-BRA,Brésil,South America,2020-04-12,7.435
-BRA,Brésil,South America,2020-04-13,7.574
-BRA,Brésil,South America,2020-04-14,7.546
-BRA,Brésil,South America,2020-04-15,8.166
-BRA,Brésil,South America,2020-04-16,8.289
-BRA,Brésil,South America,2020-04-17,9.439
-BRA,Brésil,South America,2020-04-18,10.707
-BRA,Brésil,South America,2020-04-19,11.064
-BRA,Brésil,South America,2020-04-20,11.636
-BRA,Brésil,South America,2020-04-21,11.974
-BRA,Brésil,South America,2020-04-22,11.719
-BRA,Brésil,South America,2020-04-23,13.18
-BRA,Brésil,South America,2020-04-24,13.684
-BRA,Brésil,South America,2020-04-25,15.233
-BRA,Brésil,South America,2020-04-26,16.43
-BRA,Brésil,South America,2020-04-27,17.947
-BRA,Brésil,South America,2020-04-28,20.267
-BRA,Brésil,South America,2020-04-29,22.802
-BRA,Brésil,South America,2020-04-30,24.968
-BRA,Brésil,South America,2020-05-01,25.646
-BRA,Brésil,South America,2020-05-02,25.389
-BRA,Brésil,South America,2020-05-03,26.027
-BRA,Brésil,South America,2020-05-04,27.672
-BRA,Brésil,South America,2020-05-05,28.375
-BRA,Brésil,South America,2020-05-06,31.538
-BRA,Brésil,South America,2020-05-07,32.654
-BRA,Brésil,South America,2020-05-08,36.757
-BRA,Brésil,South America,2020-05-09,39.627
-BRA,Brésil,South America,2020-05-10,40.912
-BRA,Brésil,South America,2020-05-11,40.979
-BRA,Brésil,South America,2020-05-12,42.179
-BRA,Brésil,South America,2020-05-13,42.695
-BRA,Brésil,South America,2020-05-14,45.293
-BRA,Brésil,South America,2020-05-15,49.329
-BRA,Brésil,South America,2020-05-16,52.053
-BRA,Brésil,South America,2020-05-17,52.678
-BRA,Brésil,South America,2020-05-18,57.647
-BRA,Brésil,South America,2020-05-19,62.955
-BRA,Brésil,South America,2020-05-20,68.177
-BRA,Brésil,South America,2020-05-21,71.86
-BRA,Brésil,South America,2020-05-22,74.331
-BRA,Brésil,South America,2020-05-23,76.541
-BRA,Brésil,South America,2020-05-24,82.082
-BRA,Brésil,South America,2020-05-25,80.334
-BRA,Brésil,South America,2020-05-26,80.204
-BRA,Brésil,South America,2020-05-27,80.812
-BRA,Brésil,South America,2020-05-28,86.128
-BRA,Brésil,South America,2020-05-29,90.244
-BRA,Brésil,South America,2020-05-30,101.512
-BRA,Brésil,South America,2020-05-31,101.913
-BRA,Brésil,South America,2020-06-01,101.853
-BRA,Brésil,South America,2020-06-02,110.329
-BRA,Brésil,South America,2020-06-03,115.729
-BRA,Brésil,South America,2020-06-04,118.759
-BRA,Brésil,South America,2020-06-05,121.381
-BRA,Brésil,South America,2020-06-06,117.215
-BRA,Brésil,South America,2020-06-07,118.897
-BRA,Brésil,South America,2020-06-08,121.623
-BRA,Brésil,South America,2020-06-09,123.744
-BRA,Brésil,South America,2020-06-10,126.62
-BRA,Brésil,South America,2020-06-11,126.275
-BRA,Brésil,South America,2020-06-12,123.017
-BRA,Brésil,South America,2020-06-13,119.407
-BRA,Brésil,South America,2020-06-14,118.196
-BRA,Brésil,South America,2020-06-15,121.552
-BRA,Brésil,South America,2020-06-16,123.452
-BRA,Brésil,South America,2020-06-17,122.965
-BRA,Brésil,South America,2020-06-18,117.825
-BRA,Brésil,South America,2020-06-19,137.174
-BRA,Brésil,South America,2020-06-20,145.885
-BRA,Brésil,South America,2020-06-21,144.979
-BRA,Brésil,South America,2020-06-22,146.647
-BRA,Brésil,South America,2020-06-23,149.684
-BRA,Brésil,South America,2020-06-24,156.766
-BRA,Brésil,South America,2020-06-25,168.001
-BRA,Brésil,South America,2020-06-26,162.685
-BRA,Brésil,South America,2020-06-27,165.391
-BRA,Brésil,South America,2020-06-28,175.28
-BRA,Brésil,South America,2020-06-29,175.9
-BRA,Brésil,South America,2020-06-30,172.143
-BRA,Brésil,South America,2020-07-01,174.823
-BRA,Brésil,South America,2020-07-02,180.618
-BRA,Brésil,South America,2020-07-03,177.501
-BRA,Brésil,South America,2020-07-04,176.984
-BRA,Brésil,South America,2020-07-05,174.01
-BRA,Brésil,South America,2020-07-06,171.44
-BRA,Brésil,South America,2020-07-07,179.142
-BRA,Brésil,South America,2020-07-08,177.703
-BRA,Brésil,South America,2020-07-09,174.016
-BRA,Brésil,South America,2020-07-10,175.915
-BRA,Brésil,South America,2020-07-11,176.654
-BRA,Brésil,South America,2020-07-12,175.834
-BRA,Brésil,South America,2020-07-13,175.872
-BRA,Brésil,South America,2020-07-14,173.555
-BRA,Brésil,South America,2020-07-15,170.432
-BRA,Brésil,South America,2020-07-16,172.303
-BRA,Brésil,South America,2020-07-17,164.997
-BRA,Brésil,South America,2020-07-18,157.946
-BRA,Brésil,South America,2020-07-19,157.071
-BRA,Brésil,South America,2020-07-20,157.051
-BRA,Brésil,South America,2020-07-21,156.481
-BRA,Brésil,South America,2020-07-22,175.256
-BRA,Brésil,South America,2020-07-23,185.04
-BRA,Brésil,South America,2020-07-24,199.634
-BRA,Brésil,South America,2020-07-25,214.833
-BRA,Brésil,South America,2020-07-26,215.538
-BRA,Brésil,South America,2020-07-27,217.572
-BRA,Brésil,South America,2020-07-28,217.443
-BRA,Brésil,South America,2020-07-29,218.259
-BRA,Brésil,South America,2020-07-30,216.831
-BRA,Brésil,South America,2020-07-31,214.474
-BRA,Brésil,South America,2020-08-01,210.606
-BRA,Brésil,South America,2020-08-02,211.427
-BRA,Brésil,South America,2020-08-03,206.963
-BRA,Brésil,South America,2020-08-04,214.212
-BRA,Brésil,South America,2020-08-05,206.2
-BRA,Brésil,South America,2020-08-06,203.042
-BRA,Brésil,South America,2020-08-07,201.595
-BRA,Brésil,South America,2020-08-08,204.672
-BRA,Brésil,South America,2020-08-09,202.797
-BRA,Brésil,South America,2020-08-10,206.431
-BRA,Brésil,South America,2020-08-11,206.805
-BRA,Brésil,South America,2020-08-12,205.463
-BRA,Brésil,South America,2020-08-13,210.136
-BRA,Brésil,South America,2020-08-14,210.414
-BRA,Brésil,South America,2020-08-15,204.772
-BRA,Brésil,South America,2020-08-16,204.833
-BRA,Brésil,South America,2020-08-17,203.036
-BRA,Brésil,South America,2020-08-18,200.095
-BRA,Brésil,South America,2020-08-19,196.158
-BRA,Brésil,South America,2020-08-20,186.233
-BRA,Brésil,South America,2020-08-21,172.597
-BRA,Brésil,South America,2020-08-22,178.28
-BRA,Brésil,South America,2020-08-23,178.495
-BRA,Brésil,South America,2020-08-24,176.953
-BRA,Brésil,South America,2020-08-25,176.516
-BRA,Brésil,South America,2020-08-26,175.08
-BRA,Brésil,South America,2020-08-27,174.349
-BRA,Brésil,South America,2020-08-28,183.124
-BRA,Brésil,South America,2020-08-29,177.289
-BRA,Brésil,South America,2020-08-30,172.408
-BRA,Brésil,South America,2020-08-31,191.819
-BRA,Brésil,South America,2020-09-01,188.812
-BRA,Brésil,South America,2020-09-02,188.659
-BRA,Brésil,South America,2020-09-03,188.349
-BRA,Brésil,South America,2020-09-04,192.886
-BRA,Brésil,South America,2020-09-05,186.064
-BRA,Brésil,South America,2020-09-06,184.963
-BRA,Brésil,South America,2020-09-07,160.978
-BRA,Brésil,South America,2020-09-08,141.905
-BRA,Brésil,South America,2020-09-09,134.432
-BRA,Brésil,South America,2020-09-10,132.271
-BRA,Brésil,South America,2020-09-11,127.939
-BRA,Brésil,South America,2020-09-12,129.501
-BRA,Brésil,South America,2020-09-13,129.667
-BRA,Brésil,South America,2020-09-14,132.948
-BRA,Brésil,South America,2020-09-15,147.986
-BRA,Brésil,South America,2020-09-16,148.66
-BRA,Brésil,South America,2020-09-17,145.801
-BRA,Brésil,South America,2020-09-18,143.166
-BRA,Brésil,South America,2020-09-19,142.853
-BRA,Brésil,South America,2020-09-20,143.942
-BRA,Brésil,South America,2020-09-21,142.77
-BRA,Brésil,South America,2020-09-22,140.533
-BRA,Brésil,South America,2020-09-23,115.787
-BRA,Brésil,South America,2020-09-24,135.973
-BRA,Brésil,South America,2020-09-25,130.673
-BRA,Brésil,South America,2020-09-26,127.528
-BRA,Brésil,South America,2020-09-27,126.136
-BRA,Brésil,South America,2020-09-28,125.964
-BRA,Brésil,South America,2020-09-29,125.113
-BRA,Brésil,South America,2020-09-30,147.57
-BRA,Brésil,South America,2020-10-01,127.285
-BRA,Brésil,South America,2020-10-02,105.839
-BRA,Brésil,South America,2020-10-03,126.917
-BRA,Brésil,South America,2020-10-04,122.977
-BRA,Brésil,South America,2020-10-05,122.165
-BRA,Brésil,South America,2020-10-06,128.783
-BRA,Brésil,South America,2020-10-07,127.533
-BRA,Brésil,South America,2020-10-08,121.883
-BRA,Brésil,South America,2020-10-09,140.328
-BRA,Brésil,South America,2020-10-10,118.155
-BRA,Brésil,South America,2020-10-11,120.766
-BRA,Brésil,South America,2020-10-12,118.403
-BRA,Brésil,South America,2020-10-13,97.107
-BRA,Brésil,South America,2020-10-14,94.205
-BRA,Brésil,South America,2020-10-15,94.724
-BRA,Brésil,South America,2020-10-16,97.057
-BRA,Brésil,South America,2020-10-17,95.251
-BRA,Brésil,South America,2020-10-18,86.956
-BRA,Brésil,South America,2020-10-19,99.01
-BRA,Brésil,South America,2020-10-20,107.752
-BRA,Brésil,South America,2020-10-21,106.128
-BRA,Brésil,South America,2020-10-22,103.664
-BRA,Brésil,South America,2020-10-23,103.068
-BRA,Brésil,South America,2020-10-24,105.028
-BRA,Brésil,South America,2020-10-25,114.097
-BRA,Brésil,South America,2020-10-26,106.946
-BRA,Brésil,South America,2020-10-27,111.355
-BRA,Brésil,South America,2020-10-28,113.916
-BRA,Brésil,South America,2020-10-29,114.755
-BRA,Brésil,South America,2020-10-30,109.551
-BRA,Brésil,South America,2020-10-31,104.152
-BRA,Brésil,South America,2020-11-01,101.872
-BRA,Brésil,South America,2020-11-02,97.016
-BRA,Brésil,South America,2020-11-03,84.956
-BRA,Brésil,South America,2020-11-04,81.829
-BRA,Brésil,South America,2020-11-05,64.284
-BRA,Brésil,South America,2020-11-06,76.969
-BRA,Brésil,South America,2020-11-07,79.276
-BRA,Brésil,South America,2020-11-08,79.581
-BRA,Brésil,South America,2020-11-09,81.205
-BRA,Brésil,South America,2020-11-10,89.357
-BRA,Brésil,South America,2020-11-11,105.943
-BRA,Brésil,South America,2020-11-12,128.742
-BRA,Brésil,South America,2020-11-13,120.619
-BRA,Brésil,South America,2020-11-14,131.323
-BRA,Brésil,South America,2020-11-15,133.729
-BRA,Brésil,South America,2020-11-16,135.379
-BRA,Brésil,South America,2020-11-17,142.987
-BRA,Brésil,South America,2020-11-18,133.199
-BRA,Brésil,South America,2020-11-19,134.541
-BRA,Brésil,South America,2020-11-20,140.809
-BRA,Brésil,South America,2020-11-21,136.988
-BRA,Brésil,South America,2020-11-22,140
-BRA,Brésil,South America,2020-11-23,141.906
-BRA,Brésil,South America,2020-11-24,139.087
-BRA,Brésil,South America,2020-11-25,148.367
-BRA,Brésil,South America,2020-11-26,149.506
-BRA,Brésil,South America,2020-11-27,146.639
-BRA,Brésil,South America,2020-11-28,159.61
-BRA,Brésil,South America,2020-11-29,163.544
-BRA,Brésil,South America,2020-11-30,166.858
-BRA,Brésil,South America,2020-12-01,180.171
-BRA,Brésil,South America,2020-12-02,181.491
-BRA,Brésil,South America,2020-12-03,190.108
-BRA,Brésil,South America,2020-12-04,198.679
-BRA,Brésil,South America,2020-12-05,192.823
-BRA,Brésil,South America,2020-12-06,194.097
-BRA,Brésil,South America,2020-12-07,193.582
-BRA,Brésil,South America,2020-12-08,193.702
-BRA,Brésil,South America,2020-12-09,196.115
-BRA,Brésil,South America,2020-12-10,198.072
-BRA,Brésil,South America,2020-12-11,203.143
-BRA,Brésil,South America,2020-12-12,203.607
-BRA,Brésil,South America,2020-12-13,200.557
-BRA,Brésil,South America,2020-12-14,203.798
-BRA,Brésil,South America,2020-12-15,198.287
-BRA,Brésil,South America,2020-12-16,209.794
-BRA,Brésil,South America,2020-12-17,220.869
-BRA,Brésil,South America,2020-12-18,219.603
-BRA,Brésil,South America,2020-12-19,223.822
-BRA,Brésil,South America,2020-12-20,226.255
-BRA,Brésil,South America,2020-12-21,226.138
-BRA,Brésil,South America,2020-12-22,234.413
-BRA,Brésil,South America,2020-12-23,218.365
-BRA,Brésil,South America,2020-12-24,210.705
-BRA,Brésil,South America,2020-12-25,191.934
-BRA,Brésil,South America,2020-12-26,169.802
-BRA,Brésil,South America,2020-12-27,165.12
-BRA,Brésil,South America,2020-12-28,162.115
-BRA,Brésil,South America,2020-12-29,164.478
-BRA,Brésil,South America,2020-12-30,170.496
-BRA,Brésil,South America,2020-12-31,169.383
-BRA,Brésil,South America,2021-01-01,169.377
-BRA,Brésil,South America,2021-01-02,168.423
-BRA,Brésil,South America,2021-01-03,167.658
-BRA,Brésil,South America,2021-01-04,167.294
-BRA,Brésil,South America,2021-01-05,165.903
-BRA,Brésil,South America,2021-01-06,171.132
-BRA,Brésil,South America,2021-01-07,192.014
-BRA,Brésil,South America,2021-01-08,210.449
-BRA,Brésil,South America,2021-01-09,241.676
-BRA,Brésil,South America,2021-01-10,250.044
-BRA,Brésil,South America,2021-01-11,253.953
-BRA,Brésil,South America,2021-01-12,258.91
-BRA,Brésil,South America,2021-01-13,257.209
-BRA,Brésil,South America,2021-01-14,243.711
-BRA,Brésil,South America,2021-01-15,255.246
-BRA,Brésil,South America,2021-01-16,254.76
-BRA,Brésil,South America,2021-01-17,256.943
-BRA,Brésil,South America,2021-01-18,255.497
-BRA,Brésil,South America,2021-01-19,254.199
-BRA,Brésil,South America,2021-01-20,256.542
-BRA,Brésil,South America,2021-01-21,250.736
-BRA,Brésil,South America,2021-01-22,242.237
-BRA,Brésil,South America,2021-01-23,242.752
-BRA,Brésil,South America,2021-01-24,239.582
-BRA,Brésil,South America,2021-01-25,241.696
-BRA,Brésil,South America,2021-01-26,241.608
-BRA,Brésil,South America,2021-01-27,241.026
-BRA,Brésil,South America,2021-01-28,242.836
-BRA,Brésil,South America,2021-01-29,245.036
-BRA,Brésil,South America,2021-01-30,242.434
-BRA,Brésil,South America,2021-01-31,242.053
-BRA,Brésil,South America,2021-02-01,240.557
-BRA,Brésil,South America,2021-02-02,235.27
-BRA,Brésil,South America,2021-02-03,230.217
-BRA,Brésil,South America,2021-02-04,226.899
-BRA,Brésil,South America,2021-02-05,220.881
-BRA,Brésil,South America,2021-02-06,181.59
-BRA,Brésil,South America,2021-02-07,215.005
-BRA,Brésil,South America,2021-02-08,198.478
-BRA,Brésil,South America,2021-02-09,212.476
-BRA,Brésil,South America,2021-02-10,214.896
-BRA,Brésil,South America,2021-02-11,213.464
-BRA,Brésil,South America,2021-02-12,213.917
-BRA,Brésil,South America,2021-02-13,243.689
-BRA,Brésil,South America,2021-02-14,208.26
-BRA,Brésil,South America,2021-02-15,229.899
-BRA,Brésil,South America,2021-02-16,216.69
-BRA,Brésil,South America,2021-02-17,214.784
-BRA,Brésil,South America,2021-02-18,212.859
-BRA,Brésil,South America,2021-02-19,214.228
-BRA,Brésil,South America,2021-02-20,221.379
-BRA,Brésil,South America,2021-02-21,224.247
-BRA,Brésil,South America,2021-02-22,220.745
-BRA,Brésil,South America,2021-02-23,225.748
-BRA,Brésil,South America,2021-02-24,232.349
-BRA,Brésil,South America,2021-02-25,241.838
-BRA,Brésil,South America,2021-02-26,249.626
-BRA,Brésil,South America,2021-02-27,254.103
-BRA,Brésil,South America,2021-02-28,257.464
-BRA,Brésil,South America,2021-03-01,263.349
-BRA,Brésil,South America,2021-03-02,261.474
-BRA,Brésil,South America,2021-03-03,264.912
-BRA,Brésil,South America,2021-03-04,271.031
-BRA,Brésil,South America,2021-03-05,277.971
-BRA,Brésil,South America,2021-03-06,283.352
-BRA,Brésil,South America,2021-03-07,314.591
-BRA,Brésil,South America,2021-03-08,312.292
-BRA,Brésil,South America,2021-03-09,319.577
-BRA,Brésil,South America,2021-03-10,325.069
-BRA,Brésil,South America,2021-03-11,325.277
-BRA,Brésil,South America,2021-03-12,332.111
-BRA,Brésil,South America,2021-03-13,336.526
-BRA,Brésil,South America,2021-03-14,311.863
-BRA,Brésil,South America,2021-03-15,314.496
-BRA,Brésil,South America,2021-03-16,323.342
-BRA,Brésil,South America,2021-03-17,330.35
-BRA,Brésil,South America,2021-03-18,338.126
-BRA,Brésil,South America,2021-03-19,341.424
-BRA,Brésil,South America,2021-03-20,343.367
-BRA,Brésil,South America,2021-03-21,346.03
-BRA,Brésil,South America,2021-03-22,354.803
-BRA,Brésil,South America,2021-03-23,353.84
-BRA,Brésil,South America,2021-03-24,353.631
-BRA,Brésil,South America,2021-03-25,362.486
-BRA,Brésil,South America,2021-03-26,358.235
-BRA,Brésil,South America,2021-03-27,362.859
-BRA,Brésil,South America,2021-03-28,360.541
-BRA,Brésil,South America,2021-03-29,353.574
-BRA,Brésil,South America,2021-03-30,354.919
-BRA,Brésil,South America,2021-03-31,355.353
-BRA,Brésil,South America,2021-04-01,349.264
-BRA,Brésil,South America,2021-04-02,339.85
-BRA,Brésil,South America,2021-04-03,311.331
-BRA,Brésil,South America,2021-04-04,302.617
-BRA,Brésil,South America,2021-04-05,295.706
-BRA,Brésil,South America,2021-04-06,297.376
-BRA,Brésil,South America,2021-04-07,298.712
-BRA,Brésil,South America,2021-04-08,295.724
-BRA,Brésil,South America,2021-04-09,311.235
-BRA,Brésil,South America,2021-04-10,330.267
-BRA,Brésil,South America,2021-04-11,334.069
-BRA,Brésil,South America,2021-04-12,338.868
-BRA,Brésil,South America,2021-04-13,335.647
-BRA,Brésil,South America,2021-04-14,322.802
-BRA,Brésil,South America,2021-04-15,313.744
-BRA,Brésil,South America,2021-04-16,308.674
-BRA,Brésil,South America,2021-04-17,305.854
-BRA,Brésil,South America,2021-04-18,309.862
-BRA,Brésil,South America,2021-04-19,306.393
-BRA,Brésil,South America,2021-04-20,297.787
-BRA,Brésil,South America,2021-04-21,301.958
-BRA,Brésil,South America,2021-04-22,283.142
-BRA,Brésil,South America,2021-04-23,271.939
-BRA,Brésil,South America,2021-04-24,274.292
-BRA,Brésil,South America,2021-04-25,267.297
-BRA,Brésil,South America,2021-04-26,265.961
-BRA,Brésil,South America,2021-04-27,267.816
-BRA,Brésil,South America,2021-04-28,267.82
-BRA,Brésil,South America,2021-04-29,284.092
-BRA,Brésil,South America,2021-04-30,283.573
-BRA,Brésil,South America,2021-05-01,280.769
-BRA,Brésil,South America,2021-05-02,278.324
-BRA,Brésil,South America,2021-05-03,275.624
-BRA,Brésil,South America,2021-05-04,279.132
-BRA,Brésil,South America,2021-05-05,274.81
-BRA,Brésil,South America,2021-05-06,277.492
-BRA,Brésil,South America,2021-05-07,284.585
-BRA,Brésil,South America,2021-05-08,282.21
-BRA,Brésil,South America,2021-05-09,288.914
-BRA,Brésil,South America,2021-05-10,289.305
-BRA,Brésil,South America,2021-05-11,286.184
-BRA,Brésil,South America,2021-05-12,288.467
-BRA,Brésil,South America,2021-05-13,289.281
-BRA,Brésil,South America,2021-05-14,293.75
-BRA,Brésil,South America,2021-05-15,296.156
-BRA,Brésil,South America,2021-05-16,297.364
-BRA,Brésil,South America,2021-05-17,300.69
-BRA,Brésil,South America,2021-05-18,302.524
-BRA,Brésil,South America,2021-05-19,304.223
-BRA,Brésil,South America,2021-05-20,309.228
-BRA,Brésil,South America,2021-05-21,303.393
-BRA,Brésil,South America,2021-05-22,309.765
-BRA,Brésil,South America,2021-05-23,306.479
-BRA,Brésil,South America,2021-05-24,311.419
+DZA,Algérie,Africa,2020-02-25,NA
+DZA,Algérie,Africa,2020-02-26,NA
+DZA,Algérie,Africa,2020-02-27,NA
+DZA,Algérie,Africa,2020-02-28,NA
+DZA,Algérie,Africa,2020-02-29,NA
+DZA,Algérie,Africa,2020-03-01,0.003
+DZA,Algérie,Africa,2020-03-02,0.01
+DZA,Algérie,Africa,2020-03-03,0.013
+DZA,Algérie,Africa,2020-03-04,0.036
+DZA,Algérie,Africa,2020-03-05,0.036
+DZA,Algérie,Africa,2020-03-06,0.052
+DZA,Algérie,Africa,2020-03-07,0.052
+DZA,Algérie,Africa,2020-03-08,0.059
+DZA,Algérie,Africa,2020-03-09,0.055
+DZA,Algérie,Africa,2020-03-10,0.049
+DZA,Algérie,Africa,2020-03-11,0.026
+DZA,Algérie,Africa,2020-03-12,0.039
+DZA,Algérie,Africa,2020-03-13,0.029
+DZA,Algérie,Africa,2020-03-14,0.065
+DZA,Algérie,Africa,2020-03-15,0.094
+DZA,Algérie,Africa,2020-03-16,0.111
+DZA,Algérie,Africa,2020-03-17,0.13
+DZA,Algérie,Africa,2020-03-18,0.176
+DZA,Algérie,Africa,2020-03-19,0.205
+DZA,Algérie,Africa,2020-03-20,0.208
+DZA,Algérie,Africa,2020-03-21,0.332
+DZA,Algérie,Africa,2020-03-22,0.498
+DZA,Algérie,Africa,2020-03-23,0.573
+DZA,Algérie,Africa,2020-03-24,0.665
+DZA,Algérie,Africa,2020-03-25,0.743
+DZA,Algérie,Africa,2020-03-26,0.912
+DZA,Algérie,Africa,2020-03-27,1.039
+DZA,Algérie,Africa,2020-03-28,1.026
+DZA,Algérie,Africa,2020-03-29,1.01
+DZA,Algérie,Africa,2020-03-30,1.153
+DZA,Algérie,Africa,2020-03-31,1.473
+DZA,Algérie,Africa,2020-04-01,1.775
+DZA,Algérie,Africa,2020-04-02,2.017
+DZA,Algérie,Africa,2020-04-03,2.482
+DZA,Algérie,Africa,2020-04-04,2.596
+DZA,Algérie,Africa,2020-04-05,2.636
+DZA,Algérie,Africa,2020-04-06,2.733
+DZA,Algérie,Africa,2020-04-07,2.45
+DZA,Algérie,Africa,2020-04-08,2.362
+DZA,Algérie,Africa,2020-04-09,2.215
+DZA,Algérie,Africa,2020-04-10,1.922
+DZA,Algérie,Africa,2020-04-11,1.87
+DZA,Algérie,Africa,2020-04-12,1.935
+DZA,Algérie,Africa,2020-04-13,1.824
+DZA,Algérie,Africa,2020-04-14,1.961
+DZA,Algérie,Africa,2020-04-15,1.916
+DZA,Algérie,Africa,2020-04-16,1.961
+DZA,Algérie,Africa,2020-04-17,2.14
+DZA,Algérie,Africa,2020-04-18,2.31
+DZA,Algérie,Africa,2020-04-19,2.329
+DZA,Algérie,Africa,2020-04-20,2.394
+DZA,Algérie,Africa,2020-04-21,2.414
+DZA,Algérie,Africa,2020-04-22,2.443
+DZA,Algérie,Africa,2020-04-23,2.408
+DZA,Algérie,Africa,2020-04-24,2.31
+DZA,Algérie,Africa,2020-04-25,2.352
+DZA,Algérie,Africa,2020-04-26,2.453
+DZA,Algérie,Africa,2020-04-27,2.603
+DZA,Algérie,Africa,2020-04-28,2.73
+DZA,Algérie,Africa,2020-04-29,3.056
+DZA,Algérie,Africa,2020-04-30,3.255
+DZA,Algérie,Africa,2020-05-01,3.346
+DZA,Algérie,Africa,2020-05-02,3.385
+DZA,Algérie,Africa,2020-05-03,3.557
+DZA,Algérie,Africa,2020-05-04,3.685
+DZA,Algérie,Africa,2020-05-05,3.874
+DZA,Algérie,Africa,2020-05-06,3.743
+DZA,Algérie,Africa,2020-05-07,3.831
+DZA,Algérie,Africa,2020-05-08,3.958
+DZA,Algérie,Africa,2020-05-09,4.115
+DZA,Algérie,Africa,2020-05-10,4.069
+DZA,Algérie,Africa,2020-05-11,4.049
+DZA,Algérie,Africa,2020-05-12,4.004
+DZA,Algérie,Africa,2020-05-13,4.092
+DZA,Algérie,Africa,2020-05-14,4.105
+DZA,Algérie,Africa,2020-05-15,4.105
+DZA,Algérie,Africa,2020-05-16,4.115
+DZA,Algérie,Africa,2020-05-17,4.222
+DZA,Algérie,Africa,2020-05-18,4.268
+DZA,Algérie,Africa,2020-05-19,4.268
+DZA,Algérie,Africa,2020-05-20,4.199
+DZA,Algérie,Africa,2020-05-21,4.19
+DZA,Algérie,Africa,2020-05-22,4.199
+DZA,Algérie,Africa,2020-05-23,4.209
+DZA,Algérie,Africa,2020-05-24,4.193
+DZA,Algérie,Africa,2020-05-25,4.242
+DZA,Algérie,Africa,2020-05-26,4.3
+DZA,Algérie,Africa,2020-05-27,4.284
+DZA,Algérie,Africa,2020-05-28,4.134
+DZA,Algérie,Africa,2020-05-29,3.961
+DZA,Algérie,Africa,2020-05-30,3.759
+DZA,Algérie,Africa,2020-05-31,3.544
+DZA,Algérie,Africa,2020-06-01,3.29
+DZA,Algérie,Africa,2020-06-02,3.026
+DZA,Algérie,Africa,2020-06-03,2.854
+DZA,Algérie,Africa,2020-06-04,2.717
+DZA,Algérie,Africa,2020-06-05,2.609
+DZA,Algérie,Africa,2020-06-06,2.551
+DZA,Algérie,Africa,2020-06-07,2.476
+DZA,Algérie,Africa,2020-06-08,2.45
+DZA,Algérie,Africa,2020-06-09,2.463
+DZA,Algérie,Africa,2020-06-10,2.447
+DZA,Algérie,Africa,2020-06-11,2.469
+DZA,Algérie,Africa,2020-06-12,2.486
+DZA,Algérie,Africa,2020-06-13,2.476
+DZA,Algérie,Africa,2020-06-14,2.492
+DZA,Algérie,Africa,2020-06-15,2.495
+DZA,Algérie,Africa,2020-06-16,2.492
+DZA,Algérie,Africa,2020-06-17,2.554
+DZA,Algérie,Africa,2020-06-18,2.593
+DZA,Algérie,Africa,2020-06-19,2.626
+DZA,Algérie,Africa,2020-06-20,2.675
+DZA,Algérie,Africa,2020-06-21,2.776
+DZA,Algérie,Africa,2020-06-22,2.896
+DZA,Algérie,Africa,2020-06-23,3.026
+DZA,Algérie,Africa,2020-06-24,3.193
+DZA,Algérie,Africa,2020-06-25,3.453
+DZA,Algérie,Africa,2020-06-26,3.847
+DZA,Algérie,Africa,2020-06-27,4.356
+DZA,Algérie,Africa,2020-06-28,4.893
+DZA,Algérie,Africa,2020-06-29,5.379
+DZA,Algérie,Africa,2020-06-30,5.965
+DZA,Algérie,Africa,2020-07-01,6.594
+DZA,Algérie,Africa,2020-07-02,7.206
+DZA,Algérie,Africa,2020-07-03,7.77
+DZA,Algérie,Africa,2020-07-04,8.249
+DZA,Algérie,Africa,2020-07-05,8.692
+DZA,Algérie,Africa,2020-07-06,9.229
+DZA,Algérie,Africa,2020-07-07,9.682
+DZA,Algérie,Africa,2020-07-08,10.021
+DZA,Algérie,Africa,2020-07-09,10.265
+DZA,Algérie,Africa,2020-07-10,10.334
+DZA,Algérie,Africa,2020-07-11,10.464
+DZA,Algérie,Africa,2020-07-12,10.601
+DZA,Algérie,Africa,2020-07-13,10.702
+DZA,Algérie,Africa,2020-07-14,10.871
+DZA,Algérie,Africa,2020-07-15,11.148
+DZA,Algérie,Africa,2020-07-16,11.555
+DZA,Algérie,Africa,2020-07-17,12.073
+DZA,Algérie,Africa,2020-07-18,12.5
+DZA,Algérie,Africa,2020-07-19,12.67
+DZA,Algérie,Africa,2020-07-20,13.038
+DZA,Algérie,Africa,2020-07-21,13.233
+DZA,Algérie,Africa,2020-07-22,13.363
+DZA,Algérie,Africa,2020-07-23,13.451
+DZA,Algérie,Africa,2020-07-24,13.719
+DZA,Algérie,Africa,2020-07-25,13.732
+DZA,Algérie,Africa,2020-07-26,13.921
+DZA,Algérie,Africa,2020-07-27,13.95
+DZA,Algérie,Africa,2020-07-28,14.129
+DZA,Algérie,Africa,2020-07-29,14.194
+DZA,Algérie,Africa,2020-07-30,14.162
+DZA,Algérie,Africa,2020-07-31,13.797
+DZA,Algérie,Africa,2020-08-01,13.637
+DZA,Algérie,Africa,2020-08-02,13.383
+DZA,Algérie,Africa,2020-08-03,13.028
+DZA,Algérie,Africa,2020-08-04,12.67
+DZA,Algérie,Africa,2020-08-05,12.464
+DZA,Algérie,Africa,2020-08-06,12.363
+DZA,Algérie,Africa,2020-08-07,12.253
+DZA,Algérie,Africa,2020-08-08,12.194
+DZA,Algérie,Africa,2020-08-09,12.038
+DZA,Algérie,Africa,2020-08-10,12.184
+DZA,Algérie,Africa,2020-08-11,12.054
+DZA,Algérie,Africa,2020-08-12,11.871
+DZA,Algérie,Africa,2020-08-13,11.601
+DZA,Algérie,Africa,2020-08-14,11.432
+DZA,Algérie,Africa,2020-08-15,11.207
+DZA,Algérie,Africa,2020-08-16,11.151
+DZA,Algérie,Africa,2020-08-17,10.793
+DZA,Algérie,Africa,2020-08-18,10.555
+DZA,Algérie,Africa,2020-08-19,10.255
+DZA,Algérie,Africa,2020-08-20,10.005
+DZA,Algérie,Africa,2020-08-21,9.783
+DZA,Algérie,Africa,2020-08-22,9.562
+DZA,Algérie,Africa,2020-08-23,9.373
+DZA,Algérie,Africa,2020-08-24,9.229
+DZA,Algérie,Africa,2020-08-25,9.07
+DZA,Algérie,Africa,2020-08-26,9.031
+DZA,Algérie,Africa,2020-08-27,8.985
+DZA,Algérie,Africa,2020-08-28,8.913
+DZA,Algérie,Africa,2020-08-29,8.838
+DZA,Algérie,Africa,2020-08-30,8.75
+DZA,Algérie,Africa,2020-08-31,8.588
+DZA,Algérie,Africa,2020-09-01,8.487
+DZA,Algérie,Africa,2020-09-02,8.272
+DZA,Algérie,Africa,2020-09-03,7.991
+DZA,Algérie,Africa,2020-09-04,7.721
+DZA,Algérie,Africa,2020-09-05,7.46
+DZA,Algérie,Africa,2020-09-06,7.226
+DZA,Algérie,Africa,2020-09-07,7.034
+DZA,Algérie,Africa,2020-09-08,6.858
+DZA,Algérie,Africa,2020-09-09,6.705
+DZA,Algérie,Africa,2020-09-10,6.577
+DZA,Algérie,Africa,2020-09-11,6.447
+DZA,Algérie,Africa,2020-09-12,6.307
+DZA,Algérie,Africa,2020-09-13,6.157
+DZA,Algérie,Africa,2020-09-14,6.004
+DZA,Algérie,Africa,2020-09-15,5.851
+DZA,Algérie,Africa,2020-09-16,5.701
+DZA,Algérie,Africa,2020-09-17,5.558
+DZA,Algérie,Africa,2020-09-18,5.411
+DZA,Algérie,Africa,2020-09-19,5.265
+DZA,Algérie,Africa,2020-09-20,5.121
+DZA,Algérie,Africa,2020-09-21,4.975
+DZA,Algérie,Africa,2020-09-22,4.822
+DZA,Algérie,Africa,2020-09-23,4.672
+DZA,Algérie,Africa,2020-09-24,4.512
+DZA,Algérie,Africa,2020-09-25,4.369
+DZA,Algérie,Africa,2020-09-26,4.206
+DZA,Algérie,Africa,2020-09-27,4.043
+DZA,Algérie,Africa,2020-09-28,3.877
+DZA,Algérie,Africa,2020-09-29,3.759
+DZA,Algérie,Africa,2020-09-30,3.681
+DZA,Algérie,Africa,2020-10-01,3.619
+DZA,Algérie,Africa,2020-10-02,3.561
+DZA,Algérie,Africa,2020-10-03,3.522
+DZA,Algérie,Africa,2020-10-04,3.483
+DZA,Algérie,Africa,2020-10-05,3.443
+DZA,Algérie,Africa,2020-10-06,3.359
+DZA,Algérie,Africa,2020-10-07,3.225
+DZA,Algérie,Africa,2020-10-08,3.154
+DZA,Algérie,Africa,2020-10-09,3.118
+DZA,Algérie,Africa,2020-10-10,3.079
+DZA,Algérie,Africa,2020-10-11,3.049
+DZA,Algérie,Africa,2020-10-12,3.437
+DZA,Algérie,Africa,2020-10-13,3.258
+DZA,Algérie,Africa,2020-10-14,3.466
+DZA,Algérie,Africa,2020-10-15,3.645
+DZA,Algérie,Africa,2020-10-16,3.89
+DZA,Algérie,Africa,2020-10-17,4.115
+DZA,Algérie,Africa,2020-10-18,4.333
+DZA,Algérie,Africa,2020-10-19,4.206
+DZA,Algérie,Africa,2020-10-20,4.659
+DZA,Algérie,Africa,2020-10-21,4.877
+DZA,Algérie,Africa,2020-10-22,5.147
+DZA,Algérie,Africa,2020-10-23,5.317
+DZA,Algérie,Africa,2020-10-24,5.463
+DZA,Algérie,Africa,2020-10-25,5.672
+DZA,Algérie,Africa,2020-10-26,5.874
+DZA,Algérie,Africa,2020-10-27,6.115
+DZA,Algérie,Africa,2020-10-28,6.336
+DZA,Algérie,Africa,2020-10-29,6.434
+DZA,Algérie,Africa,2020-10-30,6.584
+DZA,Algérie,Africa,2020-10-31,6.718
+DZA,Algérie,Africa,2020-11-01,6.936
+DZA,Algérie,Africa,2020-11-02,7.021
+DZA,Algérie,Africa,2020-11-03,7.405
+DZA,Algérie,Africa,2020-11-04,8.148
+DZA,Algérie,Africa,2020-11-05,9.242
+DZA,Algérie,Africa,2020-11-06,10.259
+DZA,Algérie,Africa,2020-11-07,11.204
+DZA,Algérie,Africa,2020-11-08,12.311
+DZA,Algérie,Africa,2020-11-09,13.419
+DZA,Algérie,Africa,2020-11-10,14.553
+DZA,Algérie,Africa,2020-11-11,15.409
+DZA,Algérie,Africa,2020-11-12,16.09
+DZA,Algérie,Africa,2020-11-13,16.859
+DZA,Algérie,Africa,2020-11-14,17.716
+DZA,Algérie,Africa,2020-11-15,18.335
+DZA,Algérie,Africa,2020-11-16,19.208
+DZA,Algérie,Africa,2020-11-17,20.019
+DZA,Algérie,Africa,2020-11-18,20.759
+DZA,Algérie,Africa,2020-11-19,21.319
+DZA,Algérie,Africa,2020-11-20,22.088
+DZA,Algérie,Africa,2020-11-21,22.658
+DZA,Algérie,Africa,2020-11-22,23.401
+DZA,Algérie,Africa,2020-11-23,23.71
+DZA,Algérie,Africa,2020-11-24,24.137
+DZA,Algérie,Africa,2020-11-25,24.095
+DZA,Algérie,Africa,2020-11-26,24.297
+DZA,Algérie,Africa,2020-11-27,24.15
+DZA,Algérie,Africa,2020-11-28,24.231
+DZA,Algérie,Africa,2020-11-29,23.974
+DZA,Algérie,Africa,2020-11-30,23.886
+DZA,Algérie,Africa,2020-12-01,23.3
+DZA,Algérie,Africa,2020-12-02,22.997
+DZA,Algérie,Africa,2020-12-03,22.208
+DZA,Algérie,Africa,2020-12-04,21.378
+DZA,Algérie,Africa,2020-12-05,20.491
+DZA,Algérie,Africa,2020-12-06,19.648
+DZA,Algérie,Africa,2020-12-07,18.328
+DZA,Algérie,Africa,2020-12-08,17.149
+DZA,Algérie,Africa,2020-12-09,16.061
+DZA,Algérie,Africa,2020-12-10,15.155
+DZA,Algérie,Africa,2020-12-11,14.305
+DZA,Algérie,Africa,2020-12-12,13.474
+DZA,Algérie,Africa,2020-12-13,12.542
+DZA,Algérie,Africa,2020-12-14,12.288
+DZA,Algérie,Africa,2020-12-15,11.888
+DZA,Algérie,Africa,2020-12-16,11.379
+DZA,Algérie,Africa,2020-12-17,10.927
+DZA,Algérie,Africa,2020-12-18,10.588
+DZA,Algérie,Africa,2020-12-19,10.239
+DZA,Algérie,Africa,2020-12-20,10.102
+DZA,Algérie,Africa,2020-12-21,9.975
+DZA,Algérie,Africa,2020-12-22,9.786
+DZA,Algérie,Africa,2020-12-23,9.91
+DZA,Algérie,Africa,2020-12-24,10.014
+DZA,Algérie,Africa,2020-12-25,10.001
+DZA,Algérie,Africa,2020-12-26,10.021
+DZA,Algérie,Africa,2020-12-27,9.923
+DZA,Algérie,Africa,2020-12-28,9.682
+DZA,Algérie,Africa,2020-12-29,9.509
+DZA,Algérie,Africa,2020-12-30,8.998
+DZA,Algérie,Africa,2020-12-31,8.48
+DZA,Algérie,Africa,2021-01-01,8.001
+DZA,Algérie,Africa,2021-01-02,7.499
+DZA,Algérie,Africa,2021-01-03,7.034
+DZA,Algérie,Africa,2021-01-04,6.561
+DZA,Algérie,Africa,2021-01-05,6.141
+DZA,Algérie,Africa,2021-01-06,5.893
+DZA,Algérie,Africa,2021-01-07,5.773
+DZA,Algérie,Africa,2021-01-08,5.734
+DZA,Algérie,Africa,2021-01-09,5.714
+DZA,Algérie,Africa,2021-01-10,5.656
+DZA,Algérie,Africa,2021-01-11,5.616
+DZA,Algérie,Africa,2021-01-12,5.76
+DZA,Algérie,Africa,2021-01-13,5.669
+DZA,Algérie,Africa,2021-01-14,5.685
+DZA,Algérie,Africa,2021-01-15,5.616
+DZA,Algérie,Africa,2021-01-16,5.532
+DZA,Algérie,Africa,2021-01-17,5.502
+DZA,Algérie,Africa,2021-01-18,5.613
+DZA,Algérie,Africa,2021-01-19,5.538
+DZA,Algérie,Africa,2021-01-20,5.688
+DZA,Algérie,Africa,2021-01-21,5.62
+DZA,Algérie,Africa,2021-01-22,5.678
+DZA,Algérie,Africa,2021-01-23,5.727
+DZA,Algérie,Africa,2021-01-24,5.743
+DZA,Algérie,Africa,2021-01-25,5.74
+DZA,Algérie,Africa,2021-01-26,5.721
+DZA,Algérie,Africa,2021-01-27,5.711
+DZA,Algérie,Africa,2021-01-28,5.727
+DZA,Algérie,Africa,2021-01-29,5.743
+DZA,Algérie,Africa,2021-01-30,5.711
+DZA,Algérie,Africa,2021-01-31,5.678
+DZA,Algérie,Africa,2021-02-01,5.616
+DZA,Algérie,Africa,2021-02-02,5.682
+DZA,Algérie,Africa,2021-02-03,5.724
+DZA,Algérie,Africa,2021-02-04,5.77
+DZA,Algérie,Africa,2021-02-05,5.675
+DZA,Algérie,Africa,2021-02-06,4.909
+DZA,Algérie,Africa,2021-02-07,5.698
+DZA,Algérie,Africa,2021-02-08,5.652
+DZA,Algérie,Africa,2021-02-09,5.597
+DZA,Algérie,Africa,2021-02-10,5.427
+DZA,Algérie,Africa,2021-02-11,5.434
+DZA,Algérie,Africa,2021-02-12,5.454
+DZA,Algérie,Africa,2021-02-13,6.138
+DZA,Algérie,Africa,2021-02-14,5.287
+DZA,Algérie,Africa,2021-02-15,5.151
+DZA,Algérie,Africa,2021-02-16,4.919
+DZA,Algérie,Africa,2021-02-17,4.773
+DZA,Algérie,Africa,2021-02-18,4.46
+DZA,Algérie,Africa,2021-02-19,4.225
+DZA,Algérie,Africa,2021-02-20,4.075
+DZA,Algérie,Africa,2021-02-21,3.929
+DZA,Algérie,Africa,2021-02-22,3.909
+DZA,Algérie,Africa,2021-02-23,3.942
+DZA,Algérie,Africa,2021-02-24,3.955
+DZA,Algérie,Africa,2021-02-25,3.922
+DZA,Algérie,Africa,2021-02-26,3.926
+DZA,Algérie,Africa,2021-02-27,3.896
+DZA,Algérie,Africa,2021-02-28,3.828
+DZA,Algérie,Africa,2021-03-01,3.782
+DZA,Algérie,Africa,2021-03-02,3.75
+DZA,Algérie,Africa,2021-03-03,3.688
+DZA,Algérie,Africa,2021-03-04,3.711
+DZA,Algérie,Africa,2021-03-05,3.724
+DZA,Algérie,Africa,2021-03-06,3.727
+DZA,Algérie,Africa,2021-03-07,3.72
+DZA,Algérie,Africa,2021-03-08,3.672
+DZA,Algérie,Africa,2021-03-09,3.626
+DZA,Algérie,Africa,2021-03-10,3.544
+DZA,Algérie,Africa,2021-03-11,3.551
+DZA,Algérie,Africa,2021-03-12,3.453
+DZA,Algérie,Africa,2021-03-13,3.385
+DZA,Algérie,Africa,2021-03-14,3.359
+DZA,Algérie,Africa,2021-03-15,3.349
+DZA,Algérie,Africa,2021-03-16,3.248
+DZA,Algérie,Africa,2021-03-17,3.281
+DZA,Algérie,Africa,2021-03-18,3.228
+DZA,Algérie,Africa,2021-03-19,3.134
+DZA,Algérie,Africa,2021-03-20,3.007
+DZA,Algérie,Africa,2021-03-21,2.906
+DZA,Algérie,Africa,2021-03-22,2.753
+DZA,Algérie,Africa,2021-03-23,2.636
+DZA,Algérie,Africa,2021-03-24,2.443
+DZA,Algérie,Africa,2021-03-25,2.284
+DZA,Algérie,Africa,2021-03-26,2.238
+DZA,Algérie,Africa,2021-03-27,2.228
+DZA,Algérie,Africa,2021-03-28,2.212
+DZA,Algérie,Africa,2021-03-29,2.251
+DZA,Algérie,Africa,2021-03-30,2.32
+DZA,Algérie,Africa,2021-03-31,2.456
+DZA,Algérie,Africa,2021-04-01,2.479
+DZA,Algérie,Africa,2021-04-02,2.515
+DZA,Algérie,Africa,2021-04-03,2.522
+DZA,Algérie,Africa,2021-04-04,2.561
+DZA,Algérie,Africa,2021-04-05,2.583
+DZA,Algérie,Africa,2021-04-06,2.665
+DZA,Algérie,Africa,2021-04-07,2.645
+DZA,Algérie,Africa,2021-04-08,2.645
+DZA,Algérie,Africa,2021-04-09,2.678
+DZA,Algérie,Africa,2021-04-10,2.782
+DZA,Algérie,Africa,2021-04-11,2.912
+DZA,Algérie,Africa,2021-04-12,2.952
+DZA,Algérie,Africa,2021-04-13,2.997
+DZA,Algérie,Africa,2021-04-14,3.163
+DZA,Algérie,Africa,2021-04-15,3.342
+DZA,Algérie,Africa,2021-04-16,3.492
+DZA,Algérie,Africa,2021-04-17,3.61
+DZA,Algérie,Africa,2021-04-18,3.668
+DZA,Algérie,Africa,2021-04-19,3.779
+DZA,Algérie,Africa,2021-04-20,3.887
+DZA,Algérie,Africa,2021-04-21,3.906
+DZA,Algérie,Africa,2021-04-22,3.978
+DZA,Algérie,Africa,2021-04-23,4.036
+DZA,Algérie,Africa,2021-04-24,4.072
+DZA,Algérie,Africa,2021-04-25,4.17
+DZA,Algérie,Africa,2021-04-26,4.258
+DZA,Algérie,Africa,2021-04-27,4.405
+DZA,Algérie,Africa,2021-04-28,4.58
+DZA,Algérie,Africa,2021-04-29,4.896
+DZA,Algérie,Africa,2021-04-30,5.037
+DZA,Algérie,Africa,2021-05-01,5.131
+DZA,Algérie,Africa,2021-05-02,5.212
+DZA,Algérie,Africa,2021-05-03,5.229
+DZA,Algérie,Africa,2021-05-04,5.392
+DZA,Algérie,Africa,2021-05-05,5.512
+DZA,Algérie,Africa,2021-05-06,5.235
+DZA,Algérie,Africa,2021-05-07,5.16
+DZA,Algérie,Africa,2021-05-08,5.177
+DZA,Algérie,Africa,2021-05-09,5.154
+DZA,Algérie,Africa,2021-05-10,5.118
+DZA,Algérie,Africa,2021-05-11,4.835
+DZA,Algérie,Africa,2021-05-12,4.593
+DZA,Algérie,Africa,2021-05-13,4.613
+DZA,Algérie,Africa,2021-05-14,4.453
+DZA,Algérie,Africa,2021-05-15,4.216
+DZA,Algérie,Africa,2021-05-16,3.932
+DZA,Algérie,Africa,2021-05-17,3.9
+DZA,Algérie,Africa,2021-05-18,3.942
+DZA,Algérie,Africa,2021-05-19,3.955
+DZA,Algérie,Africa,2021-05-20,4.128
+DZA,Algérie,Africa,2021-05-21,4.479
+DZA,Algérie,Africa,2021-05-22,4.747
+DZA,Algérie,Africa,2021-05-23,5.046
+DZA,Algérie,Africa,2021-05-24,5.284
+DZA,Algérie,Africa,2021-05-25,5.434
+DZA,Algérie,Africa,2021-05-26,5.701
+DZA,Algérie,Africa,2021-05-27,5.766
+DZA,Algérie,Africa,2021-05-28,5.747
+DZA,Algérie,Africa,2021-05-29,5.88
+DZA,Algérie,Africa,2021-05-30,6.076
+DZA,Algérie,Africa,2021-05-31,5.884
+DZA,Algérie,Africa,2021-06-01,6.05
+DZA,Algérie,Africa,2021-06-02,6.496
+DZA,Algérie,Africa,2021-06-03,6.678
+DZA,Algérie,Africa,2021-06-04,7.047
+DZA,Algérie,Africa,2021-06-05,7.249
+DZA,Algérie,Africa,2021-06-06,7.275
+DZA,Algérie,Africa,2021-06-07,7.721
+DZA,Algérie,Africa,2021-06-08,7.913
+DZA,Algérie,Africa,2021-06-09,7.799
+DZA,Algérie,Africa,2021-06-10,7.75
+DZA,Algérie,Africa,2021-06-11,7.708
+DZA,Algérie,Africa,2021-06-12,7.783
+DZA,Algérie,Africa,2021-06-13,7.916
+DZA,Algérie,Africa,2021-06-14,8.011
+DZA,Algérie,Africa,2021-06-15,8.04
+DZA,Algérie,Africa,2021-06-16,7.897
+DZA,Algérie,Africa,2021-06-17,8.096
+DZA,Algérie,Africa,2021-06-18,8.118
+DZA,Algérie,Africa,2021-06-19,8.197
+DZA,Algérie,Africa,2021-06-20,7.926
+DZA,Algérie,Africa,2021-06-21,8.314
+DZA,Algérie,Africa,2021-06-22,8.353
+DZA,Algérie,Africa,2021-06-23,8.441
+DZA,Algérie,Africa,2021-06-24,8.35
+DZA,Algérie,Africa,2021-06-25,8.317
+DZA,Algérie,Africa,2021-06-26,8.232
+DZA,Algérie,Africa,2021-06-27,8.614
+DZA,Algérie,Africa,2021-06-28,8.294
+DZA,Algérie,Africa,2021-06-29,8.307
+DZA,Algérie,Africa,2021-06-30,8.395
+DZA,Algérie,Africa,2021-07-01,8.705
+DZA,Algérie,Africa,2021-07-02,9.05
+DZA,Algérie,Africa,2021-07-03,9.428
+DZA,Algérie,Africa,2021-07-04,9.793
+BWA,Botswana,Africa,2020-03-30,NA
+BWA,Botswana,Africa,2020-03-31,NA
+BWA,Botswana,Africa,2020-04-01,NA
+BWA,Botswana,Africa,2020-04-02,NA
+BWA,Botswana,Africa,2020-04-03,NA
+BWA,Botswana,Africa,2020-04-04,0.243
+BWA,Botswana,Africa,2020-04-05,0.364
+BWA,Botswana,Africa,2020-04-06,0.182
+BWA,Botswana,Africa,2020-04-07,0.121
+BWA,Botswana,Africa,2020-04-08,0.121
+BWA,Botswana,Africa,2020-04-09,0.547
+BWA,Botswana,Africa,2020-04-10,0.547
+BWA,Botswana,Africa,2020-04-11,0.547
+BWA,Botswana,Africa,2020-04-12,0.425
+BWA,Botswana,Africa,2020-04-13,0.425
+BWA,Botswana,Africa,2020-04-14,0.425
+BWA,Botswana,Africa,2020-04-15,0.425
+BWA,Botswana,Africa,2020-04-16,0.121
+BWA,Botswana,Africa,2020-04-17,0.121
+BWA,Botswana,Africa,2020-04-18,0.121
+BWA,Botswana,Africa,2020-04-19,0.425
+BWA,Botswana,Africa,2020-04-20,0.425
+BWA,Botswana,Africa,2020-04-21,0.425
+BWA,Botswana,Africa,2020-04-22,0.547
+BWA,Botswana,Africa,2020-04-23,0.425
+BWA,Botswana,Africa,2020-04-24,0.425
+BWA,Botswana,Africa,2020-04-25,0.425
+BWA,Botswana,Africa,2020-04-26,0.121
+BWA,Botswana,Africa,2020-04-27,0.121
+BWA,Botswana,Africa,2020-04-28,0.182
+BWA,Botswana,Africa,2020-04-29,0.061
+BWA,Botswana,Africa,2020-04-30,0.061
+BWA,Botswana,Africa,2020-05-01,0.061
+BWA,Botswana,Africa,2020-05-02,0.061
+BWA,Botswana,Africa,2020-05-03,0.061
+BWA,Botswana,Africa,2020-05-04,0.061
+BWA,Botswana,Africa,2020-05-05,0.0
+BWA,Botswana,Africa,2020-05-06,0.0
+BWA,Botswana,Africa,2020-05-07,0.0
+BWA,Botswana,Africa,2020-05-08,0.0
+BWA,Botswana,Africa,2020-05-09,0.0
+BWA,Botswana,Africa,2020-05-10,0.0
+BWA,Botswana,Africa,2020-05-11,0.061
+BWA,Botswana,Africa,2020-05-12,0.061
+BWA,Botswana,Africa,2020-05-13,0.061
+BWA,Botswana,Africa,2020-05-14,0.061
+BWA,Botswana,Africa,2020-05-15,0.061
+BWA,Botswana,Africa,2020-05-16,0.061
+BWA,Botswana,Africa,2020-05-17,0.121
+BWA,Botswana,Africa,2020-05-18,0.061
+BWA,Botswana,Africa,2020-05-19,0.061
+BWA,Botswana,Africa,2020-05-20,0.061
+BWA,Botswana,Africa,2020-05-21,0.304
+BWA,Botswana,Africa,2020-05-22,0.364
+BWA,Botswana,Africa,2020-05-23,0.364
+BWA,Botswana,Africa,2020-05-24,0.607
+BWA,Botswana,Africa,2020-05-25,0.607
+BWA,Botswana,Africa,2020-05-26,0.607
+BWA,Botswana,Africa,2020-05-27,0.607
+BWA,Botswana,Africa,2020-05-28,0.364
+BWA,Botswana,Africa,2020-05-29,0.304
+BWA,Botswana,Africa,2020-05-30,0.304
+BWA,Botswana,Africa,2020-05-31,0.0
+BWA,Botswana,Africa,2020-06-01,0.182
+BWA,Botswana,Africa,2020-06-02,0.304
+BWA,Botswana,Africa,2020-06-03,0.304
+BWA,Botswana,Africa,2020-06-04,0.304
+BWA,Botswana,Africa,2020-06-05,0.304
+BWA,Botswana,Africa,2020-06-06,0.304
+BWA,Botswana,Africa,2020-06-07,0.304
+BWA,Botswana,Africa,2020-06-08,0.243
+BWA,Botswana,Africa,2020-06-09,0.121
+BWA,Botswana,Africa,2020-06-10,0.486
+BWA,Botswana,Africa,2020-06-11,0.486
+BWA,Botswana,Africa,2020-06-12,0.486
+BWA,Botswana,Africa,2020-06-13,1.215
+BWA,Botswana,Africa,2020-06-14,1.215
+BWA,Botswana,Africa,2020-06-15,1.093
+BWA,Botswana,Africa,2020-06-16,1.093
+BWA,Botswana,Africa,2020-06-17,1.883
+BWA,Botswana,Africa,2020-06-18,1.883
+BWA,Botswana,Africa,2020-06-19,2.491
+BWA,Botswana,Africa,2020-06-20,1.762
+BWA,Botswana,Africa,2020-06-21,1.762
+BWA,Botswana,Africa,2020-06-22,1.762
+BWA,Botswana,Africa,2020-06-23,1.762
+BWA,Botswana,Africa,2020-06-24,0.79
+BWA,Botswana,Africa,2020-06-25,0.79
+BWA,Botswana,Africa,2020-06-26,0.182
+BWA,Botswana,Africa,2020-06-27,0.182
+BWA,Botswana,Africa,2020-06-28,0.182
+BWA,Botswana,Africa,2020-06-29,5.224
+BWA,Botswana,Africa,2020-06-30,8.383
+BWA,Botswana,Africa,2020-07-01,8.201
+BWA,Botswana,Africa,2020-07-02,8.201
+BWA,Botswana,Africa,2020-07-03,11.238
+BWA,Botswana,Africa,2020-07-04,11.238
+BWA,Botswana,Africa,2020-07-05,11.238
+BWA,Botswana,Africa,2020-07-06,8.444
+BWA,Botswana,Africa,2020-07-07,5.285
+BWA,Botswana,Africa,2020-07-08,5.285
+BWA,Botswana,Africa,2020-07-09,5.285
+BWA,Botswana,Africa,2020-07-10,2.248
+BWA,Botswana,Africa,2020-07-11,2.248
+BWA,Botswana,Africa,2020-07-12,7.411
+BWA,Botswana,Africa,2020-07-13,5.164
+BWA,Botswana,Africa,2020-07-14,5.164
+BWA,Botswana,Africa,2020-07-15,5.164
+BWA,Botswana,Africa,2020-07-16,12.636
+BWA,Botswana,Africa,2020-07-17,12.636
+BWA,Botswana,Africa,2020-07-18,12.636
+BWA,Botswana,Africa,2020-07-19,7.472
+BWA,Botswana,Africa,2020-07-20,7.472
+BWA,Botswana,Africa,2020-07-21,7.472
+BWA,Botswana,Africa,2020-07-22,7.472
+BWA,Botswana,Africa,2020-07-23,4.252
+BWA,Botswana,Africa,2020-07-24,9.963
+BWA,Botswana,Africa,2020-07-25,9.963
+BWA,Botswana,Africa,2020-07-26,9.963
+BWA,Botswana,Africa,2020-07-27,13.182
+BWA,Botswana,Africa,2020-07-28,13.182
+BWA,Botswana,Africa,2020-07-29,17.131
+BWA,Botswana,Africa,2020-07-30,12.879
+BWA,Botswana,Africa,2020-07-31,7.168
+BWA,Botswana,Africa,2020-08-01,7.168
+BWA,Botswana,Africa,2020-08-02,7.168
+BWA,Botswana,Africa,2020-08-03,3.949
+BWA,Botswana,Africa,2020-08-04,3.949
+BWA,Botswana,Africa,2020-08-05,0.0
+BWA,Botswana,Africa,2020-08-06,0.0
+BWA,Botswana,Africa,2020-08-07,0.0
+BWA,Botswana,Africa,2020-08-08,0.0
+BWA,Botswana,Africa,2020-08-09,0.0
+BWA,Botswana,Africa,2020-08-10,15.916
+BWA,Botswana,Africa,2020-08-11,15.916
+BWA,Botswana,Africa,2020-08-12,15.916
+BWA,Botswana,Africa,2020-08-13,24.907
+BWA,Botswana,Africa,2020-08-14,24.907
+BWA,Botswana,Africa,2020-08-15,24.907
+BWA,Botswana,Africa,2020-08-16,24.907
+BWA,Botswana,Africa,2020-08-17,14.701
+BWA,Botswana,Africa,2020-08-18,14.701
+BWA,Botswana,Africa,2020-08-19,14.701
+BWA,Botswana,Africa,2020-08-20,5.71
+BWA,Botswana,Africa,2020-08-21,5.71
+BWA,Botswana,Africa,2020-08-22,5.71
+BWA,Botswana,Africa,2020-08-23,5.71
+BWA,Botswana,Africa,2020-08-24,15.43
+BWA,Botswana,Africa,2020-08-25,15.43
+BWA,Botswana,Africa,2020-08-26,15.43
+BWA,Botswana,Africa,2020-08-27,15.43
+BWA,Botswana,Africa,2020-08-28,15.43
+BWA,Botswana,Africa,2020-08-29,15.43
+BWA,Botswana,Africa,2020-08-30,19.743
+BWA,Botswana,Africa,2020-08-31,4.313
+BWA,Botswana,Africa,2020-09-01,9.841
+BWA,Botswana,Africa,2020-09-02,9.841
+BWA,Botswana,Africa,2020-09-03,9.841
+BWA,Botswana,Africa,2020-09-04,26.729
+BWA,Botswana,Africa,2020-09-05,26.729
+BWA,Botswana,Africa,2020-09-06,22.416
+BWA,Botswana,Africa,2020-09-07,29.949
+BWA,Botswana,Africa,2020-09-08,24.421
+BWA,Botswana,Africa,2020-09-09,24.421
+BWA,Botswana,Africa,2020-09-10,32.075
+BWA,Botswana,Africa,2020-09-11,15.187
+BWA,Botswana,Africa,2020-09-12,15.187
+BWA,Botswana,Africa,2020-09-13,15.187
+BWA,Botswana,Africa,2020-09-14,20.472
+BWA,Botswana,Africa,2020-09-15,20.472
+BWA,Botswana,Africa,2020-09-16,20.472
+BWA,Botswana,Africa,2020-09-17,19.136
+BWA,Botswana,Africa,2020-09-18,19.136
+BWA,Botswana,Africa,2020-09-19,19.136
+BWA,Botswana,Africa,2020-09-20,19.136
+BWA,Botswana,Africa,2020-09-21,6.318
+BWA,Botswana,Africa,2020-09-22,6.318
+BWA,Botswana,Africa,2020-09-23,6.318
+BWA,Botswana,Africa,2020-09-24,21.505
+BWA,Botswana,Africa,2020-09-25,21.505
+BWA,Botswana,Africa,2020-09-26,21.505
+BWA,Botswana,Africa,2020-09-27,21.505
+BWA,Botswana,Africa,2020-09-28,36.753
+BWA,Botswana,Africa,2020-09-29,36.753
+BWA,Botswana,Africa,2020-09-30,36.753
+BWA,Botswana,Africa,2020-10-01,15.248
+BWA,Botswana,Africa,2020-10-02,15.248
+BWA,Botswana,Africa,2020-10-03,15.248
+BWA,Botswana,Africa,2020-10-04,15.248
+BWA,Botswana,Africa,2020-10-05,0.0
+BWA,Botswana,Africa,2020-10-06,0.0
+BWA,Botswana,Africa,2020-10-07,0.0
+BWA,Botswana,Africa,2020-10-08,2.855
+BWA,Botswana,Africa,2020-10-09,2.855
+BWA,Botswana,Africa,2020-10-10,2.855
+BWA,Botswana,Africa,2020-10-11,2.855
+BWA,Botswana,Africa,2020-10-12,20.837
+BWA,Botswana,Africa,2020-10-13,20.837
+BWA,Botswana,Africa,2020-10-14,20.837
+BWA,Botswana,Africa,2020-10-15,42.22
+BWA,Botswana,Africa,2020-10-16,122.894
+BWA,Botswana,Africa,2020-10-17,122.894
+BWA,Botswana,Africa,2020-10-18,122.894
+BWA,Botswana,Africa,2020-10-19,127.207
+BWA,Botswana,Africa,2020-10-20,127.207
+BWA,Botswana,Africa,2020-10-21,127.207
+BWA,Botswana,Africa,2020-10-22,122.043
+BWA,Botswana,Africa,2020-10-23,41.37
+BWA,Botswana,Africa,2020-10-24,41.37
+BWA,Botswana,Africa,2020-10-25,41.37
+BWA,Botswana,Africa,2020-10-26,40.944
+BWA,Botswana,Africa,2020-10-27,40.944
+BWA,Botswana,Africa,2020-10-28,40.944
+BWA,Botswana,Africa,2020-10-29,43.678
+BWA,Botswana,Africa,2020-10-30,43.678
+BWA,Botswana,Africa,2020-10-31,43.678
+BWA,Botswana,Africa,2020-11-01,43.678
+BWA,Botswana,Africa,2020-11-02,21.809
+BWA,Botswana,Africa,2020-11-03,21.809
+BWA,Botswana,Africa,2020-11-04,21.809
+BWA,Botswana,Africa,2020-11-05,72.473
+BWA,Botswana,Africa,2020-11-06,72.473
+BWA,Botswana,Africa,2020-11-07,72.473
+BWA,Botswana,Africa,2020-11-08,72.473
+BWA,Botswana,Africa,2020-11-09,72.473
+BWA,Botswana,Africa,2020-11-10,72.473
+BWA,Botswana,Africa,2020-11-11,72.473
+BWA,Botswana,Africa,2020-11-12,23.692
+BWA,Botswana,Africa,2020-11-13,23.692
+BWA,Botswana,Africa,2020-11-14,23.692
+BWA,Botswana,Africa,2020-11-15,23.692
+BWA,Botswana,Africa,2020-11-16,77.029
+BWA,Botswana,Africa,2020-11-17,77.029
+BWA,Botswana,Africa,2020-11-18,77.029
+BWA,Botswana,Africa,2020-11-19,83.164
+BWA,Botswana,Africa,2020-11-20,83.164
+BWA,Botswana,Africa,2020-11-21,83.164
+BWA,Botswana,Africa,2020-11-22,83.164
+BWA,Botswana,Africa,2020-11-23,54.005
+BWA,Botswana,Africa,2020-11-24,54.005
+BWA,Botswana,Africa,2020-11-25,54.005
+BWA,Botswana,Africa,2020-11-26,40.337
+BWA,Botswana,Africa,2020-11-27,40.337
+BWA,Botswana,Africa,2020-11-28,40.337
+BWA,Botswana,Africa,2020-11-29,40.337
+BWA,Botswana,Africa,2020-11-30,45.561
+BWA,Botswana,Africa,2020-12-01,45.561
+BWA,Botswana,Africa,2020-12-02,45.561
+BWA,Botswana,Africa,2020-12-03,77.333
+BWA,Botswana,Africa,2020-12-04,77.333
+BWA,Botswana,Africa,2020-12-05,77.333
+BWA,Botswana,Africa,2020-12-06,77.333
+BWA,Botswana,Africa,2020-12-07,79.945
+BWA,Botswana,Africa,2020-12-08,79.945
+BWA,Botswana,Africa,2020-12-09,79.945
+BWA,Botswana,Africa,2020-12-10,58.926
+BWA,Botswana,Africa,2020-12-11,58.926
+BWA,Botswana,Africa,2020-12-12,58.926
+BWA,Botswana,Africa,2020-12-13,58.926
+BWA,Botswana,Africa,2020-12-14,49.51
+BWA,Botswana,Africa,2020-12-15,49.51
+BWA,Botswana,Africa,2020-12-16,49.51
+BWA,Botswana,Africa,2020-12-17,31.164
+BWA,Botswana,Africa,2020-12-18,31.164
+BWA,Botswana,Africa,2020-12-19,31.164
+BWA,Botswana,Africa,2020-12-20,31.164
+BWA,Botswana,Africa,2020-12-21,45.5
+BWA,Botswana,Africa,2020-12-22,45.5
+BWA,Botswana,Africa,2020-12-23,45.5
+BWA,Botswana,Africa,2020-12-24,61.416
+BWA,Botswana,Africa,2020-12-25,61.416
+BWA,Botswana,Africa,2020-12-26,61.416
+BWA,Botswana,Africa,2020-12-27,61.416
+BWA,Botswana,Africa,2020-12-28,24.482
+BWA,Botswana,Africa,2020-12-29,24.482
+BWA,Botswana,Africa,2020-12-30,65.487
+BWA,Botswana,Africa,2020-12-31,47.384
+BWA,Botswana,Africa,2021-01-01,47.384
+BWA,Botswana,Africa,2021-01-02,47.384
+BWA,Botswana,Africa,2021-01-03,47.384
+BWA,Botswana,Africa,2021-01-04,81.585
+BWA,Botswana,Africa,2021-01-05,85.959
+BWA,Botswana,Africa,2021-01-06,44.954
+BWA,Botswana,Africa,2021-01-07,75.632
+BWA,Botswana,Africa,2021-01-08,75.632
+BWA,Botswana,Africa,2021-01-09,75.632
+BWA,Botswana,Africa,2021-01-10,75.632
+BWA,Botswana,Africa,2021-01-11,85.048
+BWA,Botswana,Africa,2021-01-12,80.674
+BWA,Botswana,Africa,2021-01-13,80.674
+BWA,Botswana,Africa,2021-01-14,79.884
+BWA,Botswana,Africa,2021-01-15,79.884
+BWA,Botswana,Africa,2021-01-16,79.884
+BWA,Botswana,Africa,2021-01-17,79.884
+BWA,Botswana,Africa,2021-01-18,113.113
+BWA,Botswana,Africa,2021-01-19,113.113
+BWA,Botswana,Africa,2021-01-20,113.113
+BWA,Botswana,Africa,2021-01-21,139.053
+BWA,Botswana,Africa,2021-01-22,139.053
+BWA,Botswana,Africa,2021-01-23,139.053
+BWA,Botswana,Africa,2021-01-24,139.053
+BWA,Botswana,Africa,2021-01-25,123.197
+BWA,Botswana,Africa,2021-01-26,123.197
+BWA,Botswana,Africa,2021-01-27,123.197
+BWA,Botswana,Africa,2021-01-28,99.566
+BWA,Botswana,Africa,2021-01-29,99.566
+BWA,Botswana,Africa,2021-01-30,99.566
+BWA,Botswana,Africa,2021-01-31,99.566
+BWA,Botswana,Africa,2021-02-01,126.356
+BWA,Botswana,Africa,2021-02-02,126.356
+BWA,Botswana,Africa,2021-02-03,126.356
+BWA,Botswana,Africa,2021-02-04,134.254
+BWA,Botswana,Africa,2021-02-05,134.254
+BWA,Botswana,Africa,2021-02-06,134.254
+BWA,Botswana,Africa,2021-02-07,134.254
+BWA,Botswana,Africa,2021-02-08,103.09
+BWA,Botswana,Africa,2021-02-09,103.09
+BWA,Botswana,Africa,2021-02-10,103.09
+BWA,Botswana,Africa,2021-02-11,86.445
+BWA,Botswana,Africa,2021-02-12,86.445
+BWA,Botswana,Africa,2021-02-13,86.445
+BWA,Botswana,Africa,2021-02-14,86.445
+BWA,Botswana,Africa,2021-02-15,83.043
+BWA,Botswana,Africa,2021-02-16,83.043
+BWA,Botswana,Africa,2021-02-17,83.043
+BWA,Botswana,Africa,2021-02-18,97.076
+BWA,Botswana,Africa,2021-02-19,97.076
+BWA,Botswana,Africa,2021-02-20,97.076
+BWA,Botswana,Africa,2021-02-21,97.076
+BWA,Botswana,Africa,2021-02-22,116.576
+BWA,Botswana,Africa,2021-02-23,116.576
+BWA,Botswana,Africa,2021-02-24,116.576
+BWA,Botswana,Africa,2021-02-25,112.202
+BWA,Botswana,Africa,2021-02-26,112.202
+BWA,Botswana,Africa,2021-02-27,112.202
+BWA,Botswana,Africa,2021-02-28,112.202
+BWA,Botswana,Africa,2021-03-01,182.609
+BWA,Botswana,Africa,2021-03-02,182.609
+BWA,Botswana,Africa,2021-03-03,182.609
+BWA,Botswana,Africa,2021-03-04,205.025
+BWA,Botswana,Africa,2021-03-05,205.025
+BWA,Botswana,Africa,2021-03-06,205.025
+BWA,Botswana,Africa,2021-03-07,205.025
+BWA,Botswana,Africa,2021-03-08,132.735
+BWA,Botswana,Africa,2021-03-09,132.735
+BWA,Botswana,Africa,2021-03-10,132.735
+BWA,Botswana,Africa,2021-03-11,142.88
+BWA,Botswana,Africa,2021-03-12,142.88
+BWA,Botswana,Africa,2021-03-13,142.88
+BWA,Botswana,Africa,2021-03-14,142.88
+BWA,Botswana,Africa,2021-03-15,126.782
+BWA,Botswana,Africa,2021-03-16,126.782
+BWA,Botswana,Africa,2021-03-17,126.782
+BWA,Botswana,Africa,2021-03-18,84.744
+BWA,Botswana,Africa,2021-03-19,84.744
+BWA,Botswana,Africa,2021-03-20,84.744
+BWA,Botswana,Africa,2021-03-21,84.744
+BWA,Botswana,Africa,2021-03-22,155.516
+BWA,Botswana,Africa,2021-03-23,155.516
+BWA,Botswana,Africa,2021-03-24,155.516
+BWA,Botswana,Africa,2021-03-25,180.605
+BWA,Botswana,Africa,2021-03-26,180.605
+BWA,Botswana,Africa,2021-03-27,180.605
+BWA,Botswana,Africa,2021-03-28,180.605
+BWA,Botswana,Africa,2021-03-29,139.053
+BWA,Botswana,Africa,2021-03-30,139.053
+BWA,Botswana,Africa,2021-03-31,139.053
+BWA,Botswana,Africa,2021-04-01,146.525
+BWA,Botswana,Africa,2021-04-02,146.525
+BWA,Botswana,Africa,2021-04-03,146.525
+BWA,Botswana,Africa,2021-04-04,146.525
+BWA,Botswana,Africa,2021-04-05,113.113
+BWA,Botswana,Africa,2021-04-06,113.113
+BWA,Botswana,Africa,2021-04-07,113.113
+BWA,Botswana,Africa,2021-04-08,50.543
+BWA,Botswana,Africa,2021-04-09,109.104
+BWA,Botswana,Africa,2021-04-10,109.104
+BWA,Botswana,Africa,2021-04-11,109.104
+BWA,Botswana,Africa,2021-04-12,105.337
+BWA,Botswana,Africa,2021-04-13,105.337
+BWA,Botswana,Africa,2021-04-14,105.337
+BWA,Botswana,Africa,2021-04-15,143.67
+BWA,Botswana,Africa,2021-04-16,85.108
+BWA,Botswana,Africa,2021-04-17,85.108
+BWA,Botswana,Africa,2021-04-18,85.108
+BWA,Botswana,Africa,2021-04-19,76.421
+BWA,Botswana,Africa,2021-04-20,76.421
+BWA,Botswana,Africa,2021-04-21,76.421
+BWA,Botswana,Africa,2021-04-22,108.132
+BWA,Botswana,Africa,2021-04-23,108.132
+BWA,Botswana,Africa,2021-04-24,108.132
+BWA,Botswana,Africa,2021-04-25,108.132
+BWA,Botswana,Africa,2021-04-26,70.043
+BWA,Botswana,Africa,2021-04-27,115.3
+BWA,Botswana,Africa,2021-04-28,115.3
+BWA,Botswana,Africa,2021-04-29,65.547
+BWA,Botswana,Africa,2021-04-30,65.547
+BWA,Botswana,Africa,2021-05-01,65.547
+BWA,Botswana,Africa,2021-05-02,65.547
+BWA,Botswana,Africa,2021-05-03,121.254
+BWA,Botswana,Africa,2021-05-04,75.996
+BWA,Botswana,Africa,2021-05-05,75.996
+BWA,Botswana,Africa,2021-05-06,90.09
+BWA,Botswana,Africa,2021-05-07,90.09
+BWA,Botswana,Africa,2021-05-08,90.09
+BWA,Botswana,Africa,2021-05-09,90.09
+BWA,Botswana,Africa,2021-05-10,72.29
+BWA,Botswana,Africa,2021-05-11,72.29
+BWA,Botswana,Africa,2021-05-12,72.29
+BWA,Botswana,Africa,2021-05-13,37.907
+BWA,Botswana,Africa,2021-05-14,75.267
+BWA,Botswana,Africa,2021-05-15,75.267
+BWA,Botswana,Africa,2021-05-16,75.267
+BWA,Botswana,Africa,2021-05-17,106.856
+BWA,Botswana,Africa,2021-05-18,106.856
+BWA,Botswana,Africa,2021-05-19,106.856
+BWA,Botswana,Africa,2021-05-20,156.67
+BWA,Botswana,Africa,2021-05-21,119.31
+BWA,Botswana,Africa,2021-05-22,119.31
+BWA,Botswana,Africa,2021-05-23,119.31
+BWA,Botswana,Africa,2021-05-24,125.445
+BWA,Botswana,Africa,2021-05-25,125.445
+BWA,Botswana,Africa,2021-05-26,125.445
+BWA,Botswana,Africa,2021-05-27,130.67
+BWA,Botswana,Africa,2021-05-28,130.67
+BWA,Botswana,Africa,2021-05-29,130.67
+BWA,Botswana,Africa,2021-05-30,130.67
+BWA,Botswana,Africa,2021-05-31,128.057
+BWA,Botswana,Africa,2021-06-01,128.057
+BWA,Botswana,Africa,2021-06-02,128.057
+BWA,Botswana,Africa,2021-06-03,148.59
+BWA,Botswana,Africa,2021-06-04,148.59
+BWA,Botswana,Africa,2021-06-05,148.59
+BWA,Botswana,Africa,2021-06-06,148.59
+BWA,Botswana,Africa,2021-06-07,189.656
+BWA,Botswana,Africa,2021-06-08,189.656
+BWA,Botswana,Africa,2021-06-09,189.656
+BWA,Botswana,Africa,2021-06-10,198.222
+BWA,Botswana,Africa,2021-06-11,198.222
+BWA,Botswana,Africa,2021-06-12,198.222
+BWA,Botswana,Africa,2021-06-13,198.222
+BWA,Botswana,Africa,2021-06-14,204.236
+BWA,Botswana,Africa,2021-06-15,204.236
+BWA,Botswana,Africa,2021-06-16,204.236
+BWA,Botswana,Africa,2021-06-17,228.839
+BWA,Botswana,Africa,2021-06-18,228.839
+BWA,Botswana,Africa,2021-06-19,228.839
+BWA,Botswana,Africa,2021-06-20,228.839
+BWA,Botswana,Africa,2021-06-21,264.316
+BWA,Botswana,Africa,2021-06-22,264.316
+BWA,Botswana,Africa,2021-06-23,264.316
+BWA,Botswana,Africa,2021-06-24,257.876
+BWA,Botswana,Africa,2021-06-25,257.876
+BWA,Botswana,Africa,2021-06-26,257.876
+BWA,Botswana,Africa,2021-06-27,257.876
+BWA,Botswana,Africa,2021-06-28,235.217
+BWA,Botswana,Africa,2021-06-29,235.217
+BWA,Botswana,Africa,2021-06-30,235.217
+BWA,Botswana,Africa,2021-07-01,240.016
+BWA,Botswana,Africa,2021-07-02,240.016
+BWA,Botswana,Africa,2021-07-03,240.016
+BWA,Botswana,Africa,2021-07-04,240.016
+BGR,Bulgarie,Europe,2020-03-08,NA
+BGR,Bulgarie,Europe,2020-03-09,NA
+BGR,Bulgarie,Europe,2020-03-10,NA
+BGR,Bulgarie,Europe,2020-03-11,NA
+BGR,Bulgarie,Europe,2020-03-12,NA
+BGR,Bulgarie,Europe,2020-03-13,0.473
+BGR,Bulgarie,Europe,2020-03-14,0.843
+BGR,Bulgarie,Europe,2020-03-15,0.966
+BGR,Bulgarie,Europe,2020-03-16,0.987
+BGR,Bulgarie,Europe,2020-03-17,1.295
+BGR,Bulgarie,Europe,2020-03-18,1.748
+BGR,Bulgarie,Europe,2020-03-19,1.789
+BGR,Bulgarie,Europe,2020-03-20,2.138
+BGR,Bulgarie,Europe,2020-03-21,2.508
+BGR,Bulgarie,Europe,2020-03-22,2.796
+BGR,Bulgarie,Europe,2020-03-23,3.063
+BGR,Bulgarie,Europe,2020-03-24,3.104
+BGR,Bulgarie,Europe,2020-03-25,3.084
+BGR,Bulgarie,Europe,2020-03-26,3.495
+BGR,Bulgarie,Europe,2020-03-27,3.413
+BGR,Bulgarie,Europe,2020-03-28,3.454
+BGR,Bulgarie,Europe,2020-03-29,3.269
+BGR,Bulgarie,Europe,2020-03-30,3.248
+BGR,Bulgarie,Europe,2020-03-31,3.721
+BGR,Bulgarie,Europe,2020-04-01,3.701
+BGR,Bulgarie,Europe,2020-04-02,3.968
+BGR,Bulgarie,Europe,2020-04-03,3.947
+BGR,Bulgarie,Europe,2020-04-04,3.536
+BGR,Bulgarie,Europe,2020-04-05,3.804
+BGR,Bulgarie,Europe,2020-04-06,3.906
+BGR,Bulgarie,Europe,2020-04-07,3.66
+BGR,Bulgarie,Europe,2020-04-08,3.516
+BGR,Bulgarie,Europe,2020-04-09,3.31
+BGR,Bulgarie,Europe,2020-04-10,3.084
+BGR,Bulgarie,Europe,2020-04-11,3.248
+BGR,Bulgarie,Europe,2020-04-12,2.961
+BGR,Bulgarie,Europe,2020-04-13,2.796
+BGR,Bulgarie,Europe,2020-04-14,2.796
+BGR,Bulgarie,Europe,2020-04-15,3.166
+BGR,Bulgarie,Europe,2020-04-16,3.742
+BGR,Bulgarie,Europe,2020-04-17,4.338
+BGR,Bulgarie,Europe,2020-04-18,4.461
+BGR,Bulgarie,Europe,2020-04-19,4.503
+BGR,Bulgarie,Europe,2020-04-20,5.017
+BGR,Bulgarie,Europe,2020-04-21,5.387
+BGR,Bulgarie,Europe,2020-04-22,5.695
+BGR,Bulgarie,Europe,2020-04-23,6.106
+BGR,Bulgarie,Europe,2020-04-24,7.977
+BGR,Bulgarie,Europe,2020-04-25,7.586
+BGR,Bulgarie,Europe,2020-04-26,8.347
+BGR,Bulgarie,Europe,2020-04-27,8.923
+BGR,Bulgarie,Europe,2020-04-28,8.717
+BGR,Bulgarie,Europe,2020-04-29,8.697
+BGR,Bulgarie,Europe,2020-04-30,8.409
+BGR,Bulgarie,Europe,2020-05-01,6.6
+BGR,Bulgarie,Europe,2020-05-02,7.134
+BGR,Bulgarie,Europe,2020-05-03,6.538
+BGR,Bulgarie,Europe,2020-05-04,5.942
+BGR,Bulgarie,Europe,2020-05-05,6.271
+BGR,Bulgarie,Europe,2020-05-06,6.805
+BGR,Bulgarie,Europe,2020-05-07,6.641
+BGR,Bulgarie,Europe,2020-05-08,6.517
+BGR,Bulgarie,Europe,2020-05-09,6.723
+BGR,Bulgarie,Europe,2020-05-10,7.134
+BGR,Bulgarie,Europe,2020-05-11,6.949
+BGR,Bulgarie,Europe,2020-05-12,6.559
+BGR,Bulgarie,Europe,2020-05-13,5.983
+BGR,Bulgarie,Europe,2020-05-14,5.572
+BGR,Bulgarie,Europe,2020-05-15,5.469
+BGR,Bulgarie,Europe,2020-05-16,5.222
+BGR,Bulgarie,Europe,2020-05-17,5.058
+BGR,Bulgarie,Europe,2020-05-18,5.037
+BGR,Bulgarie,Europe,2020-05-19,4.852
+BGR,Bulgarie,Europe,2020-05-20,4.585
+BGR,Bulgarie,Europe,2020-05-21,4.749
+BGR,Bulgarie,Europe,2020-05-22,4.811
+BGR,Bulgarie,Europe,2020-05-23,4.79
+BGR,Bulgarie,Europe,2020-05-24,4.441
+BGR,Bulgarie,Europe,2020-05-25,4.071
+BGR,Bulgarie,Europe,2020-05-26,3.783
+BGR,Bulgarie,Europe,2020-05-27,3.454
+BGR,Bulgarie,Europe,2020-05-28,3.002
+BGR,Bulgarie,Europe,2020-05-29,2.323
+BGR,Bulgarie,Europe,2020-05-30,1.871
+BGR,Bulgarie,Europe,2020-05-31,1.768
+BGR,Bulgarie,Europe,2020-06-01,1.768
+BGR,Bulgarie,Europe,2020-06-02,1.953
+BGR,Bulgarie,Europe,2020-06-03,2.056
+BGR,Bulgarie,Europe,2020-06-04,2.22
+BGR,Bulgarie,Europe,2020-06-05,2.919
+BGR,Bulgarie,Europe,2020-06-06,4.359
+BGR,Bulgarie,Europe,2020-06-07,4.4
+BGR,Bulgarie,Europe,2020-06-08,5.983
+BGR,Bulgarie,Europe,2020-06-09,7.216
+BGR,Bulgarie,Europe,2020-06-10,8.902
+BGR,Bulgarie,Europe,2020-06-11,10.3
+BGR,Bulgarie,Europe,2020-06-12,11.596
+BGR,Bulgarie,Europe,2020-06-13,11.411
+BGR,Bulgarie,Europe,2020-06-14,11.575
+BGR,Bulgarie,Europe,2020-06-15,10.917
+BGR,Bulgarie,Europe,2020-06-16,11.596
+BGR,Bulgarie,Europe,2020-06-17,11.287
+BGR,Bulgarie,Europe,2020-06-18,12.089
+BGR,Bulgarie,Europe,2020-06-19,11.596
+BGR,Bulgarie,Europe,2020-06-20,12.459
+BGR,Bulgarie,Europe,2020-06-21,12.644
+BGR,Bulgarie,Europe,2020-06-22,13.22
+BGR,Bulgarie,Europe,2020-06-23,13.59
+BGR,Bulgarie,Europe,2020-06-24,14.392
+BGR,Bulgarie,Europe,2020-06-25,15.091
+BGR,Bulgarie,Europe,2020-06-26,15.584
+BGR,Bulgarie,Europe,2020-06-27,15.481
+BGR,Bulgarie,Europe,2020-06-28,16.16
+BGR,Bulgarie,Europe,2020-06-29,17.414
+BGR,Bulgarie,Europe,2020-06-30,17.99
+BGR,Bulgarie,Europe,2020-07-01,18.75
+BGR,Bulgarie,Europe,2020-07-02,18.648
+BGR,Bulgarie,Europe,2020-07-03,20.231
+BGR,Bulgarie,Europe,2020-07-04,21.629
+BGR,Bulgarie,Europe,2020-07-05,21.567
+BGR,Bulgarie,Europe,2020-07-06,22.266
+BGR,Bulgarie,Europe,2020-07-07,22.883
+BGR,Bulgarie,Europe,2020-07-08,24.425
+BGR,Bulgarie,Europe,2020-07-09,27.899
+BGR,Bulgarie,Europe,2020-07-10,30.161
+BGR,Bulgarie,Europe,2020-07-11,30.798
+BGR,Bulgarie,Europe,2020-07-12,31.086
+BGR,Bulgarie,Europe,2020-07-13,30.778
+BGR,Bulgarie,Europe,2020-07-14,31.723
+BGR,Bulgarie,Europe,2020-07-15,31.559
+BGR,Bulgarie,Europe,2020-07-16,30.264
+BGR,Bulgarie,Europe,2020-07-17,30.387
+BGR,Bulgarie,Europe,2020-07-18,30.079
+BGR,Bulgarie,Europe,2020-07-19,30.449
+BGR,Bulgarie,Europe,2020-07-20,31.209
+BGR,Bulgarie,Europe,2020-07-21,33.08
+BGR,Bulgarie,Europe,2020-07-22,35.095
+BGR,Bulgarie,Europe,2020-07-23,35.136
+BGR,Bulgarie,Europe,2020-07-24,34.561
+BGR,Bulgarie,Europe,2020-07-25,34.417
+BGR,Bulgarie,Europe,2020-07-26,34.828
+BGR,Bulgarie,Europe,2020-07-27,34.787
+BGR,Bulgarie,Europe,2020-07-28,33.245
+BGR,Bulgarie,Europe,2020-07-29,32.299
+BGR,Bulgarie,Europe,2020-07-30,32.217
+BGR,Bulgarie,Europe,2020-07-31,32.217
+BGR,Bulgarie,Europe,2020-08-01,31.333
+BGR,Bulgarie,Europe,2020-08-02,31.415
+BGR,Bulgarie,Europe,2020-08-03,31.621
+BGR,Bulgarie,Europe,2020-08-04,31.723
+BGR,Bulgarie,Europe,2020-08-05,32.114
+BGR,Bulgarie,Europe,2020-08-06,32.772
+BGR,Bulgarie,Europe,2020-08-07,31.23
+BGR,Bulgarie,Europe,2020-08-08,30.983
+BGR,Bulgarie,Europe,2020-08-09,29.626
+BGR,Bulgarie,Europe,2020-08-10,27.817
+BGR,Bulgarie,Europe,2020-08-11,26.892
+BGR,Bulgarie,Europe,2020-08-12,24.178
+BGR,Bulgarie,Europe,2020-08-13,18.072
+BGR,Bulgarie,Europe,2020-08-14,21.259
+BGR,Bulgarie,Europe,2020-08-15,20.354
+BGR,Bulgarie,Europe,2020-08-16,19.922
+BGR,Bulgarie,Europe,2020-08-17,20.313
+BGR,Bulgarie,Europe,2020-08-18,19.47
+BGR,Bulgarie,Europe,2020-08-19,19.059
+BGR,Bulgarie,Europe,2020-08-20,21.978
+BGR,Bulgarie,Europe,2020-08-21,18.257
+BGR,Bulgarie,Europe,2020-08-22,16.407
+BGR,Bulgarie,Europe,2020-08-23,18.956
+BGR,Bulgarie,Europe,2020-08-24,18.216
+BGR,Bulgarie,Europe,2020-08-25,18.915
+BGR,Bulgarie,Europe,2020-08-26,19.141
+BGR,Bulgarie,Europe,2020-08-27,19.449
+BGR,Bulgarie,Europe,2020-08-28,19.203
+BGR,Bulgarie,Europe,2020-08-29,21.238
+BGR,Bulgarie,Europe,2020-08-30,18.565
+BGR,Bulgarie,Europe,2020-08-31,18.092
+BGR,Bulgarie,Europe,2020-09-01,17.784
+BGR,Bulgarie,Europe,2020-09-02,17.805
+BGR,Bulgarie,Europe,2020-09-03,17.825
+BGR,Bulgarie,Europe,2020-09-04,18.277
+BGR,Bulgarie,Europe,2020-09-05,18.216
+BGR,Bulgarie,Europe,2020-09-06,18.483
+BGR,Bulgarie,Europe,2020-09-07,18.092
+BGR,Bulgarie,Europe,2020-09-08,17.661
+BGR,Bulgarie,Europe,2020-09-09,16.818
+BGR,Bulgarie,Europe,2020-09-10,16.921
+BGR,Bulgarie,Europe,2020-09-11,17.373
+BGR,Bulgarie,Europe,2020-09-12,17.291
+BGR,Bulgarie,Europe,2020-09-13,17.044
+BGR,Bulgarie,Europe,2020-09-14,18.812
+BGR,Bulgarie,Europe,2020-09-15,18.565
+BGR,Bulgarie,Europe,2020-09-16,19.634
+BGR,Bulgarie,Europe,2020-09-17,19.449
+BGR,Bulgarie,Europe,2020-09-18,19.203
+BGR,Bulgarie,Europe,2020-09-19,19.079
+BGR,Bulgarie,Europe,2020-09-20,19.429
+BGR,Bulgarie,Europe,2020-09-21,19.593
+BGR,Bulgarie,Europe,2020-09-22,18.648
+BGR,Bulgarie,Europe,2020-09-23,18.36
+BGR,Bulgarie,Europe,2020-09-24,21.156
+BGR,Bulgarie,Europe,2020-09-25,22.513
+BGR,Bulgarie,Europe,2020-09-26,24.219
+BGR,Bulgarie,Europe,2020-09-27,24.507
+BGR,Bulgarie,Europe,2020-09-28,25.843
+BGR,Bulgarie,Europe,2020-09-29,29.277
+BGR,Bulgarie,Europe,2020-09-30,31.867
+BGR,Bulgarie,Europe,2020-10-01,25.905
+BGR,Bulgarie,Europe,2020-10-02,31.004
+BGR,Bulgarie,Europe,2020-10-03,31.271
+BGR,Bulgarie,Europe,2020-10-04,31.497
+BGR,Bulgarie,Europe,2020-10-05,32.875
+BGR,Bulgarie,Europe,2020-10-06,36.164
+BGR,Bulgarie,Europe,2020-10-07,39.269
+BGR,Bulgarie,Europe,2020-10-08,49.878
+BGR,Bulgarie,Europe,2020-10-09,52.119
+BGR,Bulgarie,Europe,2020-10-10,57.587
+BGR,Bulgarie,Europe,2020-10-11,57.875
+BGR,Bulgarie,Europe,2020-10-12,64.125
+BGR,Bulgarie,Europe,2020-10-13,71.301
+BGR,Bulgarie,Europe,2020-10-14,79.154
+BGR,Bulgarie,Europe,2020-10-15,87.337
+BGR,Bulgarie,Europe,2020-10-16,95.273
+BGR,Bulgarie,Europe,2020-10-17,98.46
+BGR,Bulgarie,Europe,2020-10-18,104.874
+BGR,Bulgarie,Europe,2020-10-19,113.859
+BGR,Bulgarie,Europe,2020-10-20,125.187
+BGR,Bulgarie,Europe,2020-10-21,138.613
+BGR,Bulgarie,Europe,2020-10-22,152.614
+BGR,Bulgarie,Europe,2020-10-23,164.765
+BGR,Bulgarie,Europe,2020-10-24,173.811
+BGR,Bulgarie,Europe,2020-10-25,172.413
+BGR,Bulgarie,Europe,2020-10-26,197.475
+BGR,Bulgarie,Europe,2020-10-27,222.825
+BGR,Bulgarie,Europe,2020-10-28,249.306
+BGR,Bulgarie,Europe,2020-10-29,271.798
+BGR,Bulgarie,Europe,2020-10-30,298.566
+BGR,Bulgarie,Europe,2020-10-31,314.192
+BGR,Bulgarie,Europe,2020-11-01,332.654
+BGR,Bulgarie,Europe,2020-11-02,336.437
+BGR,Bulgarie,Europe,2020-11-03,366.701
+BGR,Bulgarie,Europe,2020-11-04,393.305
+BGR,Bulgarie,Europe,2020-11-05,415.201
+BGR,Bulgarie,Europe,2020-11-06,434.691
+BGR,Bulgarie,Europe,2020-11-07,444.93
+BGR,Bulgarie,Europe,2020-11-08,433.622
+BGR,Bulgarie,Europe,2020-11-09,462.179
+BGR,Bulgarie,Europe,2020-11-10,469.355
+BGR,Bulgarie,Europe,2020-11-11,467.114
+BGR,Bulgarie,Europe,2020-11-12,460.124
+BGR,Bulgarie,Europe,2020-11-13,467.792
+BGR,Bulgarie,Europe,2020-11-14,471.842
+BGR,Bulgarie,Europe,2020-11-15,474.741
+BGR,Bulgarie,Europe,2020-11-16,468.635
+BGR,Bulgarie,Europe,2020-11-17,477.64
+BGR,Bulgarie,Europe,2020-11-18,477.496
+BGR,Bulgarie,Europe,2020-11-19,487.468
+BGR,Bulgarie,Europe,2020-11-20,482.76
+BGR,Bulgarie,Europe,2020-11-21,478.257
+BGR,Bulgarie,Europe,2020-11-22,484.569
+BGR,Bulgarie,Europe,2020-11-23,476.9
+BGR,Bulgarie,Europe,2020-11-24,467.731
+BGR,Bulgarie,Europe,2020-11-25,463.084
+BGR,Bulgarie,Europe,2020-11-26,456.279
+BGR,Bulgarie,Europe,2020-11-27,442.792
+BGR,Bulgarie,Europe,2020-11-28,432.779
+BGR,Bulgarie,Europe,2020-11-29,424.884
+BGR,Bulgarie,Europe,2020-11-30,418.059
+BGR,Bulgarie,Europe,2020-12-01,399.411
+BGR,Bulgarie,Europe,2020-12-02,387.61
+BGR,Bulgarie,Europe,2020-12-03,381.689
+BGR,Bulgarie,Europe,2020-12-04,387.589
+BGR,Bulgarie,Europe,2020-12-05,392.626
+BGR,Bulgarie,Europe,2020-12-06,389.296
+BGR,Bulgarie,Europe,2020-12-07,388.268
+BGR,Bulgarie,Europe,2020-12-08,398.65
+BGR,Bulgarie,Europe,2020-12-09,402.557
+BGR,Bulgarie,Europe,2020-12-10,398.342
+BGR,Bulgarie,Europe,2020-12-11,387.713
+BGR,Bulgarie,Europe,2020-12-12,372.293
+BGR,Bulgarie,Europe,2020-12-13,370.648
+BGR,Bulgarie,Europe,2020-12-14,356.894
+BGR,Bulgarie,Europe,2020-12-15,331.462
+BGR,Bulgarie,Europe,2020-12-16,303.316
+BGR,Bulgarie,Europe,2020-12-17,282.078
+BGR,Bulgarie,Europe,2020-12-18,254.158
+BGR,Bulgarie,Europe,2020-12-19,248.298
+BGR,Bulgarie,Europe,2020-12-20,241.493
+BGR,Bulgarie,Europe,2020-12-21,224.675
+BGR,Bulgarie,Europe,2020-12-22,205.267
+BGR,Bulgarie,Europe,2020-12-23,198.194
+BGR,Bulgarie,Europe,2020-12-24,172.084
+BGR,Bulgarie,Europe,2020-12-25,141.614
+BGR,Bulgarie,Europe,2020-12-26,130.656
+BGR,Bulgarie,Europe,2020-12-27,134.069
+BGR,Bulgarie,Europe,2020-12-28,114.743
+BGR,Bulgarie,Europe,2020-12-29,107.321
+BGR,Bulgarie,Europe,2020-12-30,109.665
+BGR,Bulgarie,Europe,2020-12-31,115.298
+BGR,Bulgarie,Europe,2021-01-01,115.648
+BGR,Bulgarie,Europe,2021-01-02,112.995
+BGR,Bulgarie,Europe,2021-01-03,109.685
+BGR,Bulgarie,Europe,2021-01-04,123.913
+BGR,Bulgarie,Europe,2021-01-05,121.281
+BGR,Bulgarie,Europe,2021-01-06,106.334
+BGR,Bulgarie,Europe,2021-01-07,102.654
+BGR,Bulgarie,Europe,2021-01-08,112.502
+BGR,Bulgarie,Europe,2021-01-09,113.612
+BGR,Bulgarie,Europe,2021-01-10,112.255
+BGR,Bulgarie,Europe,2021-01-11,103.846
+BGR,Bulgarie,Europe,2021-01-12,92.333
+BGR,Bulgarie,Europe,2021-01-13,82.732
+BGR,Bulgarie,Europe,2021-01-14,75.906
+BGR,Bulgarie,Europe,2021-01-15,71.774
+BGR,Bulgarie,Europe,2021-01-16,68.463
+BGR,Bulgarie,Europe,2021-01-17,67.888
+BGR,Bulgarie,Europe,2021-01-18,66.86
+BGR,Bulgarie,Europe,2021-01-19,62.624
+BGR,Bulgarie,Europe,2021-01-20,61.535
+BGR,Bulgarie,Europe,2021-01-21,59.89
+BGR,Bulgarie,Europe,2021-01-22,60.178
+BGR,Bulgarie,Europe,2021-01-23,60.856
+BGR,Bulgarie,Europe,2021-01-24,61.761
+BGR,Bulgarie,Europe,2021-01-25,65.914
+BGR,Bulgarie,Europe,2021-01-26,71.732
+BGR,Bulgarie,Europe,2021-01-27,74.117
+BGR,Bulgarie,Europe,2021-01-28,76.276
+BGR,Bulgarie,Europe,2021-01-29,78.928
+BGR,Bulgarie,Europe,2021-01-30,80.635
+BGR,Bulgarie,Europe,2021-01-31,80.82
+BGR,Bulgarie,Europe,2021-02-01,82.053
+BGR,Bulgarie,Europe,2021-02-02,84.932
+BGR,Bulgarie,Europe,2021-02-03,87.419
+BGR,Bulgarie,Europe,2021-02-04,94.06
+BGR,Bulgarie,Europe,2021-02-05,98.48
+BGR,Bulgarie,Europe,2021-02-06,101.441
+BGR,Bulgarie,Europe,2021-02-07,102.51
+BGR,Bulgarie,Europe,2021-02-08,108.328
+BGR,Bulgarie,Europe,2021-02-09,113.366
+BGR,Bulgarie,Europe,2021-02-10,117.354
+BGR,Bulgarie,Europe,2021-02-11,121.199
+BGR,Bulgarie,Europe,2021-02-12,122.35
+BGR,Bulgarie,Europe,2021-02-13,122.617
+BGR,Bulgarie,Europe,2021-02-14,122.227
+BGR,Bulgarie,Europe,2021-02-15,121.26
+BGR,Bulgarie,Europe,2021-02-16,124.077
+BGR,Bulgarie,Europe,2021-02-17,130.923
+BGR,Bulgarie,Europe,2021-02-18,131.252
+BGR,Bulgarie,Europe,2021-02-19,141.471
+BGR,Bulgarie,Europe,2021-02-20,142.334
+BGR,Bulgarie,Europe,2021-02-21,143.65
+BGR,Bulgarie,Europe,2021-02-22,161.269
+BGR,Bulgarie,Europe,2021-02-23,170.542
+BGR,Bulgarie,Europe,2021-02-24,180.554
+BGR,Bulgarie,Europe,2021-02-25,195.686
+BGR,Bulgarie,Europe,2021-02-26,200.168
+BGR,Bulgarie,Europe,2021-02-27,211.085
+BGR,Bulgarie,Europe,2021-02-28,213.244
+BGR,Bulgarie,Europe,2021-03-01,226.875
+BGR,Bulgarie,Europe,2021-03-02,239.272
+BGR,Bulgarie,Europe,2021-03-03,227.368
+BGR,Bulgarie,Europe,2021-03-04,235.099
+BGR,Bulgarie,Europe,2021-03-05,262.299
+BGR,Bulgarie,Europe,2021-03-06,269.433
+BGR,Bulgarie,Europe,2021-03-07,272.826
+BGR,Bulgarie,Europe,2021-03-08,281.193
+BGR,Bulgarie,Europe,2021-03-09,303.788
+BGR,Bulgarie,Europe,2021-03-10,337.095
+BGR,Bulgarie,Europe,2021-03-11,356.071
+BGR,Bulgarie,Europe,2021-03-12,359.258
+BGR,Bulgarie,Europe,2021-03-13,371.45
+BGR,Bulgarie,Europe,2021-03-14,375.192
+BGR,Bulgarie,Europe,2021-03-15,408.951
+BGR,Bulgarie,Europe,2021-03-16,426.879
+BGR,Bulgarie,Europe,2021-03-17,456.217
+BGR,Bulgarie,Europe,2021-03-18,474.454
+BGR,Bulgarie,Europe,2021-03-19,495.075
+BGR,Bulgarie,Europe,2021-03-20,505.807
+BGR,Bulgarie,Europe,2021-03-21,511.235
+BGR,Bulgarie,Europe,2021-03-22,507.74
+BGR,Bulgarie,Europe,2021-03-23,517.546
+BGR,Bulgarie,Europe,2021-03-24,521.124
+BGR,Bulgarie,Europe,2021-03-25,520.713
+BGR,Bulgarie,Europe,2021-03-26,520.034
+BGR,Bulgarie,Europe,2021-03-27,519.952
+BGR,Bulgarie,Europe,2021-03-28,520.774
+BGR,Bulgarie,Europe,2021-03-29,521.391
+BGR,Bulgarie,Europe,2021-03-30,528.073
+BGR,Bulgarie,Europe,2021-03-31,524.619
+BGR,Bulgarie,Europe,2021-04-01,518.574
+BGR,Bulgarie,Europe,2021-04-02,516.189
+BGR,Bulgarie,Europe,2021-04-03,503.484
+BGR,Bulgarie,Europe,2021-04-04,498.488
+BGR,Bulgarie,Europe,2021-04-05,485.391
+BGR,Bulgarie,Europe,2021-04-06,378.975
+BGR,Bulgarie,Europe,2021-04-07,447.911
+BGR,Bulgarie,Europe,2021-04-08,432.759
+BGR,Bulgarie,Europe,2021-04-09,407.882
+BGR,Bulgarie,Europe,2021-04-10,396.224
+BGR,Bulgarie,Europe,2021-04-11,390.509
+BGR,Bulgarie,Europe,2021-04-12,375.336
+BGR,Bulgarie,Europe,2021-04-13,435.863
+BGR,Bulgarie,Europe,2021-04-14,332.181
+BGR,Bulgarie,Europe,2021-04-15,316.309
+BGR,Bulgarie,Europe,2021-04-16,302.39
+BGR,Bulgarie,Europe,2021-04-17,296.716
+BGR,Bulgarie,Europe,2021-04-18,295.811
+BGR,Bulgarie,Europe,2021-04-19,281.666
+BGR,Bulgarie,Europe,2021-04-20,264.232
+BGR,Bulgarie,Europe,2021-04-21,253.644
+BGR,Bulgarie,Europe,2021-04-22,208.721
+BGR,Bulgarie,Europe,2021-04-23,234.688
+BGR,Bulgarie,Europe,2021-04-24,228.972
+BGR,Bulgarie,Europe,2021-04-25,228.602
+BGR,Bulgarie,Europe,2021-04-26,214.724
+BGR,Bulgarie,Europe,2021-04-27,209.667
+BGR,Bulgarie,Europe,2021-04-28,196.92
+BGR,Bulgarie,Europe,2021-04-29,222.352
+BGR,Bulgarie,Europe,2021-04-30,166.08
+BGR,Bulgarie,Europe,2021-05-01,159.255
+BGR,Bulgarie,Europe,2021-05-02,158.185
+BGR,Bulgarie,Europe,2021-05-03,134.994
+BGR,Bulgarie,Europe,2021-05-04,104.504
+BGR,Bulgarie,Europe,2021-05-05,109.706
+BGR,Bulgarie,Europe,2021-05-06,95.479
+BGR,Bulgarie,Europe,2021-05-07,105.162
+BGR,Bulgarie,Europe,2021-05-08,105.162
+BGR,Bulgarie,Europe,2021-05-09,102.962
+BGR,Bulgarie,Europe,2021-05-10,112.153
+BGR,Bulgarie,Europe,2021-05-11,122.638
+BGR,Bulgarie,Europe,2021-05-12,102.531
+BGR,Bulgarie,Europe,2021-05-13,101.729
+BGR,Bulgarie,Europe,2021-05-14,89.29
+BGR,Bulgarie,Europe,2021-05-15,83.883
+BGR,Bulgarie,Europe,2021-05-16,82.033
+BGR,Bulgarie,Europe,2021-05-17,73.788
+BGR,Bulgarie,Europe,2021-05-18,65.153
+BGR,Bulgarie,Europe,2021-05-19,59.068
+BGR,Bulgarie,Europe,2021-05-20,56.23
+BGR,Bulgarie,Europe,2021-05-21,53.023
+BGR,Bulgarie,Europe,2021-05-22,51.892
+BGR,Bulgarie,Europe,2021-05-23,50.453
+BGR,Bulgarie,Europe,2021-05-24,38.2
+BGR,Bulgarie,Europe,2021-05-25,37.151
+BGR,Bulgarie,Europe,2021-05-26,37.809
+BGR,Bulgarie,Europe,2021-05-27,36.267
+BGR,Bulgarie,Europe,2021-05-28,34.725
+BGR,Bulgarie,Europe,2021-05-29,34.047
+BGR,Bulgarie,Europe,2021-05-30,33.471
+BGR,Bulgarie,Europe,2021-05-31,38.035
+BGR,Bulgarie,Europe,2021-06-01,34.54
+BGR,Bulgarie,Europe,2021-06-02,30.51
+BGR,Bulgarie,Europe,2021-06-03,27.982
+BGR,Bulgarie,Europe,2021-06-04,25.309
+BGR,Bulgarie,Europe,2021-06-05,24.774
+BGR,Bulgarie,Europe,2021-06-06,24.651
+BGR,Bulgarie,Europe,2021-06-07,22.698
+BGR,Bulgarie,Europe,2021-06-08,21.505
+BGR,Bulgarie,Europe,2021-06-09,20.148
+BGR,Bulgarie,Europe,2021-06-10,18.709
+BGR,Bulgarie,Europe,2021-06-11,18.01
+BGR,Bulgarie,Europe,2021-06-12,17.846
+BGR,Bulgarie,Europe,2021-06-13,17.743
+BGR,Bulgarie,Europe,2021-06-14,16.694
+BGR,Bulgarie,Europe,2021-06-15,16.345
+BGR,Bulgarie,Europe,2021-06-16,15.605
+BGR,Bulgarie,Europe,2021-06-17,15.81
+BGR,Bulgarie,Europe,2021-06-18,15.44
+BGR,Bulgarie,Europe,2021-06-19,14.618
+BGR,Bulgarie,Europe,2021-06-20,14.309
+BGR,Bulgarie,Europe,2021-06-21,13.549
+BGR,Bulgarie,Europe,2021-06-22,12.171
+BGR,Bulgarie,Europe,2021-06-23,12.13
+BGR,Bulgarie,Europe,2021-06-24,11.143
+BGR,Bulgarie,Europe,2021-06-25,10.753
+BGR,Bulgarie,Europe,2021-06-26,10.485
+BGR,Bulgarie,Europe,2021-06-27,10.259
+BGR,Bulgarie,Europe,2021-06-28,10.156
+BGR,Bulgarie,Europe,2021-06-29,10.383
+BGR,Bulgarie,Europe,2021-06-30,10.074
+BGR,Bulgarie,Europe,2021-07-01,10.3
+BGR,Bulgarie,Europe,2021-07-02,10.198
+BGR,Bulgarie,Europe,2021-07-03,10.67
+BGR,Bulgarie,Europe,2021-07-04,10.341
 FRA,France,Europe,2020-01-24,NA
 FRA,France,Europe,2020-01-25,NA
 FRA,France,Europe,2020-01-26,NA
@@ -992,9 +1470,9 @@ FRA,France,Europe,2020-02-18,0.002
 FRA,France,Europe,2020-02-19,0.002
 FRA,France,Europe,2020-02-20,0.002
 FRA,France,Europe,2020-02-21,0.002
-FRA,France,Europe,2020-02-22,0
-FRA,France,Europe,2020-02-23,0
-FRA,France,Europe,2020-02-24,0
+FRA,France,Europe,2020-02-22,0.0
+FRA,France,Europe,2020-02-23,0.0
+FRA,France,Europe,2020-02-24,0.0
 FRA,France,Europe,2020-02-25,0.004
 FRA,France,Europe,2020-02-26,0.013
 FRA,France,Europe,2020-02-27,0.055
@@ -1239,7 +1717,7 @@ FRA,France,Europe,2020-10-22,402.734
 FRA,France,Europe,2020-10-23,439.112
 FRA,France,Europe,2020-10-24,466.94
 FRA,France,Europe,2020-10-25,417.841
-FRA,France,Europe,2020-10-26,542
+FRA,France,Europe,2020-10-26,542.0
 FRA,France,Europe,2020-10-27,571.826
 FRA,France,Europe,2020-10-28,593.241
 FRA,France,Europe,2020-10-29,605.502
@@ -1445,978 +1923,523 @@ FRA,France,Europe,2021-05-16,212.972
 FRA,France,Europe,2021-05-17,213.082
 FRA,France,Europe,2021-05-18,207.652
 FRA,France,Europe,2021-05-19,202.491
-FRA,France,Europe,2021-05-20,193.936
-FRA,France,Europe,2021-05-21,206.115
-FRA,France,Europe,2021-05-22,199.615
-FRA,France,Europe,2021-05-23,190.642
-FRA,France,Europe,2021-05-24,188.272
-IND,Inde,Asia,2020-01-30,NA
-IND,Inde,Asia,2020-01-31,NA
-IND,Inde,Asia,2020-02-01,NA
-IND,Inde,Asia,2020-02-02,NA
-IND,Inde,Asia,2020-02-03,NA
-IND,Inde,Asia,2020-02-04,0
-IND,Inde,Asia,2020-02-05,0
-IND,Inde,Asia,2020-02-06,0
-IND,Inde,Asia,2020-02-07,0
-IND,Inde,Asia,2020-02-08,0
-IND,Inde,Asia,2020-02-09,0
-IND,Inde,Asia,2020-02-10,0
-IND,Inde,Asia,2020-02-11,0
-IND,Inde,Asia,2020-02-12,0
-IND,Inde,Asia,2020-02-13,0
-IND,Inde,Asia,2020-02-14,0
-IND,Inde,Asia,2020-02-15,0
-IND,Inde,Asia,2020-02-16,0
-IND,Inde,Asia,2020-02-17,0
-IND,Inde,Asia,2020-02-18,0
-IND,Inde,Asia,2020-02-19,0
-IND,Inde,Asia,2020-02-20,0
-IND,Inde,Asia,2020-02-21,0
-IND,Inde,Asia,2020-02-22,0
-IND,Inde,Asia,2020-02-23,0
-IND,Inde,Asia,2020-02-24,0
-IND,Inde,Asia,2020-02-25,0
-IND,Inde,Asia,2020-02-26,0
-IND,Inde,Asia,2020-02-27,0
-IND,Inde,Asia,2020-02-28,0
-IND,Inde,Asia,2020-02-29,0
-IND,Inde,Asia,2020-03-01,0
-IND,Inde,Asia,2020-03-02,0
-IND,Inde,Asia,2020-03-03,0
-IND,Inde,Asia,2020-03-04,0.003
-IND,Inde,Asia,2020-03-05,0.003
-IND,Inde,Asia,2020-03-06,0.003
-IND,Inde,Asia,2020-03-07,0.003
-IND,Inde,Asia,2020-03-08,0.004
-IND,Inde,Asia,2020-03-09,0.004
-IND,Inde,Asia,2020-03-10,0.005
-IND,Inde,Asia,2020-03-11,0.004
-IND,Inde,Asia,2020-03-12,0.004
-IND,Inde,Asia,2020-03-13,0.005
-IND,Inde,Asia,2020-03-14,0.007
-IND,Inde,Asia,2020-03-15,0.008
-IND,Inde,Asia,2020-03-16,0.008
-IND,Inde,Asia,2020-03-17,0.009
-IND,Inde,Asia,2020-03-18,0.01
-IND,Inde,Asia,2020-03-19,0.013
-IND,Inde,Asia,2020-03-20,0.017
-IND,Inde,Asia,2020-03-21,0.024
-IND,Inde,Asia,2020-03-22,0.029
-IND,Inde,Asia,2020-03-23,0.039
-IND,Inde,Asia,2020-03-24,0.041
-IND,Inde,Asia,2020-03-25,0.052
-IND,Inde,Asia,2020-03-26,0.055
-IND,Inde,Asia,2020-03-27,0.067
-IND,Inde,Asia,2020-03-28,0.068
-IND,Inde,Asia,2020-03-29,0.065
-IND,Inde,Asia,2020-03-30,0.078
-IND,Inde,Asia,2020-03-31,0.089
-IND,Inde,Asia,2020-04-01,0.139
-IND,Inde,Asia,2020-04-02,0.188
-IND,Inde,Asia,2020-04-03,0.174
-IND,Inde,Asia,2020-04-04,0.217
-IND,Inde,Asia,2020-04-05,0.265
-IND,Inde,Asia,2020-04-06,0.365
-IND,Inde,Asia,2020-04-07,0.405
-IND,Inde,Asia,2020-04-08,0.406
-IND,Inde,Asia,2020-04-09,0.433
-IND,Inde,Asia,2020-04-10,0.521
-IND,Inde,Asia,2020-04-11,0.555
-IND,Inde,Asia,2020-04-12,0.581
-IND,Inde,Asia,2020-04-13,0.587
-IND,Inde,Asia,2020-04-14,0.639
-IND,Inde,Asia,2020-04-15,0.663
-IND,Inde,Asia,2020-04-16,0.694
-IND,Inde,Asia,2020-04-17,0.699
-IND,Inde,Asia,2020-04-18,0.753
-IND,Inde,Asia,2020-04-19,0.871
-IND,Inde,Asia,2020-04-20,0.837
-IND,Inde,Asia,2020-04-21,0.89
-IND,Inde,Asia,2020-04-22,0.937
-IND,Inde,Asia,2020-04-23,0.999
-IND,Inde,Asia,2020-04-24,1.054
-IND,Inde,Asia,2020-04-25,1.093
-IND,Inde,Asia,2020-04-26,1.064
-IND,Inde,Asia,2020-04-27,1.13
-IND,Inde,Asia,2020-04-28,1.164
-IND,Inde,Asia,2020-04-29,1.21
-IND,Inde,Asia,2020-04-30,1.22
-IND,Inde,Asia,2020-05-01,1.317
-IND,Inde,Asia,2020-05-02,1.389
-IND,Inde,Asia,2020-05-03,1.513
-IND,Inde,Asia,2020-05-04,1.758
-IND,Inde,Asia,2020-05-05,1.871
-IND,Inde,Asia,2020-05-06,2.063
-IND,Inde,Asia,2020-05-07,2.224
-IND,Inde,Asia,2020-05-08,2.323
-IND,Inde,Asia,2020-05-09,2.392
-IND,Inde,Asia,2020-05-10,2.552
-IND,Inde,Asia,2020-05-11,2.519
-IND,Inde,Asia,2020-05-12,2.577
-IND,Inde,Asia,2020-05-13,2.595
-IND,Inde,Asia,2020-05-14,2.655
-IND,Inde,Asia,2020-05-15,2.701
-IND,Inde,Asia,2020-05-16,2.882
-IND,Inde,Asia,2020-05-17,2.954
-IND,Inde,Asia,2020-05-18,3.06
-IND,Inde,Asia,2020-05-19,3.332
-IND,Inde,Asia,2020-05-20,3.517
-IND,Inde,Asia,2020-05-21,3.75
-IND,Inde,Asia,2020-05-22,4.038
-IND,Inde,Asia,2020-05-23,4.221
-IND,Inde,Asia,2020-05-24,4.435
-IND,Inde,Asia,2020-05-25,4.619
-IND,Inde,Asia,2020-05-26,4.588
-IND,Inde,Asia,2020-05-27,4.768
-IND,Inde,Asia,2020-05-28,4.882
-IND,Inde,Asia,2020-05-29,5.041
-IND,Inde,Asia,2020-05-30,5.218
-IND,Inde,Asia,2020-05-31,5.391
-IND,Inde,Asia,2020-06-01,5.53
-IND,Inde,Asia,2020-06-02,5.838
-IND,Inde,Asia,2020-06-03,6.081
-IND,Inde,Asia,2020-06-04,6.349
-IND,Inde,Asia,2020-06-05,6.49
-IND,Inde,Asia,2020-06-06,6.708
-IND,Inde,Asia,2020-06-07,6.923
-IND,Inde,Asia,2020-06-08,6.994
-IND,Inde,Asia,2020-06-09,7.138
-IND,Inde,Asia,2020-06-10,7.224
-IND,Inde,Asia,2020-06-11,7.331
-IND,Inde,Asia,2020-06-12,7.537
-IND,Inde,Asia,2020-06-13,7.691
-IND,Inde,Asia,2020-06-14,7.758
-IND,Inde,Asia,2020-06-15,7.988
-IND,Inde,Asia,2020-06-16,8.066
-IND,Inde,Asia,2020-06-17,8.317
-IND,Inde,Asia,2020-06-18,8.592
-IND,Inde,Asia,2020-06-19,8.908
-IND,Inde,Asia,2020-06-20,9.268
-IND,Inde,Asia,2020-06-21,9.613
-IND,Inde,Asia,2020-06-22,10.054
-IND,Inde,Asia,2020-06-23,10.571
-IND,Inde,Asia,2020-06-24,10.99
-IND,Inde,Asia,2020-06-25,11.374
-IND,Inde,Asia,2020-06-26,11.791
-IND,Inde,Asia,2020-06-27,12.258
-IND,Inde,Asia,2020-06-28,12.737
-IND,Inde,Asia,2020-06-29,13.108
-IND,Inde,Asia,2020-06-30,13.385
-IND,Inde,Asia,2020-07-01,13.617
-IND,Inde,Asia,2020-07-02,13.99
-IND,Inde,Asia,2020-07-03,14.427
-IND,Inde,Asia,2020-07-04,14.938
-IND,Inde,Asia,2020-07-05,15.434
-IND,Inde,Asia,2020-07-06,15.82
-IND,Inde,Asia,2020-07-07,16.246
-IND,Inde,Asia,2020-07-08,16.838
-IND,Inde,Asia,2020-07-09,17.418
-IND,Inde,Asia,2020-07-10,17.868
-IND,Inde,Asia,2020-07-11,18.256
-IND,Inde,Asia,2020-07-12,18.721
-IND,Inde,Asia,2020-07-13,19.367
-IND,Inde,Asia,2020-07-14,20.058
-IND,Inde,Asia,2020-07-15,20.865
-IND,Inde,Asia,2020-07-16,21.742
-IND,Inde,Asia,2020-07-17,22.585
-IND,Inde,Asia,2020-07-18,23.629
-IND,Inde,Asia,2020-07-19,24.84
-IND,Inde,Asia,2020-07-20,25.733
-IND,Inde,Asia,2020-07-21,26.594
-IND,Inde,Asia,2020-07-22,27.944
-IND,Inde,Asia,2020-07-23,29.428
-IND,Inde,Asia,2020-07-24,30.843
-IND,Inde,Asia,2020-07-25,31.869
-IND,Inde,Asia,2020-07-26,32.858
-IND,Inde,Asia,2020-07-27,33.616
-IND,Inde,Asia,2020-07-28,35.051
-IND,Inde,Asia,2020-07-29,35.524
-IND,Inde,Asia,2020-07-30,35.884
-IND,Inde,Asia,2020-07-31,37.16
-IND,Inde,Asia,2020-08-01,37.794
-IND,Inde,Asia,2020-08-02,38.103
-IND,Inde,Asia,2020-08-03,38.889
-IND,Inde,Asia,2020-08-04,38.984
-IND,Inde,Asia,2020-08-05,39.604
-IND,Inde,Asia,2020-08-06,40.614
-IND,Inde,Asia,2020-08-07,40.644
-IND,Inde,Asia,2020-08-08,41.644
-IND,Inde,Asia,2020-08-09,42.586
-IND,Inde,Asia,2020-08-10,42.746
-IND,Inde,Asia,2020-08-11,43.621
-IND,Inde,Asia,2020-08-12,44.731
-IND,Inde,Asia,2020-08-13,44.939
-IND,Inde,Asia,2020-08-14,45.27
-IND,Inde,Asia,2020-08-15,45.232
-IND,Inde,Asia,2020-08-16,44.781
-IND,Inde,Asia,2020-08-17,44.928
-IND,Inde,Asia,2020-08-18,45.302
-IND,Inde,Asia,2020-08-19,45.578
-IND,Inde,Asia,2020-08-20,46.028
-IND,Inde,Asia,2020-08-21,46.561
-IND,Inde,Asia,2020-08-22,47.1
-IND,Inde,Asia,2020-08-23,47.483
-IND,Inde,Asia,2020-08-24,48.099
-IND,Inde,Asia,2020-08-25,47.339
-IND,Inde,Asia,2020-08-26,48.997
-IND,Inde,Asia,2020-08-27,49.863
-IND,Inde,Asia,2020-08-28,50.545
-IND,Inde,Asia,2020-08-29,51.531
-IND,Inde,Asia,2020-08-30,53.302
-IND,Inde,Asia,2020-08-31,54.228
-IND,Inde,Asia,2020-09-01,56.416
-IND,Inde,Asia,2020-09-02,56.229
-IND,Inde,Asia,2020-09-03,56.858
-IND,Inde,Asia,2020-09-04,57.889
-IND,Inde,Asia,2020-09-05,59.118
-IND,Inde,Asia,2020-09-06,60.39
-IND,Inde,Asia,2020-09-07,60.999
-IND,Inde,Asia,2020-09-08,62.174
-IND,Inde,Asia,2020-09-09,63.401
-IND,Inde,Asia,2020-09-10,64.769
-IND,Inde,Asia,2020-09-11,65.922
-IND,Inde,Asia,2020-09-12,66.309
-IND,Inde,Asia,2020-09-13,66.44
-IND,Inde,Asia,2020-09-14,67.268
-IND,Inde,Asia,2020-09-15,67.311
-IND,Inde,Asia,2020-09-16,67.535
-IND,Inde,Asia,2020-09-17,67.522
-IND,Inde,Asia,2020-09-18,67.084
-IND,Inde,Asia,2020-09-19,66.901
-IND,Inde,Asia,2020-09-20,66.372
-IND,Inde,Asia,2020-09-21,65.468
-IND,Inde,Asia,2020-09-22,64.767
-IND,Inde,Asia,2020-09-23,63.588
-IND,Inde,Asia,2020-09-24,62.515
-IND,Inde,Asia,2020-09-25,61.689
-IND,Inde,Asia,2020-09-26,61.274
-IND,Inde,Asia,2020-09-27,60.778
-IND,Inde,Asia,2020-09-28,60.313
-IND,Inde,Asia,2020-09-29,60.016
-IND,Inde,Asia,2020-09-30,60.048
-IND,Inde,Asia,2020-10-01,59.575
-IND,Inde,Asia,2020-10-02,58.966
-IND,Inde,Asia,2020-10-03,57.644
-IND,Inde,Asia,2020-10-04,56.844
-IND,Inde,Asia,2020-10-05,55.879
-IND,Inde,Asia,2020-10-06,55.007
-IND,Inde,Asia,2020-10-07,54.148
-IND,Inde,Asia,2020-10-08,53.01
-IND,Inde,Asia,2020-10-09,52.368
-IND,Inde,Asia,2020-10-10,52.219
-IND,Inde,Asia,2020-10-11,51.42
-IND,Inde,Asia,2020-10-12,50.807
-IND,Inde,Asia,2020-10-13,49.923
-IND,Inde,Asia,2020-10-14,48.803
-IND,Inde,Asia,2020-10-15,48.066
-IND,Inde,Asia,2020-10-16,46.921
-IND,Inde,Asia,2020-10-17,45.626
-IND,Inde,Asia,2020-10-18,44.486
-IND,Inde,Asia,2020-10-19,43.601
-IND,Inde,Asia,2020-10-20,42.621
-IND,Inde,Asia,2020-10-21,41.392
-IND,Inde,Asia,2020-10-22,40.46
-IND,Inde,Asia,2020-10-23,39.545
-IND,Inde,Asia,2020-10-24,38.329
-IND,Inde,Asia,2020-10-25,37.234
-IND,Inde,Asia,2020-10-26,36.166
-IND,Inde,Asia,2020-10-27,35.115
-IND,Inde,Asia,2020-10-28,34.499
-IND,Inde,Asia,2020-10-29,33.907
-IND,Inde,Asia,2020-10-30,33.378
-IND,Inde,Asia,2020-10-31,33.051
-IND,Inde,Asia,2020-11-01,33.059
-IND,Inde,Asia,2020-11-02,33.25
-IND,Inde,Asia,2020-11-03,33.494
-IND,Inde,Asia,2020-11-04,33.528
-IND,Inde,Asia,2020-11-05,33.424
-IND,Inde,Asia,2020-11-06,33.64
-IND,Inde,Asia,2020-11-07,33.506
-IND,Inde,Asia,2020-11-08,33.576
-IND,Inde,Asia,2020-11-09,33.551
-IND,Inde,Asia,2020-11-10,33.347
-IND,Inde,Asia,2020-11-11,33.109
-IND,Inde,Asia,2020-11-12,32.823
-IND,Inde,Asia,2020-11-13,32.236
-IND,Inde,Asia,2020-11-14,31.762
-IND,Inde,Asia,2020-11-15,30.173
-IND,Inde,Asia,2020-11-16,29.25
-IND,Inde,Asia,2020-11-17,28.664
-IND,Inde,Asia,2020-11-18,28.423
-IND,Inde,Asia,2020-11-19,28.527
-IND,Inde,Asia,2020-11-20,28.687
-IND,Inde,Asia,2020-11-21,29.112
-IND,Inde,Asia,2020-11-22,30.511
-IND,Inde,Asia,2020-11-23,31.423
-IND,Inde,Asia,2020-11-24,32.019
-IND,Inde,Asia,2020-11-25,31.907
-IND,Inde,Asia,2020-11-26,31.617
-IND,Inde,Asia,2020-11-27,31.109
-IND,Inde,Asia,2020-11-28,30.757
-IND,Inde,Asia,2020-11-29,30.21
-IND,Inde,Asia,2020-11-30,29.5
-IND,Inde,Asia,2020-12-01,28.695
-IND,Inde,Asia,2020-12-02,27.77
-IND,Inde,Asia,2020-12-03,27.098
-IND,Inde,Asia,2020-12-04,26.615
-IND,Inde,Asia,2020-12-05,26.015
-IND,Inde,Asia,2020-12-06,25.415
-IND,Inde,Asia,2020-12-07,24.944
-IND,Inde,Asia,2020-12-08,24.476
-IND,Inde,Asia,2020-12-09,24.059
-IND,Inde,Asia,2020-12-10,23.311
-IND,Inde,Asia,2020-12-11,22.626
-IND,Inde,Asia,2020-12-12,22.03
-IND,Inde,Asia,2020-12-13,21.418
-IND,Inde,Asia,2020-12-14,20.952
-IND,Inde,Asia,2020-12-15,20.362
-IND,Inde,Asia,2020-12-16,19.584
-IND,Inde,Asia,2020-12-17,18.913
-IND,Inde,Asia,2020-12-18,18.408
-IND,Inde,Asia,2020-12-19,18.032
-IND,Inde,Asia,2020-12-20,17.749
-IND,Inde,Asia,2020-12-21,17.49
-IND,Inde,Asia,2020-12-22,17.238
-IND,Inde,Asia,2020-12-23,17.311
-IND,Inde,Asia,2020-12-24,17.329
-IND,Inde,Asia,2020-12-25,17.031
-IND,Inde,Asia,2020-12-26,16.214
-IND,Inde,Asia,2020-12-27,15.767
-IND,Inde,Asia,2020-12-28,15.444
-IND,Inde,Asia,2020-12-29,15.092
-IND,Inde,Asia,2020-12-30,14.792
-IND,Inde,Asia,2020-12-31,12.405
-IND,Inde,Asia,2021-01-01,12.173
-IND,Inde,Asia,2021-01-02,14.091
-IND,Inde,Asia,2021-01-03,13.726
-IND,Inde,Asia,2021-01-04,13.721
-IND,Inde,Asia,2021-01-05,13.466
-IND,Inde,Asia,2021-01-06,13.313
-IND,Inde,Asia,2021-01-07,15.191
-IND,Inde,Asia,2021-01-08,13.117
-IND,Inde,Asia,2021-01-09,13.076
-IND,Inde,Asia,2021-01-10,13.056
-IND,Inde,Asia,2021-01-11,12.664
-IND,Inde,Asia,2021-01-12,12.445
-IND,Inde,Asia,2021-01-13,12.093
-IND,Inde,Asia,2021-01-14,11.829
-IND,Inde,Asia,2021-01-15,13.398
-IND,Inde,Asia,2021-01-16,11.149
-IND,Inde,Asia,2021-01-17,10.888
-IND,Inde,Asia,2021-01-18,10.626
-IND,Inde,Asia,2021-01-19,10.403
-IND,Inde,Asia,2021-01-20,10.227
-IND,Inde,Asia,2021-01-21,10.118
-IND,Inde,Asia,2021-01-22,10.025
-IND,Inde,Asia,2021-01-23,9.995
-IND,Inde,Asia,2021-01-24,9.934
-IND,Inde,Asia,2021-01-25,9.836
-IND,Inde,Asia,2021-01-26,9.719
-IND,Inde,Asia,2021-01-27,9.349
-IND,Inde,Asia,2021-01-28,9.795
-IND,Inde,Asia,2021-01-29,9.673
-IND,Inde,Asia,2021-01-30,9.487
-IND,Inde,Asia,2021-01-31,9.304
-IND,Inde,Asia,2021-02-01,9.255
-IND,Inde,Asia,2021-02-02,9.085
-IND,Inde,Asia,2021-02-03,9.212
-IND,Inde,Asia,2021-02-04,8.545
-IND,Inde,Asia,2021-02-05,8.403
-IND,Inde,Asia,2021-02-06,8.301
-IND,Inde,Asia,2021-02-07,8.342
-IND,Inde,Asia,2021-02-08,8.391
-IND,Inde,Asia,2021-02-09,8.394
-IND,Inde,Asia,2021-02-10,8.397
-IND,Inde,Asia,2021-02-11,8.076
-IND,Inde,Asia,2021-02-12,8.12
-IND,Inde,Asia,2021-02-13,8.134
-IND,Inde,Asia,2021-02-14,8.115
-IND,Inde,Asia,2021-02-15,8.117
-IND,Inde,Asia,2021-02-16,8.173
-IND,Inde,Asia,2021-02-17,8.168
-IND,Inde,Asia,2021-02-18,8.57
-IND,Inde,Asia,2021-02-19,8.762
-IND,Inde,Asia,2021-02-20,8.976
-IND,Inde,Asia,2021-02-21,9.24
-IND,Inde,Asia,2021-02-22,9.392
-IND,Inde,Asia,2021-02-23,9.612
-IND,Inde,Asia,2021-02-24,10.012
-IND,Inde,Asia,2021-02-25,10.362
-IND,Inde,Asia,2021-02-26,10.62
-IND,Inde,Asia,2021-02-27,10.878
-IND,Inde,Asia,2021-02-28,11.014
-IND,Inde,Asia,2021-03-01,11.19
-IND,Inde,Asia,2021-03-02,11.319
-IND,Inde,Asia,2021-03-03,11.388
-IND,Inde,Asia,2021-03-04,11.415
-IND,Inde,Asia,2021-03-05,11.601
-IND,Inde,Asia,2021-03-06,11.808
-IND,Inde,Asia,2021-03-07,12.128
-IND,Inde,Asia,2021-03-08,12.449
-IND,Inde,Asia,2021-03-09,12.753
-IND,Inde,Asia,2021-03-10,13.317
-IND,Inde,Asia,2021-03-11,13.984
-IND,Inde,Asia,2021-03-12,14.667
-IND,Inde,Asia,2021-03-13,15.347
-IND,Inde,Asia,2021-03-14,16.143
-IND,Inde,Asia,2021-03-15,17.085
-IND,Inde,Asia,2021-03-16,18.222
-IND,Inde,Asia,2021-03-17,19.57
-IND,Inde,Asia,2021-03-18,21.272
-IND,Inde,Asia,2021-03-19,22.935
-IND,Inde,Asia,2021-03-20,24.853
-IND,Inde,Asia,2021-03-21,26.992
-IND,Inde,Asia,2021-03-22,28.671
-IND,Inde,Asia,2021-03-23,30.572
-IND,Inde,Asia,2021-03-24,32.394
-IND,Inde,Asia,2021-03-25,34.402
-IND,Inde,Asia,2021-03-26,36.607
-IND,Inde,Asia,2021-03-27,38.56
-IND,Inde,Asia,2021-03-28,40.741
-IND,Inde,Asia,2021-03-29,42.346
-IND,Inde,Asia,2021-03-30,42.989
-IND,Inde,Asia,2021-03-31,44.941
-IND,Inde,Asia,2021-04-01,47.254
-IND,Inde,Asia,2021-04-02,50.036
-IND,Inde,Asia,2021-04-03,53.197
-IND,Inde,Asia,2021-04-04,56.876
-IND,Inde,Asia,2021-04-05,61.096
-IND,Inde,Asia,2021-04-06,67.541
-IND,Inde,Asia,2021-04-07,73.179
-IND,Inde,Asia,2021-04-08,78.407
-IND,Inde,Asia,2021-04-09,84.23
-IND,Inde,Asia,2021-04-10,90.403
-IND,Inde,Asia,2021-04-11,97.168
-IND,Inde,Asia,2021-04-12,103.872
-IND,Inde,Asia,2021-04-13,110.977
-IND,Inde,Asia,2021-04-14,118.632
-IND,Inde,Asia,2021-04-15,127.471
-IND,Inde,Asia,2021-04-16,136.716
-IND,Inde,Asia,2021-04-17,147.95
-IND,Inde,Asia,2021-04-18,158.808
-IND,Inde,Asia,2021-04-19,168.894
-IND,Inde,Asia,2021-04-20,180.362
-IND,Inde,Asia,2021-04-21,192.154
-IND,Inde,Asia,2021-04-22,204.117
-IND,Inde,Asia,2021-04-23,215.721
-IND,Inde,Asia,2021-04-24,224.862
-IND,Inde,Asia,2021-04-25,233.059
-IND,Inde,Asia,2021-04-26,239.669
-IND,Inde,Asia,2021-04-27,246.478
-IND,Inde,Asia,2021-04-28,253.172
-IND,Inde,Asia,2021-04-29,258.724
-IND,Inde,Asia,2021-04-30,264.439
-IND,Inde,Asia,2021-05-01,268.869
-IND,Inde,Asia,2021-05-02,270.429
-IND,Inde,Asia,2021-05-03,273.979
-IND,Inde,Asia,2021-05-04,276.176
-IND,Inde,Asia,2021-05-05,279.605
-IND,Inde,Asia,2021-05-06,282.465
-IND,Inde,Asia,2021-05-07,282.37
-IND,Inde,Asia,2021-05-08,283.501
-IND,Inde,Asia,2021-05-09,283.338
-IND,Inde,Asia,2021-05-10,280.505
-IND,Inde,Asia,2021-05-11,277.014
-IND,Inde,Asia,2021-05-12,271.868
-IND,Inde,Asia,2021-05-13,264.514
-IND,Inde,Asia,2021-05-14,256.752
-IND,Inde,Asia,2021-05-15,247.204
-IND,Inde,Asia,2021-05-16,238.393
-IND,Inde,Asia,2021-05-17,231.519
-IND,Inde,Asia,2021-05-18,223.125
-IND,Inde,Asia,2021-05-19,214.158
-IND,Inde,Asia,2021-05-20,205.505
-IND,Inde,Asia,2021-05-21,198.383
-IND,Inde,Asia,2021-05-22,191.102
-IND,Inde,Asia,2021-05-23,184.987
-IND,Inde,Asia,2021-05-24,178.041
-USA,États-Unis,North America,2020-01-22,NA
-USA,États-Unis,North America,2020-01-23,NA
-USA,États-Unis,North America,2020-01-24,NA
-USA,États-Unis,North America,2020-01-25,NA
-USA,États-Unis,North America,2020-01-26,NA
-USA,États-Unis,North America,2020-01-27,NA
-USA,États-Unis,North America,2020-01-28,0.002
-USA,États-Unis,North America,2020-01-29,0.002
-USA,États-Unis,North America,2020-01-30,0.002
-USA,États-Unis,North America,2020-01-31,0.003
-USA,États-Unis,North America,2020-02-01,0.003
-USA,États-Unis,North America,2020-02-02,0.001
-USA,États-Unis,North America,2020-02-03,0.003
-USA,États-Unis,North America,2020-02-04,0.003
-USA,États-Unis,North America,2020-02-05,0.002
-USA,États-Unis,North America,2020-02-06,0.003
-USA,États-Unis,North America,2020-02-07,0.002
-USA,États-Unis,North America,2020-02-08,0.002
-USA,États-Unis,North America,2020-02-09,0.002
-USA,États-Unis,North America,2020-02-10,0
-USA,États-Unis,North America,2020-02-11,0.001
-USA,États-Unis,North America,2020-02-12,0.001
-USA,États-Unis,North America,2020-02-13,0.001
-USA,États-Unis,North America,2020-02-14,0.001
-USA,États-Unis,North America,2020-02-15,0.001
-USA,États-Unis,North America,2020-02-16,0.001
-USA,États-Unis,North America,2020-02-17,0.001
-USA,États-Unis,North America,2020-02-18,0
-USA,États-Unis,North America,2020-02-19,0
-USA,États-Unis,North America,2020-02-20,0
-USA,États-Unis,North America,2020-02-21,0.001
-USA,États-Unis,North America,2020-02-22,0.001
-USA,États-Unis,North America,2020-02-23,0.001
-USA,États-Unis,North America,2020-02-24,0.001
-USA,États-Unis,North America,2020-02-25,0.001
-USA,États-Unis,North America,2020-02-26,0.001
-USA,États-Unis,North America,2020-02-27,0.001
-USA,États-Unis,North America,2020-02-28,0
-USA,États-Unis,North America,2020-02-29,0.004
-USA,États-Unis,North America,2020-03-01,0.007
-USA,États-Unis,North America,2020-03-02,0.017
-USA,États-Unis,North America,2020-03-03,0.025
-USA,États-Unis,North America,2020-03-04,0.039
-USA,États-Unis,North America,2020-03-05,0.072
-USA,États-Unis,North America,2020-03-06,0.095
-USA,États-Unis,North America,2020-03-07,0.163
-USA,États-Unis,North America,2020-03-08,0.21
-USA,États-Unis,North America,2020-03-09,0.233
-USA,États-Unis,North America,2020-03-10,0.306
-USA,États-Unis,North America,2020-03-11,0.449
-USA,États-Unis,North America,2020-03-12,0.605
-USA,États-Unis,North America,2020-03-13,0.855
-USA,États-Unis,North America,2020-03-14,1.111
-USA,États-Unis,North America,2020-03-15,1.162
-USA,États-Unis,North America,2020-03-16,1.763
-USA,États-Unis,North America,2020-03-17,2.473
-USA,États-Unis,North America,2020-03-18,3.462
-USA,États-Unis,North America,2020-03-19,5.212
-USA,États-Unis,North America,2020-03-20,7.687
-USA,États-Unis,North America,2020-03-21,9.947
-USA,États-Unis,North America,2020-03-22,13.675
-USA,États-Unis,North America,2020-03-23,17.892
-USA,États-Unis,North America,2020-03-24,21.684
-USA,États-Unis,North America,2020-03-25,25.752
-USA,États-Unis,North America,2020-03-26,31.519
-USA,États-Unis,North America,2020-03-27,36.837
-USA,États-Unis,North America,2020-03-28,42.722
-USA,États-Unis,North America,2020-03-29,47.049
-USA,États-Unis,North America,2020-03-30,51.726
-USA,États-Unis,North America,2020-03-31,58.5
-USA,États-Unis,North America,2020-04-01,67.208
-USA,États-Unis,North America,2020-04-02,73.413
-USA,États-Unis,North America,2020-04-03,79.285
-USA,États-Unis,North America,2020-04-04,84.792
-USA,États-Unis,North America,2020-04-05,89.53
-USA,États-Unis,North America,2020-04-06,93.551
-USA,États-Unis,North America,2020-04-07,95.474
-USA,États-Unis,North America,2020-04-08,95.023
-USA,États-Unis,North America,2020-04-09,96.622
-USA,États-Unis,North America,2020-04-10,97.537
-USA,États-Unis,North America,2020-04-11,96.117
-USA,États-Unis,North America,2020-04-12,94.987
-USA,États-Unis,North America,2020-04-13,93.065
-USA,États-Unis,North America,2020-04-14,92.226
-USA,États-Unis,North America,2020-04-15,89.719
-USA,États-Unis,North America,2020-04-16,87.163
-USA,États-Unis,North America,2020-04-17,86.566
-USA,États-Unis,North America,2020-04-18,86.061
-USA,États-Unis,North America,2020-04-19,85.56
-USA,États-Unis,North America,2020-04-20,86.806
-USA,États-Unis,North America,2020-04-21,85.551
-USA,États-Unis,North America,2020-04-22,87.042
-USA,États-Unis,North America,2020-04-23,88.576
-USA,États-Unis,North America,2020-04-24,88.272
-USA,États-Unis,North America,2020-04-25,89.336
-USA,États-Unis,North America,2020-04-26,89.511
-USA,États-Unis,North America,2020-04-27,86.867
-USA,États-Unis,North America,2020-04-28,86.289
-USA,États-Unis,North America,2020-04-29,85.244
-USA,États-Unis,North America,2020-04-30,83.367
-USA,États-Unis,North America,2020-05-01,84.488
-USA,États-Unis,North America,2020-05-02,83.174
-USA,États-Unis,North America,2020-05-03,82.222
-USA,États-Unis,North America,2020-05-04,82.387
-USA,États-Unis,North America,2020-05-05,82.367
-USA,États-Unis,North America,2020-05-06,81.557
-USA,États-Unis,North America,2020-05-07,80.776
-USA,États-Unis,North America,2020-05-08,77.286
-USA,États-Unis,North America,2020-05-09,76.33
-USA,États-Unis,North America,2020-05-10,73.987
-USA,États-Unis,North America,2020-05-11,71.909
-USA,États-Unis,North America,2020-05-12,71.226
-USA,États-Unis,North America,2020-05-13,69.434
-USA,États-Unis,North America,2020-05-14,69.178
-USA,États-Unis,North America,2020-05-15,68.275
-USA,États-Unis,North America,2020-05-16,67.854
-USA,États-Unis,North America,2020-05-17,67.636
-USA,États-Unis,North America,2020-05-18,68.982
-USA,États-Unis,North America,2020-05-19,68.144
-USA,États-Unis,North America,2020-05-20,69.132
-USA,États-Unis,North America,2020-05-21,68.678
-USA,États-Unis,North America,2020-05-22,68.208
-USA,États-Unis,North America,2020-05-23,66.892
-USA,États-Unis,North America,2020-05-24,67.628
-USA,États-Unis,North America,2020-05-25,66.024
-USA,États-Unis,North America,2020-05-26,65.438
-USA,États-Unis,North America,2020-05-27,63.648
-USA,États-Unis,North America,2020-05-28,62.161
-USA,États-Unis,North America,2020-05-29,62.514
-USA,États-Unis,North America,2020-05-30,63.602
-USA,États-Unis,North America,2020-05-31,63.136
-USA,États-Unis,North America,2020-06-01,62.602
-USA,États-Unis,North America,2020-06-02,63.401
-USA,États-Unis,North America,2020-06-03,63.965
-USA,États-Unis,North America,2020-06-04,63.67
-USA,États-Unis,North America,2020-06-05,64.07
-USA,États-Unis,North America,2020-06-06,63.003
-USA,États-Unis,North America,2020-06-07,62.541
-USA,États-Unis,North America,2020-06-08,62.627
-USA,États-Unis,North America,2020-06-09,61.282
-USA,États-Unis,North America,2020-06-10,61.823
-USA,États-Unis,North America,2020-06-11,62.468
-USA,États-Unis,North America,2020-06-12,62.238
-USA,États-Unis,North America,2020-06-13,63.985
-USA,États-Unis,North America,2020-06-14,64.43
-USA,États-Unis,North America,2020-06-15,65.372
-USA,États-Unis,North America,2020-06-16,67.653
-USA,États-Unis,North America,2020-06-17,70.223
-USA,États-Unis,North America,2020-06-18,72.551
-USA,États-Unis,North America,2020-06-19,75.44
-USA,États-Unis,North America,2020-06-20,78.488
-USA,États-Unis,North America,2020-06-21,81.164
-USA,États-Unis,North America,2020-06-22,86.487
-USA,États-Unis,North America,2020-06-23,92.272
-USA,États-Unis,North America,2020-06-24,96.076
-USA,États-Unis,North America,2020-06-25,101.164
-USA,États-Unis,North America,2020-06-26,107.393
-USA,États-Unis,North America,2020-06-27,111.31
-USA,États-Unis,North America,2020-06-28,118.035
-USA,États-Unis,North America,2020-06-29,121.976
-USA,États-Unis,North America,2020-06-30,126.014
-USA,États-Unis,North America,2020-07-01,132.894
-USA,États-Unis,North America,2020-07-02,139.935
-USA,États-Unis,North America,2020-07-03,142.251
-USA,États-Unis,North America,2020-07-04,144.122
-USA,États-Unis,North America,2020-07-05,148.454
-USA,États-Unis,North America,2020-07-06,149.232
-USA,États-Unis,North America,2020-07-07,155.371
-USA,États-Unis,North America,2020-07-08,158.953
-USA,États-Unis,North America,2020-07-09,161.485
-USA,États-Unis,North America,2020-07-10,168.69
-USA,États-Unis,North America,2020-07-11,174.884
-USA,États-Unis,North America,2020-07-12,178.195
-USA,États-Unis,North America,2020-07-13,185.018
-USA,États-Unis,North America,2020-07-14,188.204
-USA,États-Unis,North America,2020-07-15,191.658
-USA,États-Unis,North America,2020-07-16,197.408
-USA,États-Unis,North America,2020-07-17,199.223
-USA,États-Unis,North America,2020-07-18,200.303
-USA,États-Unis,North America,2020-07-19,201.183
-USA,États-Unis,North America,2020-07-20,202.561
-USA,États-Unis,North America,2020-07-21,201.044
-USA,États-Unis,North America,2020-07-22,202.099
-USA,États-Unis,North America,2020-07-23,198.913
-USA,États-Unis,North America,2020-07-24,199.372
-USA,États-Unis,North America,2020-07-25,200.399
-USA,États-Unis,North America,2020-07-26,197.938
-USA,États-Unis,North America,2020-07-27,195.677
-USA,États-Unis,North America,2020-07-28,196.513
-USA,États-Unis,North America,2020-07-29,197.07
-USA,États-Unis,North America,2020-07-30,196.645
-USA,États-Unis,North America,2020-07-31,194.658
-USA,États-Unis,North America,2020-08-01,190.89
-USA,États-Unis,North America,2020-08-02,186.907
-USA,États-Unis,North America,2020-08-03,182.02
-USA,États-Unis,North America,2020-08-04,178.716
-USA,États-Unis,North America,2020-08-05,171.208
-USA,États-Unis,North America,2020-08-06,167.712
-USA,États-Unis,North America,2020-08-07,163.646
-USA,États-Unis,North America,2020-08-08,162.754
-USA,États-Unis,North America,2020-08-09,162.845
-USA,États-Unis,North America,2020-08-10,163.749
-USA,États-Unis,North America,2020-08-11,159.088
-USA,États-Unis,North America,2020-08-12,159.775
-USA,États-Unis,North America,2020-08-13,156.303
-USA,États-Unis,North America,2020-08-14,158.912
-USA,États-Unis,North America,2020-08-15,155.805
-USA,États-Unis,North America,2020-08-16,152.973
-USA,États-Unis,North America,2020-08-17,148.248
-USA,États-Unis,North America,2020-08-18,146.967
-USA,États-Unis,North America,2020-08-19,143.217
-USA,États-Unis,North America,2020-08-20,140.077
-USA,États-Unis,North America,2020-08-21,132.951
-USA,États-Unis,North America,2020-08-22,131.279
-USA,États-Unis,North America,2020-08-23,129.138
-USA,États-Unis,North America,2020-08-24,129.071
-USA,États-Unis,North America,2020-08-25,127.054
-USA,États-Unis,North America,2020-08-26,126.108
-USA,États-Unis,North America,2020-08-27,126.686
-USA,États-Unis,North America,2020-08-28,125.831
-USA,États-Unis,North America,2020-08-29,125.696
-USA,États-Unis,North America,2020-08-30,125.76
-USA,États-Unis,North America,2020-08-31,125.27
-USA,États-Unis,North America,2020-09-01,125.92
-USA,États-Unis,North America,2020-09-02,124.128
-USA,États-Unis,North America,2020-09-03,123.623
-USA,États-Unis,North America,2020-09-04,125.153
-USA,États-Unis,North America,2020-09-05,125.307
-USA,États-Unis,North America,2020-09-06,123.92
-USA,États-Unis,North America,2020-09-07,118.819
-USA,États-Unis,North America,2020-09-08,112.573
-USA,États-Unis,North America,2020-09-09,109.571
-USA,États-Unis,North America,2020-09-10,106.059
-USA,États-Unis,North America,2020-09-11,104.93
-USA,États-Unis,North America,2020-09-12,104.056
-USA,États-Unis,North America,2020-09-13,105.429
-USA,États-Unis,North America,2020-09-14,110.117
-USA,États-Unis,North America,2020-09-15,115.345
-USA,États-Unis,North America,2020-09-16,117.486
-USA,États-Unis,North America,2020-09-17,121.398
-USA,États-Unis,North America,2020-09-18,122.048
-USA,États-Unis,North America,2020-09-19,122.521
-USA,États-Unis,North America,2020-09-20,124.275
-USA,États-Unis,North America,2020-09-21,131.847
-USA,États-Unis,North America,2020-09-22,132
-USA,États-Unis,North America,2020-09-23,132.019
-USA,États-Unis,North America,2020-09-24,132.871
-USA,États-Unis,North America,2020-09-25,132.439
-USA,États-Unis,North America,2020-09-26,133.515
-USA,États-Unis,North America,2020-09-27,133.123
-USA,États-Unis,North America,2020-09-28,125.037
-USA,États-Unis,North America,2020-09-29,126.584
-USA,États-Unis,North America,2020-09-30,126.745
-USA,États-Unis,North America,2020-10-01,126.116
-USA,États-Unis,North America,2020-10-02,128.999
-USA,États-Unis,North America,2020-10-03,130.674
-USA,États-Unis,North America,2020-10-04,129.901
-USA,États-Unis,North America,2020-10-05,132.582
-USA,États-Unis,North America,2020-10-06,133.363
-USA,États-Unis,North America,2020-10-07,138.381
-USA,États-Unis,North America,2020-10-08,143.966
-USA,États-Unis,North America,2020-10-09,144.578
-USA,États-Unis,North America,2020-10-10,147.333
-USA,États-Unis,North America,2020-10-11,151.747
-USA,États-Unis,North America,2020-10-12,152.78
-USA,États-Unis,North America,2020-10-13,155.797
-USA,États-Unis,North America,2020-10-14,159.553
-USA,États-Unis,North America,2020-10-15,162.27
-USA,États-Unis,North America,2020-10-16,167.779
-USA,États-Unis,North America,2020-10-17,168.564
-USA,États-Unis,North America,2020-10-18,170.031
-USA,États-Unis,North America,2020-10-19,181.213
-USA,États-Unis,North America,2020-10-20,185.41
-USA,États-Unis,North America,2020-10-21,186.928
-USA,États-Unis,North America,2020-10-22,191.853
-USA,États-Unis,North America,2020-10-23,197.379
-USA,États-Unis,North America,2020-10-24,208.597
-USA,États-Unis,North America,2020-10-25,214.122
-USA,États-Unis,North America,2020-10-26,213.971
-USA,États-Unis,North America,2020-10-27,220.39
-USA,États-Unis,North America,2020-10-28,227.347
-USA,États-Unis,North America,2020-10-29,233.714
-USA,États-Unis,North America,2020-10-30,241.177
-USA,États-Unis,North America,2020-10-31,244.183
-USA,États-Unis,North America,2020-11-01,262.616
-USA,États-Unis,North America,2020-11-02,270.343
-USA,États-Unis,North America,2020-11-03,292.04
-USA,États-Unis,North America,2020-11-04,302.918
-USA,États-Unis,North America,2020-11-05,319.449
-USA,États-Unis,North America,2020-11-06,331.864
-USA,États-Unis,North America,2020-11-07,348.158
-USA,États-Unis,North America,2020-11-08,352.571
-USA,États-Unis,North America,2020-11-09,367.791
-USA,États-Unis,North America,2020-11-10,373.565
-USA,États-Unis,North America,2020-11-11,391.7
-USA,États-Unis,North America,2020-11-12,407.015
-USA,États-Unis,North America,2020-11-13,429.623
-USA,États-Unis,North America,2020-11-14,447.021
-USA,États-Unis,North America,2020-11-15,456.15
-USA,États-Unis,North America,2020-11-16,474.437
-USA,États-Unis,North America,2020-11-17,484.548
-USA,États-Unis,North America,2020-11-18,496.007
-USA,États-Unis,North America,2020-11-19,507.534
-USA,États-Unis,North America,2020-11-20,515.263
-USA,États-Unis,North America,2020-11-21,520.232
-USA,États-Unis,North America,2020-11-22,524.79
-USA,États-Unis,North America,2020-11-23,529.755
-USA,États-Unis,North America,2020-11-24,534.757
-USA,États-Unis,North America,2020-11-25,539.121
-USA,États-Unis,North America,2020-11-26,504.928
-USA,États-Unis,North America,2020-11-27,509.197
-USA,États-Unis,North America,2020-11-28,498.95
-USA,États-Unis,North America,2020-11-29,496.123
-USA,États-Unis,North America,2020-11-30,490.133
-USA,États-Unis,North America,2020-12-01,495.617
-USA,États-Unis,North America,2020-12-02,503.933
-USA,États-Unis,North America,2020-12-03,551.965
-USA,États-Unis,North America,2020-12-04,562.581
-USA,États-Unis,North America,2020-12-05,588.48
-USA,États-Unis,North America,2020-12-06,606.08
-USA,États-Unis,North America,2020-12-07,620.878
-USA,États-Unis,North America,2020-12-08,636.533
-USA,États-Unis,North America,2020-12-09,645.157
-USA,États-Unis,North America,2020-12-10,648.568
-USA,États-Unis,North America,2020-12-11,651.672
-USA,États-Unis,North America,2020-12-12,652.553
-USA,États-Unis,North America,2020-12-13,655.441
-USA,États-Unis,North America,2020-12-14,655.425
-USA,États-Unis,North America,2020-12-15,648.741
-USA,États-Unis,North America,2020-12-16,659.169
-USA,États-Unis,North America,2020-12-17,662.712
-USA,États-Unis,North America,2020-12-18,667.888
-USA,États-Unis,North America,2020-12-19,656.805
-USA,États-Unis,North America,2020-12-20,656.855
-USA,États-Unis,North America,2020-12-21,658.68
-USA,États-Unis,North America,2020-12-22,653.935
-USA,États-Unis,North America,2020-12-23,646.562
-USA,États-Unis,North America,2020-12-24,626.916
-USA,États-Unis,North America,2020-12-25,560.312
-USA,États-Unis,North America,2020-12-26,575.151
-USA,États-Unis,North America,2020-12-27,561.261
-USA,États-Unis,North America,2020-12-28,550.723
-USA,États-Unis,North America,2020-12-29,551.69
-USA,États-Unis,North America,2020-12-30,553.445
-USA,États-Unis,North America,2020-12-31,571.34
-USA,États-Unis,North America,2021-01-01,595.501
-USA,États-Unis,North America,2021-01-02,627.449
-USA,États-Unis,North America,2021-01-03,650.371
-USA,États-Unis,North America,2021-01-04,654.535
-USA,États-Unis,North America,2021-01-05,669.579
-USA,États-Unis,North America,2021-01-06,678.971
-USA,États-Unis,North America,2021-01-07,697.366
-USA,États-Unis,North America,2021-01-08,758.474
-USA,États-Unis,North America,2021-01-09,741.376
-USA,États-Unis,North America,2021-01-10,743.319
-USA,États-Unis,North America,2021-01-11,756.574
-USA,États-Unis,North America,2021-01-12,753.039
-USA,États-Unis,North America,2021-01-13,742.214
-USA,États-Unis,North America,2021-01-14,723.836
-USA,États-Unis,North America,2021-01-15,701.184
-USA,États-Unis,North America,2021-01-16,675.714
-USA,États-Unis,North America,2021-01-17,660.407
-USA,États-Unis,North America,2021-01-18,629.515
-USA,États-Unis,North America,2021-01-19,607.843
-USA,États-Unis,North America,2021-01-20,587.504
-USA,États-Unis,North America,2021-01-21,569.425
-USA,États-Unis,North America,2021-01-22,546.992
-USA,États-Unis,North America,2021-01-23,533.584
-USA,États-Unis,North America,2021-01-24,513.42
-USA,États-Unis,North America,2021-01-25,517.112
-USA,États-Unis,North America,2021-01-26,504.524
-USA,États-Unis,North America,2021-01-27,491.882
-USA,États-Unis,North America,2021-01-28,481.003
-USA,États-Unis,North America,2021-01-29,470.565
-USA,États-Unis,North America,2021-01-30,458.35
-USA,États-Unis,North America,2021-01-31,450.122
-USA,États-Unis,North America,2021-02-01,442.886
-USA,États-Unis,North America,2021-02-02,428.985
-USA,États-Unis,North America,2021-02-03,415.043
-USA,États-Unis,North America,2021-02-04,395.779
-USA,États-Unis,North America,2021-02-05,381.895
-USA,États-Unis,North America,2021-02-06,365.354
-USA,États-Unis,North America,2021-02-07,355.708
-USA,États-Unis,North America,2021-02-08,336.336
-USA,États-Unis,North America,2021-02-09,327.833
-USA,États-Unis,North America,2021-02-10,316.411
-USA,États-Unis,North America,2021-02-11,308.55
-USA,États-Unis,North America,2021-02-12,293.548
-USA,États-Unis,North America,2021-02-13,286.27
-USA,États-Unis,North America,2021-02-14,275.641
-USA,États-Unis,North America,2021-02-15,260.048
-USA,États-Unis,North America,2021-02-16,245.843
-USA,États-Unis,North America,2021-02-17,235.028
-USA,États-Unis,North America,2021-02-18,219.561
-USA,États-Unis,North America,2021-02-19,210.783
-USA,États-Unis,North America,2021-02-20,204.051
-USA,États-Unis,North America,2021-02-21,200.624
-USA,États-Unis,North America,2021-02-22,201.502
-USA,États-Unis,North America,2021-02-23,205.621
-USA,États-Unis,North America,2021-02-24,207.612
-USA,États-Unis,North America,2021-02-25,210.882
-USA,États-Unis,North America,2021-02-26,210.04
-USA,États-Unis,North America,2021-02-27,207.041
-USA,États-Unis,North America,2021-02-28,204.571
-USA,États-Unis,North America,2021-03-01,205.438
-USA,États-Unis,North America,2021-03-02,198.876
-USA,États-Unis,North America,2021-03-03,195.623
-USA,États-Unis,North America,2021-03-04,191.544
-USA,États-Unis,North America,2021-03-05,186.842
-USA,États-Unis,North America,2021-03-06,184.092
-USA,États-Unis,North America,2021-03-07,179.625
-USA,États-Unis,North America,2021-03-08,173.931
-USA,États-Unis,North America,2021-03-09,174.182
-USA,États-Unis,North America,2021-03-10,170.18
-USA,États-Unis,North America,2021-03-11,167.773
-USA,États-Unis,North America,2021-03-12,165.646
-USA,États-Unis,North America,2021-03-13,163.371
-USA,États-Unis,North America,2021-03-14,162.169
-USA,États-Unis,North America,2021-03-15,167.188
-USA,États-Unis,North America,2021-03-16,165.598
-USA,États-Unis,North America,2021-03-17,166.123
-USA,États-Unis,North America,2021-03-18,165.287
-USA,États-Unis,North America,2021-03-19,165.333
-USA,États-Unis,North America,2021-03-20,166.387
-USA,États-Unis,North America,2021-03-21,164.465
-USA,États-Unis,North America,2021-03-22,162.275
-USA,États-Unis,North America,2021-03-23,162.123
-USA,États-Unis,North America,2021-03-24,174.131
-USA,États-Unis,North America,2021-03-25,177.121
-USA,États-Unis,North America,2021-03-26,183.893
-USA,États-Unis,North America,2021-03-27,187.055
-USA,États-Unis,North America,2021-03-28,191.081
-USA,États-Unis,North America,2021-03-29,198.779
-USA,États-Unis,North America,2021-03-30,202.079
-USA,États-Unis,North America,2021-03-31,193.481
-USA,États-Unis,North America,2021-04-01,198.479
-USA,États-Unis,North America,2021-04-02,195.247
-USA,États-Unis,North America,2021-04-03,195.405
-USA,États-Unis,North America,2021-04-04,191.898
-USA,États-Unis,North America,2021-04-05,195.459
-USA,États-Unis,North America,2021-04-06,195.155
-USA,États-Unis,North America,2021-04-07,198.607
-USA,États-Unis,North America,2021-04-08,198.966
-USA,États-Unis,North America,2021-04-09,204.52
-USA,États-Unis,North America,2021-04-10,206.016
-USA,États-Unis,North America,2021-04-11,210.94
-USA,États-Unis,North America,2021-04-12,207.725
-USA,États-Unis,North America,2021-04-13,215.206
-USA,États-Unis,North America,2021-04-14,215.352
-USA,États-Unis,North America,2021-04-15,212.94
-USA,États-Unis,North America,2021-04-16,211.771
-USA,États-Unis,North America,2021-04-17,205.659
-USA,États-Unis,North America,2021-04-18,203.777
-USA,États-Unis,North America,2021-04-19,202.785
-USA,États-Unis,North America,2021-04-20,195.619
-USA,États-Unis,North America,2021-04-21,190.216
-USA,États-Unis,North America,2021-04-22,187.181
-USA,États-Unis,North America,2021-04-23,179.589
-USA,États-Unis,North America,2021-04-24,180.016
-USA,États-Unis,North America,2021-04-25,175.72
-USA,États-Unis,North America,2021-04-26,166.984
-USA,États-Unis,North America,2021-04-27,162.488
-USA,États-Unis,North America,2021-04-28,159.151
-USA,États-Unis,North America,2021-04-29,155.242
-USA,États-Unis,North America,2021-04-30,153.31
-USA,États-Unis,North America,2021-05-01,149.831
-USA,États-Unis,North America,2021-05-02,148.666
-USA,États-Unis,North America,2021-05-03,149.905
-USA,États-Unis,North America,2021-05-04,145.536
-USA,États-Unis,North America,2021-05-05,141.052
-USA,États-Unis,North America,2021-05-06,136.44
-USA,États-Unis,North America,2021-05-07,131.851
-USA,États-Unis,North America,2021-05-08,127.185
-USA,États-Unis,North America,2021-05-09,123.744
-USA,États-Unis,North America,2021-05-10,117.847
-USA,États-Unis,North America,2021-05-11,114.791
-USA,États-Unis,North America,2021-05-12,110.968
-USA,États-Unis,North America,2021-05-13,106.899
-USA,États-Unis,North America,2021-05-14,104.745
-USA,États-Unis,North America,2021-05-15,102.294
-USA,États-Unis,North America,2021-05-16,100.34
-USA,États-Unis,North America,2021-05-17,96.787
-USA,États-Unis,North America,2021-05-18,94.27
-USA,États-Unis,North America,2021-05-19,91.428
-USA,États-Unis,North America,2021-05-20,87.998
-USA,États-Unis,North America,2021-05-21,81.975
-USA,États-Unis,North America,2021-05-22,78.075
-USA,États-Unis,North America,2021-05-23,76.344
-USA,États-Unis,North America,2021-05-24,74.982
+FRA,France,Europe,2021-05-20,161.343
+FRA,France,Europe,2021-05-21,173.522
+FRA,France,Europe,2021-05-22,167.022
+FRA,France,Europe,2021-05-23,158.049
+FRA,France,Europe,2021-05-24,155.678
+FRA,France,Europe,2021-05-25,125.933
+FRA,France,Europe,2021-05-26,112.401
+FRA,France,Europe,2021-05-27,141.861
+FRA,France,Europe,2021-05-28,138.628
+FRA,France,Europe,2021-05-29,136.336
+FRA,France,Europe,2021-05-30,133.877
+FRA,France,Europe,2021-05-31,129.944
+FRA,France,Europe,2021-06-01,144.106
+FRA,France,Europe,2021-06-02,120.207
+FRA,France,Europe,2021-06-03,123.91
+FRA,France,Europe,2021-06-04,114.784
+FRA,France,Europe,2021-06-05,104.48
+FRA,France,Europe,2021-06-06,97.141
+FRA,France,Europe,2021-06-07,98.841
+FRA,France,Europe,2021-06-08,90.739
+FRA,France,Europe,2021-06-09,99.651
+FRA,France,Europe,2021-06-10,75.968
+FRA,France,Europe,2021-06-11,69.458
+FRA,France,Europe,2021-06-12,63.787
+FRA,France,Europe,2021-06-13,59.104
+FRA,France,Europe,2021-06-14,58.097
+FRA,France,Europe,2021-06-15,52.223
+FRA,France,Europe,2021-06-16,46.927
+FRA,France,Europe,2021-06-17,41.977
+FRA,France,Europe,2021-06-18,40.514
+FRA,France,Europe,2021-06-19,37.664
+FRA,France,Europe,2021-06-20,35.467
+FRA,France,Europe,2021-06-21,35.04
+FRA,France,Europe,2021-06-22,32.862
+FRA,France,Europe,2021-06-23,31.31
+FRA,France,Europe,2021-06-24,31.329
+FRA,France,Europe,2021-06-25,28.794
+FRA,France,Europe,2021-06-26,27.745
+FRA,France,Europe,2021-06-27,27.242
+FRA,France,Europe,2021-06-28,27.288
+FRA,France,Europe,2021-06-29,29.788
+FRA,France,Europe,2021-06-30,27.779
+FRA,France,Europe,2021-07-01,28.864
+FRA,France,Europe,2021-07-02,30.341
+FRA,France,Europe,2021-07-03,32.198
+FRA,France,Europe,2021-07-04,34.251
+KGZ,Kirghizistan,Asia,2020-03-18,NA
+KGZ,Kirghizistan,Asia,2020-03-19,NA
+KGZ,Kirghizistan,Asia,2020-03-20,NA
+KGZ,Kirghizistan,Asia,2020-03-21,NA
+KGZ,Kirghizistan,Asia,2020-03-22,NA
+KGZ,Kirghizistan,Asia,2020-03-23,0.35
+KGZ,Kirghizistan,Asia,2020-03-24,0.92
+KGZ,Kirghizistan,Asia,2020-03-25,0.898
+KGZ,Kirghizistan,Asia,2020-03-26,0.898
+KGZ,Kirghizistan,Asia,2020-03-27,1.139
+KGZ,Kirghizistan,Asia,2020-03-28,0.963
+KGZ,Kirghizistan,Asia,2020-03-29,1.533
+KGZ,Kirghizistan,Asia,2020-03-30,1.708
+KGZ,Kirghizistan,Asia,2020-03-31,1.423
+KGZ,Kirghizistan,Asia,2020-04-01,1.467
+KGZ,Kirghizistan,Asia,2020-04-02,1.577
+KGZ,Kirghizistan,Asia,2020-04-03,1.577
+KGZ,Kirghizistan,Asia,2020-04-04,1.883
+KGZ,Kirghizistan,Asia,2020-04-05,1.379
+KGZ,Kirghizistan,Asia,2020-04-06,2.671
+KGZ,Kirghizistan,Asia,2020-04-07,2.649
+KGZ,Kirghizistan,Asia,2020-04-08,3.482
+KGZ,Kirghizistan,Asia,2020-04-09,3.591
+KGZ,Kirghizistan,Asia,2020-04-10,3.679
+KGZ,Kirghizistan,Asia,2020-04-11,4.27
+KGZ,Kirghizistan,Asia,2020-04-12,5.036
+KGZ,Kirghizistan,Asia,2020-04-13,4.445
+KGZ,Kirghizistan,Asia,2020-04-14,4.423
+KGZ,Kirghizistan,Asia,2020-04-15,3.919
+KGZ,Kirghizistan,Asia,2020-04-16,4.073
+KGZ,Kirghizistan,Asia,2020-04-17,4.182
+KGZ,Kirghizistan,Asia,2020-04-18,3.657
+KGZ,Kirghizistan,Asia,2020-04-19,3.876
+KGZ,Kirghizistan,Asia,2020-04-20,3.263
+KGZ,Kirghizistan,Asia,2020-04-21,3.503
+KGZ,Kirghizistan,Asia,2020-04-22,3.569
+KGZ,Kirghizistan,Asia,2020-04-23,3.613
+KGZ,Kirghizistan,Asia,2020-04-24,3.854
+KGZ,Kirghizistan,Asia,2020-04-25,3.482
+KGZ,Kirghizistan,Asia,2020-04-26,2.803
+KGZ,Kirghizistan,Asia,2020-04-27,2.781
+KGZ,Kirghizistan,Asia,2020-04-28,2.584
+KGZ,Kirghizistan,Asia,2020-04-29,2.562
+KGZ,Kirghizistan,Asia,2020-04-30,2.518
+KGZ,Kirghizistan,Asia,2020-05-01,1.993
+KGZ,Kirghizistan,Asia,2020-05-02,2.277
+KGZ,Kirghizistan,Asia,2020-05-03,2.474
+KGZ,Kirghizistan,Asia,2020-05-04,2.956
+KGZ,Kirghizistan,Asia,2020-05-05,2.956
+KGZ,Kirghizistan,Asia,2020-05-06,3.109
+KGZ,Kirghizistan,Asia,2020-05-07,3.263
+KGZ,Kirghizistan,Asia,2020-05-08,3.284
+KGZ,Kirghizistan,Asia,2020-05-09,3.547
+KGZ,Kirghizistan,Asia,2020-05-10,4.533
+KGZ,Kirghizistan,Asia,2020-05-11,4.073
+KGZ,Kirghizistan,Asia,2020-05-12,4.248
+KGZ,Kirghizistan,Asia,2020-05-13,3.788
+KGZ,Kirghizistan,Asia,2020-05-14,4.095
+KGZ,Kirghizistan,Asia,2020-05-15,4.489
+KGZ,Kirghizistan,Asia,2020-05-16,4.073
+KGZ,Kirghizistan,Asia,2020-05-17,2.978
+KGZ,Kirghizistan,Asia,2020-05-18,4.379
+KGZ,Kirghizistan,Asia,2020-05-19,4.511
+KGZ,Kirghizistan,Asia,2020-05-20,4.949
+KGZ,Kirghizistan,Asia,2020-05-21,5.058
+KGZ,Kirghizistan,Asia,2020-05-22,5.233
+KGZ,Kirghizistan,Asia,2020-05-23,5.43
+KGZ,Kirghizistan,Asia,2020-05-24,5.803
+KGZ,Kirghizistan,Asia,2020-05-25,4.752
+KGZ,Kirghizistan,Asia,2020-05-26,4.927
+KGZ,Kirghizistan,Asia,2020-05-27,5.474
+KGZ,Kirghizistan,Asia,2020-05-28,6.153
+KGZ,Kirghizistan,Asia,2020-05-29,6.832
+KGZ,Kirghizistan,Asia,2020-05-30,7.817
+KGZ,Kirghizistan,Asia,2020-05-31,7.554
+KGZ,Kirghizistan,Asia,2020-06-01,8.408
+KGZ,Kirghizistan,Asia,2020-06-02,8.255
+KGZ,Kirghizistan,Asia,2020-06-03,7.686
+KGZ,Kirghizistan,Asia,2020-06-04,6.678
+KGZ,Kirghizistan,Asia,2020-06-05,6.0
+KGZ,Kirghizistan,Asia,2020-06-06,5.518
+KGZ,Kirghizistan,Asia,2020-06-07,5.671
+KGZ,Kirghizistan,Asia,2020-06-08,4.708
+KGZ,Kirghizistan,Asia,2020-06-09,4.598
+KGZ,Kirghizistan,Asia,2020-06-10,4.861
+KGZ,Kirghizistan,Asia,2020-06-11,5.846
+KGZ,Kirghizistan,Asia,2020-06-12,5.036
+KGZ,Kirghizistan,Asia,2020-06-13,5.102
+KGZ,Kirghizistan,Asia,2020-06-14,6.087
+KGZ,Kirghizistan,Asia,2020-06-15,9.634
+KGZ,Kirghizistan,Asia,2020-06-16,11.102
+KGZ,Kirghizistan,Asia,2020-06-17,12.35
+KGZ,Kirghizistan,Asia,2020-06-18,10.751
+KGZ,Kirghizistan,Asia,2020-06-19,13.642
+KGZ,Kirghizistan,Asia,2020-06-20,16.948
+KGZ,Kirghizistan,Asia,2020-06-21,23.451
+KGZ,Kirghizistan,Asia,2020-06-22,19.357
+KGZ,Kirghizistan,Asia,2020-06-23,25.488
+KGZ,Kirghizistan,Asia,2020-06-24,28.4
+KGZ,Kirghizistan,Asia,2020-06-25,33.874
+KGZ,Kirghizistan,Asia,2020-06-26,36.283
+KGZ,Kirghizistan,Asia,2020-06-27,33.545
+KGZ,Kirghizistan,Asia,2020-06-28,36.37
+KGZ,Kirghizistan,Asia,2020-06-29,42.479
+KGZ,Kirghizistan,Asia,2020-06-30,38.976
+KGZ,Kirghizistan,Asia,2020-07-01,50.515
+KGZ,Kirghizistan,Asia,2020-07-02,56.121
+KGZ,Kirghizistan,Asia,2020-07-03,53.252
+KGZ,Kirghizistan,Asia,2020-07-04,56.515
+KGZ,Kirghizistan,Asia,2020-07-05,51.676
+KGZ,Kirghizistan,Asia,2020-07-06,62.296
+KGZ,Kirghizistan,Asia,2020-07-07,60.719
+KGZ,Kirghizistan,Asia,2020-07-08,56.624
+KGZ,Kirghizistan,Asia,2020-07-09,56.734
+KGZ,Kirghizistan,Asia,2020-07-10,66.39
+KGZ,Kirghizistan,Asia,2020-07-11,72.609
+KGZ,Kirghizistan,Asia,2020-07-12,81.893
+KGZ,Kirghizistan,Asia,2020-07-13,72.324
+KGZ,Kirghizistan,Asia,2020-07-14,69.303
+KGZ,Kirghizistan,Asia,2020-07-15,75.215
+KGZ,Kirghizistan,Asia,2020-07-16,68.755
+KGZ,Kirghizistan,Asia,2020-07-17,69.872
+KGZ,Kirghizistan,Asia,2020-07-18,310.843
+KGZ,Kirghizistan,Asia,2020-07-19,350.914
+KGZ,Kirghizistan,Asia,2020-07-20,343.754
+KGZ,Kirghizistan,Asia,2020-07-21,368.015
+KGZ,Kirghizistan,Asia,2020-07-22,365.628
+KGZ,Kirghizistan,Asia,2020-07-23,410.538
+KGZ,Kirghizistan,Asia,2020-07-24,397.334
+KGZ,Kirghizistan,Asia,2020-07-25,164.618
+KGZ,Kirghizistan,Asia,2020-07-26,124.153
+KGZ,Kirghizistan,Asia,2020-07-27,134.729
+KGZ,Kirghizistan,Asia,2020-07-28,122.467
+KGZ,Kirghizistan,Asia,2020-07-29,122.883
+KGZ,Kirghizistan,Asia,2020-07-30,87.061
+KGZ,Kirghizistan,Asia,2020-07-31,99.804
+KGZ,Kirghizistan,Asia,2020-08-01,91.418
+KGZ,Kirghizistan,Asia,2020-08-02,85.528
+KGZ,Kirghizistan,Asia,2020-08-03,83.929
+KGZ,Kirghizistan,Asia,2020-08-04,80.951
+KGZ,Kirghizistan,Asia,2020-08-05,77.032
+KGZ,Kirghizistan,Asia,2020-08-06,75.236
+KGZ,Kirghizistan,Asia,2020-08-07,73.507
+KGZ,Kirghizistan,Asia,2020-08-08,71.645
+KGZ,Kirghizistan,Asia,2020-08-09,70.069
+KGZ,Kirghizistan,Asia,2020-08-10,64.726
+KGZ,Kirghizistan,Asia,2020-08-11,63.806
+KGZ,Kirghizistan,Asia,2020-08-12,58.004
+KGZ,Kirghizistan,Asia,2020-08-13,52.771
+KGZ,Kirghizistan,Asia,2020-08-14,48.413
+KGZ,Kirghizistan,Asia,2020-08-15,45.413
+KGZ,Kirghizistan,Asia,2020-08-16,42.414
+KGZ,Kirghizistan,Asia,2020-08-17,41.735
+KGZ,Kirghizistan,Asia,2020-08-18,37.027
+KGZ,Kirghizistan,Asia,2020-08-19,34.29
+KGZ,Kirghizistan,Asia,2020-08-20,31.487
+KGZ,Kirghizistan,Asia,2020-08-21,29.122
+KGZ,Kirghizistan,Asia,2020-08-22,27.239
+KGZ,Kirghizistan,Asia,2020-08-23,25.553
+KGZ,Kirghizistan,Asia,2020-08-24,24.853
+KGZ,Kirghizistan,Asia,2020-08-25,24.064
+KGZ,Kirghizistan,Asia,2020-08-26,22.619
+KGZ,Kirghizistan,Asia,2020-08-27,20.845
+KGZ,Kirghizistan,Asia,2020-08-28,19.357
+KGZ,Kirghizistan,Asia,2020-08-29,18.021
+KGZ,Kirghizistan,Asia,2020-08-30,17.452
+KGZ,Kirghizistan,Asia,2020-08-31,16.904
+KGZ,Kirghizistan,Asia,2020-09-01,15.612
+KGZ,Kirghizistan,Asia,2020-09-02,14.846
+KGZ,Kirghizistan,Asia,2020-09-03,14.802
+KGZ,Kirghizistan,Asia,2020-09-04,13.401
+KGZ,Kirghizistan,Asia,2020-09-05,12.722
+KGZ,Kirghizistan,Asia,2020-09-06,12.766
+KGZ,Kirghizistan,Asia,2020-09-07,12.262
+KGZ,Kirghizistan,Asia,2020-09-08,11.583
+KGZ,Kirghizistan,Asia,2020-09-09,12.634
+KGZ,Kirghizistan,Asia,2020-09-10,12.021
+KGZ,Kirghizistan,Asia,2020-09-11,12.306
+KGZ,Kirghizistan,Asia,2020-09-12,11.715
+KGZ,Kirghizistan,Asia,2020-09-13,10.467
+KGZ,Kirghizistan,Asia,2020-09-14,10.291
+KGZ,Kirghizistan,Asia,2020-09-15,11.211
+KGZ,Kirghizistan,Asia,2020-09-16,10.051
+KGZ,Kirghizistan,Asia,2020-09-17,10.269
+KGZ,Kirghizistan,Asia,2020-09-18,10.576
+KGZ,Kirghizistan,Asia,2020-09-19,11.102
+KGZ,Kirghizistan,Asia,2020-09-20,9.941
+KGZ,Kirghizistan,Asia,2020-09-21,11.89
+KGZ,Kirghizistan,Asia,2020-09-22,11.89
+KGZ,Kirghizistan,Asia,2020-09-23,12.218
+KGZ,Kirghizistan,Asia,2020-09-24,13.226
+KGZ,Kirghizistan,Asia,2020-09-25,15.065
+KGZ,Kirghizistan,Asia,2020-09-26,16.532
+KGZ,Kirghizistan,Asia,2020-09-27,20.057
+KGZ,Kirghizistan,Asia,2020-09-28,19.357
+KGZ,Kirghizistan,Asia,2020-09-29,21.459
+KGZ,Kirghizistan,Asia,2020-09-30,22.75
+KGZ,Kirghizistan,Asia,2020-10-01,23.736
+KGZ,Kirghizistan,Asia,2020-10-02,24.612
+KGZ,Kirghizistan,Asia,2020-10-03,23.955
+KGZ,Kirghizistan,Asia,2020-10-04,25.772
+KGZ,Kirghizistan,Asia,2020-10-05,28.028
+KGZ,Kirghizistan,Asia,2020-10-06,27.962
+KGZ,Kirghizistan,Asia,2020-10-07,31.268
+KGZ,Kirghizistan,Asia,2020-10-08,32.867
+KGZ,Kirghizistan,Asia,2020-10-09,34.18
+KGZ,Kirghizistan,Asia,2020-10-10,38.1
+KGZ,Kirghizistan,Asia,2020-10-11,39.458
+KGZ,Kirghizistan,Asia,2020-10-12,41.45
+KGZ,Kirghizistan,Asia,2020-10-13,45.37
+KGZ,Kirghizistan,Asia,2020-10-14,46.07
+KGZ,Kirghizistan,Asia,2020-10-15,49.202
+KGZ,Kirghizistan,Asia,2020-10-16,52.617
+KGZ,Kirghizistan,Asia,2020-10-17,56.186
+KGZ,Kirghizistan,Asia,2020-10-18,61.617
+KGZ,Kirghizistan,Asia,2020-10-19,65.646
+KGZ,Kirghizistan,Asia,2020-10-20,66.544
+KGZ,Kirghizistan,Asia,2020-10-21,71.339
+KGZ,Kirghizistan,Asia,2020-10-22,74.82
+KGZ,Kirghizistan,Asia,2020-10-23,78.127
+KGZ,Kirghizistan,Asia,2020-10-24,80.01
+KGZ,Kirghizistan,Asia,2020-10-25,81.149
+KGZ,Kirghizistan,Asia,2020-10-26,79.791
+KGZ,Kirghizistan,Asia,2020-10-27,83.82
+KGZ,Kirghizistan,Asia,2020-10-28,83.579
+KGZ,Kirghizistan,Asia,2020-10-29,83.032
+KGZ,Kirghizistan,Asia,2020-10-30,83.338
+KGZ,Kirghizistan,Asia,2020-10-31,81.762
+KGZ,Kirghizistan,Asia,2020-11-01,68.492
+KGZ,Kirghizistan,Asia,2020-11-02,81.214
+KGZ,Kirghizistan,Asia,2020-11-03,88.374
+KGZ,Kirghizistan,Asia,2020-11-04,88.309
+KGZ,Kirghizistan,Asia,2020-11-05,76.879
+KGZ,Kirghizistan,Asia,2020-11-06,73.441
+KGZ,Kirghizistan,Asia,2020-11-07,75.018
+KGZ,Kirghizistan,Asia,2020-11-08,86.294
+KGZ,Kirghizistan,Asia,2020-11-09,76.879
+KGZ,Kirghizistan,Asia,2020-11-10,78.521
+KGZ,Kirghizistan,Asia,2020-11-11,66.806
+KGZ,Kirghizistan,Asia,2020-11-12,78.346
+KGZ,Kirghizistan,Asia,2020-11-13,81.149
+KGZ,Kirghizistan,Asia,2020-11-14,79.9
+KGZ,Kirghizistan,Asia,2020-11-15,91.177
+KGZ,Kirghizistan,Asia,2020-11-16,78.674
+KGZ,Kirghizistan,Asia,2020-11-17,68.076
+KGZ,Kirghizistan,Asia,2020-11-18,77.382
+KGZ,Kirghizistan,Asia,2020-11-19,75.083
+KGZ,Kirghizistan,Asia,2020-11-20,71.12
+KGZ,Kirghizistan,Asia,2020-11-21,69.981
+KGZ,Kirghizistan,Asia,2020-11-22,56.887
+KGZ,Kirghizistan,Asia,2020-11-23,63.544
+KGZ,Kirghizistan,Asia,2020-11-24,63.434
+KGZ,Kirghizistan,Asia,2020-11-25,71.755
+KGZ,Kirghizistan,Asia,2020-11-26,70.77
+KGZ,Kirghizistan,Asia,2020-11-27,62.318
+KGZ,Kirghizistan,Asia,2020-11-28,61.792
+KGZ,Kirghizistan,Asia,2020-11-29,70.638
+KGZ,Kirghizistan,Asia,2020-11-30,72.105
+KGZ,Kirghizistan,Asia,2020-12-01,61.573
+KGZ,Kirghizistan,Asia,2020-12-02,51.282
+KGZ,Kirghizistan,Asia,2020-12-03,52.223
+KGZ,Kirghizistan,Asia,2020-12-04,61.858
+KGZ,Kirghizistan,Asia,2020-12-05,61.376
+KGZ,Kirghizistan,Asia,2020-12-06,56.668
+KGZ,Kirghizistan,Asia,2020-12-07,48.545
+KGZ,Kirghizistan,Asia,2020-12-08,55.004
+KGZ,Kirghizistan,Asia,2020-12-09,54.719
+KGZ,Kirghizistan,Asia,2020-12-10,53.822
+KGZ,Kirghizistan,Asia,2020-12-11,58.814
+KGZ,Kirghizistan,Asia,2020-12-12,50.034
+KGZ,Kirghizistan,Asia,2020-12-13,42.939
+KGZ,Kirghizistan,Asia,2020-12-14,49.902
+KGZ,Kirghizistan,Asia,2020-12-15,53.887
+KGZ,Kirghizistan,Asia,2020-12-16,46.837
+KGZ,Kirghizistan,Asia,2020-12-17,44.319
+KGZ,Kirghizistan,Asia,2020-12-18,35.472
+KGZ,Kirghizistan,Asia,2020-12-19,40.552
+KGZ,Kirghizistan,Asia,2020-12-20,41.56
+KGZ,Kirghizistan,Asia,2020-12-21,34.597
+KGZ,Kirghizistan,Asia,2020-12-22,27.984
+KGZ,Kirghizistan,Asia,2020-12-23,33.02
+KGZ,Kirghizistan,Asia,2020-12-24,31.312
+KGZ,Kirghizistan,Asia,2020-12-25,29.473
+KGZ,Kirghizistan,Asia,2020-12-26,27.83
+KGZ,Kirghizistan,Asia,2020-12-27,24.502
+KGZ,Kirghizistan,Asia,2020-12-28,28.049
+KGZ,Kirghizistan,Asia,2020-12-29,26.823
+KGZ,Kirghizistan,Asia,2020-12-30,25.925
+KGZ,Kirghizistan,Asia,2020-12-31,26.035
+KGZ,Kirghizistan,Asia,2021-01-01,24.765
+KGZ,Kirghizistan,Asia,2021-01-02,22.597
+KGZ,Kirghizistan,Asia,2021-01-03,22.225
+KGZ,Kirghizistan,Asia,2021-01-04,18.678
+KGZ,Kirghizistan,Asia,2021-01-05,18.787
+KGZ,Kirghizistan,Asia,2021-01-06,17.802
+KGZ,Kirghizistan,Asia,2021-01-07,17.342
+KGZ,Kirghizistan,Asia,2021-01-08,18.284
+KGZ,Kirghizistan,Asia,2021-01-09,20.232
+KGZ,Kirghizistan,Asia,2021-01-10,19.378
+KGZ,Kirghizistan,Asia,2021-01-11,21.721
+KGZ,Kirghizistan,Asia,2021-01-12,23.539
+KGZ,Kirghizistan,Asia,2021-01-13,20.386
+KGZ,Kirghizistan,Asia,2021-01-14,19.641
+KGZ,Kirghizistan,Asia,2021-01-15,21.787
+KGZ,Kirghizistan,Asia,2021-01-16,21.262
+KGZ,Kirghizistan,Asia,2021-01-17,19.816
+KGZ,Kirghizistan,Asia,2021-01-18,17.473
+KGZ,Kirghizistan,Asia,2021-01-19,18.459
+KGZ,Kirghizistan,Asia,2021-01-20,18.459
+KGZ,Kirghizistan,Asia,2021-01-21,18.875
+KGZ,Kirghizistan,Asia,2021-01-22,17.736
+KGZ,Kirghizistan,Asia,2021-01-23,15.043
+KGZ,Kirghizistan,Asia,2021-01-24,15.809
+KGZ,Kirghizistan,Asia,2021-01-25,19.488
+KGZ,Kirghizistan,Asia,2021-01-26,16.313
+KGZ,Kirghizistan,Asia,2021-01-27,19.116
+KGZ,Kirghizistan,Asia,2021-01-28,15.722
+KGZ,Kirghizistan,Asia,2021-01-29,12.722
+KGZ,Kirghizistan,Asia,2021-01-30,16.05
+KGZ,Kirghizistan,Asia,2021-01-31,15.065
+KGZ,Kirghizistan,Asia,2021-02-01,11.386
+KGZ,Kirghizistan,Asia,2021-02-02,10.313
+KGZ,Kirghizistan,Asia,2021-02-03,11.583
+KGZ,Kirghizistan,Asia,2021-02-04,13.51
+KGZ,Kirghizistan,Asia,2021-02-05,11.89
+KGZ,Kirghizistan,Asia,2021-02-06,10.138
+KGZ,Kirghizistan,Asia,2021-02-07,10.576
+KGZ,Kirghizistan,Asia,2021-02-08,11.496
+KGZ,Kirghizistan,Asia,2021-02-09,11.496
+KGZ,Kirghizistan,Asia,2021-02-10,9.218
+KGZ,Kirghizistan,Asia,2021-02-11,8.934
+KGZ,Kirghizistan,Asia,2021-02-12,10.467
+KGZ,Kirghizistan,Asia,2021-02-13,9.832
+KGZ,Kirghizistan,Asia,2021-02-14,8.846
+KGZ,Kirghizistan,Asia,2021-02-15,8.824
+KGZ,Kirghizistan,Asia,2021-02-16,8.605
+KGZ,Kirghizistan,Asia,2021-02-17,9.547
+KGZ,Kirghizistan,Asia,2021-02-18,7.905
+KGZ,Kirghizistan,Asia,2021-02-19,9.481
+KGZ,Kirghizistan,Asia,2021-02-20,8.54
+KGZ,Kirghizistan,Asia,2021-02-21,9.941
+KGZ,Kirghizistan,Asia,2021-02-22,9.043
+KGZ,Kirghizistan,Asia,2021-02-23,9.569
+KGZ,Kirghizistan,Asia,2021-02-24,7.357
+KGZ,Kirghizistan,Asia,2021-02-25,8.802
+KGZ,Kirghizistan,Asia,2021-02-26,6.81
+KGZ,Kirghizistan,Asia,2021-02-27,7.751
+KGZ,Kirghizistan,Asia,2021-02-28,7.051
+KGZ,Kirghizistan,Asia,2021-03-01,8.299
+KGZ,Kirghizistan,Asia,2021-03-02,7.773
+KGZ,Kirghizistan,Asia,2021-03-03,8.43
+KGZ,Kirghizistan,Asia,2021-03-04,6.985
+KGZ,Kirghizistan,Asia,2021-03-05,6.766
+KGZ,Kirghizistan,Asia,2021-03-06,7.029
+KGZ,Kirghizistan,Asia,2021-03-07,6.547
+KGZ,Kirghizistan,Asia,2021-03-08,6.022
+KGZ,Kirghizistan,Asia,2021-03-09,6.219
+KGZ,Kirghizistan,Asia,2021-03-10,5.036
+KGZ,Kirghizistan,Asia,2021-03-11,7.554
+KGZ,Kirghizistan,Asia,2021-03-12,8.036
+KGZ,Kirghizistan,Asia,2021-03-13,6.832
+KGZ,Kirghizistan,Asia,2021-03-14,6.569
+KGZ,Kirghizistan,Asia,2021-03-15,7.313
+KGZ,Kirghizistan,Asia,2021-03-16,8.868
+KGZ,Kirghizistan,Asia,2021-03-17,11.014
+KGZ,Kirghizistan,Asia,2021-03-18,8.496
+KGZ,Kirghizistan,Asia,2021-03-19,9.218
+KGZ,Kirghizistan,Asia,2021-03-20,12.503
+KGZ,Kirghizistan,Asia,2021-03-21,11.802
+KGZ,Kirghizistan,Asia,2021-03-22,11.934
+KGZ,Kirghizistan,Asia,2021-03-23,13.291
+KGZ,Kirghizistan,Asia,2021-03-24,13.466
+KGZ,Kirghizistan,Asia,2021-03-25,13.466
+KGZ,Kirghizistan,Asia,2021-03-26,13.554
+KGZ,Kirghizistan,Asia,2021-03-27,12.196
+KGZ,Kirghizistan,Asia,2021-03-28,15.393
+KGZ,Kirghizistan,Asia,2021-03-29,15.349
+KGZ,Kirghizistan,Asia,2021-03-30,13.663
+KGZ,Kirghizistan,Asia,2021-03-31,17.079
+KGZ,Kirghizistan,Asia,2021-04-01,17.079
+KGZ,Kirghizistan,Asia,2021-04-02,18.437
+KGZ,Kirghizistan,Asia,2021-04-03,19.619
+KGZ,Kirghizistan,Asia,2021-04-04,20.189
+KGZ,Kirghizistan,Asia,2021-04-05,21.678
+KGZ,Kirghizistan,Asia,2021-04-06,21.918
+KGZ,Kirghizistan,Asia,2021-04-07,19.707
+KGZ,Kirghizistan,Asia,2021-04-08,24.568
+KGZ,Kirghizistan,Asia,2021-04-09,24.327
+KGZ,Kirghizistan,Asia,2021-04-10,25.772
+KGZ,Kirghizistan,Asia,2021-04-11,26.56
+KGZ,Kirghizistan,Asia,2021-04-12,26.692
+KGZ,Kirghizistan,Asia,2021-04-13,28.947
+KGZ,Kirghizistan,Asia,2021-04-14,30.677
+KGZ,Kirghizistan,Asia,2021-04-15,32.494
+KGZ,Kirghizistan,Asia,2021-04-16,34.224
+KGZ,Kirghizistan,Asia,2021-04-17,35.472
+KGZ,Kirghizistan,Asia,2021-04-18,36.261
+KGZ,Kirghizistan,Asia,2021-04-19,37.728
+KGZ,Kirghizistan,Asia,2021-04-20,37.684
+KGZ,Kirghizistan,Asia,2021-04-21,39.129
+KGZ,Kirghizistan,Asia,2021-04-22,40.771
+KGZ,Kirghizistan,Asia,2021-04-23,41.691
+KGZ,Kirghizistan,Asia,2021-04-24,43.005
+KGZ,Kirghizistan,Asia,2021-04-25,42.654
+KGZ,Kirghizistan,Asia,2021-04-26,42.37
+KGZ,Kirghizistan,Asia,2021-04-27,42.852
+KGZ,Kirghizistan,Asia,2021-04-28,43.202
+KGZ,Kirghizistan,Asia,2021-04-29,42.435
+KGZ,Kirghizistan,Asia,2021-04-30,43.727
+KGZ,Kirghizistan,Asia,2021-05-01,47.056
+KGZ,Kirghizistan,Asia,2021-05-02,48.807
+KGZ,Kirghizistan,Asia,2021-05-03,50.515
+KGZ,Kirghizistan,Asia,2021-05-04,50.012
+KGZ,Kirghizistan,Asia,2021-05-05,51.654
+KGZ,Kirghizistan,Asia,2021-05-06,51.107
+KGZ,Kirghizistan,Asia,2021-05-07,52.289
+KGZ,Kirghizistan,Asia,2021-05-08,50.953
+KGZ,Kirghizistan,Asia,2021-05-09,51.238
+KGZ,Kirghizistan,Asia,2021-05-10,50.734
+KGZ,Kirghizistan,Asia,2021-05-11,54.128
+KGZ,Kirghizistan,Asia,2021-05-12,51.632
+KGZ,Kirghizistan,Asia,2021-05-13,51.829
+KGZ,Kirghizistan,Asia,2021-05-14,47.778
+KGZ,Kirghizistan,Asia,2021-05-15,47.515
+KGZ,Kirghizistan,Asia,2021-05-16,45.392
+KGZ,Kirghizistan,Asia,2021-05-17,45.501
+KGZ,Kirghizistan,Asia,2021-05-18,42.326
+KGZ,Kirghizistan,Asia,2021-05-19,41.669
+KGZ,Kirghizistan,Asia,2021-05-20,42.37
+KGZ,Kirghizistan,Asia,2021-05-21,44.516
+KGZ,Kirghizistan,Asia,2021-05-22,42.414
+KGZ,Kirghizistan,Asia,2021-05-23,44.625
+KGZ,Kirghizistan,Asia,2021-05-24,43.136
+KGZ,Kirghizistan,Asia,2021-05-25,44.538
+KGZ,Kirghizistan,Asia,2021-05-26,43.53
+KGZ,Kirghizistan,Asia,2021-05-27,43.859
+KGZ,Kirghizistan,Asia,2021-05-28,43.53
+KGZ,Kirghizistan,Asia,2021-05-29,44.581
+KGZ,Kirghizistan,Asia,2021-05-30,44.757
+KGZ,Kirghizistan,Asia,2021-05-31,44.384
+KGZ,Kirghizistan,Asia,2021-06-01,46.224
+KGZ,Kirghizistan,Asia,2021-06-02,49.53
+KGZ,Kirghizistan,Asia,2021-06-03,49.42
+KGZ,Kirghizistan,Asia,2021-06-04,51.61
+KGZ,Kirghizistan,Asia,2021-06-05,52.858
+KGZ,Kirghizistan,Asia,2021-06-06,52.946
+KGZ,Kirghizistan,Asia,2021-06-07,57.062
+KGZ,Kirghizistan,Asia,2021-06-08,56.997
+KGZ,Kirghizistan,Asia,2021-06-09,59.208
+KGZ,Kirghizistan,Asia,2021-06-10,61.901
+KGZ,Kirghizistan,Asia,2021-06-11,65.033
+KGZ,Kirghizistan,Asia,2021-06-12,69.543
+KGZ,Kirghizistan,Asia,2021-06-13,74.383
+KGZ,Kirghizistan,Asia,2021-06-14,76.506
+KGZ,Kirghizistan,Asia,2021-06-15,79.463
+KGZ,Kirghizistan,Asia,2021-06-16,83.579
+KGZ,Kirghizistan,Asia,2021-06-17,89.995
+KGZ,Kirghizistan,Asia,2021-06-18,92.776
+KGZ,Kirghizistan,Asia,2021-06-19,98.272
+KGZ,Kirghizistan,Asia,2021-06-20,102.038
+KGZ,Kirghizistan,Asia,2021-06-21,104.797
+KGZ,Kirghizistan,Asia,2021-06-22,113.928
+KGZ,Kirghizistan,Asia,2021-06-23,115.92
+KGZ,Kirghizistan,Asia,2021-06-24,116.687
+KGZ,Kirghizistan,Asia,2021-06-25,121.548
+KGZ,Kirghizistan,Asia,2021-06-26,122.029
+KGZ,Kirghizistan,Asia,2021-06-27,127.766
+KGZ,Kirghizistan,Asia,2021-06-28,138.627
+KGZ,Kirghizistan,Asia,2021-06-29,142.152
+KGZ,Kirghizistan,Asia,2021-06-30,169.019
+KGZ,Kirghizistan,Asia,2021-07-01,181.5
+KGZ,Kirghizistan,Asia,2021-07-02,194.857
+KGZ,Kirghizistan,Asia,2021-07-03,204.93
+KGZ,Kirghizistan,Asia,2021-07-04,213.885

@@ -1,272 +1,235 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
     <title>Dashboard Covid-19</title>
+
+    <!-- Chargement des librairies  -->
+    <script src="d3.v5.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js" defer></script>
+    <script src="https://unpkg.com/topojson@3" defer></script>
+    <script src="js/device_detector.js" defer></script>
+
+    <script src="js/common-graph.js" defer></script>
+
+    <!-- Scripts - Pandémie - France - National  -->
+    <script src="js/fra-nat-graph01.js" defer></script>
+    <script src="js/fra-nat-graph02.js" defer></script>
+    <script src="js/fra-nat-graph03.js" defer></script>
+    <script src="js/fra-nat-graph04.js" defer></script>
+    <script src="js/fra-nat-graph05.js" defer></script>
+    <script src="js/fra-nat-graph06.js" defer></script>
+    <!-- Scripts - Pandémie - France - Régions  -->
+    <script src="js/fra-reg-graph01.js" defer></script>
+    <script src="js/fra-reg-graph02.js" defer></script>
+    <script src="js/fra-reg-graph03.js" defer></script>
+    <script src="js/fra-reg-graph04.js" defer></script>
+    <!-- Scripts - Vaccination - France  -->
+    <script src="js/vac-fra-graph01.js" defer></script>
+    <script src="js/vac-fra-graph02.js" defer></script>
+    <script src="js/vac-fra-graph03.js" defer></script>
+    <script src="js/vac-fra-graph04.js" defer></script>
+    <script src="js/vac-fra-graph05.js" defer></script>
+    <script src="js/vac-fra-graph06.js" defer></script>
+    <!-- Scripts - Vaccination - Inter  -->
+    <script src="js/vac-inter-graph01.js" defer></script>
+    <script src="js/vac-inter-graph02.js" defer></script>
+    <script src="js/vac-inter-graph03.js" defer></script>
+
 </head>
-
 <body>
+    <article class="page-content dashboard dshbrd">
+        <!-- TITRE DE LA PAGE -->
+        <h1 class="dshbrd-title"><span class="section-logo logo">infographie</span> Covid-19 : morts, hospitalisations, vaccins... Suivez l’évolution de l'épidémie en France et dans le monde</h1>
 
-    <!-- TITRE DE LA PAGE -->
-    <div class='dashboard-title'>
-        <h1 class='dashboard-title-content'>INFOGRAPHIES. Covid-19 : morts, hospitalisations, vaccins... Suivez
-            l’évolution de l'épidémie en France et
-            dans le monde</h1>
-        <p class='dashboard-title-content'>Pour vous donner jour après jour une vision complète de la progression de la
-            pandémie liée au coronavirus en France et dans le monde, nous mettons à votre disposition une série de
-            cartes et de graphiques actualisés quotidiennement.</p>
-    </div>
-    <!-- -------------------------------------------------------------------------------------- -->
+        <div class="dshbrd-chapo">Pour vous donner jour après jour une vision complète de la progression de la pandémie liée au coronavirus en France et dans le monde, nous mettons à votre disposition une série de cartes et de graphiques actualisés quotidiennement.</div>
 
-    <!-- LA PANDÉMIE EN FRANCE -->
-    <hr>
-    <h2>La pandémie en France</h2>
-    <!-- Situation au niveau national - VERBATIM -->
-    <hr>
-    <h3>La situation au niveau national</h3>
-    <p class='sub-section-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies faucibus
-        tempus.
-        Ut sit amet erat lectus. Suspendisse eleifend ipsum nulla, eget ornare lacus commodo et.
-        Aenean dignissim sem.</p>
+        <!-- -------------------------------------------------------------------------------------- -->
 
-    <!-- Situation au niveau national - GRAPHIQUES -->
-    <div class='container'>
-        <div class='row-container'>
-            <div class='graph-box' id='fra-nat-graph01'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-            <div class='graph-box' id='fra-nat-graph02'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-        </div>
-        <div class='row-container'>
-            <div class='graph-box' id='fra-nat-graph03'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-            <div class='graph-box' id='fra-nat-graph04'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-        </div>
-        <div class='row-container'>
-            <div class='graph-box' id='fra-nat-graph05'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-            <div class='graph-box' id='fra-nat-graph06'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-        </div>
-    </div>
+        <!-- LA PANDÉMIE EN FRANCE -->
+        <h2 class="dshbrd-subtitle">La pandémie en France</h2>
 
-    <!-- Situation au niveau régional - VERBATIM -->
-    <hr>
-    <h3>La situation dans les régions</h3>
-    <p class='sub-section-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies faucibus
-        tempus.
-        Ut sit amet erat lectus. Suspendisse eleifend ipsum nulla, eget ornare lacus commodo et.
-        Aenean dignissim sem.</p>
+        <section class="dshbrd-section sctn section-national">
 
-    <!-- Situation au niveau régional - GRAPHIQUES -->
+            <!-- Situation au niveau national - VERBATIM -->
+            <h3 class="sctn-title">La situation au niveau national</h3>
 
-    <div class='container'>
-        <div class='row-container'>
-            <div class='graph-box' id='fra-reg-graph01'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-            <div class='graph-box' id='fra-reg-graph02'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-        </div>
-        <div class='row-container'>
-            <div class='graph-box' id='fra-reg-graph03'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-            <div class='graph-box' id='fra-reg-graph04'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-        </div>
-    </div>
+            <div class="sctn-chapo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies faucibus tempus. Ut sit amet erat lectus. Suspendisse eleifend ipsum nulla, eget ornare lacus commodo et. Aenean dignissim sem.</div>
 
-    <!-- -------------------------------------------------------------------------------------- -->
+            <!-- Situation au niveau national - GRAPHIQUES -->
+            <div class="sctn-container cntnr">
+                <div class="cntnr-graph grph" id="fra-nat-graph01">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
 
-    <!-- La vaccination  -->
-    <hr>
-    <h2>Vaccination contre le Covid-19</h2>
-    <!-- Etat de la vaccination en France - VERBATIM -->
-    <hr>
-    <h3>Etat de la campagne vaccinale en France</h3>
-    <p class='sub-section-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies faucibus
-        tempus.
-        Ut sit amet erat lectus. Suspendisse eleifend ipsum nulla, eget ornare lacus commodo et.
-        Aenean dignissim sem.</p>
+                <div class="cntnr-graph grph" id="fra-nat-graph02">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
 
-    <!-- Etat de la vaccination en France - GRAPHIQUES -->
-    <div class='container'>
-        <div class='row-container'>
-            <div class='graph-box' id='vac-fra-graph01'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-            <div class='graph-box' id='vac-fra-graph02'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-        </div>
-        <div class='row-container'>
-            <div class='graph-box' id='vac-fra-graph03'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-            <div class='graph-box' id='vac-fra-graph04'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-        </div>
-        <div class='row-container'>
-            <div class='graph-box' id='vac-fra-graph05'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-            <div class='graph-box' id='vac-fra-graph06'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-        </div>
-        <div class='row-container'>
-            <div class='graph-box' id='vac-fra-graph07'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-            <div class='graph-box' id='vac-fra-graph08'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-        </div>
-        <div class='row-container'>
-            <div class='graph-box' id='vac-fra-graph09'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-            <div class='graph-box' id='vac-fra-graph10'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-        </div>
-    </div>
+                <div class="cntnr-graph grph" id="fra-nat-graph03">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
 
-    <hr>
-    <h3>Etat de la vaccination en Europe et dans le reste du monde</h3>
-    <!-- Etat de la vaccination en Europe et dans le reste du monde - VERBATIM -->
-    <p class='sub-section-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies faucibus
-        tempus.
-        Ut sit amet erat lectus. Suspendisse eleifend ipsum nulla, eget ornare lacus commodo et.
-        Aenean dignissim sem.</p>
-    
-    <!-- Etat de la vaccination en Europe et dans le reste du monde - GRAPHIQUES -->
-    <div class='container'>
-        <div class='row-container'>
-            <div class='graph-box' id='vac-inter-graph01'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-            <div class='graph-box' id='vac-inter-graph02'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-        </div>
-        <div class='row-container'>
-            <div class='graph-box' id='vac-inter-graph03'>
-                <h4 class='graph-title'></h4>
-                <h4 class='graph-subtitle'></h4>
-                <div class="graph"></div>
-                <h5 class="graph-caption"></h5>
-            </div>
-        </div>
-    </div>
+                <div class="cntnr-graph grph" id="fra-nat-graph04">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
 
+                <div class="cntnr-graph grph" id="fra-nat-graph05">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
 
+                <div class="cntnr-graph grph" id="fra-nat-graph06">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Situation au niveau régional - VERBATIM -->
+        <section class="dshbrd-section sctn section-regional">
+            <h3 class="sctn-title">La situation au niveau régional</h3>
+
+            <div class="sctn-chapo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies faucibus tempus. Ut sit amet erat lectus. Suspendisse eleifend ipsum nulla, eget ornare lacus commodo et. Aenean dignissim sem.</div>
+
+            <!-- Situation au niveau régional - GRAPHIQUES -->
+            <div class="sctn-container cntnr">
+                <div class="cntnr-graph grph" id="fra-reg-graph01">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="cntnr-graph grph" id="fra-reg-graph02">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="cntnr-graph grph" id="fra-reg-graph03">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="cntnr-graph grph" id="fra-reg-graph04">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <!-- La vaccination  -->
+        <h2 class="dshbrd-subtitle">Vaccination contre le Covid-19</h2>
+
+        <!-- Etat de la vaccination en France - VERBATIM -->
+        <section class="dshbrd-section sctn section-vaccin">
+            <h3 class="sctn-title">Etat de la campagne vaccinale en France</h3>
+
+            <div class="sctn-chapo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies faucibus tempus. Ut sit amet erat lectus. Suspendisse eleifend ipsum nulla, eget ornare lacus commodo et. Aenean dignissim sem.</div>
+
+            <!-- Etat de la vaccination en France - GRAPHIQUES -->
+            <div class="sctn-container cntnr">
+                <div class="cntnr-graph grph" id="vac-fra-graph01">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="cntnr-graph grph" id="vac-fra-graph02">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="cntnr-graph grph" id="vac-fra-graph03">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="cntnr-graph grph" id="vac-fra-graph04">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="cntnr-graph grph" id="vac-fra-graph05">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="cntnr-graph grph" id="vac-fra-graph06">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Etat de la vaccination en Europe et dans le reste du monde - VERBATIM -->
+        <section class="dshbrd-section sctn section-vaccin">
+            <h3 class="sctn-title">Etat de la vaccination en Europe et dans le reste du monde</h3>
+
+            <div class="sctn-chapo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ultricies faucibus tempus. Ut sit amet erat lectus. Suspendisse eleifend ipsum nulla, eget ornare lacus commodo et. Aenean dignissim sem.</div>
+            
+            <!-- Etat de la vaccination en Europe et dans le reste du monde - GRAPHIQUES -->
+            <div class="sctn-container cntnr">
+                <div class="cntnr-graph grph dbl-width" id="vac-inter-graph01">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="cntnr-graph grph" id="vac-inter-graph02">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+
+                <div class="cntnr-graph grph" id="vac-inter-graph03">
+                    <h4 class="grph-title"></h4>
+                    <figure class="grph-content">
+                        <figcaption class="grph-caption"></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </article>
 </body>
-
-<!-- Chargement des librairies  -->
-<script src="d3.v5.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
-<script src="https://unpkg.com/topojson@3"></script>
-<script src="js/device_detector.js"></script>
-<!-- Scripts - Pandémie - France - National  -->
-<script src="js/fra-nat-graph01.js"></script>
-<script src="js/fra-nat-graph02.js"></script>
-<script src="js/fra-nat-graph03.js"></script>
-<script src="js/fra-nat-graph04.js"></script>
-<script src="js/fra-nat-graph05.js"></script>
-<script src="js/fra-nat-graph06.js"></script>
-<!-- Scripts - Pandémie - France - Régions  -->
-<script src="js/fra-reg-graph01.js"></script>
-<script src="js/fra-reg-graph02.js"></script>
-<script src="js/fra-reg-graph03.js"></script>
-<script src="js/fra-reg-graph04.js"></script>
-<!-- Scripts - Vaccination - France  -->
-<script src="js/vac-fra-graph01.js"></script>
-<script src="js/vac-fra-graph02.js"></script>
-<script src="js/vac-fra-graph03.js"></script>
-<script src="js/vac-fra-graph04.js"></script>
-<script src="js/vac-fra-graph05.js"></script>
-<script src="js/vac-fra-graph06.js"></script>
-
 </html>
