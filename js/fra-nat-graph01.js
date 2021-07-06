@@ -4,13 +4,13 @@ d3.csv('data/spf_fra_data.csv').then(data => {
     title: `Evolution du nombre de contaminations au Covid-19`,
     subtitle: `depuis le [[startDate]]`,
     caption: `Source. <a href="https://www.data.gouv.fr/fr/organizations/sante-publique-france/" target="_blank">Santé publique France</a>`,
-    startDate: {
+    startDate: { // définition de la date (si nécessaire)
       day: 1,
       month: 9,
       year: 2020,
     },
-    type: 'landscape',
-    device: window.screenDevice,
+    type: 'landscape', // définition du format du graphe
+    device: window.screenDevice, // récupération de la largeur de l'écran
   }
 
   // Traitement des données
@@ -32,6 +32,7 @@ d3.csv('data/spf_fra_data.csv').then(data => {
 
   // Création du canevas SVG
 
+  // Déclaration des tailles (si elles sont déclarées, sinon prend les tailles par défaut selon le format du graphe)
   const width = graphCfg?.size?.svg?.width || commonGraph.size[graphCfg.type][graphCfg.device].svg.width;
   const height = graphCfg?.size?.svg?.height || commonGraph.size[graphCfg.type][graphCfg.device].svg.height;
   const marginH = graphCfg?.size?.margin?.horizontal || commonGraph.size[graphCfg.type][graphCfg.device].margin.horizontal;
@@ -70,6 +71,7 @@ d3.csv('data/spf_fra_data.csv').then(data => {
   const padding = marginH / viewBox.width * 100
   const paddingTxt = `0 ${ padding }%`
 
+  // déclaration du padding du graphe (pour mettre du padding aux titres, via le CSS)
   document.documentElement.style.setProperty('--gutter-size', `${ padding }%`)
 
   // Écriture du titre
@@ -167,6 +169,7 @@ d3.csv('data/spf_fra_data.csv').then(data => {
   let legendeValues = [];
   let rect;
 
+  // Si on est sur mobile, création d'un areaChart, sinon création d'un barChart (avec la bonne légende)
   if (graphCfg.device === 'mobile') {
     legendeValues = [
       { label: "Moyenne glissante", col: "#D55E00", op: 1 },
@@ -288,93 +291,45 @@ d3.csv('data/spf_fra_data.csv').then(data => {
 
   // Animation Bar Chart
 
+  // condition pour que l'animation fonctionne sur desktop ou tablette
   if (graphCfg.device !== 'mobile') {
+    // création du tooltip de la légende personnalisé
     const custTooltip = commonGraph.tooltip(graphCfg.target, d3)
 
-    // création d'un groupe g qui contiendra le tooltip de la légende
-    const tooltip = svgPlot.append("g")
-
-    // condition pour que l'animation ne fonctionne que sur desktop
-    // voir script device_detector pour la fonction deviceType()
-    rect.on('mouseover', function (d, e, f, g) {
+    rect.on('mouseover', function (d, idx, arr) {
       // lors du survol avec la souris l'opacité des barres passe à 1
       d3.select(this).attr("opacity", 1);
-
-      // stockage dans deux deux variables des positions x et y de la barre survolée
-      let xPosition = +scaleT(d.date);
-      let yPosition = +scaleY(d.new_cases);
-      const largeurBande = scaleX.bandwidth();
 
       // format de la date affichée dans le tooltip
       // stockage de la date de la barre survolée au format XX mois XXXX dans une variable
       const formatTime = d3.timeFormat("%d %b %Y");
       const instantT = formatTime(d.date);
 
-      custTooltip
-        .select('div')
-        .remove()
+      // efface les données du tooltip
+      custTooltip.html('')
 
+      // affiche et positionne le tooltip avec les données
       custTooltip
         .style('opacity', '1')
         .style('left', `${ d3.event.pageX }px`)
         .style('top', `${ d3.event.pageY }px`)
-        .style("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
+        .style('font-size', `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
         .append('div')
         .html(`${instantT}`)
+      custTooltip
         .append('div')
         .html(`Moyenne lissée: ${Math.round(d.roll_cases).toLocaleString("fr-FR")}`)
+      custTooltip
         .append('div')
         .html(`Nombre par jour: ${d.new_cases.toLocaleString("fr-FR")}`)
-
-      // création d'un rectangle blanc pour le tooltip
-      tooltip
-        .attr(
-          "transform",
-          `translate(${xPosition - 70 + largeurBande / 2},
-            ${yPosition - 50})`
-        )
-        .append("rect")
-        .attr("width", 140)
-        .attr("height", 50)
-        .attr("fill", "#ffffff");
-
-      // écriture texte dans le tooltip : ici la DATE
-      tooltip
-        .append("text")
-        .attr("x", 5)
-        .attr("y", 20)
-        .text(`${instantT}`)
-        .attr("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
-
-      // écriture texte dans le tooltip : ici la MOYENNE LISSÉE
-      tooltip
-        .append("text")
-        .attr("x", 5)
-        .attr("y", 32)
-        .text(
-          `Moyenne lissée: ${Math.round(d.roll_cases).toLocaleString("fr-FR")}`
-        )
-        .attr("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
-        .attr("font-weight", "bold")
-
-      // écriture texte dans le tooltip : ici le NOMBRE PAR JOUR
-      tooltip
-        .append("text")
-        .attr("x", 5)
-        .attr("y", 44)
-        .text(`Nombre par jour: ${d.new_cases.toLocaleString("fr-FR")}`)
-        .attr("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`);
     });
 
     // efface le contenu du groupe g lorsque la souris ne survole plus la barre
     rect.on("mouseout", function () {
       d3.select(this).attr("opacity", 0.6); // rétablit l'opacité à 0.6
 
-      custTooltip
-        .style('opacity', '0')
-
-      tooltip.select("rect").remove();
-      tooltip.selectAll("text").remove();
+      // rend invisible le tooltip
+      custTooltip.style('opacity', '0')
     });
   }
 });

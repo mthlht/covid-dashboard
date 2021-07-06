@@ -248,68 +248,42 @@ d3.csv("data/spf_fra_test.csv").then(data => {
 
   // Animation Bar Chart
 
-  // création d'un groupe g qui contiendra le tooltip de la légende
-  const tooltip = svgPlot.append("g");
+  // création du tooltip de la légende personnalisé
+  const custTooltip = commonGraph.tooltip(graphCfg.target, d3)
 
-  // condition pour que l'animation ne fonctionne que sur desktop
-  // voir script device_detector pour la fonction deviceType()
   rect.on("mouseover", function (d) {
     // lors du survol avec la souris l'opacité des barres passe à 1
     d3.select(this).attr("opacity", 1);
-
-    // stockage dans deux deux variables des positions x et y de la barre survolée
-    let xPosition = +scaleT(d.date);
-    let yPosition = +scaleY1(d.test);
-    const largeurBande = scaleX.bandwidth();
 
     // format de la date affichée dans le tooltip
     // stockage de la date de la barre survolée au format XX mois XXXX dans une variable
     const formatTime = d3.timeFormat("%d %b %Y");
     const instantT = formatTime(d.date);
 
-    // création d'un rectangle blanc pour le tooltip
-    tooltip
-      .attr(
-        "transform",
-        `translate(${xPosition - 70 + largeurBande / 2},
-          ${yPosition - 50})`
-      )
-      .append("rect")
-      .attr("width", 140)
-      .attr("height", 50)
-      .attr("fill", "#ffffff");
+    // efface les données du tooltip
+    custTooltip.html('')
 
-    // écriture texte dans le tooltip : ici la DATE
-    tooltip
-      .append("text")
-      .attr("x", 5)
-      .attr("y", 20)
-      .text(`${instantT}`)
-      .attr("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
-
-    // écriture texte dans le tooltip : ici la MOYENNE LISSÉE
-    tooltip
-      .append("text")
-      .attr("x", 5)
-      .attr("y", 32)
-      .text(`Moyenne lissée: ${Math.round(d.test).toLocaleString("fr-FR")}`)
-      .attr("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
-      .attr("font-weight", "bold");
-
-    // écriture texte dans le tooltip : ici le NOMBRE PAR JOUR
-    tooltip
-      .append("text")
-      .attr("x", 5)
-      .attr("y", 44)
-      .text(`Nombre par jour: ${d.test.toLocaleString("fr-FR")}`)
-      .attr("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
+    // affiche et positionne le tooltip avec les données
+    custTooltip
+      .style('opacity', '1')
+      .style('left', `${ d3.event.pageX }px`)
+      .style('top', `${ d3.event.pageY }px`)
+      .style('font-size', `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
+      .append('div')
+      .html(`${instantT}`)
+    custTooltip
+      .append('div')
+      .html(`Moyenne lissée: ${Math.round(d.test).toLocaleString("fr-FR")}`)
+    custTooltip
+      .append('div')
+      .html(`Nombre par jour: ${d.test.toLocaleString("fr-FR")}`)
   });
 
   // efface le contenu du groupe g lorsque la souris ne survole plus la barre
   rect.on("mouseout", function () {
     d3.select(this).attr("opacity", 0.6); // rétablit l'opacité à 0.6
 
-    tooltip.select("rect").remove();
-    tooltip.selectAll("text").remove();
+    // rend invisible le tooltip
+    custTooltip.style('opacity', '0')
   });
 });

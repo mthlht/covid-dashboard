@@ -215,57 +215,53 @@ Promise.all([
   // création d'un groupe g qui contiendra le tooltip de la légende
   const tooltip = svgPlot.append("g").attr("transform", `translate(0, 60)`);
 
-  // condition pour que l'animation ne fonctionne que sur desktop
-  // voir script device_detector pour la fonction deviceType()
-  if (deviceType() == "desktop") {
-    polygons.on("mouseover", function (d) {
-      // lors du survol avec la souris l'opacité des barres passe à 1
-      d3.select(this).attr("opacity", 0.8);
+  polygons.on("mouseover", function (d) {
+    // lors du survol avec la souris l'opacité des barres passe à 1
+    d3.select(this).attr("opacity", 0.8);
 
-      // format de la date affichée dans le tooltip
-      // stockage de la date de la barre survolée au format XX mois XXXX dans une variable
-      const formatTime = d3.timeFormat("%d %b");
-      let dateT = d.properties.date;
-      let instantT = formatTime(dateT);
+    // format de la date affichée dans le tooltip
+    // stockage de la date de la barre survolée au format XX mois XXXX dans une variable
+    const formatTime = d3.timeFormat("%d %b");
+    let dateT = d.properties.date;
+    let instantT = formatTime(dateT);
 
-      // ON ENLÈVE 7 JOURS À LA DATE - ATTENTION car .setDate() modifie l'objet en place
-      let instantT7 = formatTime(dateT.setDate(dateT.getDate() - 7));
+    // ON ENLÈVE 7 JOURS À LA DATE - ATTENTION car .setDate() modifie l'objet en place
+    let instantT7 = formatTime(dateT.setDate(dateT.getDate() - 7));
 
-      // ATTENTION À BIEN RAJOUTER LES 7 JOURS à dateT
-      dateT.setDate(dateT.getDate() + 7);
+    // ATTENTION À BIEN RAJOUTER LES 7 JOURS à dateT
+    dateT.setDate(dateT.getDate() + 7);
 
-      // Affichage du nom du département en gras
-      tooltip
-        .append("text")
-        .attr("y", 0)
-        .text(d.properties.name)
-        .attr("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
-        .style("font-weight", "bold");
+    // Affichage du nom du département en gras
+    tooltip
+      .append("text")
+      .attr("y", 0)
+      .text(d.properties.name)
+      .attr("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
+      .style("font-weight", "bold");
 
-      // variation ou baisse selon la valeur incid_evol
-      let variation = +d.properties.incid_evol > 0 ? "hausse" : "baisse";
+    // variation ou baisse selon la valeur incid_evol
+    let variation = +d.properties.incid_evol > 0 ? "hausse" : "baisse";
 
-      // valeur arrondie à 2 décimales de incid_evol
-      let valeur = Math.abs(+d.properties.incid_evol * 100).toFixed(2);
+    // valeur arrondie à 2 décimales de incid_evol
+    let valeur = Math.abs(+d.properties.incid_evol * 100).toFixed(2).replace('.00', '').replace('.', ','); // Remplace le point en virgule et supprime les décimales nulles.
 
-      // 1e ligne sous le nom du département
-      tooltip
-        .append("text")
-        .attr("y", 20)
-        .text(`en ${variation} de ${valeur}%`);
+    // 1e ligne sous le nom du département
+    tooltip
+      .append("text")
+      .attr("y", 20)
+      .text(`en ${variation} de ${valeur}%`);
 
-      // 2e ligne sous le nom du département
-      tooltip
-        .append("text")
-        .attr("y", 35)
-        .text(`entre le ${instantT7} et le ${instantT}`);
-    });
+    // 2e ligne sous le nom du département
+    tooltip
+      .append("text")
+      .attr("y", 35)
+      .text(`entre le ${instantT7} et le ${instantT}`);
+  });
 
-    // efface le contenu du groupe g lorsque la souris ne survole plus le polygone
-    polygons.on("mouseout", function () {
-      d3.select(this).attr("opacity", 1); // rétablit l'opacité à 1
+  // efface le contenu du groupe g lorsque la souris ne survole plus le polygone
+  polygons.on("mouseout", function () {
+    d3.select(this).attr("opacity", 1); // rétablit l'opacité à 1
 
-      tooltip.selectAll("text").remove();
-    });
-  }
+    tooltip.selectAll("text").remove();
+  });
 });

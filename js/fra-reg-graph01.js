@@ -138,7 +138,7 @@ Promise.all([
     legCells = [0, 50, 150, 250, 400, 600];
   } else if (quantile > 250) {
     maxValColor = 400;
-    legCells = [0, 25, 50, 150, 250, 400];
+    legCells = [0, 50, 150, 250, 400];
   } else if (quantile > 150) {
     maxValColor = 250;
     legCells = [0, 25, 50, 150, 250];
@@ -199,8 +199,6 @@ Promise.all([
   // création d'un groupe g qui contiendra le tooltip de la légende
   const tooltip = svgPlot.append("g").attr("transform", `translate(0, 60)`); // placement du groupe en haut à gauche sous le titre et la légende
 
-  // condition pour que l'animation ne fonctionne que sur desktop
-  // voir script device_detector pour la fonction deviceType()
   polygons.on("mouseover", function (d) {
     // lors du survol avec la souris l'opacité des barres passe à 1
     d3.select(this).attr("opacity", 0.8);

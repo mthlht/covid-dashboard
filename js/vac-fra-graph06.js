@@ -124,8 +124,8 @@ Promise.all([
   console.log(listVals);
 
   // Calling the d3.quantile() function
-  const Q0 = d3.quantile(listVals, 0); 
-  const Q1 = d3.quantile(listVals, 0.25); 
+  const Q0 = d3.quantile(listVals, 0);
+  const Q1 = d3.quantile(listVals, 0.25);
   const Q2 = d3.quantile(listVals, 0.5);
   const Q3 = d3.quantile(listVals, 0.75);
 
@@ -198,8 +198,8 @@ Promise.all([
     polygons.on("mouseover", function (d) {
       // lors du survol avec la souris l'opacité des barres passe à 1
       d3.select(this)
-      .attr("opacity", 0.8)
-      .style('cursor', 'default');
+        .attr("opacity", 0.8)
+        .style('cursor', 'default');
 
       // format de la date affichée dans le tooltip
       // stockage de la date de la barre survolée au format XX mois XXXX dans une variable
@@ -216,9 +216,9 @@ Promise.all([
         .style("font-weight", "bold");
 
       // variation ou baisse selon la valeur incid_evol
-      let nbDoses1 = +d.properties.t_dose1>=1000000 ? (+d.properties.t_dose1/1000000).toFixed(2) : +d.properties.t_dose1 ;
-      let labelNbDoses1 = +d.properties.t_dose1>=1000000 ? `${nbDoses1} millions de vaccinés` : `${nbDoses1} vaccinés`;
-
+      let labelNbDoses1 = +d.properties.t_dose1>=1000000
+        ? `${ (+d.properties.t_dose1 / 1000000).toFixed(2).replace('.', ',')} million${ (+d.properties.t_dose1/1000000) >= 2 ? 's' : '' } de vaccinés` // permet d'ajouter un 's' à partir de 2 millions
+        : `${ (+d.properties.t_dose1 + '').replace(/\B(?=(\d{3})+(?!\d))/g, ' ') } vaccinés`; // Permet d'ajouter un espace entre les milliers
 
       // valeur arrondie à 2 décimales de incid_evol
       let pcDoses1 = Math.round(+d.properties.p_dose1*100);

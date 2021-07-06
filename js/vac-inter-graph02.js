@@ -5,7 +5,7 @@ function showData(data) {
     target: `#vac-inter-graph02`,
     title: `Les 10 pays européens qui vaccinent le plus`,
     subtitle: `en pourcentage de la population ayant reçu au moins une injection, au [[autoDate]]`,
-    caption: `Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>, <a href='https://data.drees.solidarites-sante.gouv.fr/explore/dataset/707_bases-administratives-sae/information/' target='_blank'>Drees</a>`,
+    caption: `Source. <a href='https://ourworldindata.org/coronavirus' target='_blank'>Our world in data</a>`,
   }
 
   // Traitement des données
