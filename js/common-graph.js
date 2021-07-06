@@ -205,3 +205,38 @@ d3.timeFormatDefaultLocale(commonGraph.locale)
             : 'mobile'
   }
 }
+
+// Gestion des ancres.
+{
+  let tabHeight = 0
+
+  getTabHeight()
+
+  // Mémorisation de la hauteur du menu sticky.
+  window.addEventListener('resize', getTabHeight)
+
+  document.querySelectorAll('.tab-group a').forEach((el, idx, arr) => {
+    // gestion de l'événement du click des liens du menu sticky.
+    el.addEventListener('click', e => {
+      // Annule le comportement naturel des ancres.
+      e.preventDefault()
+
+      // Ajout et suppression de m'attribut "active".
+      Array.from(arr).filter(el => el[el !== arr[idx] ? 'removeAttribute' : 'setAttribute']('active', ''))
+
+      // Mémorisation de la position de la section cible.
+      const targetSectionPos = window.scrollY + document.querySelector(e.target.getAttribute('href')).getBoundingClientRect().top
+
+      // Scroll de la page vers la position cible (moins la hauteur du menu sticky).
+      window.scrollTo({
+        top: targetSectionPos - tabHeight,
+        left: 0
+      })
+    })
+  })
+
+  // Fonction de récupération de la hauteur du menu sticky.
+  function getTabHeight () {
+    tabHeight = document.querySelector('.tab-group-wrapper').clientHeight
+  }
+}

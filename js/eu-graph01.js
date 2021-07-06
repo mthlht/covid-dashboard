@@ -163,7 +163,6 @@ polygons
 const legend = d3
     .legendColor()
     .shapeWidth(width / 10)
-    .shapeHeight(10)
     .cells([0, 0.5, 2.5, 5, 10, 50, 100, 500, 1000, 4000])
     .orient("horizontal")
     .labelAlign("middle")
@@ -192,7 +191,7 @@ if (graphCfg.device !== 'mobile') {
     const custTooltip = commonGraph.tooltip(graphCfg.target, d3)
 
     polygons.on("mouseover", function (d, idx, arr) {
-        // lors du survol avec la souris l'opacité des barres passe à 1
+        // lors du survol avec la souris l'opacité des polygones passe à 0.6
         d3.select(this).attr("opacity", 0.6);
 
         // format de la date affichée dans le tooltip
