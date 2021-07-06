@@ -61,7 +61,7 @@ function showData(data) {
 
   // Définition du padding à appliquer aux titres, sous-titres, source
   // pour une titraille toujours alignée avec le graphique
-  const paddingTxt = `0 ${ marginH / viewBox.width * 100 }%`
+  const paddingTxt = `0 ${marginH / viewBox.width * 100}%`
 
   // Écriture du titre
   d3.select(graphCfg.target)
@@ -79,7 +79,7 @@ function showData(data) {
   // Écriture du sous-titre
   d3.select(graphCfg.target)
     .select('.grph-subtitle')
-    .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${ dateToTitle }`))
+    .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${dateToTitle}`))
     .style("padding", paddingTxt);
 
   // Écriture de la source
@@ -103,7 +103,7 @@ function showData(data) {
     .scaleBand()
     .domain(d3.range(tidyData.length))
     .range([height, 0])
-    .padding(0.2);
+    .padding(0.12);
 
   //---------------------------------------------------------------------------------------
 
@@ -147,6 +147,18 @@ function showData(data) {
     .attr("fill", d => d.pays === 'France' ? '#D55E00' : '#0072B2') // orange pour la France et bleu pour les autres pays
     .attr("opacity", 0.6);
 
+  const rectFillFreeSpace = svgPlot
+    .append("g")
+    .selectAll("rect")
+    .data(tidyData)
+    .join("rect")
+    .attr("y", (d, i) => scaleY(i))
+    .attr("x", (d) => scaleX(d.tx_vacc))
+    .attr("width", (d) => scaleX(100 - d.tx_vacc))
+    .attr("height", scaleY.bandwidth()) // width des barres avec l'échelle d'épaiseur
+    .attr("fill", d => d.pays === 'France' ? '#D55E00' : '#0072B2') // orange pour la France et bleu pour les autres pays
+    .attr("opacity", 0.05);
+
   const rectFrame = svgPlot
     .append("g")
     .selectAll("rect")
@@ -157,9 +169,9 @@ function showData(data) {
     .attr("width", (d) => scaleX(100))
     .attr("height", scaleY.bandwidth()) // width des barres avec l'échelle d'épaiseur
     .attr("fill", "transparent")
-    .attr("stroke-width", "2px")
-    .attr("stroke", "grey")
-    .attr("opacity", 1);
+    .attr("stroke-width", "1px")
+    .attr("stroke", d => d.pays === 'France' ? '#D55E00' : '#0072B2')
+    .attr("opacity", 0.6);
 
   //---------------------------------------------------------------------------------------
 

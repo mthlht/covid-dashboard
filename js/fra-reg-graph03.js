@@ -109,7 +109,7 @@ d3.csv("data/hosp_reg.csv").then(data => {
     .scaleBand()
     .domain(d3.range(tidyData.length))
     .range([height, 0])
-    .padding(0.2);
+    .padding(0.12);
 
   //---------------------------------------------------------------------------------------
 
@@ -140,6 +140,7 @@ d3.csv("data/hosp_reg.csv").then(data => {
   //---------------------------------------------------------------------------------------
 
   // Création du Bar Chart
+
   const rectFill = svgPlot
     .append("g")
     .selectAll("rect")
@@ -152,6 +153,18 @@ d3.csv("data/hosp_reg.csv").then(data => {
     .attr("fill", "#0072B2")
     .attr("opacity", 0.6);
 
+  const rectFillFreeSpace = svgPlot
+    .append("g")
+    .selectAll("rect")
+    .data(tidyData)
+    .join("rect")
+    .attr("y", (d, i) => scaleY(i))
+    .attr("x", (d) => scaleX(d.tx_rea))
+    .attr("width", (d) => scaleX(100-d.tx_rea))
+    .attr("height", scaleY.bandwidth()) // width des barres avec l'échelle d'épaiseur
+    .attr("fill", "#0072B2")
+    .attr("opacity", 0.05);
+
   const rectFrame = svgPlot
     .append("g")
     .selectAll("rect")
@@ -162,9 +175,9 @@ d3.csv("data/hosp_reg.csv").then(data => {
     .attr("width", (d) => scaleX(100))
     .attr("height", scaleY.bandwidth()) // width des barres avec l'échelle d'épaiseur
     .attr("fill", "transparent")
-    .attr("stroke-width", "2px")
-    .attr("stroke", "grey")
-    .attr("opacity", 1);
+    .attr("stroke-width", "1px")
+    .attr("stroke", "#0072B2")
+    .attr("opacity", 0.6);
 
   //---------------------------------------------------------------------------------------
 

@@ -63,9 +63,9 @@ d3.csv("data/vacc_age.csv").then(data => {
   // Définition du padding à appliquer aux titres, sous-titres, source
   // pour une titraille toujours alignée avec le graphique
   const padding = marginH / viewBox.width * 100
-  const paddingTxt = `0 ${ padding }%`
+  const paddingTxt = `0 ${padding}%`
 
-  document.documentElement.style.setProperty('--gutter-size', `${ padding }%`)
+  document.documentElement.style.setProperty('--gutter-size', `${padding}%`)
 
   // Écriture du titre
   d3.select(graphCfg.target)
@@ -82,7 +82,7 @@ d3.csv("data/vacc_age.csv").then(data => {
   // Écriture du sous-titre
   d3.select(graphCfg.target)
     .select('.grph-subtitle')
-    .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${ dateToTitle }`))
+    .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${dateToTitle}`))
     .style("padding", paddingTxt)
 
   // Écriture de la source
@@ -106,7 +106,7 @@ d3.csv("data/vacc_age.csv").then(data => {
     .scaleBand()
     .domain(d3.range(tidyData.length))
     .range([height, 0])
-    .padding(0.2);
+    .padding(0.12);
 
   //---------------------------------------------------------------------------------------
 
@@ -150,6 +150,18 @@ d3.csv("data/vacc_age.csv").then(data => {
     .attr("fill", "#0072B2")
     .attr("opacity", 0.6);
 
+  const rectFillFreeSpace = svgPlot
+    .append("g")
+    .selectAll("rect")
+    .data(tidyData)
+    .join("rect")
+    .attr("y", (d, i) => scaleY(i))
+    .attr("x", (d) => scaleX(d.tx_rea))
+    .attr("width", (d) => scaleX(100 - d.tx_rea))
+    .attr("height", scaleY.bandwidth()) // width des barres avec l'échelle d'épaiseur
+    .attr("fill", "#0072B2")
+    .attr("opacity", 0.05);
+
   const rectFrame = svgPlot
     .append("g")
     .selectAll("rect")
@@ -160,9 +172,9 @@ d3.csv("data/vacc_age.csv").then(data => {
     .attr("width", (d) => scaleX(100))
     .attr("height", scaleY.bandwidth()) // width des barres avec l'échelle d'épaiseur
     .attr("fill", "transparent")
-    .attr("stroke-width", "2px")
-    .attr("stroke", "grey")
-    .attr("opacity", 1);
+    .attr("stroke-width", "1px")
+    .attr("stroke", "#0072B2")
+    .attr("opacity", 0.6);
 
   //---------------------------------------------------------------------------------------
 
