@@ -208,13 +208,6 @@ d3.timeFormatDefaultLocale(commonGraph.locale)
 
 // Gestion des ancres.
 {
-  let tabHeight = 0
-
-  getTabHeight()
-
-  // Mémorisation de la hauteur du menu sticky.
-  window.addEventListener('resize', getTabHeight)
-
   document.querySelectorAll('.tab-group a').forEach((el, idx, arr) => {
     // gestion de l'événement du click des liens du menu sticky.
     el.addEventListener('click', e => {
@@ -229,14 +222,9 @@ d3.timeFormatDefaultLocale(commonGraph.locale)
 
       // Scroll de la page vers la position cible (moins la hauteur du menu sticky).
       window.scrollTo({
-        top: targetSectionPos - tabHeight,
+        top: targetSectionPos - document.querySelector('.tab-group-wrapper').clientHeight,
         left: 0
       })
     })
   })
-
-  // Fonction de récupération de la hauteur du menu sticky.
-  function getTabHeight () {
-    tabHeight = document.querySelector('.tab-group-wrapper').clientHeight
-  }
 }

@@ -4,11 +4,6 @@ d3.csv("data/hosp_reg.csv").then(data => {
     title: `Taux d'occupation des réanimations par des patients Covid par région`,
     subtitle: `au [[autoDate]]`,
     caption: `Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>, <a href='https://data.drees.solidarites-sante.gouv.fr/explore/dataset/707_bases-administratives-sae/information/' target='_blank'>Drees</a>`,
-    // size: {
-    //   tooltip: {
-    //     font: 20,
-    //   },
-    // },
     type: 'square',
     device: window.screenDevice,
   }
@@ -208,5 +203,5 @@ d3.csv("data/hosp_reg.csv").then(data => {
 
   // Placement Y
   svgPlot.append("g").call(yAxis).attr("color", "transparent"); // les ticks de l'axe X sont transparents
-  
+
 });

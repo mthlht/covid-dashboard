@@ -5,9 +5,9 @@ d3.csv("data/spf_fra_vacc_dose1_2.csv").then(data => {
     subtitle: `depuis le [[startDate]]`,
     caption: `Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>`,
     startDate: {
-      day: 1,
-      month: 1,
-      year: 2021,
+      day: '01',
+      month: '01',
+      year: '2021',
     },
     type: 'landscape',
     device: window.screenDevice,
@@ -29,7 +29,7 @@ d3.csv("data/spf_fra_vacc_dose1_2.csv").then(data => {
   });
 
   // Filtre les données uniquement à partir du 1er janvier
-  const startDate = `${ graphCfg.startDate.year }-${ graphCfg.startDate.month.length < 2 ? '0' + graphCfg.startDate.month : graphCfg.startDate.month }-${ graphCfg.startDate.day.length < 2 ? '0' + graphCfg.startDate.day : graphCfg.startDate.day }`
+  const startDate = `${ graphCfg.startDate.year }-${ graphCfg.startDate.month }-${ graphCfg.startDate.day }`
   const tidyData = tempData.filter((d) => d.date >= new Date(startDate));
 
   // Données spécifique au line chart qui filtre les valeurs manquantes des 7 premiers jours

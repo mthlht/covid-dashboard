@@ -5,9 +5,9 @@ d3.csv('data/spf_fra_data.csv').then(data => {
     subtitle: `depuis le [[startDate]]`,
     caption: `Source. <a href="https://www.data.gouv.fr/fr/organizations/sante-publique-france/" target="_blank">Santé publique France</a>`,
     startDate: { // définition de la date (si nécessaire)
-      day: 1,
-      month: 9,
-      year: 2020,
+      day: '01',
+      month: '09',
+      year: '2020',
     },
     type: 'landscape', // définition du format du graphe
     device: window.screenDevice, // récupération de la largeur de l'écran
@@ -25,7 +25,7 @@ d3.csv('data/spf_fra_data.csv').then(data => {
   });
 
   // Filtre les données uniquement à partir du 1er septembre
-  const startDate = `${ graphCfg.startDate.year }-${ graphCfg.startDate.month.length < 2 ? '0' + graphCfg.startDate.month : graphCfg.startDate.month }-${ graphCfg.startDate.day.length < 2 ? '0' + graphCfg.startDate.day : graphCfg.startDate.day }`
+  const startDate = `${ graphCfg.startDate.year }-${ graphCfg.startDate.month }-${ graphCfg.startDate.day }`
   const tidyData = tempData.filter((d) => d.date >= new Date(startDate));
 
   //---------------------------------------------------------------------------------------
@@ -107,7 +107,7 @@ d3.csv('data/spf_fra_data.csv').then(data => {
   // échelle linéaire pour l'axe des Y
   const scaleY = d3
     .scaleLinear()
-    .domain([0, d3.max(tidyData, d => d[graphCfg.device === 'mobile' ? 'roll_cases' : 'new_cases'])])
+    .domain([0, d3.max(tidyData, d => graphCfg.device === 'mobile' ? d.roll_cases : d.new_cases)])
     .range([height, 0]);
 
   // échelee temporelle pour l'axe des X
@@ -241,7 +241,7 @@ d3.csv('data/spf_fra_data.csv').then(data => {
   // création cercle
   svgPlot
     .append("circle")
-    .attr("cx", scaleT(maxDate.setDate(maxDate.getDate())))
+    .attr("cx", scaleT(maxDate))
     .attr("cy", scaleY(maxVal[0].roll_cases))
     .attr("r", 4)
     .attr("stroke", "#ffffff")
