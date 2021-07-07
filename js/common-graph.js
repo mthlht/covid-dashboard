@@ -62,6 +62,40 @@ const commonGraph = {
           font: 10,
         },
       },
+      wide: {
+        svg: {
+          width: 500,
+          height: 200,
+        },
+        margin: {
+          horizontal: 80,
+          vertical: 20,
+        },
+        legend: {
+          height: 40,
+          font: 14,
+        },
+        tooltip: {
+          font: 10,
+        },
+      },
+      very_wide: {
+        svg: {
+          width: 500,
+          height: 200,
+        },
+        margin: {
+          horizontal: 80,
+          vertical: 20,
+        },
+        legend: {
+          height: 40,
+          font: 14,
+        },
+        tooltip: {
+          font: 10,
+        },
+      }
     },
     square: {
       mobile: {
@@ -99,6 +133,40 @@ const commonGraph = {
         },
       },
       desktop: {
+        svg: {
+          width: 500,
+          height: 500,
+        },
+        margin: {
+          horizontal: 80,
+          vertical: 20,
+        },
+        legend: {
+          height: 20,
+          font: 14,
+        },
+        tooltip: {
+          font: 10,
+        },
+      },
+      wide: {
+        svg: {
+          width: 500,
+          height: 500,
+        },
+        margin: {
+          horizontal: 80,
+          vertical: 20,
+        },
+        legend: {
+          height: 20,
+          font: 14,
+        },
+        tooltip: {
+          font: 10,
+        },
+      },
+      very_wide: {
         svg: {
           width: 500,
           height: 500,
@@ -168,6 +236,40 @@ const commonGraph = {
           font: 10,
         },
       },
+      wide: {
+        svg: {
+          width: 500,
+          height: 200,
+        },
+        margin: {
+          horizontal: 80,
+          vertical: 20,
+        },
+        legend: {
+          height: 40,
+          font: 14,
+        },
+        tooltip: {
+          font: 10,
+        },
+      },
+      very_wide: {
+        svg: {
+          width: 500,
+          height: 200,
+        },
+        margin: {
+          horizontal: 80,
+          vertical: 20,
+        },
+        legend: {
+          height: 40,
+          font: 14,
+        },
+        tooltip: {
+          font: 10,
+        },
+      }
     },
   },
   ticksY: {
@@ -195,7 +297,7 @@ d3.timeFormatDefaultLocale(commonGraph.locale)
 
   function getScreenDevice () {
     window.screenDevice = window.innerWidth >= 2560
-    ? '4k'
+    ? 'very_wide'
     : window.innerWidth >= 1600
       ? 'wide'
       : window.innerWidth >= 1024
