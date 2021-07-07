@@ -180,11 +180,12 @@ FRA,France,Europe,2021-06-27,32.857
 FRA,France,Europe,2021-06-28,33.429
 FRA,France,Europe,2021-06-29,34.143
 FRA,France,Europe,2021-06-30,31.429
-FRA,France,Europe,2021-07-01,29.286
-FRA,France,Europe,2021-07-02,28.0
-FRA,France,Europe,2021-07-03,28.714
-FRA,France,Europe,2021-07-04,27.571
-FRA,France,Europe,2021-07-05,26.571
+FRA,France,Europe,2021-07-01,32.857
+FRA,France,Europe,2021-07-02,31.571
+FRA,France,Europe,2021-07-03,32.286
+FRA,France,Europe,2021-07-04,31.143
+FRA,France,Europe,2021-07-05,30.143
+FRA,France,Europe,2021-07-06,27.143
 DEU,Allemagne,Europe,2021-01-01,652.143
 DEU,Allemagne,Europe,2021-01-02,647.714
 DEU,Allemagne,Europe,2021-01-03,642.0
@@ -371,6 +372,7 @@ DEU,Allemagne,Europe,2021-07-02,40.0
 DEU,Allemagne,Europe,2021-07-03,39.857
 DEU,Allemagne,Europe,2021-07-04,38.714
 DEU,Allemagne,Europe,2021-07-05,34.571
+DEU,Allemagne,Europe,2021-07-06,33.571
 ITA,Italie,Europe,2021-01-01,466.0
 ITA,Italie,Europe,2021-01-02,480.714
 ITA,Italie,Europe,2021-01-03,486.714
@@ -557,6 +559,7 @@ ITA,Italie,Europe,2021-07-02,28.143
 ITA,Italie,Europe,2021-07-03,25.571
 ITA,Italie,Europe,2021-07-04,25.286
 ITA,Italie,Europe,2021-07-05,25.714
+ITA,Italie,Europe,2021-07-06,23.143
 TUR,Turquie,Asia,2021-01-01,246.0
 TUR,Turquie,Asia,2021-01-02,238.714
 TUR,Turquie,Asia,2021-01-03,230.0
@@ -741,8 +744,9 @@ TUR,Turquie,Asia,2021-06-30,53.429
 TUR,Turquie,Asia,2021-07-01,51.0
 TUR,Turquie,Asia,2021-07-02,50.857
 TUR,Turquie,Asia,2021-07-03,50.0
-TUR,Turquie,Asia,2021-07-04,42.571
-TUR,Turquie,Asia,2021-07-05,34.286
+TUR,Turquie,Asia,2021-07-04,49.714
+TUR,Turquie,Asia,2021-07-05,46.429
+TUR,Turquie,Asia,2021-07-06,44.143
 UKR,Ukraine,Europe,2021-01-01,168.857
 UKR,Ukraine,Europe,2021-01-02,158.429
 UKR,Ukraine,Europe,2021-01-03,165.429
@@ -929,3 +933,4 @@ UKR,Ukraine,Europe,2021-07-02,36.857
 UKR,Ukraine,Europe,2021-07-03,37.429
 UKR,Ukraine,Europe,2021-07-04,37.143
 UKR,Ukraine,Europe,2021-07-05,38.143
+UKR,Ukraine,Europe,2021-07-06,40.571
