@@ -186,6 +186,7 @@ ARG,Argentine,South America,2021-07-03,421.44
 ARG,Argentine,South America,2021-07-04,411.625
 ARG,Argentine,South America,2021-07-05,408.11
 ARG,Argentine,South America,2021-07-06,400.287
+ARG,Argentine,South America,2021-07-07,390.014
 BRA,Brésil,South America,2021-01-01,169.377
 BRA,Brésil,South America,2021-01-02,168.423
 BRA,Brésil,South America,2021-01-03,167.658
@@ -373,6 +374,7 @@ BRA,Brésil,South America,2021-07-03,238.677
 BRA,Brésil,South America,2021-07-04,234.697
 BRA,Brésil,South America,2021-07-05,231.269
 BRA,Brésil,South America,2021-07-06,229.657
+BRA,Brésil,South America,2021-07-07,236.503
 COL,Colombie,South America,2021-01-01,225.091
 COL,Colombie,South America,2021-01-02,228.831
 COL,Colombie,South America,2021-01-03,228.32
@@ -560,6 +562,7 @@ COL,Colombie,South America,2021-07-03,555.59
 COL,Colombie,South America,2021-07-04,538.433
 COL,Colombie,South America,2021-07-05,529.695
 COL,Colombie,South America,2021-07-06,532.057
+COL,Colombie,South America,2021-07-07,521.728
 IDN,Indonésie,Asia,2021-01-01,26.727
 IDN,Indonésie,Asia,2021-01-02,26.969
 IDN,Indonésie,Asia,2021-01-03,27.151
@@ -747,6 +750,7 @@ IDN,Indonésie,Asia,2021-07-03,85.074
 IDN,Indonésie,Asia,2021-07-04,88.151
 IDN,Indonésie,Asia,2021-07-05,92.878
 IDN,Indonésie,Asia,2021-07-06,98.478
+IDN,Indonésie,Asia,2021-07-07,105.044
 GBR,Royaume-Uni,Europe,2021-01-01,677.064
 GBR,Royaume-Uni,Europe,2021-01-02,725.601
 GBR,Royaume-Uni,Europe,2021-01-03,773.294
@@ -934,3 +938,4 @@ GBR,Royaume-Uni,Europe,2021-07-03,341.457
 GBR,Royaume-Uni,Europe,2021-07-04,360.95
 GBR,Royaume-Uni,Europe,2021-07-05,370.173
 GBR,Royaume-Uni,Europe,2021-07-06,387.782
+GBR,Royaume-Uni,Europe,2021-07-07,401.231
