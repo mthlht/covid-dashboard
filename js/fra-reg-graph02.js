@@ -132,9 +132,9 @@ Promise.all([
   const divScale = d3
     .scaleDiverging((t) => d3.interpolateRdBu(1 - t))
     .domain([
-      d3.min(dataIncid, (d) => +d.incid_evol / 100),
+      -1,
       0,
-      d3.max(dataIncid, (d) => +d.incid_evol / 100),
+      1
     ]);
 
   //---------------------------------------------------------------------------------------
@@ -158,7 +158,7 @@ Promise.all([
     .join("path")
     .attr("d", (d) => path(d))
     .attr("stroke", "#ffffff")
-    .attr("fill", (d) => divScale(d.properties.incid_evol));
+    .attr("fill", (d) => isNaN(d.properties.incid_evol) ? "#e0e0e0" : divScale(d.properties.incid_evol));
 
   //---------------------------------------------------------------------------------------
 
@@ -198,14 +198,16 @@ Promise.all([
   // paramètres de la legende à l'aide de la variable legCells définie avec l'échelled de couleur
   const legend = d3
     .legendColor()
-    .shapeWidth(width / legCells.length)
+    .shapeWidth(width / 9)
     .labelFormat(d3.format(".0%"))
-    .cells(legCells)
+    .cells([-1, -0.75, -0.5, -0.25, 0, 0.25, 0.5, 0.75, 1])
     .orient("horizontal")
     .scale(divScale);
 
   // projection de la légende
-  svgLegend.call(legend);
+  svgLegend.call(legend)
+    .selectAll("text")
+    .attr("fill", "grey");
 
   //---------------------------------------------------------------------------------------
 
@@ -235,6 +237,9 @@ Promise.all([
     .attr("y", 40)
     .text(`les valeurs`)
     .style("font-weight", "bold");
+  tooltip
+    .selectAll('text')
+    .attr('fill', 'grey');
 
   // Arrow nudge
 
@@ -262,8 +267,8 @@ Promise.all([
     .attr('d', lineGen(linePoints))
     .attr('fill', 'transparent')
     .attr('stroke-width', '3px')
-    .attr('stroke', 'black')
-    .attr("marker-end", "url(#arrow)");
+    .attr("marker-end", "url(#arrow)")
+    .attr("stroke", "grey");
 
   polygons.on("mouseover", function (d) {
     // lors du survol avec la souris l'opacité des barres passe à 1
@@ -304,17 +309,21 @@ Promise.all([
     // valeur arrondie à 2 décimales de incid_evol
     let valeur = Math.abs(+d.properties.incid_evol * 100).toFixed(2).replace('.00', '').replace('.', ','); // Remplace le point en virgule et supprime les décimales nulles.
 
-    // 1e ligne sous le nom du département
-    tooltip
-      .append("text")
-      .attr("y", 20)
-      .text(`en ${variation} de ${valeur}%`);
+    if (!(isNaN(d.properties.incid_evol))) {
+      // 1e ligne sous le nom du département
+      tooltip
+        .append("text")
+        .attr("y", 20)
+        .text(`en ${variation} de ${valeur}%`);
 
-    // 2e ligne sous le nom du département
-    tooltip
-      .append("text")
-      .attr("y", 35)
-      .text(`entre le ${instantT7} et le ${instantT}`);
+      // 2e ligne sous le nom du département
+      tooltip
+        .append("text")
+        .attr("y", 35)
+        .text(`entre le ${instantT7} et le ${instantT}`);
+
+    };
+
   });
 
   // efface le contenu du groupe g lorsque la souris ne survole plus le polygone
@@ -345,12 +354,16 @@ Promise.all([
       .style("font-weight", "bold");
 
     tooltip
+      .selectAll('text')
+      .attr('fill', 'grey');
+
+    tooltip
       .append("path")
       .attr('d', lineGen(linePoints))
       .attr('fill', 'transparent')
       .attr('stroke-width', '3px')
-      .attr('stroke', 'black')
-      .attr("marker-end", "url(#arrow)");
+      .attr("marker-end", "url(#arrow)")
+      .attr("stroke", "grey");
 
   });
 });

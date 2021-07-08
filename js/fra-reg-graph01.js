@@ -23,6 +23,7 @@ Promise.all([
 
   // données incidence
   let dataIncid = data[1];
+  console.log(dataIncid)
 
   // création d'un container pour le tri des données d'incidence
   let dataContainer = { incid: {}, incid_evol: {}, date: {} };
@@ -190,7 +191,9 @@ Promise.all([
     .scale(divScale)
 
   // projection de la légende
-  svgLegend.call(legend);
+  svgLegend.call(legend)
+    .selectAll("text")
+    .attr("fill", "grey");
 
   //---------------------------------------------------------------------------------------
 
@@ -245,6 +248,7 @@ Promise.all([
     .attr("orient", "auto")
     .append("svg:path")
     .attr("d", "M0,-5L10,0L0,5")
+    .attr("fill", "grey");
 
   tooltip
     .append("path")
@@ -252,10 +256,7 @@ Promise.all([
     .attr('fill', 'transparent')
     .attr('stroke-width', '3px')
     .attr("marker-end", "url(#arrow)")
-
-  tooltip
-    .selectAll('path')
-    .attr("stroke", "grey")
+    .attr("stroke", "grey");
 
 
 
@@ -334,14 +335,18 @@ Promise.all([
       .attr("y", 40)
       .text(`les valeurs`)
       .style("font-weight", "bold");
-  
+
+    tooltip
+      .selectAll('text')
+      .attr('fill', 'grey');
+
     tooltip
       .append("path")
       .attr('d', lineGen(linePoints))
       .attr('fill', 'transparent')
       .attr('stroke-width', '3px')
-      .attr('stroke', 'black')
-      .attr("marker-end", "url(#arrow)");
+      .attr("marker-end", "url(#arrow)")
+      .attr("stroke", "grey");
 
   });
 });

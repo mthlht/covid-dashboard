@@ -72,7 +72,7 @@ d3.csv("data/hosp_reg.csv").then(data => {
 
   // Date à afficher dans le titre
   // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
-  const formatTimeToTitle = d3.timeFormat("%d %b %Y");
+  const formatTimeToTitle = d3.timeFormat("%d %B %Y");
   const actualDate = new Date(tidyData[0].date);
   const dateToTitle = formatTimeToTitle(actualDate);
 
