@@ -41,12 +41,6 @@ figure {
     padding-top: 2.5rem;
 }
 
-/* @media screen and (min-width: 768px) {
-    .dshbrd-subtitle {
-        padding-top: 5rem;
-    }
-} */
-
 .section-logo {
     display: block;
     font-size: 1.125rem;
@@ -109,7 +103,7 @@ figure {
     white-space: nowrap;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 550px) and (orientation: landscape) {
     .tab-group {
         flex-wrap: unset;
     }
@@ -131,15 +125,21 @@ figure {
     padding-bottom: 1em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), screen and (min-width: 550px) and (orientation: landscape) {
     .tab-group a,
     .tab-group a:last-child {
         border-bottom: transparent 4px solid;
-        font-size: 1rem;
         padding-right: 1em;
         padding-bottom: .8em;
         padding-left: 1em;
         width: unset;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tab-group a,
+    .tab-group a:last-child {
+        font-size: 1rem;
     }
 }
 

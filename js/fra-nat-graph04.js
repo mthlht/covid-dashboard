@@ -1,7 +1,7 @@
 d3.csv("data/spf_fra_data.csv").then(data => {
   const graphCfg = {
     target: `#fra-nat-graph04`,
-    title: `Evolution du nombre de contaminations au Covid-19`,
+    title: `Evolution du nombre d'hospitalisations de patients Covid-19`,
     subtitle: `depuis le [[startDate]]`,
     caption: `Source. <a href="https://www.data.gouv.fr/fr/organizations/sante-publique-france/" target="_blank">Santé publique France</a>`,
     startDate: {
@@ -26,7 +26,7 @@ d3.csv("data/spf_fra_data.csv").then(data => {
   });
 
   // Filtre les données uniquement à partir du 1er septembre
-  const startDate = `${ graphCfg.startDate.year }-${ graphCfg.startDate.month }-${ graphCfg.startDate.day }`
+  const startDate = `${graphCfg.startDate.year}-${graphCfg.startDate.month}-${graphCfg.startDate.day}`
   const tidyData = tempData.filter((d) => d.date >= new Date(startDate));
 
   //---------------------------------------------------------------------------------------
@@ -69,9 +69,9 @@ d3.csv("data/spf_fra_data.csv").then(data => {
   // Définition du padding à appliquer aux titres, sous-titres, source
   // pour une titraille toujours alignée avec le graphique
   const padding = marginH / viewBox.width * 100
-  const paddingTxt = `0 ${ padding }%`
+  const paddingTxt = `0 ${padding}%`
 
-  document.documentElement.style.setProperty('--gutter-size', `${ padding }%`)
+  document.documentElement.style.setProperty('--gutter-size', `${padding}%`)
 
   // Écriture du titre
   d3.select(graphCfg.target)
@@ -84,7 +84,7 @@ d3.csv("data/spf_fra_data.csv").then(data => {
     .select('.grph-title')
     .append('span')
     .attr('class', 'grph-date')
-    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${ graphCfg?.startDate?.day === 1 ? graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day } ${ commonGraph.locale.months[graphCfg?.startDate?.month - 1] } ${ graphCfg?.startDate?.year }`))
+    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${+graphCfg?.startDate?.day === 1 ? +graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day} ${commonGraph.locale.months[+graphCfg?.startDate?.month - 1]} ${graphCfg?.startDate?.year}`))
 
   // Écriture de la source
   d3.select(graphCfg.target)
@@ -219,8 +219,8 @@ d3.csv("data/spf_fra_data.csv").then(data => {
 
   // Objet contenant les informations à afficher dans la légende : text, couleur, opacité
   const legendeValues = [
-    { label: "Hospitalisations", col: "#0072B2", op: 0.6 },
-    { label: "Réanimations", col: "#D55E00", op: 1 },
+    { label: "Soins critiques", col: "#D55E00", op: 1 },
+    { label: "Autres hospitalisations", col: "#0072B2", op: 0.6 }
   ];
 
   // Création d'un groupe g par élément de la légende (ici deux infos)
@@ -229,7 +229,7 @@ d3.csv("data/spf_fra_data.csv").then(data => {
     .data(legendeValues)
     .join("g")
     .attr("transform", (d, i) => {
-      return `translate(${(i * width) / 3}, ${0})`;
+      return `translate(${(i * width) / 4}, ${0})`;
     })
     .attr("class", "legend");
 
@@ -247,5 +247,5 @@ d3.csv("data/spf_fra_data.csv").then(data => {
     .attr("x", 24)
     .attr("y", 10)
     .text((d) => d.label)
-    .attr("font-size", `${ graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font }px`);
+    .attr("font-size", `${graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font}px`);
 });

@@ -85,7 +85,7 @@ d3.csv('data/spf_fra_data.csv').then(data => {
     .select('.grph-title')
     .append('span')
     .attr('class', 'grph-date')
-    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${ graphCfg?.startDate?.day === 1 ? graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day } ${ commonGraph.locale.months[graphCfg?.startDate?.month - 1] } ${ graphCfg?.startDate?.year }`))
+    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${ +graphCfg?.startDate?.day === 1 ? +graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day } ${ commonGraph.locale.months[+graphCfg?.startDate?.month - 1] } ${ graphCfg?.startDate?.year }`))
 
   // Écriture de la source
   d3.select(graphCfg.target)

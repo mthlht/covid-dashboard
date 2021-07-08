@@ -1,9 +1,7 @@
 Promise.all([
   d3.json("data/ftv_world.geojson"),
   d3.csv("data/owid_total_vacc.csv")
-]).then(showData);
-
-function showData(data) {
+]).then(data => {
   const graphCfg = {
     target: `#vac-inter-graph01`,
     title: `Avancée de la vaccination dans le monde`,
@@ -213,70 +211,66 @@ function showData(data) {
   const tooltip = svgPlot.append("g")
     .attr("transform", `translate(${0}, ${height / 1.4})`);
 
-  // condition pour que l'animation ne fonctionne que sur desktop
-  // voir script device_detector pour la fonction deviceType()
-  if (deviceType() == "desktop") {
-    polygons.on("mouseover", function (d) {
-      // lors du survol avec la souris l'opacité des barres passe à 1
-      d3.select(this)
-        .attr("opacity", 0.8)
-        .style('cursor', 'default');
+  polygons.on("mouseover", function (d) {
+    // lors du survol avec la souris l'opacité des barres passe à 1
+    d3.select(this)
+      .attr("opacity", 0.8)
+      .style('cursor', 'default');
 
-      // Activation de l'animation uniquement pour les pays qui
-      // ont un pourcentage de vaccinés
-      if (d.properties.people_vaccinated_per_hundred) {
+    // Activation de l'animation uniquement pour les pays qui
+    // ont un pourcentage de vaccinés
+    if (d.properties.people_vaccinated_per_hundred) {
 
-        tooltip.html('')
+      tooltip.html('')
 
-        // écriture nom Pays
-        tooltip
-          // .append('g')
-          .append("text")
-          .attr("x", 12)
-          .attr("y", height - (height / 1.4))
-          .text(d.properties.name_fr)
-          .style("font-size", "13px")
-          .style("font-weight", "bold");
+      // écriture nom Pays
+      tooltip
+        // .append('g')
+        .append("text")
+        .attr("x", 12)
+        .attr("y", height - (height / 1.4))
+        .text(d.properties.name_fr)
+        .style("font-size", "13px")
+        .style("font-weight", "bold");
 
 
-        // Agencement des données pour la génération du pie chart
-        let pieData = [
-          {
-            name: "Au moins une dose",
-            value: d.properties.people_vaccinated_per_hundred * 100,
-          },
-          {
-            name: "Non vacciné",
-            value: 100 - d.properties.people_vaccinated_per_hundred * 100,
-          }
-        ];
+      // Agencement des données pour la génération du pie chart
+      let pieData = [
+        {
+          name: "Au moins une dose",
+          value: d.properties.people_vaccinated_per_hundred * 100,
+        },
+        {
+          name: "Non vacciné",
+          value: 100 - d.properties.people_vaccinated_per_hundred * 100,
+        }
+      ];
 
-        // Projection des donuts
-        const donuts = tooltip
-          .append('g')
-          .attr('transform', 'translate(45, 30)')
-          .selectAll("path")
-          .data(pie(pieData))
-          .join("path")
-          // couleurs de remplissage des arcs
-          .attr("fill", (d) => d.data.name === "Au moins une dose" ? seqScale(d.data.value / 100) : "#e0e0e0")
-          .attr("d", arc);
+      // Projection des donuts
+      const donuts = tooltip
+        .append('g')
+        .attr('transform', 'translate(45, 30)')
+        .selectAll("path")
+        .data(pie(pieData))
+        .join("path")
+        // couleurs de remplissage des arcs
+        .attr("fill", (d) => d.data.name === "Au moins une dose" ? seqScale(d.data.value / 100) : "#e0e0e0")
+        .attr("d", arc);
 
-        // Ajout des valeurs en pourcentage à l'intérieur de chaque ar
-        tooltip
-          .append('g')
-          .attr('transform', d.properties.people_vaccinated_per_hundred < 0.1 ? `translate(${radius - 4}, ${radius - 4})` : `translate(${radius - 6}, ${radius - 4})`)
-          .append("text")
-          .text(Math.round(d.properties.people_vaccinated_per_hundred * 100) + "%")
-          .attr("font-weight", "bold")
-          .attr("font-size", "12px")
-          .attr("fill", "#000000");
-      }
-    });
+      // Ajout des valeurs en pourcentage à l'intérieur de chaque ar
+      tooltip
+        .append('g')
+        .attr('transform', d.properties.people_vaccinated_per_hundred < 0.1 ? `translate(${radius - 4}, ${radius - 4})` : `translate(${radius - 6}, ${radius - 4})`)
+        .append("text")
+        .text(Math.round(d.properties.people_vaccinated_per_hundred * 100) + "%")
+        .attr("font-weight", "bold")
+        .attr("font-size", "12px")
+        .attr("fill", "#000000");
+    }
+  });
 
-    // efface le contenu du groupe g lorsque la souris ne survole plus le polygone
-    polygons.on("mouseout", function () {
-      d3.select(this).attr("opacity", 1); // rétablit l'opacité à 1
-    });
-  }
-}
+  // efface le contenu du groupe g lorsque la souris ne survole plus le polygone
+  polygons.on("mouseout", function () {
+    d3.select(this).attr("opacity", 1); // rétablit l'opacité à 1
+  });
+});

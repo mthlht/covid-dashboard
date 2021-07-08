@@ -1,6 +1,4 @@
-d3.csv("data/owid_top10_vac_eu.csv").then(showData);
-
-function showData(data) {
+d3.csv("data/owid_top10_vac_eu.csv").then(data => {
   const graphCfg = {
     target: `#vac-inter-graph02`,
     title: `Les 10 pays européens qui vaccinent le plus`,
@@ -202,4 +200,4 @@ function showData(data) {
 
   // Placement Y
   svgPlot.append("g").call(yAxis).attr("color", "transparent"); // les ticks de l'axe X sont transparents
-}
+});

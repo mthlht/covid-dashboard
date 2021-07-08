@@ -87,9 +87,9 @@ Promise.all([
   // Définition du padding à appliquer aux titres, sous-titres, source
   // pour une titraille toujours alignée avec le graphique
   const padding = marginH / viewBox.width * 100
-  const paddingTxt = `0 ${ padding }%`
+  const paddingTxt = `0 ${padding}%`
 
-  document.documentElement.style.setProperty('--gutter-size', `${ padding }%`)
+  document.documentElement.style.setProperty('--gutter-size', `${padding}%`)
 
   // Écriture du titre
   d3.select(graphCfg.target)
@@ -99,7 +99,7 @@ Promise.all([
 
   // Date à afficher dans le titre
   // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
-  const formatTimeToTitle = d3.timeFormat("%d %b %Y");
+  const formatTimeToTitle = d3.timeFormat("%d %B %Y");
   const actualDate = new Date(dataIncid[0].date);
   const dateToTitle = formatTimeToTitle(actualDate);
 
@@ -108,7 +108,7 @@ Promise.all([
     .select('.grph-title')
     .append('span')
     .attr('class', 'grph-date')
-    .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${ dateToTitle }`))
+    .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${dateToTitle}`))
 
   // Écriture de la source
   d3.select(graphCfg.target)
@@ -199,6 +199,66 @@ Promise.all([
   // création d'un groupe g qui contiendra le tooltip de la légende
   const tooltip = svgPlot.append("g").attr("transform", `translate(0, 60)`); // placement du groupe en haut à gauche sous le titre et la légende
 
+  // Texte cliquez sur la carte
+  tooltip
+    .append("text")
+    .attr("x", 30)
+    .attr("y", 0)
+    .text(`Cliquez sur la`)
+    .style("font-weight", "bold");
+
+  tooltip
+    .append("text")
+    .attr("x", 30)
+    .attr("y", 20)
+    .text(`carte pour afficher`)
+    .style("font-weight", "bold");
+
+  tooltip
+    .append("text")
+    .attr("x", 30)
+    .attr("y", 40)
+    .text(`les valeurs`)
+    .style("font-weight", "bold");
+
+  tooltip
+    .selectAll('text')
+    .attr("fill", "grey");
+
+  // Arrow nudge
+
+  let linePoints = [
+    [80, 50],
+    [80, 70],
+    [100, 80]
+  ];
+
+  const lineGen = d3.line()
+    .curve(d3.curveBasis);
+
+  svg.append("svg:defs").append("svg:marker")
+    .attr("id", "arrow")
+    .attr("viewBox", "0 -5 10 10")
+    .attr('refX', 0)//so that it comes towards the center.
+    .attr("markerWidth", 4)
+    .attr("markerHeight", 4)
+    .attr("orient", "auto")
+    .append("svg:path")
+    .attr("d", "M0,-5L10,0L0,5")
+
+  tooltip
+    .append("path")
+    .attr('d', lineGen(linePoints))
+    .attr('fill', 'transparent')
+    .attr('stroke-width', '3px')
+    .attr("marker-end", "url(#arrow)")
+
+  tooltip
+    .selectAll('path')
+    .attr("stroke", "grey")
+
+
+
   polygons.on("mouseover", function (d) {
     // lors du survol avec la souris l'opacité des barres passe à 1
     d3.select(this).attr("opacity", 0.8);
@@ -217,10 +277,18 @@ Promise.all([
 
     // Affichage du nom du département en gras
     tooltip
+      .selectAll('text')
+      .remove()
+
+    tooltip
+      .selectAll('path')
+      .remove()
+
+    tooltip
       .append("text")
       .attr("y", 0)
       .text(d.properties.name)
-      .attr("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
+      .attr("font-size", `${graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font}px`)
       .style("font-weight", "bold");
 
     // 1e ligne sous le nom du département
@@ -243,6 +311,37 @@ Promise.all([
   polygons.on("mouseout", function () {
     d3.select(this).attr("opacity", 1); // rétablit l'opacité à 1
 
-    tooltip.selectAll("text").remove();
+    tooltip.selectAll("text")
+      .remove()
+
+    tooltip
+      .append("text")
+      .attr("x", 30)
+      .attr("y", 0)
+      .text(`Cliquez sur la`)
+      .style("font-weight", "bold");
+
+    tooltip
+      .append("text")
+      .attr("x", 30)
+      .attr("y", 20)
+      .text(`carte pour afficher`)
+      .style("font-weight", "bold");
+
+    tooltip
+      .append("text")
+      .attr("x", 30)
+      .attr("y", 40)
+      .text(`les valeurs`)
+      .style("font-weight", "bold");
+  
+    tooltip
+      .append("path")
+      .attr('d', lineGen(linePoints))
+      .attr('fill', 'transparent')
+      .attr('stroke-width', '3px')
+      .attr('stroke', 'black')
+      .attr("marker-end", "url(#arrow)");
+
   });
 });

@@ -2,10 +2,10 @@ d3.csv("data/spf_fra_data.csv").then(data => {
   const graphCfg = {
     target: `#fra-nat-graph03`,
     title: `Evolution des admisssions à l'hôpital des patients Covid`,
-    subtitle: `depuis [[startDate]]`,
+    subtitle: `depuis le [[startDate]]`,
     caption: `Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>`,
     startDate: {
-      day: '01',
+      day: '25',
       month: '03',
       year: '2020',
     },
@@ -82,7 +82,7 @@ d3.csv("data/spf_fra_data.csv").then(data => {
     .select('.grph-title')
     .append('span')
     .attr('class', 'grph-date')
-    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${ graphCfg?.startDate?.day === 1 ? graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day } ${ commonGraph.locale.months[graphCfg?.startDate?.month - 1] } ${ graphCfg?.startDate?.year }`))
+    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${ +graphCfg?.startDate?.day === 1 ? +graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day } ${ commonGraph.locale.months[+graphCfg?.startDate?.month - 1] } ${ graphCfg?.startDate?.year }`))
 
   // Écriture
   d3.select(graphCfg.target)
@@ -296,8 +296,6 @@ d3.csv("data/spf_fra_data.csv").then(data => {
     // création du tooltip de la légende personnalisé
     const custTooltip = commonGraph.tooltip(graphCfg.target, d3)
 
-    // condition pour que l'animation ne fonctionne que sur desktop
-    // voir script device_detector pour la fonction deviceType()
     rect.on("mouseover", function (d) {
       // lors du survol avec la souris l'opacité des barres passe à 1
       d3.select(this).attr("opacity", 1);

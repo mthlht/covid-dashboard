@@ -192,56 +192,50 @@ Promise.all([
   // création d'un groupe g qui contiendra le tooltip de la légende
   const tooltip = svgPlot.append("g").attr("transform", `translate(0, 0)`);
 
-  // condition pour que l'animation ne fonctionne que sur desktop
-  // voir script device_detector pour la fonction deviceType()
-  if (deviceType() == "desktop") {
-    polygons.on("mouseover", function (d) {
-      // lors du survol avec la souris l'opacité des barres passe à 1
-      d3.select(this)
-        .attr("opacity", 0.8)
-        .style('cursor', 'default');
+  polygons.on("mouseover", function (d) {
+    // lors du survol avec la souris l'opacité des barres passe à 1
+    d3.select(this)
+      .attr("opacity", 0.8)
+      .style('cursor', 'default');
 
-      // format de la date affichée dans le tooltip
-      // stockage de la date de la barre survolée au format XX mois XXXX dans une variable
-      const formatTime = d3.timeFormat("%d %b");
-      let dateT = d.properties.date;
-      let instantT = formatTime(dateT);
+    // format de la date affichée dans le tooltip
+    // stockage de la date de la barre survolée au format XX mois XXXX dans une variable
+    const formatTime = d3.timeFormat("%d %b");
+    let dateT = d.properties.date;
+    let instantT = formatTime(dateT);
 
-      // Affichage du nom du département en gras
-      tooltip
-        .append("text")
-        .attr("y", 0)
-        .text(d.properties.NOM)
-        .style("font-size", "20px")
-        .style("font-weight", "bold");
+    // Affichage du nom du département en gras
+    tooltip
+      .append("text")
+      .attr("y", 0)
+      .text(d.properties.NOM)
+      .style("font-size", "20px")
+      .style("font-weight", "bold");
 
-      // variation ou baisse selon la valeur incid_evol
-      let labelNbDoses1 = +d.properties.t_dose1>=1000000
-        ? `${ (+d.properties.t_dose1 / 1000000).toFixed(2).replace('.', ',')} million${ (+d.properties.t_dose1/1000000) >= 2 ? 's' : '' } de vaccinés` // permet d'ajouter un 's' à partir de 2 millions
-        : `${ (+d.properties.t_dose1 + '').replace(/\B(?=(\d{3})+(?!\d))/g, ' ') } vaccinés`; // Permet d'ajouter un espace entre les milliers
+    // variation ou baisse selon la valeur incid_evol
+    let labelNbDoses1 = +d.properties.t_dose1>=1000000
+      ? `${ (+d.properties.t_dose1 / 1000000).toFixed(2).replace('.', ',')} million${ (+d.properties.t_dose1/1000000) >= 2 ? 's' : '' } de vaccinés` // permet d'ajouter un 's' à partir de 2 millions
+      : `${ (+d.properties.t_dose1 + '').replace(/\B(?=(\d{3})+(?!\d))/g, ' ') } vaccinés`; // Permet d'ajouter un espace entre les milliers
 
-      // valeur arrondie à 2 décimales de incid_evol
-      let pcDoses1 = Math.round(+d.properties.p_dose1*100);
+    // valeur arrondie à 2 décimales de incid_evol
+    let pcDoses1 = Math.round(+d.properties.p_dose1*100);
 
-      // 1e ligne sous le nom du département
-      tooltip
-        .append("text")
-        .attr("y", 22)
-        .text(labelNbDoses1);
+    // 1e ligne sous le nom du département
+    tooltip
+      .append("text")
+      .attr("y", 22)
+      .text(labelNbDoses1);
 
-      // 2e ligne sous le nom du département
-      tooltip
-        .append("text")
-        .attr("y", 40)
-        .text(`soit ${pcDoses1}% de la population`);
-    });
+    // 2e ligne sous le nom du département
+    tooltip
+      .append("text")
+      .attr("y", 40)
+      .text(`soit ${pcDoses1}% de la population`);
+  });
 
-    // efface le contenu du groupe g lorsque la souris ne survole plus le polygone
-    polygons.on("mouseout", function () {
-      d3.select(this).attr("opacity", 1); // rétablit l'opacité à 1
-
-      tooltip.selectAll("text").remove();
-    });
-  }
-
+  // efface le contenu du groupe g lorsque la souris ne survole plus le polygone
+  polygons.on("mouseout", function () {
+    d3.select(this).attr("opacity", 1); // rétablit l'opacité à 1
+    tooltip.selectAll("text").remove();
+  });
 });

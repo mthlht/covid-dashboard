@@ -5,7 +5,6 @@ Promise.all([
   const graphCfg = {
     target: `#fra-reg-graph02`,
     title: `Variation du taux d'incidence par département`,
-    // subtitle: `entre le [[autoDate1]] et le [[autoDate2]]`,
     caption: `Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>`,
     size: {
       tooltip: {
@@ -87,9 +86,9 @@ Promise.all([
   // Définition du padding à appliquer aux titres, sous-titres, source
   // pour une titraille toujours alignée avec le graphique
   const padding = marginH / viewBox.width * 100
-  const paddingTxt = `0 ${ padding }%`
+  const paddingTxt = `0 ${padding}%`
 
-  document.documentElement.style.setProperty('--gutter-size', `${ padding }%`)
+  document.documentElement.style.setProperty('--gutter-size', `${padding}%`)
 
   // Écriture du titre
   d3.select(graphCfg.target)
@@ -215,6 +214,57 @@ Promise.all([
   // création d'un groupe g qui contiendra le tooltip de la légende
   const tooltip = svgPlot.append("g").attr("transform", `translate(0, 60)`);
 
+  // Texte cliquez sur la carte
+  tooltip
+    .append("text")
+    .attr("x", 30)
+    .attr("y", 0)
+    .text(`Cliquez sur la`)
+    .style("font-weight", "bold");
+
+  tooltip
+    .append("text")
+    .attr("x", 30)
+    .attr("y", 20)
+    .text(`carte pour afficher`)
+    .style("font-weight", "bold");
+
+  tooltip
+    .append("text")
+    .attr("x", 30)
+    .attr("y", 40)
+    .text(`les valeurs`)
+    .style("font-weight", "bold");
+
+  // Arrow nudge
+
+  let linePoints = [
+    [80, 50],
+    [80, 70],
+    [100, 80]
+  ];
+
+  const lineGen = d3.line()
+    .curve(d3.curveBasis);
+
+  svg.append("svg:defs").append("svg:marker")
+    .attr("id", "arrow")
+    .attr("viewBox", "0 -5 10 10")
+    .attr('refX', 0)//so that it comes towards the center.
+    .attr("markerWidth", 4)
+    .attr("markerHeight", 4)
+    .attr("orient", "auto")
+    .append("svg:path")
+    .attr("d", "M0,-5L10,0L0,5");
+
+  tooltip
+    .append("path")
+    .attr('d', lineGen(linePoints))
+    .attr('fill', 'transparent')
+    .attr('stroke-width', '3px')
+    .attr('stroke', 'black')
+    .attr("marker-end", "url(#arrow)");
+
   polygons.on("mouseover", function (d) {
     // lors du survol avec la souris l'opacité des barres passe à 1
     d3.select(this).attr("opacity", 0.8);
@@ -231,12 +281,21 @@ Promise.all([
     // ATTENTION À BIEN RAJOUTER LES 7 JOURS à dateT
     dateT.setDate(dateT.getDate() + 7);
 
+    // Suppression du nudge
+    tooltip
+      .selectAll('text')
+      .remove()
+
+    tooltip
+      .selectAll('path')
+      .remove()
+
     // Affichage du nom du département en gras
     tooltip
       .append("text")
       .attr("y", 0)
       .text(d.properties.name)
-      .attr("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
+      .attr("font-size", `${graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font}px`)
       .style("font-weight", "bold");
 
     // variation ou baisse selon la valeur incid_evol
@@ -263,5 +322,35 @@ Promise.all([
     d3.select(this).attr("opacity", 1); // rétablit l'opacité à 1
 
     tooltip.selectAll("text").remove();
+
+    tooltip
+      .append("text")
+      .attr("x", 30)
+      .attr("y", 0)
+      .text(`Cliquez sur la`)
+      .style("font-weight", "bold");
+
+    tooltip
+      .append("text")
+      .attr("x", 30)
+      .attr("y", 20)
+      .text(`carte pour afficher`)
+      .style("font-weight", "bold");
+
+    tooltip
+      .append("text")
+      .attr("x", 30)
+      .attr("y", 40)
+      .text(`les valeurs`)
+      .style("font-weight", "bold");
+
+    tooltip
+      .append("path")
+      .attr('d', lineGen(linePoints))
+      .attr('fill', 'transparent')
+      .attr('stroke-width', '3px')
+      .attr('stroke', 'black')
+      .attr("marker-end", "url(#arrow)");
+
   });
 });

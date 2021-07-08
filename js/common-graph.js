@@ -308,9 +308,12 @@ d3.timeFormatDefaultLocale(commonGraph.locale)
   }
 }
 
-// Gestion des ancres.
+// Gestion des ancres/menu sticky d'onglets.
 {
-  document.querySelectorAll('.tab-group a').forEach((el, idx, arr) => {
+  const linkGroup = document.querySelectorAll('.tab-group a')
+  const linkGroupWrapper = document.querySelector('.tab-group-wrapper')
+
+  linkGroup.forEach((el, idx, arr) => {
     // gestion de l'événement du click des liens du menu sticky.
     el.addEventListener('click', e => {
       // Annule le comportement naturel des ancres.
@@ -324,9 +327,19 @@ d3.timeFormatDefaultLocale(commonGraph.locale)
 
       // Scroll de la page vers la position cible (moins la hauteur du menu sticky).
       window.scrollTo({
-        top: targetSectionPos - document.querySelector('.tab-group-wrapper').clientHeight,
+        top: Math.round(targetSectionPos - linkGroupWrapper.clientHeight),
         left: 0
       })
     })
   })
+
+  // gestion du scroll pour le menu sticky.
+  window.addEventListener('scroll', () => {
+    Array.from(linkGroup).filter((el, idx, arr) => el[el !== arr[window.pageYOffset < getArrRef()[1] - 1 ? 0 : window.pageYOffset < getArrRef()[2] - 1 ? 1 : 2] ? 'removeAttribute' : 'setAttribute']('active', ''))
+  })
+
+  // tableau des positions pour le menu sticky.
+  function getArrRef () {
+    return Array.from(linkGroup).map(link => Math.round(window.scrollY + document.querySelector(link.getAttribute('href')).getBoundingClientRect().top - linkGroupWrapper.clientHeight))
+  }
 }

@@ -1,11 +1,11 @@
 Promise.all([
-    d3.json("data/ftv_eu.geojson"),
-    d3.csv("data/owid_incid.csv")
+    d3.json("data/ftv_world.geojson"),
+    d3.csv("data/owid_total_dc.csv")
 ]).then(data => {
     const graphCfg = {
-        target: `#eu-graph01`,
-        title: `Nombre de cas Covid-19 par pays en Europe`,
-        subtitle: `en nombre de cas, lissés sur une semaine, pour un million d'habitants [[autoDate]]`,
+        target: `#inter-graph03`,
+        title: `Décès Covid par pays`,
+        subtitle: `au [[autoDate]]`,
         caption: `Source. <a href='https://ourworldindata.org/coronavirus' target='_blank'>Our world in data</a>`,
         type: 'landscape', // définition du format du graphe
         device: window.screenDevice, // récupération de la largeur de l'écran
@@ -13,35 +13,34 @@ Promise.all([
 
     // Tri des données
 
-    // données carto
     let dataMap = data[0];
+    let dataDc = data[1];
 
-    // données taux de vaccination
-    let dataVacc = data[1];
-
-    // création d'un container pour le tri des données de vaccination
     let dataContainer = {
-        new_cases_smoothed_per_million: {},
-        date: {}
+        'continent': {},
+        'date': {},
+        'dc': {}
     };
 
-    // répartition des données d'incidence dans le container
-    for (let d of dataVacc) {
+    for (let d of dataDc) {
 
-        let code_pays = d.iso_code;
+        let isoCode = d.iso_code;
 
-        dataContainer.new_cases_smoothed_per_million[code_pays] = d.new_cases_smoothed_per_million;
-        dataContainer.date[code_pays] = d.date;
+        dataContainer.continent[isoCode] = d.continent;
+        dataContainer.dc[isoCode] = d.total_deaths;
+        dataContainer.date[isoCode] = d.date;
 
-    }
+    };
 
     // répartition des données d'incidence dans les properties des polygones de la carte
-    dataMap.features = dataMap.features.map((d) => {
 
-        let code_pays = d.properties.iso_a3;
+    dataMap.features = dataMap.features.map(d => {
 
-        d.properties.new_cases_smoothed_per_million = +dataContainer.new_cases_smoothed_per_million[code_pays]; // ATTENTION STRING A TRANSPOSER EN FLOAT
-        d.properties.date = new Date(dataContainer.date[code_pays]); // ATTENTION À TRANSPOSER EN FORMAT DATE
+        let isoCode = d.properties.iso_a3;
+
+        d.properties.continent = +dataContainer.continent[isoCode]; // TRANSPOSITION EN FLOAT
+        d.properties.dc = +dataContainer.dc[isoCode]; // TRANSPOSITION EN FLOAT
+        d.properties.date = new Date(dataContainer.date[isoCode]); // FORMAT DATE
 
         return d;
 
@@ -59,7 +58,7 @@ Promise.all([
 
     const viewBox = {
         width: width + marginH * 2,
-        height: height + leg + marginV * 2
+        height: height + marginV
     };
 
     // création du canevas pour le Graphique
@@ -78,14 +77,14 @@ Promise.all([
     // création d'un groupe g pour le Graphique
     const svgPlot = svg
         .append("g")
-        .attr("transform", `translate(${marginH}, ${marginV + leg})`);
+        .attr("transform", `translate(${marginH}, ${0})`);
 
     //---------------------------------------------------------------------------------------
 
     // Date à afficher dans le titre
     // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
-    const formatTimeToTitle = d3.timeFormat("%d %b %Y");
-    const actualDate = new Date(dataVacc[0].date);
+    const formatTimeToTitle = d3.timeFormat("%d %B %Y");
+    const actualDate = new Date(dataDc[0].date);
     const dateToTitle = formatTimeToTitle(actualDate);
 
     // Écriture titraille graphique
@@ -102,9 +101,10 @@ Promise.all([
 
     // Écriture du sous-titre
     d3.select(graphCfg.target)
-        .select('.grph-subtitle')
-        .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${dateToTitle}`))
-        .style("padding", paddingTxt);
+        .select('.grph-title')
+        .append('span')
+        .attr('class', 'grph-date')
+        .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${dateToTitle}`));
 
     // Écriture de la source
     d3.select(graphCfg.target)
@@ -116,11 +116,6 @@ Promise.all([
 
     // Création de l'échelle de couleur
 
-    // échelle de couleur
-    const seqScale = d3.scaleLinear()
-        .domain([0, 0.5, 2.5, 5, 10, 50, 100, 500, 1000, 4000])
-        .range(['#fff5f0', '#fee0d2', '#fcbba1', '#fc9272', '#fb6a4a', '#ef3b2c', '#cb181d', '#a50f15', '#67000d', '#011615']);
-
 
     //---------------------------------------------------------------------------------------
 
@@ -128,10 +123,10 @@ Promise.all([
 
     // définition de la projection de la carte (en geoNaturalEarth1)
     const projection = d3.geoNaturalEarth1()
-        .center([15, 54])
+        .center([0.049747, 18.798336])
         //.scale([width / (1.3 * Math.PI)])
-        .translate([width / 2, height / 2])
-        .scale([width / 1.1]);
+        .scale(112)
+        .translate([width / 2, height / 2]);
 
     // création d'un générateur géographique de formes
     const path = d3.geoPath().projection(projection);
@@ -146,30 +141,91 @@ Promise.all([
         .append("path")
         .attr("d", (d) => path(d))
         .attr("stroke", "#ffffff")
-        .attr("fill", (d) => d.properties.new_cases_smoothed_per_million ? seqScale(d.properties.new_cases_smoothed_per_million) : "#eee")
+        .attr("fill", "#e0e0e0")
         .style("stroke-width", "0.5px");
+
+
+    //---------------------------------------------------------------------------------------
+
+    // Spikes
+
+    const spike = (length, w = 3) => `M${-w / 2},0L0,${-length}L${w / 2},0`;
+
+    const dataSpikes = dataMap.features.map(d => {
+
+        let position = projection([+d.properties.longitude, +d.properties.latitude]);
+
+        let objSpike = {
+            'pays': d.properties.name_fr,
+            'dc': d.properties.dc,
+            'position': position
+        };
+
+        return objSpike;
+
+    });
+
+    const length = d3.scaleLinear([0, d3.max(dataSpikes, d => d.dc)], [0, 100])
+
+
+    svgPlot.append("g")
+        .attr("fill", "#D55E00")
+        .attr("fill-opacity", 0.3)
+        .attr("stroke", "#D55E00")
+        .selectAll("path")
+        .data(dataSpikes
+            .filter(d => d.position)
+            .sort((a, b) => d3.ascending(a.position[1], b.position[1])
+                || d3.ascending(a.position[0], b.position[0])))
+        .join("path")
+        .attr("transform", d => `translate(${d.position})`)
+        .attr("d", d => spike(length(d.dc)))
+
 
 
 
     //---------------------------------------------------------------------------------------
 
-    // Legende ---- fonctionne avec l'API d3-legend
-    // https://d3-legend.susielu.com/
+    // Légende
 
-    // paramètres de la legende à l'aide de la variable legCells définie avec l'échelled de couleur
-    const legend = d3
-        .legendColor()
-        .shapeWidth(width / 10)
-        .cells([0, 0.5, 2.5, 5, 10, 50, 100, 500, 1000, 4000])
-        .orient("horizontal")
-        .labelAlign("middle")
-        .scale(seqScale);
+    const legend = svgPlot.append("g")
+        .attr("transform", `translate(${0}, ${height})`)
+        .attr("fill", "#777")
+        .attr("font-size", "8px")
+        .selectAll("g")
+        .data(length.ticks(4).reverse())
+        .join("g")
+        .attr("transform", (d, i) => `translate(${10 + 30 * i},0)`);
 
-    // projection de la légende
-    svgLegend.call(legend)
-        .selectAll("text")
-        .attr("fill", "grey")
-        .attr("font-size", "12px");
+    legend.append("path")
+        .attr("fill", "#D55E00")
+        .attr("fill-opacity", 0.3)
+        .attr("stroke", "#D55E00")
+        .attr("d", d => spike(length(d)));
+
+    legend.append("text")
+        .attr("dy", "1.2em")
+        .attr("dx", "-1em")
+        .text(length.tickFormat(1, "s"));
+
+
+    //---------------------------------------------------------------------------------------
+
+    // Rayon des donuts
+    const radius = Math.min(width / 4, height / 4) / 2;
+
+    // Les arcs du pie en donut (avec un trou à l'intérieur)
+    const arc = d3
+        .arc()
+        .innerRadius(radius * 0.5)
+        .outerRadius(radius - 1);
+
+    // Générateur de path
+    const pie = d3
+        .pie()
+        .padAngle(0.005)
+        .sort(null)
+        .value((d) => d.value);
 
     //---------------------------------------------------------------------------------------
 
@@ -205,7 +261,7 @@ Promise.all([
 
         custTooltip
             .append('div')
-            .html(`${Math.round(d.properties.new_cases_smoothed_per_million).toLocaleString("fr-FR")} cas pour un million d'habitants`);
+            .html(`${Math.round(d.properties.dc).toLocaleString("fr-FR")} décès`);
 
     });
 

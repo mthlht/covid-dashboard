@@ -88,7 +88,7 @@ d3.csv("data/spf_fra_test.csv").then(data => {
     .select('.grph-title')
     .append('span')
     .attr('class', 'grph-date')
-    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${ graphCfg?.startDate?.day === 1 ? graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day } ${ commonGraph.locale.months[graphCfg?.startDate?.month - 1] } ${ graphCfg?.startDate?.year }`))
+    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${ +graphCfg?.startDate?.day === 1 ? +graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day } ${ commonGraph.locale.months[+graphCfg?.startDate?.month - 1] } ${ graphCfg?.startDate?.year }`))
 
   // Écriture de la source
   d3.select(graphCfg.target)
@@ -178,15 +178,19 @@ d3.csv("data/spf_fra_test.csv").then(data => {
 
   // Création du Bar Chart
 
-  const rect = svgPlot
-    .selectAll("rect")
-    .data(tidyData)
-    .join("rect")
-    .attr("x", (d) => scaleT(d.date))
-    .attr("y", (d) => scaleY1(d.test))
-    .attr("height", (d) => scaleY1(0) - scaleY1(d.test))
-    .attr("width", scaleX.bandwidth()) // width des barres avec l'échelle d'épaiseur
+  const areaTest = d3
+    .area()
+    .curve(d3.curveLinear)
+    .x((d) => scaleT(d.date))
+    .y0((d) => scaleY1(0))
+    .y1((d) => scaleY1(d.test))
+    .curve(d3.curveBasis);
+
+    svgPlot
+    .append("path")
+    .datum(tidyData)
     .attr("fill", "#0072B2")
+    .attr("d", areaTest)
     .attr("opacity", 0.6);
 
   //---------------------------------------------------------------------------------------
@@ -244,46 +248,5 @@ d3.csv("data/spf_fra_test.csv").then(data => {
     .text((d) => d.label)
     .attr("font-size", `${ graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font }px`);
 
-  //---------------------------------------------------------------------------------------
-
-  // Animation Bar Chart
-
-  // création du tooltip de la légende personnalisé
-  const custTooltip = commonGraph.tooltip(graphCfg.target, d3)
-
-  rect.on("mouseover", function (d) {
-    // lors du survol avec la souris l'opacité des barres passe à 1
-    d3.select(this).attr("opacity", 1);
-
-    // format de la date affichée dans le tooltip
-    // stockage de la date de la barre survolée au format XX mois XXXX dans une variable
-    const formatTime = d3.timeFormat("%d %b %Y");
-    const instantT = formatTime(d.date);
-
-    // efface les données du tooltip
-    custTooltip.html('')
-
-    // affiche et positionne le tooltip avec les données
-    custTooltip
-      .style('opacity', '1')
-      .style('left', `${ d3.event.pageX }px`)
-      .style('top', `${ d3.event.pageY }px`)
-      .style('font-size', `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
-      .append('div')
-      .html(`${instantT}`)
-    custTooltip
-      .append('div')
-      .html(`Moyenne lissée: ${Math.round(d.test).toLocaleString("fr-FR")}`)
-    custTooltip
-      .append('div')
-      .html(`Nombre par jour: ${d.test.toLocaleString("fr-FR")}`)
-  });
-
-  // efface le contenu du groupe g lorsque la souris ne survole plus la barre
-  rect.on("mouseout", function () {
-    d3.select(this).attr("opacity", 0.6); // rétablit l'opacité à 0.6
-
-    // rend invisible le tooltip
-    custTooltip.style('opacity', '0')
-  });
+  
 });
