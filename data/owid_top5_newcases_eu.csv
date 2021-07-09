@@ -186,6 +186,8 @@ FRA,France,Europe,2021-07-03,32.278
 FRA,France,Europe,2021-07-04,34.331
 FRA,France,Europe,2021-07-05,34.932
 FRA,France,Europe,2021-07-06,35.34
+FRA,France,Europe,2021-07-07,41.055
+FRA,France,Europe,2021-07-08,44.743
 ESP,Espagne,Europe,2021-01-01,224.008
 ESP,Espagne,Europe,2021-01-02,224.008
 ESP,Espagne,Europe,2021-01-03,224.008
@@ -366,6 +368,8 @@ ESP,Espagne,Europe,2021-07-03,157.066
 ESP,Espagne,Europe,2021-07-04,157.066
 ESP,Espagne,Europe,2021-07-05,225.593
 ESP,Espagne,Europe,2021-07-06,247.122
+ESP,Espagne,Europe,2021-07-07,272.046
+ESP,Espagne,Europe,2021-07-08,287.237
 TUR,Turquie,Asia,2021-01-01,173.788
 TUR,Turquie,Asia,2021-01-02,167.118
 TUR,Turquie,Asia,2021-01-03,159.787
@@ -553,6 +557,8 @@ TUR,Turquie,Asia,2021-07-03,61.358
 TUR,Turquie,Asia,2021-07-04,60.57
 TUR,Turquie,Asia,2021-07-05,59.545
 TUR,Turquie,Asia,2021-07-06,58.619
+TUR,Turquie,Asia,2021-07-07,58.05
+TUR,Turquie,Asia,2021-07-08,57.852
 UKR,Ukraine,Europe,2021-01-01,180.547
 UKR,Ukraine,Europe,2021-01-02,171.62
 UKR,Ukraine,Europe,2021-01-03,166.174
@@ -740,6 +746,8 @@ UKR,Ukraine,Europe,2021-07-03,21.242
 UKR,Ukraine,Europe,2021-07-04,21.265
 UKR,Ukraine,Europe,2021-07-05,21.347
 UKR,Ukraine,Europe,2021-07-06,22.693
+UKR,Ukraine,Europe,2021-07-07,22.758
+UKR,Ukraine,Europe,2021-07-08,22.608
 GBR,Royaume-Uni,Europe,2021-01-01,677.064
 GBR,Royaume-Uni,Europe,2021-01-02,725.601
 GBR,Royaume-Uni,Europe,2021-01-03,773.294
@@ -927,3 +935,5 @@ GBR,Royaume-Uni,Europe,2021-07-03,341.457
 GBR,Royaume-Uni,Europe,2021-07-04,360.95
 GBR,Royaume-Uni,Europe,2021-07-05,370.173
 GBR,Royaume-Uni,Europe,2021-07-06,387.782
+GBR,Royaume-Uni,Europe,2021-07-07,401.231
+GBR,Royaume-Uni,Europe,2021-07-08,410.596

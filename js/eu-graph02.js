@@ -8,6 +8,14 @@ Promise.all([
         caption: `Source. <a href='https://ourworldindata.org/coronavirus' target='_blank'>Our world in data</a>`,
         type: 'landscape', // définition du format du graphe
         device: window.screenDevice, // récupération de la largeur de l'écran
+        size: {
+            svg: {
+                height: 300,
+            },
+            legend: {
+                height: 20,
+            },
+        },
     }
 
     // Tri des données
@@ -50,11 +58,11 @@ Promise.all([
 
     // Création du canevas SVG
 
-    const width = 500;
-    const height = 300;
-    const marginH = 80;
-    const marginV = 20;
-    const leg = 20;
+    const width = graphCfg?.size?.svg?.width || commonGraph.size[graphCfg.type][graphCfg.device].svg.width;
+    const height = graphCfg?.size?.svg?.height || commonGraph.size[graphCfg.type][graphCfg.device].svg.height;
+    const marginH = graphCfg?.size?.margin?.horizontal || commonGraph.size[graphCfg.type][graphCfg.device].margin.horizontal;
+    const marginV = graphCfg?.size?.margin?.vertical || commonGraph.size[graphCfg.type][graphCfg.device].margin.vertical;
+    const leg = graphCfg?.size?.legend?.height || commonGraph.size[graphCfg.type][graphCfg.device].legend.height;
 
     const viewBox = {
         width: width + marginH * 2,
@@ -210,7 +218,7 @@ Promise.all([
     svgLegend.call(legend)
         .selectAll("text")
         .attr("fill", "grey")
-        .attr("font-size", "12px");
+        .attr("font-size", `${ graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font }px`)
 
     //---------------------------------------------------------------------------------------
 

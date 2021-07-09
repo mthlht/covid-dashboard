@@ -130,7 +130,7 @@ d3.csv("data/hosp_reg.csv").then(data => {
       .call((g) => g.select(".domain").remove()) // supprime la ligne de l'axe
       .selectAll("text")
       .style("font-size", scaleY.bandwidth() * 0.5 + "px")
-      .style("fill", "grey"); // couleur du texte
+      .style("fill", "grey") // couleur du texte
 
   //---------------------------------------------------------------------------------------
 

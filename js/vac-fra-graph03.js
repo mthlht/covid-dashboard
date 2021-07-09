@@ -90,7 +90,7 @@ d3.csv("data/spf_fra_vacc_dose1_2.csv").then(data => {
     .select('.grph-title')
     .append('span')
     .attr('class', 'grph-date')
-    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${ graphCfg?.startDate?.day === 1 ? graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day } ${ commonGraph.locale.months[graphCfg?.startDate?.month - 1] } ${ graphCfg?.startDate?.year }`))
+    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${ +graphCfg?.startDate?.day === 1 ? +graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day } ${ commonGraph.locale.months[+graphCfg?.startDate?.month - 1] } ${ graphCfg?.startDate?.year }`))
 
   // Écriture de la source
   d3.select(graphCfg.target)
@@ -254,6 +254,7 @@ d3.csv("data/spf_fra_vacc_dose1_2.csv").then(data => {
   const legendeValues = [
     { label: "Premières doses", col: "#56B4E9", op: 1 },
     { label: "Deuxièmes doses", col: "#0072B2", op: 1 },
+    { label: "Moyenne glissante", col: "#D55E00", op: 1 }
   ];
 
   // Création d'un groupe g par élément de la légende (ici deux infos)

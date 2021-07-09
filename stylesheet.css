@@ -167,6 +167,7 @@ figure {
     line-height: 1.375;
     padding-right: var(--gutter-size);
     padding-left: var(--gutter-size);
+    max-width: 800px;
 }
 
 .sctn-title {
@@ -180,6 +181,9 @@ figure {
     display: flex;
     flex-wrap: wrap;
     margin-top: 2.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1280px;
 }
 
 .cntnr-graph {
@@ -188,7 +192,7 @@ figure {
     margin-top: 2.5rem;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 880px) {
     .cntnr-graph:not(.dbl-width) {
         flex-basis: 50%;
     }

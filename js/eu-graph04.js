@@ -140,7 +140,8 @@ d3.csv("data/owid_top5_newdc_eu.csv").then(data => {
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(scaleT).ticks(4).tickFormat(d3.timeFormat("%b %Y")))
         .selectAll("text")
-        .style("fill", "grey"); // couleur du texte
+        .style("fill", graphCfg?.size?.axis?.color || commonGraph.size[graphCfg.type][graphCfg.device].axis.color) // couleur du texte
+        .style("font-size", `${ graphCfg?.size?.axis?.font || commonGraph.size[graphCfg.type][graphCfg.device].axis.font }px`)
 
     // Axe des Y
     const yAxis = (g) =>
@@ -154,7 +155,8 @@ d3.csv("data/owid_top5_newdc_eu.csv").then(data => {
         ) // formatage grands nombre avec virgule entre milliers
         .call((g) => g.select(".domain").remove()) // supprime la ligne de l'axe
         .selectAll("text")
-        .style("fill", "grey"); // couleur du texte
+        .style("fill", graphCfg?.size?.axis?.color || commonGraph.size[graphCfg.type][graphCfg.device].axis.color) // couleur du texte
+        .style("font-size", `${ graphCfg?.size?.axis?.font || commonGraph.size[graphCfg.type][graphCfg.device].axis.font }px`)
 
     //---------------------------------------------------------------------------------------
 

@@ -13,7 +13,7 @@ Promise.all([
     },
     type: 'square',
     device: window.screenDevice,
-  }
+  };
 
   // Tri des données
 
@@ -207,7 +207,8 @@ Promise.all([
   // projection de la légende
   svgLegend.call(legend)
     .selectAll("text")
-    .attr("fill", "grey");
+    .attr("fill", "grey")
+    .attr("font-size", `${ graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font }px`);
 
   //---------------------------------------------------------------------------------------
 
@@ -260,7 +261,8 @@ Promise.all([
     .attr("markerHeight", 4)
     .attr("orient", "auto")
     .append("svg:path")
-    .attr("d", "M0,-5L10,0L0,5");
+    .attr("d", "M0,-5L10,0L0,5")
+    .attr("fill", "grey");
 
   tooltip
     .append("path")
@@ -366,4 +368,5 @@ Promise.all([
       .attr("stroke", "grey");
 
   });
+
 });

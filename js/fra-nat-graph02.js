@@ -135,7 +135,8 @@ d3.csv("data/spf_fra_test.csv").then(data => {
       .attr("transform", `translate(0, ${height})`)
       .call(d3.axisBottom(scaleT).ticks(5).tickFormat(d3.timeFormat("%b %Y")))
       .selectAll("text")
-      .style("fill", "grey"); // couleur du texte
+      .style("fill", `${ graphCfg?.size?.axis?.color || commonGraph.size[graphCfg.type][graphCfg.device].axis.color }px`)
+      .style("font-size", `${ graphCfg?.size?.axis?.font || commonGraph.size[graphCfg.type][graphCfg.device].axis.font }px`)
 
   // Placement de l'axe des X
   svgPlot.append("g").call(xAxis).attr("color", "grey"); // mise en gris des ticks de l'axe des X
@@ -164,13 +165,14 @@ d3.csv("data/spf_fra_test.csv").then(data => {
         .attr("stroke-opacity", 0.1)
     ) // lignes horizontales projetées sur le graphique
     .selectAll("text")
-    .style("font-size", "14px")
+    .style('font-size', `${graphCfg?.size?.axis?.font || commonGraph.size[graphCfg.type][graphCfg.device].axis.font}px`)
 
   // Axe Y de droite
   svgPlot
     .append("g")
     .attr("color", "#D55E00") // couleur texte et ticks
     .attr("transform", `translate(${width + 2}, 0 )`)
+    .style('font-size', `${graphCfg?.size?.axis?.font || commonGraph.size[graphCfg.type][graphCfg.device].axis.font}px`)
     .call(d3.axisRight(scaleY2).tickFormat(d3.format(".0%")).tickSizeInner(0))
     .call((g) => g.select(".domain").remove()); // lignes horizontales projetées sur le graphique
 
@@ -248,5 +250,5 @@ d3.csv("data/spf_fra_test.csv").then(data => {
     .text((d) => d.label)
     .attr("font-size", `${ graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font }px`);
 
-  
+
 });

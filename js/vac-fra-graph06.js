@@ -175,7 +175,7 @@ Promise.all([
     .attr("x", d => +d.properties.INSEE_REG<10 || +d.properties.INSEE_REG==94 ? path.centroid(d)[0]-55 : path.centroid(d)[0]-15)
     .attr("y", d => path.centroid(d)[1]+10)
     .text(d => Math.round(d.properties.p_dose1*100) + "%")
-    .style("font-size", 11)
+    .style("font-size", "16px")
     .style("fill", d => +d.properties.INSEE_REG<10 || +d.properties.INSEE_REG==94 ? "#000000" : "#ffffff");
 
 
@@ -192,6 +192,62 @@ Promise.all([
   // création d'un groupe g qui contiendra le tooltip de la légende
   const tooltip = svgPlot.append("g").attr("transform", `translate(0, 0)`);
 
+   // Texte cliquez sur la carte
+   tooltip
+   .append("text")
+   .attr("x", 30)
+   .attr("y", 0)
+   .text(`Cliquez sur la`)
+   .style("font-weight", "bold");
+
+ tooltip
+   .append("text")
+   .attr("x", 30)
+   .attr("y", 20)
+   .text(`carte pour afficher`)
+   .style("font-weight", "bold");
+
+ tooltip
+   .append("text")
+   .attr("x", 30)
+   .attr("y", 40)
+   .text(`les valeurs`)
+   .style("font-weight", "bold");
+
+ tooltip
+   .selectAll('text')
+   .attr("fill", "grey");
+
+ // Arrow nudge
+
+ let linePoints = [
+   [80, 50],
+   [80, 70],
+   [100, 80]
+ ];
+
+ const lineGen = d3.line()
+   .curve(d3.curveBasis);
+
+ svg.append("svg:defs").append("svg:marker")
+   .attr("id", "arrow")
+   .attr("viewBox", "0 -5 10 10")
+   .attr('refX', 0)//so that it comes towards the center.
+   .attr("markerWidth", 4)
+   .attr("markerHeight", 4)
+   .attr("orient", "auto")
+   .append("svg:path")
+   .attr("d", "M0,-5L10,0L0,5")
+   .attr("fill", "grey");
+
+ tooltip
+   .append("path")
+   .attr('d', lineGen(linePoints))
+   .attr('fill', 'transparent')
+   .attr('stroke-width', '3px')
+   .attr("marker-end", "url(#arrow)")
+   .attr("stroke", "grey");
+
   polygons.on("mouseover", function (d) {
     // lors du survol avec la souris l'opacité des barres passe à 1
     d3.select(this)
@@ -203,6 +259,15 @@ Promise.all([
     const formatTime = d3.timeFormat("%d %b");
     let dateT = d.properties.date;
     let instantT = formatTime(dateT);
+
+    // Efface le nudge
+    tooltip
+      .selectAll('text')
+      .remove()
+
+    tooltip
+      .selectAll('path')
+      .remove()
 
     // Affichage du nom du département en gras
     tooltip
@@ -237,5 +302,39 @@ Promise.all([
   polygons.on("mouseout", function () {
     d3.select(this).attr("opacity", 1); // rétablit l'opacité à 1
     tooltip.selectAll("text").remove();
+
+    tooltip
+      .append("text")
+      .attr("x", 30)
+      .attr("y", 0)
+      .text(`Cliquez sur la`)
+      .style("font-weight", "bold");
+
+    tooltip
+      .append("text")
+      .attr("x", 30)
+      .attr("y", 20)
+      .text(`carte pour afficher`)
+      .style("font-weight", "bold");
+
+    tooltip
+      .append("text")
+      .attr("x", 30)
+      .attr("y", 40)
+      .text(`les valeurs`)
+      .style("font-weight", "bold");
+
+    tooltip
+      .selectAll('text')
+      .attr('fill', 'grey');
+
+    tooltip
+      .append("path")
+      .attr('d', lineGen(linePoints))
+      .attr('fill', 'transparent')
+      .attr('stroke-width', '3px')
+      .attr("marker-end", "url(#arrow)")
+      .attr("stroke", "grey");
+
   });
 });

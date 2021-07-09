@@ -9,6 +9,11 @@ Promise.all([
         caption: `Source. <a href='https://ourworldindata.org/coronavirus' target='_blank'>Our world in data</a>`,
         type: 'landscape', // définition du format du graphe
         device: window.screenDevice, // récupération de la largeur de l'écran
+        size: {
+            legend: {
+                font: 9,
+            },
+        },
     }
 
     // Tri des données
@@ -179,7 +184,7 @@ Promise.all([
                 || d3.ascending(a.position[0], b.position[0])))
         .join("path")
         .attr("transform", d => `translate(${d.position})`)
-        .attr("d", d => spike(length(d.dc)))
+        .attr("d", d => spike(length(isNaN(d.dc) ? 0 : d.dc)))
 
 
 
@@ -191,11 +196,12 @@ Promise.all([
     const legend = svgPlot.append("g")
         .attr("transform", `translate(${0}, ${height})`)
         .attr("fill", "#777")
-        .attr("font-size", "8px")
+        // .attr("font-size", "8px")
         .selectAll("g")
         .data(length.ticks(4).reverse())
         .join("g")
-        .attr("transform", (d, i) => `translate(${10 + 30 * i},0)`);
+        .attr("transform", (d, i) => `translate(${10 + 30 * i},0)`)
+        .attr("font-size", `${ graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font }px`);
 
     legend.append("path")
         .attr("fill", "#D55E00")

@@ -1,7 +1,7 @@
 d3.csv("data/spf_fra_vacc_name.csv").then(data => {
   const graphCfg = {
     target: `#vac-fra-graph04`,
-    title: `Evolution du nombre d'injections par jour selon le type de vaccin`,
+    title: `Evolution des premières injections par jour selon le type de vaccin`,
     subtitle: `depuis le [[startDate]]`,
     caption: `Source. <a href='https://www.data.gouv.fr/fr/organizations/sante-publique-france/' target='_blank'>Santé publique France</a>`,
     startDate: {
@@ -89,7 +89,7 @@ d3.csv("data/spf_fra_vacc_name.csv").then(data => {
     .select('.grph-title')
     .append('span')
     .attr('class', 'grph-date')
-    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${ graphCfg?.startDate?.day } ${ commonGraph.locale.months[graphCfg?.startDate?.month - 1] } ${ graphCfg?.startDate?.year }`))
+    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${ +graphCfg?.startDate?.day === 1 ? +graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day } ${ commonGraph.locale.months[+graphCfg?.startDate?.month - 1] } ${ graphCfg?.startDate?.year }`))
 
   // Écriture de la source
   d3.select(graphCfg.target)
