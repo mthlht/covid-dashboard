@@ -192,8 +192,7 @@ Promise.all([
         .selectAll("g")
         .data([600000, 200000, 50000, 10000])
         .join("g")
-        .attr("transform", (d, i) => `translate(${10 + 40 * i},0)`)
-        .attr("font-size", `${ graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font }px`);
+        .attr("transform", (d, i) => `translate(${10 + 40 * i},0)`);
 
     legend.append("path")
         .attr("fill", "#D55E00")
@@ -204,7 +203,7 @@ Promise.all([
     legend.append("text")
         .attr("dy", "1.2em")
         .attr("dx", "-1.5em")
-        .attr("font-size", "10px")
+        .attr("font-size", `${ graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font }px`)
         .text(d => d.toLocaleString("fr-FR"));
 
 
