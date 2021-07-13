@@ -12,6 +12,10 @@
     --gutter-size: 1.5em;
 }
 
+body {
+    font-family: var(--font-family);
+}
+
 @media (min-width: 880px) {
     .dashboard {
         flex: unset;
