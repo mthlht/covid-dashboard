@@ -29,7 +29,7 @@ d3.csv("data/spf_fra_vacc_dose1_2.csv").then(data => {
   });
 
   // Filtre les données uniquement à partir du 1er janvier
-  const startDate = `${ graphCfg.startDate.year }-${ graphCfg.startDate.month }-${ graphCfg.startDate.day }`
+  const startDate = `${graphCfg.startDate.year}-${graphCfg.startDate.month}-${graphCfg.startDate.day}`
   const tidyData = tempData.filter((d) => d.date >= new Date(startDate));
 
   // Données spécifique au line chart qui filtre les valeurs manquantes des 7 premiers jours
@@ -75,9 +75,9 @@ d3.csv("data/spf_fra_vacc_dose1_2.csv").then(data => {
   // Définition du padding à appliquer aux titres, sous-titres, source
   // pour une titraille toujours alignée avec le graphique
   const padding = marginH / viewBox.width * 100
-  const paddingTxt = `0 ${ padding }%`
+  const paddingTxt = `0 ${padding}%`
 
-  document.documentElement.style.setProperty('--gutter-size', `${ padding }%`)
+  document.documentElement.style.setProperty('--gutter-size', `${padding}%`)
 
   // Écriture du titre
   d3.select(graphCfg.target)
@@ -90,7 +90,7 @@ d3.csv("data/spf_fra_vacc_dose1_2.csv").then(data => {
     .select('.grph-title')
     .append('span')
     .attr('class', 'grph-date')
-    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${ +graphCfg?.startDate?.day === 1 ? +graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day } ${ commonGraph.locale.months[+graphCfg?.startDate?.month - 1] } ${ graphCfg?.startDate?.year }`))
+    .html(graphCfg.subtitle.replace(/\[\[\s*startDate\s*\]\]/, `${+graphCfg?.startDate?.day === 1 ? +graphCfg?.startDate?.day + 'er' : graphCfg?.startDate?.day} ${commonGraph.locale.months[+graphCfg?.startDate?.month - 1]} ${graphCfg?.startDate?.year}`))
 
   // Écriture de la source
   d3.select(graphCfg.target)
@@ -184,7 +184,7 @@ d3.csv("data/spf_fra_vacc_dose1_2.csv").then(data => {
     .map((d) => (d.forEach((v) => (v.key = d.key)), d));
 
   // Création des barres
-  svgPlot
+  const stackedBars = svgPlot
     .append("g")
     .selectAll("g")
     .data(series)
@@ -281,5 +281,55 @@ d3.csv("data/spf_fra_vacc_dose1_2.csv").then(data => {
     .attr("x", 24)
     .attr("y", 10)
     .text((d) => d.label.toLocaleString("fr-FR"))
-    .attr("font-size", `${ graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font }px`);
+    .attr("font-size", `${graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font}px`);
+
+  //---------------------------------------------------------------------------------------
+
+  // Animation Bar Chart
+
+  // condition pour que l'animation fonctionne sur desktop ou tablette
+  if (graphCfg.device !== 'mobile') {
+    // création du tooltip de la légende personnalisé
+    const custTooltip = commonGraph.tooltip(graphCfg.target, d3)
+
+    stackedBars.on('mouseover', function (d, idx, arr) {
+      // lors du survol avec la souris l'opacité des barres passe à 1
+      d3.select(this).attr("opacity", 0.6);
+
+      // format de la date affichée dans le tooltip
+      // stockage de la date de la barre survolée au format XX mois XXXX dans une variable
+      const formatTime = d3.timeFormat("%d %b %Y");
+      const instantT = formatTime(d.data.date);
+
+      // efface les données du tooltip
+      custTooltip.html('')
+
+      // affiche et positionne le tooltip avec les données
+      custTooltip
+        .style('opacity', '1')
+        .style('left', `${d3.event.pageX}px`)
+        .style('top', `${d3.event.pageY}px`)
+        .style('font-size', `${graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font}px`)
+        .append('div')
+        .html(`${instantT}`)
+      custTooltip
+        .append('div')
+        .html(`Moyenne lissée: ${Math.round(d.data.roll_dose).toLocaleString("fr-FR")}`)
+      custTooltip
+        .append('div')
+        .html(`Premières doses: ${d.data.n_dose1.toLocaleString("fr-FR")}`)
+      custTooltip
+        .append('div')
+        .html(`Deuxièmes doses: ${d.data.n_dose2.toLocaleString("fr-FR")}`)
+    });
+
+    // efface le contenu du groupe g lorsque la souris ne survole plus la barre
+    stackedBars.on("mouseout", function () {
+      d3.select(this).attr("opacity", 1); // rétablit l'opacité à 0.6
+
+      // rend invisible le tooltip
+      custTooltip.style('opacity', '0')
+    });
+  }
+
 });

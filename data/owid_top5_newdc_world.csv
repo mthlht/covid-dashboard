@@ -188,6 +188,10 @@ ARG,Argentine,South America,2021-07-05,482.714
 ARG,Argentine,South America,2021-07-06,473.571
 ARG,Argentine,South America,2021-07-07,447.857
 ARG,Argentine,South America,2021-07-08,447.429
+ARG,Argentine,South America,2021-07-09,395.143
+ARG,Argentine,South America,2021-07-10,415.286
+ARG,Argentine,South America,2021-07-11,411.0
+ARG,Argentine,South America,2021-07-12,390.571
 BRA,Brésil,South America,2021-01-01,703.286
 BRA,Brésil,South America,2021-01-02,704.286
 BRA,Brésil,South America,2021-01-03,697.0
@@ -377,6 +381,10 @@ BRA,Brésil,South America,2021-07-05,1574.286
 BRA,Brésil,South America,2021-07-06,1558.143
 BRA,Brésil,South America,2021-07-07,1496.286
 BRA,Brésil,South America,2021-07-08,1440.571
+BRA,Brésil,South America,2021-07-09,1390.857
+BRA,Brésil,South America,2021-07-10,1329.429
+BRA,Brésil,South America,2021-07-11,1295.857
+BRA,Brésil,South America,2021-07-12,1303.0
 COL,Colombie,South America,2021-01-01,257.857
 COL,Colombie,South America,2021-01-02,260.286
 COL,Colombie,South America,2021-01-03,256.286
@@ -566,6 +574,396 @@ COL,Colombie,South America,2021-07-05,591.429
 COL,Colombie,South America,2021-07-06,583.571
 COL,Colombie,South America,2021-07-07,576.286
 COL,Colombie,South America,2021-07-08,574.0
+COL,Colombie,South America,2021-07-09,572.571
+COL,Colombie,South America,2021-07-10,488.143
+COL,Colombie,South America,2021-07-11,405.0
+COL,Colombie,South America,2021-07-12,552.714
+FRA,France,Europe,2021-01-01,334.857
+FRA,France,Europe,2021-01-02,336.286
+FRA,France,Europe,2021-01-03,328.143
+FRA,France,Europe,2021-01-04,330.571
+FRA,France,Europe,2021-01-05,316.143
+FRA,France,Europe,2021-01-06,313.0
+FRA,France,Europe,2021-01-07,316.571
+FRA,France,Europe,2021-01-08,382.0
+FRA,France,Europe,2021-01-09,383.714
+FRA,France,Europe,2021-01-10,388.714
+FRA,France,Europe,2021-01-11,378.286
+FRA,France,Europe,2021-01-12,360.286
+FRA,France,Europe,2021-01-13,352.714
+FRA,France,Europe,2021-01-14,353.857
+FRA,France,Europe,2021-01-15,360.286
+FRA,France,Europe,2021-01-16,363.857
+FRA,France,Europe,2021-01-17,362.429
+FRA,France,Europe,2021-01-18,375.571
+FRA,France,Europe,2021-01-19,363.286
+FRA,France,Europe,2021-01-20,374.857
+FRA,France,Europe,2021-01-21,383.857
+FRA,France,Europe,2021-01-22,385.714
+FRA,France,Europe,2021-01-23,391.0
+FRA,France,Europe,2021-01-24,395.429
+FRA,France,Europe,2021-01-25,401.429
+FRA,France,Europe,2021-01-26,395.429
+FRA,France,Europe,2021-01-27,401.143
+FRA,France,Europe,2021-01-28,400.714
+FRA,France,Europe,2021-01-29,425.286
+FRA,France,Europe,2021-01-30,426.857
+FRA,France,Europe,2021-01-31,430.143
+FRA,France,Europe,2021-02-01,431.571
+FRA,France,Europe,2021-02-02,447.571
+FRA,France,Europe,2021-02-03,448.714
+FRA,France,Europe,2021-02-04,399.571
+FRA,France,Europe,2021-02-05,426.286
+FRA,France,Europe,2021-02-06,419.143
+FRA,France,Europe,2021-02-07,415.714
+FRA,France,Europe,2021-02-08,416.286
+FRA,France,Europe,2021-02-09,416.0
+FRA,France,Europe,2021-02-10,407.143
+FRA,France,Europe,2021-02-11,458.571
+FRA,France,Europe,2021-02-12,406.714
+FRA,France,Europe,2021-02-13,407.857
+FRA,France,Europe,2021-02-14,407.286
+FRA,France,Europe,2021-02-15,400.429
+FRA,France,Europe,2021-02-16,380.857
+FRA,France,Europe,2021-02-17,382.857
+FRA,France,Europe,2021-02-18,370.143
+FRA,France,Europe,2021-02-19,359.714
+FRA,France,Europe,2021-02-20,353.714
+FRA,France,Europe,2021-02-21,352.571
+FRA,France,Europe,2021-02-22,341.429
+FRA,France,Europe,2021-02-23,319.143
+FRA,France,Europe,2021-02-24,314.571
+FRA,France,Europe,2021-02-25,313.143
+FRA,France,Europe,2021-02-26,308.429
+FRA,France,Europe,2021-02-27,312.429
+FRA,France,Europe,2021-02-28,307.143
+FRA,France,Europe,2021-03-01,313.0
+FRA,France,Europe,2021-03-02,311.143
+FRA,France,Europe,2021-03-03,317.429
+FRA,France,Europe,2021-03-04,322.0
+FRA,France,Europe,2021-03-05,307.714
+FRA,France,Europe,2021-03-06,305.571
+FRA,France,Europe,2021-03-07,306.714
+FRA,France,Europe,2021-03-08,305.0
+FRA,France,Europe,2021-03-09,297.429
+FRA,France,Europe,2021-03-10,287.429
+FRA,France,Europe,2021-03-11,285.143
+FRA,France,Europe,2021-03-12,254.286
+FRA,France,Europe,2021-03-13,254.143
+FRA,France,Europe,2021-03-14,265.143
+FRA,France,Europe,2021-03-15,262.0
+FRA,France,Europe,2021-03-16,267.0
+FRA,France,Europe,2021-03-17,243.429
+FRA,France,Europe,2021-03-18,264.143
+FRA,France,Europe,2021-03-19,273.0
+FRA,France,Europe,2021-03-20,274.143
+FRA,France,Europe,2021-03-21,264.286
+FRA,France,Europe,2021-03-22,264.571
+FRA,France,Europe,2021-03-23,248.571
+FRA,France,Europe,2021-03-24,271.286
+FRA,France,Europe,2021-03-25,243.143
+FRA,France,Europe,2021-03-26,330.571
+FRA,France,Europe,2021-03-27,332.571
+FRA,France,Europe,2021-03-28,331.571
+FRA,France,Europe,2021-03-29,334.0
+FRA,France,Europe,2021-03-30,347.286
+FRA,France,Europe,2021-03-31,355.429
+FRA,France,Europe,2021-04-01,367.286
+FRA,France,Europe,2021-04-02,286.571
+FRA,France,Europe,2021-04-03,259.429
+FRA,France,Europe,2021-04-04,293.429
+FRA,France,Europe,2021-04-05,270.143
+FRA,France,Europe,2021-04-06,276.571
+FRA,France,Europe,2021-04-07,235.143
+FRA,France,Europe,2021-04-08,298.571
+FRA,France,Europe,2021-04-09,252.0
+FRA,France,Europe,2021-04-10,253.429
+FRA,France,Europe,2021-04-11,300.143
+FRA,France,Europe,2021-04-12,327.0
+FRA,France,Europe,2021-04-13,315.429
+FRA,France,Europe,2021-04-14,356.0
+FRA,France,Europe,2021-04-15,290.857
+FRA,France,Europe,2021-04-16,337.286
+FRA,France,Europe,2021-04-17,362.714
+FRA,France,Europe,2021-04-18,283.286
+FRA,France,Europe,2021-04-19,292.143
+FRA,France,Europe,2021-04-20,296.286
+FRA,France,Europe,2021-04-21,301.429
+FRA,France,Europe,2021-04-22,298.714
+FRA,France,Europe,2021-04-23,298.857
+FRA,France,Europe,2021-04-24,302.857
+FRA,France,Europe,2021-04-25,303.571
+FRA,France,Europe,2021-04-26,296.571
+FRA,France,Europe,2021-04-27,292.714
+FRA,France,Europe,2021-04-28,290.143
+FRA,France,Europe,2021-04-29,294.571
+FRA,France,Europe,2021-04-30,288.571
+FRA,France,Europe,2021-05-01,285.0
+FRA,France,Europe,2021-05-02,280.429
+FRA,France,Europe,2021-05-03,268.0
+FRA,France,Europe,2021-05-04,255.143
+FRA,France,Europe,2021-05-05,245.0
+FRA,France,Europe,2021-05-06,232.286
+FRA,France,Europe,2021-05-07,226.714
+FRA,France,Europe,2021-05-08,224.429
+FRA,France,Europe,2021-05-09,224.714
+FRA,France,Europe,2021-05-10,222.0
+FRA,France,Europe,2021-05-11,221.143
+FRA,France,Europe,2021-05-12,212.571
+FRA,France,Europe,2021-05-13,200.0
+FRA,France,Europe,2021-05-14,188.857
+FRA,France,Europe,2021-05-15,179.714
+FRA,France,Europe,2021-05-16,174.857
+FRA,France,Europe,2021-05-17,161.143
+FRA,France,Europe,2021-05-18,157.857
+FRA,France,Europe,2021-05-19,151.714
+FRA,France,Europe,2021-05-20,152.0
+FRA,France,Europe,2021-05-21,144.857
+FRA,France,Europe,2021-05-22,141.571
+FRA,France,Europe,2021-05-23,140.0
+FRA,France,Europe,2021-05-24,120.857
+FRA,France,Europe,2021-05-25,119.857
+FRA,France,Europe,2021-05-26,120.429
+FRA,France,Europe,2021-05-27,121.714
+FRA,France,Europe,2021-05-28,122.0
+FRA,France,Europe,2021-05-29,118.714
+FRA,France,Europe,2021-05-30,115.0
+FRA,France,Europe,2021-05-31,124.429
+FRA,France,Europe,2021-06-01,112.0
+FRA,France,Europe,2021-06-02,93.714
+FRA,France,Europe,2021-06-03,94.714
+FRA,France,Europe,2021-06-04,89.429
+FRA,France,Europe,2021-06-05,88.143
+FRA,France,Europe,2021-06-06,85.429
+FRA,France,Europe,2021-06-07,76.286
+FRA,France,Europe,2021-06-08,67.857
+FRA,France,Europe,2021-06-09,74.714
+FRA,France,Europe,2021-06-10,63.143
+FRA,France,Europe,2021-06-11,61.143
+FRA,France,Europe,2021-06-12,57.857
+FRA,France,Europe,2021-06-13,56.143
+FRA,France,Europe,2021-06-14,56.0
+FRA,France,Europe,2021-06-15,56.143
+FRA,France,Europe,2021-06-16,53.714
+FRA,France,Europe,2021-06-17,52.0
+FRA,France,Europe,2021-06-18,51.143
+FRA,France,Europe,2021-06-19,49.429
+FRA,France,Europe,2021-06-20,49.571
+FRA,France,Europe,2021-06-21,46.286
+FRA,France,Europe,2021-06-22,42.714
+FRA,France,Europe,2021-06-23,40.571
+FRA,France,Europe,2021-06-24,38.857
+FRA,France,Europe,2021-06-25,33.857
+FRA,France,Europe,2021-06-26,32.429
+FRA,France,Europe,2021-06-27,32.857
+FRA,France,Europe,2021-06-28,33.429
+FRA,France,Europe,2021-06-29,34.143
+FRA,France,Europe,2021-06-30,31.429
+FRA,France,Europe,2021-07-01,32.857
+FRA,France,Europe,2021-07-02,31.571
+FRA,France,Europe,2021-07-03,32.286
+FRA,France,Europe,2021-07-04,31.143
+FRA,France,Europe,2021-07-05,30.143
+FRA,France,Europe,2021-07-06,27.143
+FRA,France,Europe,2021-07-07,29.143
+FRA,France,Europe,2021-07-08,25.0
+FRA,France,Europe,2021-07-09,24.286
+FRA,France,Europe,2021-07-10,24.571
+FRA,France,Europe,2021-07-11,23.857
+FRA,France,Europe,2021-07-12,22.571
+IND,Inde,Asia,2021-01-01,235.857
+IND,Inde,Asia,2021-01-02,259.0
+IND,Inde,Asia,2021-01-03,249.714
+IND,Inde,Asia,2021-01-04,242.429
+IND,Inde,Asia,2021-01-05,239.286
+IND,Inde,Asia,2021-01-06,228.286
+IND,Inde,Asia,2021-01-07,261.714
+IND,Inde,Asia,2021-01-08,225.143
+IND,Inde,Asia,2021-01-09,223.429
+IND,Inde,Asia,2021-01-10,215.857
+IND,Inde,Asia,2021-01-11,211.0
+IND,Inde,Asia,2021-01-12,202.143
+IND,Inde,Asia,2021-01-13,198.714
+IND,Inde,Asia,2021-01-14,192.571
+IND,Inde,Asia,2021-01-15,217.571
+IND,Inde,Asia,2021-01-16,182.143
+IND,Inde,Asia,2021-01-17,179.857
+IND,Inde,Asia,2021-01-18,175.571
+IND,Inde,Asia,2021-01-19,169.857
+IND,Inde,Asia,2021-01-20,163.143
+IND,Inde,Asia,2021-01-21,159.143
+IND,Inde,Asia,2021-01-22,155.857
+IND,Inde,Asia,2021-01-23,152.143
+IND,Inde,Asia,2021-01-24,150.143
+IND,Inde,Asia,2021-01-25,147.286
+IND,Inde,Asia,2021-01-26,143.714
+IND,Inde,Asia,2021-01-27,139.714
+IND,Inde,Asia,2021-01-28,139.714
+IND,Inde,Asia,2021-01-29,137.571
+IND,Inde,Asia,2021-01-30,133.571
+IND,Inde,Asia,2021-01-31,131.714
+IND,Inde,Asia,2021-02-01,128.429
+IND,Inde,Asia,2021-02-02,124.571
+IND,Inde,Asia,2021-02-03,122.286
+IND,Inde,Asia,2021-02-04,116.143
+IND,Inde,Asia,2021-02-05,110.143
+IND,Inde,Asia,2021-02-06,103.143
+IND,Inde,Asia,2021-02-07,98.286
+IND,Inde,Asia,2021-02-08,96.0
+IND,Inde,Asia,2021-02-09,93.714
+IND,Inde,Asia,2021-02-10,93.857
+IND,Inde,Asia,2021-02-11,89.143
+IND,Inde,Asia,2021-02-12,90.286
+IND,Inde,Asia,2021-02-13,92.286
+IND,Inde,Asia,2021-02-14,93.143
+IND,Inde,Asia,2021-02-15,93.571
+IND,Inde,Asia,2021-02-16,94.429
+IND,Inde,Asia,2021-02-17,93.429
+IND,Inde,Asia,2021-02-18,94.857
+IND,Inde,Asia,2021-02-19,94.571
+IND,Inde,Asia,2021-02-20,94.286
+IND,Inde,Asia,2021-02-21,93.286
+IND,Inde,Asia,2021-02-22,92.857
+IND,Inde,Asia,2021-02-23,93.429
+IND,Inde,Asia,2021-02-24,98.714
+IND,Inde,Asia,2021-02-25,102.0
+IND,Inde,Asia,2021-02-26,103.714
+IND,Inde,Asia,2021-02-27,107.0
+IND,Inde,Asia,2021-02-28,110.286
+IND,Inde,Asia,2021-03-01,112.143
+IND,Inde,Asia,2021-03-02,111.286
+IND,Inde,Asia,2021-03-03,104.286
+IND,Inde,Asia,2021-03-04,103.286
+IND,Inde,Asia,2021-03-05,102.571
+IND,Inde,Asia,2021-03-06,100.714
+IND,Inde,Asia,2021-03-07,99.429
+IND,Inde,Asia,2021-03-08,97.429
+IND,Inde,Asia,2021-03-09,102.429
+IND,Inde,Asia,2021-03-10,107.714
+IND,Inde,Asia,2021-03-11,108.286
+IND,Inde,Asia,2021-03-12,112.857
+IND,Inde,Asia,2021-03-13,121.571
+IND,Inde,Asia,2021-03-14,124.571
+IND,Inde,Asia,2021-03-15,132.286
+IND,Inde,Asia,2021-03-16,140.143
+IND,Inde,Asia,2021-03-17,146.714
+IND,Inde,Asia,2021-03-18,152.0
+IND,Inde,Asia,2021-03-19,158.857
+IND,Inde,Asia,2021-03-20,164.0
+IND,Inde,Asia,2021-03-21,177.429
+IND,Inde,Asia,2021-03-22,187.143
+IND,Inde,Asia,2021-03-23,199.571
+IND,Inde,Asia,2021-03-24,210.857
+IND,Inde,Asia,2021-03-25,225.571
+IND,Inde,Asia,2021-03-26,240.286
+IND,Inde,Asia,2021-03-27,256.714
+IND,Inde,Asia,2021-03-28,268.0
+IND,Inde,Asia,2021-03-29,278.286
+IND,Inde,Asia,2021-03-30,289.571
+IND,Inde,Asia,2021-03-31,319.286
+IND,Inde,Asia,2021-04-01,349.571
+IND,Inde,Asia,2021-04-02,410.0
+IND,Inde,Asia,2021-04-03,438.714
+IND,Inde,Asia,2021-04-04,465.429
+IND,Inde,Asia,2021-04-05,490.429
+IND,Inde,Asia,2021-04-06,529.857
+IND,Inde,Asia,2021-04-07,562.143
+IND,Inde,Asia,2021-04-08,606.571
+IND,Inde,Asia,2021-04-09,618.0
+IND,Inde,Asia,2021-04-10,664.571
+IND,Inde,Asia,2021-04-11,725.429
+IND,Inde,Asia,2021-04-12,787.286
+IND,Inde,Asia,2021-04-13,844.0
+IND,Inde,Asia,2021-04-14,894.429
+IND,Inde,Asia,2021-04-15,952.286
+IND,Inde,Asia,2021-04-16,1030.429
+IND,Inde,Asia,2021-04-17,1125.0
+IND,Inde,Asia,2021-04-18,1227.143
+IND,Inde,Asia,2021-04-19,1353.143
+IND,Inde,Asia,2021-04-20,1495.429
+IND,Inde,Asia,2021-04-21,1647.714
+IND,Inde,Asia,2021-04-22,1801.714
+IND,Inde,Asia,2021-04-23,1985.0
+IND,Inde,Asia,2021-04-24,2165.857
+IND,Inde,Asia,2021-04-25,2336.286
+IND,Inde,Asia,2021-04-26,2480.571
+IND,Inde,Asia,2021-04-27,2662.0
+IND,Inde,Asia,2021-04-28,2882.143
+IND,Inde,Asia,2021-04-29,3058.571
+IND,Inde,Asia,2021-04-30,3187.0
+IND,Inde,Asia,2021-05-01,3318.714
+IND,Inde,Asia,2021-05-02,3405.143
+IND,Inde,Asia,2021-05-03,3502.0
+IND,Inde,Asia,2021-05-04,3571.571
+IND,Inde,Asia,2021-05-05,3619.429
+IND,Inde,Asia,2021-05-06,3679.0
+IND,Inde,Asia,2021-05-07,3773.857
+IND,Inde,Asia,2021-05-08,3829.286
+IND,Inde,Asia,2021-05-09,3879.571
+IND,Inde,Asia,2021-05-10,3940.571
+IND,Inde,Asia,2021-05-11,4001.286
+IND,Inde,Asia,2021-05-12,4021.286
+IND,Inde,Asia,2021-05-13,4033.429
+IND,Inde,Asia,2021-05-14,3991.0
+IND,Inde,Asia,2021-05-15,3991.0
+IND,Inde,Asia,2021-05-16,4039.143
+IND,Inde,Asia,2021-05-17,4103.857
+IND,Inde,Asia,2021-05-18,4150.143
+IND,Inde,Asia,2021-05-19,4115.0
+IND,Inde,Asia,2021-05-20,4144.857
+IND,Inde,Asia,2021-05-21,4188.286
+IND,Inde,Asia,2021-05-22,4140.286
+IND,Inde,Asia,2021-05-23,4190.0
+IND,Inde,Asia,2021-05-24,4073.143
+IND,Inde,Asia,2021-05-25,4020.0
+IND,Inde,Asia,2021-05-26,4016.143
+IND,Inde,Asia,2021-05-27,3937.714
+IND,Inde,Asia,2021-05-28,3855.286
+IND,Inde,Asia,2021-05-29,3815.143
+IND,Inde,Asia,2021-05-30,3625.714
+IND,Inde,Asia,2021-05-31,3523.429
+IND,Inde,Asia,2021-06-01,3387.714
+IND,Inde,Asia,2021-06-02,3250.571
+IND,Inde,Asia,2021-06-03,3115.286
+IND,Inde,Asia,2021-06-04,3081.429
+IND,Inde,Asia,2021-06-05,2969.571
+IND,Inde,Asia,2021-06-06,2869.429
+IND,Inde,Asia,2021-06-07,2773.429
+IND,Inde,Asia,2021-06-08,2632.286
+IND,Inde,Asia,2021-06-09,2530.857
+IND,Inde,Asia,2021-06-10,3196.714
+IND,Inde,Asia,2021-06-11,3285.571
+IND,Inde,Asia,2021-06-12,3375.0
+IND,Inde,Asia,2021-06-13,3588.429
+IND,Inde,Asia,2021-06-14,3674.571
+IND,Inde,Asia,2021-06-15,3720.714
+IND,Inde,Asia,2021-06-16,3742.571
+IND,Inde,Asia,2021-06-17,2915.857
+IND,Inde,Asia,2021-06-18,2579.429
+IND,Inde,Asia,2021-06-19,2332.0
+IND,Inde,Asia,2021-06-20,1975.714
+IND,Inde,Asia,2021-06-21,1753.0
+IND,Inde,Asia,2021-06-22,1583.857
+IND,Inde,Asia,2021-06-23,1439.714
+IND,Inde,Asia,2021-06-24,1402.857
+IND,Inde,Asia,2021-06-25,1336.571
+IND,Inde,Asia,2021-06-26,1291.857
+IND,Inde,Asia,2021-06-27,1227.857
+IND,Inde,Asia,2021-06-28,1190.714
+IND,Inde,Asia,2021-06-29,1113.429
+IND,Inde,Asia,2021-06-30,1068.286
+IND,Inde,Asia,2021-07-01,1000.286
+IND,Inde,Asia,2021-07-02,936.714
+IND,Inde,Asia,2021-07-03,893.429
+IND,Inde,Asia,2021-07-04,856.857
+IND,Inde,Asia,2021-07-05,806.286
+IND,Inde,Asia,2021-07-06,822.429
+IND,Inde,Asia,2021-07-07,795.571
+IND,Inde,Asia,2021-07-08,803.857
+IND,Inde,Asia,2021-07-09,870.714
+IND,Inde,Asia,2021-07-10,862.143
+IND,Inde,Asia,2021-07-11,862.286
+IND,Inde,Asia,2021-07-12,783.286
 IDN,Indonésie,Asia,2021-01-01,211.714
 IDN,Indonésie,Asia,2021-01-02,223.0
 IDN,Indonésie,Asia,2021-01-03,213.857
@@ -755,192 +1153,7 @@ IDN,Indonésie,Asia,2021-07-05,511.286
 IDN,Indonésie,Asia,2021-07-06,549.143
 IDN,Indonésie,Asia,2021-07-07,631.0
 IDN,Indonésie,Asia,2021-07-08,680.714
-USA,États-Unis,North America,2021-01-01,2614.714
-USA,États-Unis,North America,2021-01-02,2709.857
-USA,États-Unis,North America,2021-01-03,2712.143
-USA,États-Unis,North America,2021-01-04,2725.286
-USA,États-Unis,North America,2021-01-05,2735.714
-USA,États-Unis,North America,2021-01-06,2750.143
-USA,États-Unis,North America,2021-01-07,2832.429
-USA,États-Unis,North America,2021-01-08,3113.0
-USA,États-Unis,North America,2021-01-09,3220.0
-USA,États-Unis,North America,2021-01-10,3300.571
-USA,États-Unis,North America,2021-01-11,3300.714
-USA,États-Unis,North America,2021-01-12,3411.143
-USA,États-Unis,North America,2021-01-13,3425.714
-USA,États-Unis,North America,2021-01-14,3420.571
-USA,États-Unis,North America,2021-01-15,3393.714
-USA,États-Unis,North America,2021-01-16,3409.571
-USA,États-Unis,North America,2021-01-17,3392.857
-USA,États-Unis,North America,2021-01-18,3315.286
-USA,États-Unis,North America,2021-01-19,3064.857
-USA,États-Unis,North America,2021-01-20,3125.0
-USA,États-Unis,North America,2021-01-21,3155.714
-USA,États-Unis,North America,2021-01-22,3143.571
-USA,États-Unis,North America,2021-01-23,3137.143
-USA,États-Unis,North America,2021-01-24,3131.714
-USA,États-Unis,North America,2021-01-25,3192.0
-USA,États-Unis,North America,2021-01-26,3379.857
-USA,États-Unis,North America,2021-01-27,3312.429
-USA,États-Unis,North America,2021-01-28,3287.714
-USA,États-Unis,North America,2021-01-29,3262.0
-USA,États-Unis,North America,2021-01-30,3179.714
-USA,États-Unis,North America,2021-01-31,3179.714
-USA,États-Unis,North America,2021-02-01,3194.0
-USA,États-Unis,North America,2021-02-02,3108.714
-USA,États-Unis,North America,2021-02-03,3099.857
-USA,États-Unis,North America,2021-02-04,3061.714
-USA,États-Unis,North America,2021-02-05,3064.857
-USA,États-Unis,North America,2021-02-06,3049.0
-USA,États-Unis,North America,2021-02-07,2988.143
-USA,États-Unis,North America,2021-02-08,2922.429
-USA,États-Unis,North America,2021-02-09,2868.714
-USA,États-Unis,North America,2021-02-10,2786.143
-USA,États-Unis,North America,2021-02-11,2710.571
-USA,États-Unis,North America,2021-02-12,2605.143
-USA,États-Unis,North America,2021-02-13,2535.571
-USA,États-Unis,North America,2021-02-14,2497.714
-USA,États-Unis,North America,2021-02-15,2403.857
-USA,États-Unis,North America,2021-02-16,2218.571
-USA,États-Unis,North America,2021-02-17,2089.0
-USA,États-Unis,North America,2021-02-18,1989.0
-USA,États-Unis,North America,2021-02-19,1945.714
-USA,États-Unis,North America,2021-02-20,1894.143
-USA,États-Unis,North America,2021-02-21,1903.429
-USA,États-Unis,North America,2021-02-22,1954.286
-USA,États-Unis,North America,2021-02-23,2029.143
-USA,États-Unis,North America,2021-02-24,2141.286
-USA,États-Unis,North America,2021-02-25,2129.857
-USA,États-Unis,North America,2021-02-26,2051.857
-USA,États-Unis,North America,2021-02-27,2007.0
-USA,États-Unis,North America,2021-02-28,1986.429
-USA,États-Unis,North America,2021-03-01,2014.714
-USA,États-Unis,North America,2021-03-02,1967.0
-USA,États-Unis,North America,2021-03-03,1866.857
-USA,États-Unis,North America,2021-03-04,1793.429
-USA,États-Unis,North America,2021-03-05,1754.143
-USA,États-Unis,North America,2021-03-06,1752.571
-USA,États-Unis,North America,2021-03-07,1696.857
-USA,États-Unis,North America,2021-03-08,1585.429
-USA,États-Unis,North America,2021-03-09,1565.857
-USA,États-Unis,North America,2021-03-10,1435.714
-USA,États-Unis,North America,2021-03-11,1383.714
-USA,États-Unis,North America,2021-03-12,1346.714
-USA,États-Unis,North America,2021-03-13,1278.143
-USA,États-Unis,North America,2021-03-14,1261.286
-USA,États-Unis,North America,2021-03-15,1262.857
-USA,États-Unis,North America,2021-03-16,1173.429
-USA,États-Unis,North America,2021-03-17,1124.143
-USA,États-Unis,North America,2021-03-18,1136.714
-USA,États-Unis,North America,2021-03-19,1077.143
-USA,États-Unis,North America,2021-03-20,1035.571
-USA,États-Unis,North America,2021-03-21,1021.857
-USA,États-Unis,North America,2021-03-22,1018.0
-USA,États-Unis,North America,2021-03-23,974.429
-USA,États-Unis,North America,2021-03-24,1015.143
-USA,États-Unis,North America,2021-03-25,980.143
-USA,États-Unis,North America,2021-03-26,983.571
-USA,États-Unis,North America,2021-03-27,991.571
-USA,États-Unis,North America,2021-03-28,996.857
-USA,États-Unis,North America,2021-03-29,994.857
-USA,États-Unis,North America,2021-03-30,996.143
-USA,États-Unis,North America,2021-03-31,934.143
-USA,États-Unis,North America,2021-04-01,887.857
-USA,États-Unis,North America,2021-04-02,859.571
-USA,États-Unis,North America,2021-04-03,853.143
-USA,États-Unis,North America,2021-04-04,820.571
-USA,États-Unis,North America,2021-04-05,791.857
-USA,États-Unis,North America,2021-04-06,788.429
-USA,États-Unis,North America,2021-04-07,1005.143
-USA,États-Unis,North America,2021-04-08,998.0
-USA,États-Unis,North America,2021-04-09,989.143
-USA,États-Unis,North America,2021-04-10,983.714
-USA,États-Unis,North America,2021-04-11,984.857
-USA,États-Unis,North America,2021-04-12,980.429
-USA,États-Unis,North America,2021-04-13,976.429
-USA,États-Unis,North America,2021-04-14,742.286
-USA,États-Unis,North America,2021-04-15,724.714
-USA,États-Unis,North America,2021-04-16,722.857
-USA,États-Unis,North America,2021-04-17,721.143
-USA,États-Unis,North America,2021-04-18,725.714
-USA,États-Unis,North America,2021-04-19,729.286
-USA,États-Unis,North America,2021-04-20,730.714
-USA,États-Unis,North America,2021-04-21,717.286
-USA,États-Unis,North America,2021-04-22,726.429
-USA,États-Unis,North America,2021-04-23,712.0
-USA,États-Unis,North America,2021-04-24,719.286
-USA,États-Unis,North America,2021-04-25,713.0
-USA,États-Unis,North America,2021-04-26,711.571
-USA,États-Unis,North America,2021-04-27,684.714
-USA,États-Unis,North America,2021-04-28,700.143
-USA,États-Unis,North America,2021-04-29,687.0
-USA,États-Unis,North America,2021-04-30,683.0
-USA,États-Unis,North America,2021-05-01,677.857
-USA,États-Unis,North America,2021-05-02,684.143
-USA,États-Unis,North America,2021-05-03,686.0
-USA,États-Unis,North America,2021-05-04,717.429
-USA,États-Unis,North America,2021-05-05,692.714
-USA,États-Unis,North America,2021-05-06,681.429
-USA,États-Unis,North America,2021-05-07,682.857
-USA,États-Unis,North America,2021-05-08,670.714
-USA,États-Unis,North America,2021-05-09,658.143
-USA,États-Unis,North America,2021-05-10,645.286
-USA,États-Unis,North America,2021-05-11,618.571
-USA,États-Unis,North America,2021-05-12,614.714
-USA,États-Unis,North America,2021-05-13,610.286
-USA,États-Unis,North America,2021-05-14,595.571
-USA,États-Unis,North America,2021-05-15,576.714
-USA,États-Unis,North America,2021-05-16,580.714
-USA,États-Unis,North America,2021-05-17,578.571
-USA,États-Unis,North America,2021-05-18,590.571
-USA,États-Unis,North America,2021-05-19,577.429
-USA,États-Unis,North America,2021-05-20,564.714
-USA,États-Unis,North America,2021-05-21,558.857
-USA,États-Unis,North America,2021-05-22,558.571
-USA,États-Unis,North America,2021-05-23,547.143
-USA,États-Unis,North America,2021-05-24,554.0
-USA,États-Unis,North America,2021-05-25,534.286
-USA,États-Unis,North America,2021-05-26,577.571
-USA,États-Unis,North America,2021-05-27,675.429
-USA,États-Unis,North America,2021-05-28,667.714
-USA,États-Unis,North America,2021-05-29,644.143
-USA,États-Unis,North America,2021-05-30,635.286
-USA,États-Unis,North America,2021-05-31,593.286
-USA,États-Unis,North America,2021-06-01,595.429
-USA,États-Unis,North America,2021-06-02,535.286
-USA,États-Unis,North America,2021-06-03,429.143
-USA,États-Unis,North America,2021-06-04,424.857
-USA,États-Unis,North America,2021-06-05,431.857
-USA,États-Unis,North America,2021-06-06,437.0
-USA,États-Unis,North America,2021-06-07,460.429
-USA,États-Unis,North America,2021-06-08,416.429
-USA,États-Unis,North America,2021-06-09,401.0
-USA,États-Unis,North America,2021-06-10,373.857
-USA,États-Unis,North America,2021-06-11,390.857
-USA,États-Unis,North America,2021-06-12,378.143
-USA,États-Unis,North America,2021-06-13,369.714
-USA,États-Unis,North America,2021-06-14,349.571
-USA,États-Unis,North America,2021-06-15,346.0
-USA,États-Unis,North America,2021-06-16,335.143
-USA,États-Unis,North America,2021-06-17,314.286
-USA,États-Unis,North America,2021-06-18,306.571
-USA,États-Unis,North America,2021-06-19,289.571
-USA,États-Unis,North America,2021-06-20,286.143
-USA,États-Unis,North America,2021-06-21,299.571
-USA,États-Unis,North America,2021-06-22,300.714
-USA,États-Unis,North America,2021-06-23,301.0
-USA,États-Unis,North America,2021-06-24,309.143
-USA,États-Unis,North America,2021-06-25,295.0
-USA,États-Unis,North America,2021-06-26,291.429
-USA,États-Unis,North America,2021-06-27,289.429
-USA,États-Unis,North America,2021-06-28,272.429
-USA,États-Unis,North America,2021-06-29,271.143
-USA,États-Unis,North America,2021-06-30,252.286
-USA,États-Unis,North America,2021-07-01,247.143
-USA,États-Unis,North America,2021-07-02,243.286
-USA,États-Unis,North America,2021-07-03,233.714
-USA,États-Unis,North America,2021-07-04,227.857
-USA,États-Unis,North America,2021-07-05,213.0
-USA,États-Unis,North America,2021-07-06,215.857
-USA,États-Unis,North America,2021-07-07,225.571
-USA,États-Unis,North America,2021-07-08,218.857
+IDN,Indonésie,Asia,2021-07-09,728.143
+IDN,Indonésie,Asia,2021-07-10,775.714
+IDN,Indonésie,Asia,2021-07-11,840.286
+IDN,Indonésie,Asia,2021-07-12,887.857

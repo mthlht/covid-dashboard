@@ -84,7 +84,7 @@ Promise.all([
 
   // Date à afficher dans le titre
   // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
-  const formatTimeToTitle = d3.timeFormat("%d %b %Y");
+  const formatTimeToTitle = d3.timeFormat("%d %B %Y");
   const actualDate = new Date(dataVacc[0].jour);
   const dateToTitle = formatTimeToTitle(actualDate);
 
@@ -103,9 +103,10 @@ Promise.all([
 
   // Écriture du sous-titre
   d3.select(graphCfg.target)
-    .select('.grph-subtitle')
-    .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${ dateToTitle }`))
-    .style("padding", paddingTxt);
+    .select('.grph-title')
+    .append('span')
+    .attr('class', 'grph-date')
+    .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${ dateToTitle }`));
 
   // Écriture de la source
   d3.select(graphCfg.target)

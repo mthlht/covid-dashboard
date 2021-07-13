@@ -336,6 +336,8 @@ const commonGraph = {
     mobile: 4,
     tablet: 6,
     desktop: 8,
+    wide: 6,
+    very_wide: 6
   },
   tooltip: (graphId, d3) => {
     return d3
@@ -348,25 +350,6 @@ const commonGraph = {
 
 // Mise en français des dates.
 d3.timeFormatDefaultLocale(commonGraph.locale)
-
-// Détection de la largeur de la page.
-{
-  getScreenDevice()
-
-  window.addEventListener('resize', getScreenDevice)
-
-  function getScreenDevice () {
-    window.screenDevice = window.innerWidth >= 2560
-    ? 'very_wide'
-    : window.innerWidth >= 1600
-      ? 'wide'
-      : window.innerWidth >= 1024
-          ? 'desktop'
-          : window.innerWidth >= 768
-            ? 'tablet'
-            : 'mobile'
-  }
-}
 
 // Gestion des ancres/menu sticky d'onglets.
 {
@@ -403,4 +386,28 @@ d3.timeFormatDefaultLocale(commonGraph.locale)
   function getArrRef (linkGroup, linkGroupWrapper) {
     return Array.from(linkGroup).map(link => Math.round(window.scrollY + document.querySelector(link.getAttribute('href')).getBoundingClientRect().top - linkGroupWrapper.clientHeight))
   }
+}
+
+// Détection de la largeur de la page.
+{
+  getScreenDevice()
+
+  window.addEventListener('resize', getScreenDevice)
+
+  function getScreenDevice () {
+    window.screenDevice = window.innerWidth >= 2560
+    ? 'very_wide'
+    : window.innerWidth >= 1600
+      ? 'wide'
+      : window.innerWidth >= 1024
+          ? 'desktop'
+          : window.innerWidth >= 768
+            ? 'tablet'
+            : 'mobile'
+  }
+}
+
+// Gestion du padding pour les graphes en 2 colonnes (>= 880px).
+{
+  // TODO
 }

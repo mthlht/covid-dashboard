@@ -23,7 +23,6 @@ Promise.all([
 
   // données incidence
   let dataIncid = data[1];
-  console.log(dataIncid)
 
   // création d'un container pour le tri des données d'incidence
   let dataContainer = { incid: {}, incid_evol: {}, date: {} };
@@ -286,7 +285,7 @@ Promise.all([
     tooltip
       .selectAll('path')
       .remove()
-    
+
     // Affichage du nom du département en gras
     tooltip
       .append("text")

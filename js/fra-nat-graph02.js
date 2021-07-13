@@ -11,10 +11,6 @@ d3.csv("data/spf_fra_test.csv").then(data => {
     },
     type: 'landscape',
     device: window.screenDevice,
-    ticksY: {
-      tablet: undefined,
-      desktop: undefined,
-    },
   }
 
   // Traitement des données
@@ -173,7 +169,10 @@ d3.csv("data/spf_fra_test.csv").then(data => {
     .attr("color", "#D55E00") // couleur texte et ticks
     .attr("transform", `translate(${width + 2}, 0 )`)
     .style('font-size', `${graphCfg?.size?.axis?.font || commonGraph.size[graphCfg.type][graphCfg.device].axis.font}px`)
-    .call(d3.axisRight(scaleY2).tickFormat(d3.format(".0%")).tickSizeInner(0))
+    .call(d3.axisRight(scaleY2)
+    .tickFormat(d3.format(".0%"))
+    .tickSizeInner(0))
+    
     .call((g) => g.select(".domain").remove()); // lignes horizontales projetées sur le graphique
 
   //---------------------------------------------------------------------------------------

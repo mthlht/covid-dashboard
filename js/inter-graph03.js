@@ -4,7 +4,7 @@ Promise.all([
 ]).then(data => {
     const graphCfg = {
         target: `#inter-graph03`,
-        title: `Décès Covid par pays`,
+        title: `Nombre de morts du Covid-19 répertoriés dans le monde`,
         subtitle: `au [[autoDate]]`,
         caption: `Source. <a href='https://ourworldindata.org/coronavirus' target='_blank'>Our world in data</a>`,
         type: 'landscape', // définition du format du graphe
@@ -74,11 +74,6 @@ Promise.all([
         .attr("viewBox", [0, 0, viewBox.width, viewBox.height])
         .attr("preserveAspectRatio", "xMinYMid");
 
-    // création d'un groupe g pour la Légende
-    const svgLegend = svg
-        .append("g")
-        .attr("transform", `translate(${marginH}, ${marginV})`);
-
     // création d'un groupe g pour le Graphique
     const svgPlot = svg
         .append("g")
@@ -117,10 +112,6 @@ Promise.all([
         .html(graphCfg.caption)
         .style("padding", paddingTxt);
 
-    //---------------------------------------------------------------------------------------
-
-    // Création de l'échelle de couleur
-
 
     //---------------------------------------------------------------------------------------
 
@@ -141,6 +132,7 @@ Promise.all([
         .selectAll("g")
         .data(dataMap.features)
         .join("g")
+
     // projection des polygones géographiques
     polygons
         .append("path")
@@ -194,13 +186,13 @@ Promise.all([
     // Légende
 
     const legend = svgPlot.append("g")
-        .attr("transform", `translate(${0}, ${height})`)
+        .attr("transform", `translate(${-10}, ${height})`)
         .attr("fill", "#777")
         // .attr("font-size", "8px")
         .selectAll("g")
-        .data(length.ticks(4).reverse())
+        .data([600000, 200000, 50000, 10000])
         .join("g")
-        .attr("transform", (d, i) => `translate(${10 + 30 * i},0)`)
+        .attr("transform", (d, i) => `translate(${10 + 40 * i},0)`)
         .attr("font-size", `${ graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font }px`);
 
     legend.append("path")
@@ -211,8 +203,9 @@ Promise.all([
 
     legend.append("text")
         .attr("dy", "1.2em")
-        .attr("dx", "-1em")
-        .text(length.tickFormat(1, "s"));
+        .attr("dx", "-1.5em")
+        .attr("font-size", "10px")
+        .text(d => d.toLocaleString("fr-FR"));
 
 
     //---------------------------------------------------------------------------------------

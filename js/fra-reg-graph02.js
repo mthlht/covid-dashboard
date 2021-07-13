@@ -98,7 +98,7 @@ Promise.all([
 
   // Date à afficher dans le titre
   // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
-  const formatTimeToTitle = d3.timeFormat("%d %b %Y");
+  const formatTimeToTitle = d3.timeFormat("%d %B %Y");
   const actualDate = new Date(dataIncid[0].date);
   // Soustraction de 7 jours à la date (attention modification de l'objet en place)
   const formerDate = actualDate.setDate(actualDate.getDate() - 7);

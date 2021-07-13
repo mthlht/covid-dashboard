@@ -282,4 +282,7 @@ d3.csv("data/spf_fra_vacc.csv").then(data => {
     .attr("y", 10)
     .text((d) => d.label)
     .attr("font-size", `${ graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font }px`);
-});
+
+  
+
+  });

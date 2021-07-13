@@ -32,14 +32,12 @@ d3.csv('data/spf_fra_data.csv').then(data => {
 
   // Création du canevas SVG
 
-  const graCfgDevice = window.screenDevice;
-
   // Déclaration des tailles (si elles sont déclarées, sinon prend les tailles par défaut selon le format du graphe)
-  const width = graphCfg?.size?.svg?.width || commonGraph.size[graphCfg.type][graCfgDevice].svg.width || 500;
-  const height = graphCfg?.size?.svg?.height || commonGraph.size[graphCfg.type][graCfgDevice].svg.height || 200;
-  const marginH = graphCfg?.size?.margin?.horizontal || commonGraph.size[graphCfg.type][graCfgDevice].margin.horizontal || 80;
-  const marginV = graphCfg?.size?.margin?.vertical || commonGraph.size[graphCfg.type][graCfgDevice].margin.vertical || 20;
-  const leg = graphCfg?.size?.legend?.height || commonGraph.size[graphCfg.type][graCfgDevice].legend.height || 40;
+  const width = graphCfg.size && graphCfg.size.svg && graphCfg.size.svg.width ? graphCfg.size.svg.width : commonGraph.size[graphCfg.type][graphCfg.device].svg.width;
+  const height = graphCfg?.size?.svg?.height || commonGraph.size[graphCfg.type][graphCfg.device].svg.height;
+  const marginH = graphCfg?.size?.margin?.horizontal || commonGraph.size[graphCfg.type][graphCfg.device].margin.horizontal;
+  const marginV = graphCfg?.size?.margin?.vertical || commonGraph.size[graphCfg.type][graphCfg.device].margin.vertical;
+  const leg = graphCfg?.size?.legend?.height || commonGraph.size[graphCfg.type][graphCfg.device].legend.height;
 
   const viewBox = {
     width: width + marginH * 2,

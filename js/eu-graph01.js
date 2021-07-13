@@ -4,8 +4,8 @@ Promise.all([
 ]).then(data => {
     const graphCfg = {
         target: `#eu-graph01`,
-        title: `Nombre de cas Covid-19 par pays en Europe`,
-        subtitle: `en nombre de cas, lissés sur une semaine, pour un million d'habitants [[autoDate]]`,
+        title: `Nouveaux cas de Covid-19 par pays en Europe`,
+        subtitle: `en moyenne lissée du nombre de cas pour un million d'habitants, au [[autoDate]]`,
         caption: `Source. <a href='https://ourworldindata.org/coronavirus' target='_blank'>Our world in data</a>`,
         type: 'landscape', // définition du format du graphe
         device: window.screenDevice, // récupération de la largeur de l'écran
@@ -92,7 +92,7 @@ Promise.all([
 
     // Date à afficher dans le titre
     // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
-    const formatTimeToTitle = d3.timeFormat("%d %b %Y");
+    const formatTimeToTitle = d3.timeFormat("%d %B %Y");
     const actualDate = new Date(dataVacc[0].date);
     const dateToTitle = formatTimeToTitle(actualDate);
 
@@ -110,9 +110,10 @@ Promise.all([
 
     // Écriture du sous-titre
     d3.select(graphCfg.target)
-        .select('.grph-subtitle')
-        .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${dateToTitle}`))
-        .style("padding", paddingTxt);
+        .select('.grph-title')
+        .append('span')
+        .attr('class', 'grph-date')
+        .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${dateToTitle}`));
 
     // Écriture de la source
     d3.select(graphCfg.target)
@@ -168,7 +169,8 @@ Promise.all([
     const legend = d3
         .legendColor()
         .shapeWidth(width / 10)
-        .cells([0, 0.5, 2.5, 5, 10, 50, 100, 500, 1000, 4000])
+        .labelFormat(d3.format(".0f"))
+        .cells([0, 1, 3, 5, 10, 50, 100, 500, 1000, 4000])
         .orient("horizontal")
         .labelAlign("middle")
         .scale(seqScale);

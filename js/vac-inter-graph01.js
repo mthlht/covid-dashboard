@@ -11,13 +11,13 @@ Promise.all([
     device: window.screenDevice, // récupération de la largeur de l'écran
     size: {
       svg: {
-          height: 300,
+        height: 300,
       },
       legend: {
-          height: 20,
+        height: 20,
       },
       tooltip: {
-          font: 13,
+        font: 13,
       },
     },
   }
@@ -106,7 +106,7 @@ Promise.all([
 
   // Date à afficher dans le titre
   // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
-  const formatTimeToTitle = d3.timeFormat("%d %b %Y");
+  const formatTimeToTitle = d3.timeFormat("%d %B %Y");
   const actualDate = new Date(dataVacc[0].date);
   const dateToTitle = formatTimeToTitle(actualDate);
 
@@ -124,9 +124,10 @@ Promise.all([
 
   // Écriture du sous-titre
   d3.select(graphCfg.target)
-    .select('.grph-subtitle')
-    .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${dateToTitle}`))
-    .style("padding", paddingTxt);
+    .select('.grph-title')
+    .append('span')
+    .attr('class', 'grph-date')
+    .html(graphCfg.subtitle.replace(/\[\[\s*autoDate\s*\]\]/, `${dateToTitle}`));
 
   // Écriture de la source
   d3.select(graphCfg.target)
@@ -193,7 +194,7 @@ Promise.all([
   svgLegend.call(legend)
     .selectAll("text")
     .attr("fill", "grey")
-    .attr("font-size", `${ graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font }px`);
+    .attr("font-size", `${graphCfg?.size?.legend?.font || commonGraph.size[graphCfg.type][graphCfg.device].legend.font}px`);
 
 
   //---------------------------------------------------------------------------------------
@@ -231,6 +232,65 @@ Promise.all([
 
   const tooltip2 = tooltip.append("g")
 
+  // Texte cliquez sur la carte
+  tooltip
+    .append("text")
+    .attr("x", 10)
+    .attr("y", 0)
+    .text(`Cliquez sur la`)
+    .style("font-weight", "bold")
+    .style("font-size", "11px");
+
+  tooltip
+    .append("text")
+    .attr("x", 10)
+    .attr("y", 15)
+    .text(`carte pour afficher`)
+    .style("font-weight", "bold")
+    .style("font-size", "11px");
+
+  tooltip
+    .append("text")
+    .attr("x", 10)
+    .attr("y", 30)
+    .text(`les valeurs`)
+    .style("font-weight", "bold")
+    .style("font-size", "11px");
+
+  tooltip
+    .selectAll('text')
+    .attr('fill', 'grey');
+
+  // Arrow nudge
+
+  let linePoints = [
+    [70, 35],
+    [90, 60],
+    [110, 50]
+  ];
+
+  const lineGen = d3.line()
+    .curve(d3.curveBasis);
+
+  svg.append("svg:defs").append("svg:marker")
+    .attr("id", "arrow")
+    .attr("viewBox", "0 -5 10 10")
+    .attr('refX', 0)//so that it comes towards the center.
+    .attr("markerWidth", 3)
+    .attr("markerHeight", 3)
+    .attr("orient", "auto")
+    .append("svg:path")
+    .attr("d", "M0,-5L10,0L0,5")
+    .attr("fill", "grey");
+
+  tooltip
+    .append("path")
+    .attr('d', lineGen(linePoints))
+    .attr('fill', 'transparent')
+    .attr('stroke-width', '2px')
+    .attr("marker-end", "url(#arrow)")
+    .attr("stroke", "grey");
+
   polygons.on("mouseover", function (d) {
     // lors du survol avec la souris l'opacité des barres passe à 1
     d3.select(this)
@@ -241,6 +301,14 @@ Promise.all([
     // ont un pourcentage de vaccinés
     if (d.properties.people_vaccinated_per_hundred) {
 
+      // suppresion du nudge
+      tooltip.selectAll('path')
+        .remove()
+
+      tooltip.selectAll('text')
+        .remove()
+
+      // début de la création du donut
       tooltip2.html('')
 
       // écriture nom Pays
@@ -251,7 +319,7 @@ Promise.all([
         .attr("text-anchor", "middle")
         .text(d.properties.name_fr)
         .style("font-weight", "bold")
-        .style("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
+        .style("font-size", `${graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font}px`)
 
 
       // Agencement des données pour la génération du pie chart
@@ -286,12 +354,56 @@ Promise.all([
         .attr("font-weight", "bold")
         .attr("text-anchor", "middle")
         .attr("fill", "black")
-        .style("font-size", `${ graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font }px`)
+        .style("font-size", `${graphCfg?.size?.tooltip?.font || commonGraph.size[graphCfg.type][graphCfg.device].tooltip.font}px`)
     }
   });
 
   // efface le contenu du groupe g lorsque la souris ne survole plus le polygone
   polygons.on("mouseout", function () {
     d3.select(this).attr("opacity", 1); // rétablit l'opacité à 1
+
+    tooltip.selectAll('path')
+      .remove()
+
+    tooltip.selectAll('text')
+      .remove()
+
+    // Texte cliquez sur la carte
+    tooltip
+      .append("text")
+      .attr("x", 10)
+      .attr("y", 0)
+      .text(`Cliquez sur la`)
+      .style("font-weight", "bold")
+      .style("font-size", "11px");
+
+    tooltip
+      .append("text")
+      .attr("x", 10)
+      .attr("y", 15)
+      .text(`carte pour afficher`)
+      .style("font-weight", "bold")
+      .style("font-size", "11px");
+
+    tooltip
+      .append("text")
+      .attr("x", 10)
+      .attr("y", 30)
+      .text(`les valeurs`)
+      .style("font-weight", "bold")
+      .style("font-size", "11px");
+
+    tooltip
+      .selectAll('text')
+      .attr('fill', 'grey');
+
+    tooltip
+      .append("path")
+      .attr('d', lineGen(linePoints))
+      .attr('fill', 'transparent')
+      .attr('stroke-width', '2px')
+      .attr("marker-end", "url(#arrow)")
+      .attr("stroke", "grey");
+
   });
 });

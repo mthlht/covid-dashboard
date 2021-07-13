@@ -4,7 +4,7 @@ Promise.all([
 ]).then(data => {
     const graphCfg = {
         target: `#eu-graph02`,
-        title: `Variation des nouveaux cas Covid-19 par pays en Europe`,
+        title: `Variation sur une semaine des nouveaux cas de Covid-19 par pays en Europe`,
         caption: `Source. <a href='https://ourworldindata.org/coronavirus' target='_blank'>Our world in data</a>`,
         type: 'landscape', // définition du format du graphe
         device: window.screenDevice, // récupération de la largeur de l'écran
@@ -103,7 +103,7 @@ Promise.all([
 
     // Date à afficher dans le titre
     // ATTENTION CETTE DATE DOIT FORCÉMENT ÊTRE PRISE DANS LE DATASET DU TAUX D'INCIDENCE
-    const formatTimeToTitle = d3.timeFormat("%d %b %Y");
+    const formatTimeToTitle = d3.timeFormat("%d %B %Y");
     const actualDate = new Date(dataIncid[0].date);
     // Soustraction de 7 jours à la date (attention modification de l'objet en place)
     const formerDate = actualDate.setDate(actualDate.getDate() - 7);

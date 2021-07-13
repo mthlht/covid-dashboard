@@ -14,6 +14,9 @@
 
     <script src="js/common-graph.js" defer></script>
 
+    <!-- Scripts - Chiffres clés - France  -->
+    <script src="js/data_to_cartes.js" defer></script>
+
     <!-- Scripts - Pandémie - France - National  -->
     <script src="js/fra-nat-graph01.js" defer></script>
     <script src="js/fra-nat-graph02.js" defer></script>
@@ -49,9 +52,49 @@
 <body>
     <article class="page-content dashboard dshbrd">
         <!-- TITRE DE LA PAGE -->
-        <h1 class="dshbrd-title"><span class="section-logo logo">infographie</span> Covid-19 : morts, hospitalisations, vaccins... Suivez l’évolution de l'épidémie en France et dans le monde</h1>
+        <h1 class="dshbrd-title"><span class="section-logo logo">infographie</span> Chiffres du Covid-19 : morts, hospitalisations, vaccins... Suivez l’évolution de l'épidémie en France et dans le monde</h1>
 
         <div class="dshbrd-chapo">Pour vous donner jour après jour une vision complète de la progression de la pandémie liée au coronavirus en France et dans le monde, nous mettons à votre disposition une série de cartes et de graphiques actualisés quotidiennement.</div>
+
+        <!-- -------------------------------------------------------------------------------------- -->
+
+        <h2 class="state-date">Situation en France au <span id="state-date-info"></span></h2>
+
+        <ul class="dshbrd-card-list">
+            <li class="dshbrd-card crd" id="new_cases">
+                <h1 class="crd-title">Nouveaux cas</h1>
+                <p class="crd-data" data-trend>0</p>
+                <p class="crd-notice ntc">
+                    <span class="ntc-text"><span class="ntc-trend">Tendance</span> sur la dernière semaine</span>
+                    <span class="ntc-more">Différence entre la moyenne des 7 derniers jours et la moyenne des 7 derniers jours une semaine plus tôt</span>
+                </p>
+            </li>
+
+            <li class="dshbrd-card crd" id="hosp_tot">
+                <h1 class="crd-title">Hospitalisations en cours</h1>
+                <p class="crd-data" data-trend>0</p>
+                <p class="crd-notice ntc">
+                    <span class="ntc-text"><span class="ntc-trend">Tendance</span> sur la dernière semaine</span>
+                </p>
+            </li>
+
+            <li class="dshbrd-card crd" id="dc_tot">
+                <h1 class="crd-title">Décès cumulés</h1>
+                <p class="crd-data" data-trend>0</p>
+                <p class="crd-notice ntc">
+                    <span class="ntc-text">Hôpitaux et Ehpad</span>
+                </p>
+            </li>
+
+            <li class="dshbrd-card crd" id="vacc_nb">
+                <h1 class="crd-title">Personnes vaccinées</h1>
+                <p class="crd-data" data-trend>0</p>
+                <p class="crd-notice ntc">
+                    <span class="ntc-text">Soit <span class="ntc-trend">0</span>% de la population</span>
+                    <span class="ntc-more">D’après le nombre de personnes complètement vaccinées</span>
+                </p>
+            </li>
+        </ul>
 
         <!-- -------------------------------------------------------------------------------------- -->
 
@@ -66,12 +109,12 @@
 
             <!-- La pandémie en France -->
             <section class="sctn-group" id="la-pandemie-en-france">
-                <h2 class="dshbrd-subtitle">La pandémie en France</h2>
+                <h2 class="dshbrd-subtitle">La pandémie de Covid-19 en France</h2>
 
                 <section class="dshbrd-section sctn section-national">
 
                     <!-- Situation au niveau national - VERBATIM -->
-                    <h3 class="sctn-title">La situation au niveau national</h3>
+                    <h3 class="sctn-title">La situation sanitaire au niveau national</h3>
 
                     <div class="sctn-chapo">Les nombres de cas, des tests, d’hospitalisations et de décès sont les principaux indicateurs de suivi de l’épidémie à l’échelle nationale. Pour éviter les biais liés aux variations journalières, des moyennes glissantes sur sept jours sont calculées.</div>
 
@@ -123,7 +166,7 @@
 
                 <!-- Situation au niveau régional - VERBATIM -->
                 <section class="dshbrd-section sctn section-regional">
-                    <h3 class="sctn-title">La situation au niveau régional</h3>
+                    <h3 class="sctn-title">La situation sanitaire au niveau régional</h3>
 
                     <div class="sctn-chapo">Pour suivre l’évolution de l’épidémie dans les territoires, les autorités s’appuient sur le taux d’incidence, c’est-à-dire le nombre de nouveaux cas sur une semaine pour 100 000 habitants. Le seuil d’alerte est atteint lorsque l’incidence dépasse 50.</div>
 
@@ -236,11 +279,11 @@
 
             <!-- La pandémie en Europe et dans le monde -->
             <section class="sctn-group" id="la-pandemie-en-europe-et-dans-le-monde">
-                <h2 class="dshbrd-subtitle">La pandémie en Europe et dans le monde</h2>
+                <h2 class="dshbrd-subtitle">La pandémie de Covid-19 en Europe et dans le monde</h2>
 
                 <!-- La pandémie en Europe - VERBATIM -->
                 <section class="dshbrd-section sctn section-vaccin">
-                    <h3 class="sctn-title">La situation en Europe</h3>
+                    <h3 class="sctn-title">La situation sanitaire en Europe</h3>
 
                     <div class="sctn-chapo">Les nouvelles contaminations et leur variation sur une semaine permettent de suivre la dynamique épidémique dans les pays d’Europe. Les comparaisons entre Etats peuvent en revanche être biaisées en raison de différences entre les politiques de dépistage.</div>
 
@@ -278,7 +321,7 @@
 
                 <!-- La pandémie dans le monde - VERBATIM -->
                 <section class="dshbrd-section sctn section-vaccin">
-                    <h3 class="sctn-title">La situation dans le monde</h3>
+                    <h3 class="sctn-title">La situation sanitaire dans le monde</h3>
 
                     <div class="sctn-chapo">Au niveau mondial, le nombre de décès de personnes atteintes du Covid-19 est l’indicateur le plus fiable pour comparer l’impact de la pandémie selon les continents et les pays. <a target='blank' href='https://www.francetvinfo.fr/sante/maladie/coronavirus/coronavirus-a-t-on-raison-de-douter-du-nombre-de-morts-annonce-par-la-chine_3895129.html'>De nombreux doutes sont émis concernant les chiffres communiqués par la Chine.</a></div>
 

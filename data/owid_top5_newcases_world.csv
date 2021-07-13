@@ -1,193 +1,4 @@
 iso_code,name_fr,continent,date,new_cases_smoothed_per_million
-ARG,Argentine,South America,2021-01-01,173.973
-ARG,Argentine,South America,2021-01-02,178.8
-ARG,Argentine,South America,2021-01-03,181.499
-ARG,Argentine,South America,2021-01-04,184.679
-ARG,Argentine,South America,2021-01-05,191.443
-ARG,Argentine,South America,2021-01-06,196.741
-ARG,Argentine,South America,2021-01-07,203.85
-ARG,Argentine,South America,2021-01-08,233.138
-ARG,Argentine,South America,2021-01-09,251.525
-ARG,Argentine,South America,2021-01-10,257.606
-ARG,Argentine,South America,2021-01-11,259.13
-ARG,Argentine,South America,2021-01-12,259.108
-ARG,Argentine,South America,2021-01-13,256.844
-ARG,Argentine,South America,2021-01-14,255.109
-ARG,Argentine,South America,2021-01-15,251.904
-ARG,Argentine,South America,2021-01-16,245.187
-ARG,Argentine,South America,2021-01-17,243.468
-ARG,Argentine,South America,2021-01-18,241.827
-ARG,Argentine,South America,2021-01-19,236.637
-ARG,Argentine,South America,2021-01-20,234.7
-ARG,Argentine,South America,2021-01-21,228.726
-ARG,Argentine,South America,2021-01-22,223.735
-ARG,Argentine,South America,2021-01-23,221.933
-ARG,Argentine,South America,2021-01-24,214.875
-ARG,Argentine,South America,2021-01-25,212.956
-ARG,Argentine,South America,2021-01-26,207.481
-ARG,Argentine,South America,2021-01-27,203.47
-ARG,Argentine,South America,2021-01-28,197.386
-ARG,Argentine,South America,2021-01-29,194.494
-ARG,Argentine,South America,2021-01-30,189.879
-ARG,Argentine,South America,2021-01-31,189.702
-ARG,Argentine,South America,2021-02-01,186.655
-ARG,Argentine,South America,2021-02-02,184.398
-ARG,Argentine,South America,2021-02-03,179.192
-ARG,Argentine,South America,2021-02-04,177.359
-ARG,Argentine,South America,2021-02-05,172.731
-ARG,Argentine,South America,2021-02-06,172.029
-ARG,Argentine,South America,2021-02-07,167.867
-ARG,Argentine,South America,2021-02-08,163.252
-ARG,Argentine,South America,2021-02-09,157.243
-ARG,Argentine,South America,2021-02-10,152.638
-ARG,Argentine,South America,2021-02-11,147.643
-ARG,Argentine,South America,2021-02-12,143.778
-ARG,Argentine,South America,2021-02-13,141.808
-ARG,Argentine,South America,2021-02-14,143.664
-ARG,Argentine,South America,2021-02-15,137.674
-ARG,Argentine,South America,2021-02-16,125.691
-ARG,Argentine,South America,2021-02-17,120.397
-ARG,Argentine,South America,2021-02-18,121.535
-ARG,Argentine,South America,2021-02-19,123.858
-ARG,Argentine,South America,2021-02-20,123.501
-ARG,Argentine,South America,2021-02-21,121.807
-ARG,Argentine,South America,2021-02-22,128.628
-ARG,Argentine,South America,2021-02-23,139.608
-ARG,Argentine,South America,2021-02-24,146.306
-ARG,Argentine,South America,2021-02-25,148.086
-ARG,Argentine,South America,2021-02-26,139.226
-ARG,Argentine,South America,2021-02-27,137.725
-ARG,Argentine,South America,2021-02-28,136.015
-ARG,Argentine,South America,2021-03-01,133.616
-ARG,Argentine,South America,2021-03-02,131.011
-ARG,Argentine,South America,2021-03-03,129.974
-ARG,Argentine,South America,2021-03-04,127.439
-ARG,Argentine,South America,2021-03-05,136.315
-ARG,Argentine,South America,2021-03-06,134.39
-ARG,Argentine,South America,2021-03-07,133.612
-ARG,Argentine,South America,2021-03-08,134.877
-ARG,Argentine,South America,2021-03-09,136.944
-ARG,Argentine,South America,2021-03-10,136.432
-ARG,Argentine,South America,2021-03-11,138.872
-ARG,Argentine,South America,2021-03-12,138.739
-ARG,Argentine,South America,2021-03-13,143.221
-ARG,Argentine,South America,2021-03-14,145.671
-ARG,Argentine,South America,2021-03-15,149.167
-ARG,Argentine,South America,2021-03-16,152.1
-ARG,Argentine,South America,2021-03-17,154.031
-ARG,Argentine,South America,2021-03-18,154.423
-ARG,Argentine,South America,2021-03-19,155.406
-ARG,Argentine,South America,2021-03-20,157.139
-ARG,Argentine,South America,2021-03-21,158.197
-ARG,Argentine,South America,2021-03-22,158.947
-ARG,Argentine,South America,2021-03-23,162.645
-ARG,Argentine,South America,2021-03-24,162.632
-ARG,Argentine,South America,2021-03-25,162.348
-ARG,Argentine,South America,2021-03-26,177.444
-ARG,Argentine,South America,2021-03-27,188.545
-ARG,Argentine,South America,2021-03-28,198.584
-ARG,Argentine,South America,2021-03-29,222.647
-ARG,Argentine,South America,2021-03-30,225.015
-ARG,Argentine,South America,2021-03-31,249.53
-ARG,Argentine,South America,2021-04-01,269.102
-ARG,Argentine,South America,2021-04-02,259.512
-ARG,Argentine,South America,2021-04-03,259.658
-ARG,Argentine,South America,2021-04-04,268.34
-ARG,Argentine,South America,2021-04-05,267.244
-ARG,Argentine,South America,2021-04-06,301.115
-ARG,Argentine,South America,2021-04-07,320.027
-ARG,Argentine,South America,2021-04-08,349.274
-ARG,Argentine,South America,2021-04-09,394.247
-ARG,Argentine,South America,2021-04-10,422.805
-ARG,Argentine,South America,2021-04-11,439.58
-ARG,Argentine,South America,2021-04-12,457.818
-ARG,Argentine,South America,2021-04-13,477.197
-ARG,Argentine,South America,2021-04-14,487.052
-ARG,Argentine,South America,2021-04-15,491.212
-ARG,Argentine,South America,2021-04-16,508.097
-ARG,Argentine,South America,2021-04-17,507.149
-ARG,Argentine,South America,2021-04-18,510.326
-ARG,Argentine,South America,2021-04-19,513.563
-ARG,Argentine,South America,2021-04-20,520.339
-ARG,Argentine,South America,2021-04-21,522.789
-ARG,Argentine,South America,2021-04-22,529.797
-ARG,Argentine,South America,2021-04-23,524.777
-ARG,Argentine,South America,2021-04-24,531.418
-ARG,Argentine,South America,2021-04-25,527.451
-ARG,Argentine,South America,2021-04-26,522.179
-ARG,Argentine,South America,2021-04-27,510.642
-ARG,Argentine,South America,2021-04-28,503.644
-ARG,Argentine,South America,2021-04-29,499.968
-ARG,Argentine,South America,2021-04-30,482.697
-ARG,Argentine,South America,2021-05-01,467.784
-ARG,Argentine,South America,2021-05-02,456.348
-ARG,Argentine,South America,2021-05-03,447.267
-ARG,Argentine,South America,2021-05-04,449.615
-ARG,Argentine,South America,2021-05-05,450.756
-ARG,Argentine,South America,2021-05-06,444.539
-ARG,Argentine,South America,2021-05-07,444.956
-ARG,Argentine,South America,2021-05-08,449.767
-ARG,Argentine,South America,2021-05-09,450.361
-ARG,Argentine,South America,2021-05-10,454.979
-ARG,Argentine,South America,2021-05-11,454.151
-ARG,Argentine,South America,2021-05-12,455.403
-ARG,Argentine,South America,2021-05-13,463.131
-ARG,Argentine,South America,2021-05-14,478.338
-ARG,Argentine,South America,2021-05-15,489.227
-ARG,Argentine,South America,2021-05-16,504.298
-ARG,Argentine,South America,2021-05-17,540.013
-ARG,Argentine,South America,2021-05-18,570.252
-ARG,Argentine,South America,2021-05-19,618.225
-ARG,Argentine,South America,2021-05-20,647.788
-ARG,Argentine,South America,2021-05-21,673.407
-ARG,Argentine,South America,2021-05-22,707.234
-ARG,Argentine,South America,2021-05-23,733.947
-ARG,Argentine,South America,2021-05-24,714.89
-ARG,Argentine,South America,2021-05-25,680.304
-ARG,Argentine,South America,2021-05-26,666.861
-ARG,Argentine,South America,2021-05-27,683.284
-ARG,Argentine,South America,2021-05-28,695.103
-ARG,Argentine,South America,2021-05-29,687.738
-ARG,Argentine,South America,2021-05-30,676.817
-ARG,Argentine,South America,2021-05-31,694.278
-ARG,Argentine,South America,2021-06-01,728.27
-ARG,Argentine,South America,2021-06-02,727.062
-ARG,Argentine,South America,2021-06-03,699.282
-ARG,Argentine,South America,2021-06-04,673.182
-ARG,Argentine,South America,2021-06-05,653.541
-ARG,Argentine,South America,2021-06-06,637.955
-ARG,Argentine,South America,2021-06-07,619.053
-ARG,Argentine,South America,2021-06-08,605.72
-ARG,Argentine,South America,2021-06-09,589.094
-ARG,Argentine,South America,2021-06-10,574.355
-ARG,Argentine,South America,2021-06-11,561.661
-ARG,Argentine,South America,2021-06-12,544.055
-ARG,Argentine,South America,2021-06-13,533.397
-ARG,Argentine,South America,2021-06-14,530.543
-ARG,Argentine,South America,2021-06-15,518.288
-ARG,Argentine,South America,2021-06-16,506.027
-ARG,Argentine,South America,2021-06-17,493.864
-ARG,Argentine,South America,2021-06-18,473.094
-ARG,Argentine,South America,2021-06-19,465.426
-ARG,Argentine,South America,2021-06-20,457.056
-ARG,Argentine,South America,2021-06-21,416.957
-ARG,Argentine,South America,2021-06-22,398.394
-ARG,Argentine,South America,2021-06-23,402.949
-ARG,Argentine,South America,2021-06-24,405.107
-ARG,Argentine,South America,2021-06-25,416.676
-ARG,Argentine,South America,2021-06-26,425.918
-ARG,Argentine,South America,2021-06-27,431.323
-ARG,Argentine,South America,2021-06-28,462.246
-ARG,Argentine,South America,2021-06-29,470.711
-ARG,Argentine,South America,2021-06-30,456.026
-ARG,Argentine,South America,2021-07-01,445.639
-ARG,Argentine,South America,2021-07-02,435.73
-ARG,Argentine,South America,2021-07-03,421.44
-ARG,Argentine,South America,2021-07-04,411.625
-ARG,Argentine,South America,2021-07-05,408.11
-ARG,Argentine,South America,2021-07-06,400.287
-ARG,Argentine,South America,2021-07-07,390.014
-ARG,Argentine,South America,2021-07-08,383.942
 BRA,Brésil,South America,2021-01-01,169.377
 BRA,Brésil,South America,2021-01-02,168.423
 BRA,Brésil,South America,2021-01-03,167.658
@@ -377,6 +188,10 @@ BRA,Brésil,South America,2021-07-05,231.269
 BRA,Brésil,South America,2021-07-06,229.657
 BRA,Brésil,South America,2021-07-07,236.503
 BRA,Brésil,South America,2021-07-08,228.815
+BRA,Brésil,South America,2021-07-09,223.823
+BRA,Brésil,South America,2021-07-10,219.756
+BRA,Brésil,South America,2021-07-11,215.155
+BRA,Brésil,South America,2021-07-12,211.343
 COL,Colombie,South America,2021-01-01,225.091
 COL,Colombie,South America,2021-01-02,228.831
 COL,Colombie,South America,2021-01-03,228.32
@@ -566,6 +381,396 @@ COL,Colombie,South America,2021-07-05,529.695
 COL,Colombie,South America,2021-07-06,532.057
 COL,Colombie,South America,2021-07-07,521.728
 COL,Colombie,South America,2021-07-08,507.577
+COL,Colombie,South America,2021-07-09,489.415
+COL,Colombie,South America,2021-07-10,413.813
+COL,Colombie,South America,2021-07-11,340.072
+COL,Colombie,South America,2021-07-12,434.468
+FRA,France,Europe,2021-01-01,195.41
+FRA,France,Europe,2021-01-02,196.198
+FRA,France,Europe,2021-01-03,203.965
+FRA,France,Europe,2021-01-04,206.032
+FRA,France,Europe,2021-01-05,225.762
+FRA,France,Europe,2021-01-06,223.051
+FRA,France,Europe,2021-01-07,226.698
+FRA,France,Europe,2021-01-08,227.781
+FRA,France,Europe,2021-01-09,263.115
+FRA,France,Europe,2021-01-10,270.407
+FRA,France,Europe,2021-01-11,269.841
+FRA,France,Europe,2021-01-12,267.42
+FRA,France,Europe,2021-01-13,264.671
+FRA,France,Europe,2021-01-14,263.96
+FRA,France,Europe,2021-01-15,267.041
+FRA,France,Europe,2021-01-16,269.646
+FRA,France,Europe,2021-01-17,271.122
+FRA,France,Europe,2021-01-18,271.084
+FRA,France,Europe,2021-01-19,279.996
+FRA,France,Europe,2021-01-20,286.223
+FRA,France,Europe,2021-01-21,288.927
+FRA,France,Europe,2021-01-22,293.171
+FRA,France,Europe,2021-01-23,298.488
+FRA,France,Europe,2021-01-24,302.282
+FRA,France,Europe,2021-01-25,303.343
+FRA,France,Europe,2021-01-26,299.639
+FRA,France,Europe,2021-01-27,299.795
+FRA,France,Europe,2021-01-28,302.43
+FRA,France,Europe,2021-01-29,302.241
+FRA,France,Europe,2021-01-30,302.497
+FRA,France,Europe,2021-01-31,304.187
+FRA,France,Europe,2021-02-01,304.373
+FRA,France,Europe,2021-02-02,306.897
+FRA,France,Europe,2021-02-03,305.745
+FRA,France,Europe,2021-02-04,255.135
+FRA,France,Europe,2021-02-05,302.438
+FRA,France,Europe,2021-02-06,295.129
+FRA,France,Europe,2021-02-07,296.144
+FRA,France,Europe,2021-02-08,296.048
+FRA,France,Europe,2021-02-09,286.637
+FRA,France,Europe,2021-02-10,285.098
+FRA,France,Europe,2021-02-11,329.619
+FRA,France,Europe,2021-02-12,276.974
+FRA,France,Europe,2021-02-13,278.334
+FRA,France,Europe,2021-02-14,271.634
+FRA,France,Europe,2021-02-15,271.767
+FRA,France,Europe,2021-02-16,273.268
+FRA,France,Europe,2021-02-17,272.228
+FRA,France,Europe,2021-02-18,275.277
+FRA,France,Europe,2021-02-19,282.504
+FRA,France,Europe,2021-02-20,284.914
+FRA,France,Europe,2021-02-21,296.543
+FRA,France,Europe,2021-02-22,297.067
+FRA,France,Europe,2021-02-23,298.302
+FRA,France,Europe,2021-02-24,311.71
+FRA,France,Europe,2021-02-25,317.833
+FRA,France,Europe,2021-02-26,320.135
+FRA,France,Europe,2021-02-27,323.571
+FRA,France,Europe,2021-02-28,319.144
+FRA,France,Europe,2021-03-01,319.305
+FRA,France,Europe,2021-03-02,324.996
+FRA,France,Europe,2021-03-03,315.22
+FRA,France,Europe,2021-03-04,314.949
+FRA,France,Europe,2021-03-05,311.335
+FRA,France,Europe,2021-03-06,309.876
+FRA,France,Europe,2021-03-07,313.858
+FRA,France,Europe,2021-03-08,315.558
+FRA,France,Europe,2021-03-09,316.131
+FRA,France,Europe,2021-03-10,321.99
+FRA,France,Europe,2021-03-11,328.001
+FRA,France,Europe,2021-03-12,331.532
+FRA,France,Europe,2021-03-13,345.246
+FRA,France,Europe,2021-03-14,354.786
+FRA,France,Europe,2021-03-15,356.767
+FRA,France,Europe,2021-03-16,371.405
+FRA,France,Europe,2021-03-17,390.069
+FRA,France,Europe,2021-03-18,404.726
+FRA,France,Europe,2021-03-19,425.914
+FRA,France,Europe,2021-03-20,437.643
+FRA,France,Europe,2021-03-21,446.608
+FRA,France,Europe,2021-03-22,466.36
+FRA,France,Europe,2021-03-23,433.864
+FRA,France,Europe,2021-03-24,490.722
+FRA,France,Europe,2021-03-25,513.133
+FRA,France,Europe,2021-03-26,527.242
+FRA,France,Europe,2021-03-27,542.667
+FRA,France,Europe,2021-03-28,556.271
+FRA,France,Europe,2021-03-29,542.098
+FRA,France,Europe,2021-03-30,575.975
+FRA,France,Europe,2021-03-31,562.573
+FRA,France,Europe,2021-04-01,573.253
+FRA,France,Europe,2021-04-02,583.417
+FRA,France,Europe,2021-04-03,493.458
+FRA,France,Europe,2021-04-04,585.663
+FRA,France,Europe,2021-04-05,589.23
+FRA,France,Europe,2021-04-06,541.307
+FRA,France,Europe,2021-04-07,418.474
+FRA,France,Europe,2021-04-08,516.706
+FRA,France,Europe,2021-04-09,418.347
+FRA,France,Europe,2021-04-10,421.06
+FRA,France,Europe,2021-04-11,499.865
+FRA,France,Europe,2021-04-12,495.124
+FRA,France,Europe,2021-04-13,560.821
+FRA,France,Europe,2021-04-14,650.782
+FRA,France,Europe,2021-04-15,525.844
+FRA,France,Europe,2021-04-16,602.58
+FRA,France,Europe,2021-04-17,675.528
+FRA,France,Europe,2021-04-18,488.289
+FRA,France,Europe,2021-04-19,484.383
+FRA,France,Europe,2021-04-20,494.852
+FRA,France,Europe,2021-04-21,476.704
+FRA,France,Europe,2021-04-22,466.902
+FRA,France,Europe,2021-04-23,458.209
+FRA,France,Europe,2021-04-24,451.38
+FRA,France,Europe,2021-04-25,441.062
+FRA,France,Europe,2021-04-26,439.478
+FRA,France,Europe,2021-04-27,410.399
+FRA,France,Europe,2021-04-28,403.332
+FRA,France,Europe,2021-04-29,388.75
+FRA,France,Europe,2021-04-30,371.754
+FRA,France,Europe,2021-05-01,357.013
+FRA,France,Europe,2021-05-02,326.191
+FRA,France,Europe,2021-05-03,321.556
+FRA,France,Europe,2021-05-04,308.984
+FRA,France,Europe,2021-05-05,297.19
+FRA,France,Europe,2021-05-06,287.028
+FRA,France,Europe,2021-05-07,276.11
+FRA,France,Europe,2021-05-08,265.696
+FRA,France,Europe,2021-05-09,264.089
+FRA,France,Europe,2021-05-10,263.1
+FRA,France,Europe,2021-05-11,253.403
+FRA,France,Europe,2021-05-12,243.876
+FRA,France,Europe,2021-05-13,239.053
+FRA,France,Europe,2021-05-14,213.479
+FRA,France,Europe,2021-05-15,202.781
+FRA,France,Europe,2021-05-16,212.972
+FRA,France,Europe,2021-05-17,213.082
+FRA,France,Europe,2021-05-18,207.652
+FRA,France,Europe,2021-05-19,202.491
+FRA,France,Europe,2021-05-20,161.343
+FRA,France,Europe,2021-05-21,173.522
+FRA,France,Europe,2021-05-22,167.022
+FRA,France,Europe,2021-05-23,158.049
+FRA,France,Europe,2021-05-24,155.678
+FRA,France,Europe,2021-05-25,125.933
+FRA,France,Europe,2021-05-26,112.401
+FRA,France,Europe,2021-05-27,141.861
+FRA,France,Europe,2021-05-28,138.628
+FRA,France,Europe,2021-05-29,136.336
+FRA,France,Europe,2021-05-30,133.877
+FRA,France,Europe,2021-05-31,129.944
+FRA,France,Europe,2021-06-01,144.106
+FRA,France,Europe,2021-06-02,120.207
+FRA,France,Europe,2021-06-03,123.91
+FRA,France,Europe,2021-06-04,114.784
+FRA,France,Europe,2021-06-05,104.48
+FRA,France,Europe,2021-06-06,97.141
+FRA,France,Europe,2021-06-07,98.841
+FRA,France,Europe,2021-06-08,90.739
+FRA,France,Europe,2021-06-09,99.651
+FRA,France,Europe,2021-06-10,75.968
+FRA,France,Europe,2021-06-11,69.458
+FRA,France,Europe,2021-06-12,63.787
+FRA,France,Europe,2021-06-13,59.104
+FRA,France,Europe,2021-06-14,58.097
+FRA,France,Europe,2021-06-15,52.223
+FRA,France,Europe,2021-06-16,46.927
+FRA,France,Europe,2021-06-17,41.977
+FRA,France,Europe,2021-06-18,40.514
+FRA,France,Europe,2021-06-19,37.664
+FRA,France,Europe,2021-06-20,35.467
+FRA,France,Europe,2021-06-21,35.04
+FRA,France,Europe,2021-06-22,32.862
+FRA,France,Europe,2021-06-23,31.31
+FRA,France,Europe,2021-06-24,31.329
+FRA,France,Europe,2021-06-25,28.794
+FRA,France,Europe,2021-06-26,27.745
+FRA,France,Europe,2021-06-27,27.242
+FRA,France,Europe,2021-06-28,27.288
+FRA,France,Europe,2021-06-29,29.788
+FRA,France,Europe,2021-06-30,27.779
+FRA,France,Europe,2021-07-01,28.944
+FRA,France,Europe,2021-07-02,30.422
+FRA,France,Europe,2021-07-03,32.278
+FRA,France,Europe,2021-07-04,34.331
+FRA,France,Europe,2021-07-05,34.932
+FRA,France,Europe,2021-07-06,35.34
+FRA,France,Europe,2021-07-07,41.055
+FRA,France,Europe,2021-07-08,44.743
+FRA,France,Europe,2021-07-09,48.87
+FRA,France,Europe,2021-07-10,52.443
+FRA,France,Europe,2021-07-11,56.052
+FRA,France,Europe,2021-07-12,57.038
+IND,Inde,Asia,2021-01-01,12.173
+IND,Inde,Asia,2021-01-02,14.091
+IND,Inde,Asia,2021-01-03,13.726
+IND,Inde,Asia,2021-01-04,13.721
+IND,Inde,Asia,2021-01-05,13.466
+IND,Inde,Asia,2021-01-06,13.313
+IND,Inde,Asia,2021-01-07,15.191
+IND,Inde,Asia,2021-01-08,13.117
+IND,Inde,Asia,2021-01-09,13.076
+IND,Inde,Asia,2021-01-10,13.056
+IND,Inde,Asia,2021-01-11,12.664
+IND,Inde,Asia,2021-01-12,12.445
+IND,Inde,Asia,2021-01-13,12.093
+IND,Inde,Asia,2021-01-14,11.829
+IND,Inde,Asia,2021-01-15,13.398
+IND,Inde,Asia,2021-01-16,11.149
+IND,Inde,Asia,2021-01-17,10.888
+IND,Inde,Asia,2021-01-18,10.626
+IND,Inde,Asia,2021-01-19,10.403
+IND,Inde,Asia,2021-01-20,10.227
+IND,Inde,Asia,2021-01-21,10.118
+IND,Inde,Asia,2021-01-22,10.025
+IND,Inde,Asia,2021-01-23,9.995
+IND,Inde,Asia,2021-01-24,9.934
+IND,Inde,Asia,2021-01-25,9.836
+IND,Inde,Asia,2021-01-26,9.719
+IND,Inde,Asia,2021-01-27,9.349
+IND,Inde,Asia,2021-01-28,9.795
+IND,Inde,Asia,2021-01-29,9.673
+IND,Inde,Asia,2021-01-30,9.487
+IND,Inde,Asia,2021-01-31,9.304
+IND,Inde,Asia,2021-02-01,9.255
+IND,Inde,Asia,2021-02-02,9.085
+IND,Inde,Asia,2021-02-03,9.212
+IND,Inde,Asia,2021-02-04,8.545
+IND,Inde,Asia,2021-02-05,8.403
+IND,Inde,Asia,2021-02-06,8.301
+IND,Inde,Asia,2021-02-07,8.342
+IND,Inde,Asia,2021-02-08,8.391
+IND,Inde,Asia,2021-02-09,8.394
+IND,Inde,Asia,2021-02-10,8.397
+IND,Inde,Asia,2021-02-11,8.076
+IND,Inde,Asia,2021-02-12,8.12
+IND,Inde,Asia,2021-02-13,8.134
+IND,Inde,Asia,2021-02-14,8.115
+IND,Inde,Asia,2021-02-15,8.117
+IND,Inde,Asia,2021-02-16,8.173
+IND,Inde,Asia,2021-02-17,8.168
+IND,Inde,Asia,2021-02-18,8.57
+IND,Inde,Asia,2021-02-19,8.762
+IND,Inde,Asia,2021-02-20,8.976
+IND,Inde,Asia,2021-02-21,9.24
+IND,Inde,Asia,2021-02-22,9.392
+IND,Inde,Asia,2021-02-23,9.612
+IND,Inde,Asia,2021-02-24,10.012
+IND,Inde,Asia,2021-02-25,10.362
+IND,Inde,Asia,2021-02-26,10.62
+IND,Inde,Asia,2021-02-27,10.878
+IND,Inde,Asia,2021-02-28,11.014
+IND,Inde,Asia,2021-03-01,11.19
+IND,Inde,Asia,2021-03-02,11.319
+IND,Inde,Asia,2021-03-03,11.388
+IND,Inde,Asia,2021-03-04,11.415
+IND,Inde,Asia,2021-03-05,11.601
+IND,Inde,Asia,2021-03-06,11.808
+IND,Inde,Asia,2021-03-07,12.128
+IND,Inde,Asia,2021-03-08,12.449
+IND,Inde,Asia,2021-03-09,12.753
+IND,Inde,Asia,2021-03-10,13.317
+IND,Inde,Asia,2021-03-11,13.984
+IND,Inde,Asia,2021-03-12,14.667
+IND,Inde,Asia,2021-03-13,15.347
+IND,Inde,Asia,2021-03-14,16.143
+IND,Inde,Asia,2021-03-15,17.085
+IND,Inde,Asia,2021-03-16,18.222
+IND,Inde,Asia,2021-03-17,19.57
+IND,Inde,Asia,2021-03-18,21.272
+IND,Inde,Asia,2021-03-19,22.935
+IND,Inde,Asia,2021-03-20,24.853
+IND,Inde,Asia,2021-03-21,26.992
+IND,Inde,Asia,2021-03-22,28.671
+IND,Inde,Asia,2021-03-23,30.572
+IND,Inde,Asia,2021-03-24,32.394
+IND,Inde,Asia,2021-03-25,34.402
+IND,Inde,Asia,2021-03-26,36.607
+IND,Inde,Asia,2021-03-27,38.56
+IND,Inde,Asia,2021-03-28,40.741
+IND,Inde,Asia,2021-03-29,42.346
+IND,Inde,Asia,2021-03-30,42.989
+IND,Inde,Asia,2021-03-31,44.941
+IND,Inde,Asia,2021-04-01,47.254
+IND,Inde,Asia,2021-04-02,50.036
+IND,Inde,Asia,2021-04-03,53.197
+IND,Inde,Asia,2021-04-04,56.876
+IND,Inde,Asia,2021-04-05,61.096
+IND,Inde,Asia,2021-04-06,67.541
+IND,Inde,Asia,2021-04-07,73.179
+IND,Inde,Asia,2021-04-08,78.407
+IND,Inde,Asia,2021-04-09,84.23
+IND,Inde,Asia,2021-04-10,90.403
+IND,Inde,Asia,2021-04-11,97.168
+IND,Inde,Asia,2021-04-12,103.872
+IND,Inde,Asia,2021-04-13,110.977
+IND,Inde,Asia,2021-04-14,118.632
+IND,Inde,Asia,2021-04-15,127.471
+IND,Inde,Asia,2021-04-16,136.716
+IND,Inde,Asia,2021-04-17,147.95
+IND,Inde,Asia,2021-04-18,158.808
+IND,Inde,Asia,2021-04-19,168.894
+IND,Inde,Asia,2021-04-20,180.362
+IND,Inde,Asia,2021-04-21,192.154
+IND,Inde,Asia,2021-04-22,204.117
+IND,Inde,Asia,2021-04-23,215.721
+IND,Inde,Asia,2021-04-24,224.862
+IND,Inde,Asia,2021-04-25,233.059
+IND,Inde,Asia,2021-04-26,239.669
+IND,Inde,Asia,2021-04-27,246.478
+IND,Inde,Asia,2021-04-28,253.172
+IND,Inde,Asia,2021-04-29,258.724
+IND,Inde,Asia,2021-04-30,264.439
+IND,Inde,Asia,2021-05-01,268.869
+IND,Inde,Asia,2021-05-02,270.429
+IND,Inde,Asia,2021-05-03,273.979
+IND,Inde,Asia,2021-05-04,276.176
+IND,Inde,Asia,2021-05-05,279.605
+IND,Inde,Asia,2021-05-06,282.465
+IND,Inde,Asia,2021-05-07,282.37
+IND,Inde,Asia,2021-05-08,283.501
+IND,Inde,Asia,2021-05-09,283.338
+IND,Inde,Asia,2021-05-10,280.505
+IND,Inde,Asia,2021-05-11,277.014
+IND,Inde,Asia,2021-05-12,271.868
+IND,Inde,Asia,2021-05-13,264.514
+IND,Inde,Asia,2021-05-14,256.752
+IND,Inde,Asia,2021-05-15,247.204
+IND,Inde,Asia,2021-05-16,238.393
+IND,Inde,Asia,2021-05-17,231.519
+IND,Inde,Asia,2021-05-18,223.125
+IND,Inde,Asia,2021-05-19,214.158
+IND,Inde,Asia,2021-05-20,205.505
+IND,Inde,Asia,2021-05-21,198.383
+IND,Inde,Asia,2021-05-22,191.102
+IND,Inde,Asia,2021-05-23,184.987
+IND,Inde,Asia,2021-05-24,178.041
+IND,Inde,Asia,2021-05-25,171.994
+IND,Inde,Asia,2021-05-26,165.284
+IND,Inde,Asia,2021-05-27,157.708
+IND,Inde,Asia,2021-05-28,149.063
+IND,Inde,Asia,2021-05-29,141.27
+IND,Inde,Asia,2021-05-30,134.067
+IND,Inde,Asia,2021-05-31,126.932
+IND,Inde,Asia,2021-06-01,119.051
+IND,Inde,Asia,2021-06-02,111.065
+IND,Inde,Asia,2021-06-03,105.475
+IND,Inde,Asia,2021-06-04,99.962
+IND,Inde,Asia,2021-06-05,94.672
+IND,Inde,Asia,2021-06-06,89.279
+IND,Inde,Asia,2021-06-07,85.034
+IND,Inde,Asia,2021-06-08,80.873
+IND,Inde,Asia,2021-06-09,76.661
+IND,Inde,Asia,2021-06-10,72.513
+IND,Inde,Asia,2021-06-11,68.765
+IND,Inde,Asia,2021-06-12,65.284
+IND,Inde,Asia,2021-06-13,62.157
+IND,Inde,Asia,2021-06-14,59.462
+IND,Inde,Asia,2021-06-15,56.318
+IND,Inde,Asia,2021-06-16,53.6
+IND,Inde,Asia,2021-06-17,50.514
+IND,Inde,Asia,2021-06-18,48.073
+IND,Inde,Asia,2021-06-19,45.733
+IND,Inde,Asia,2021-06-20,43.976
+IND,Inde,Asia,2021-06-21,42.13
+IND,Inde,Asia,2021-06-22,40.953
+IND,Inde,Asia,2021-06-23,39.593
+IND,Inde,Asia,2021-06-24,38.473
+IND,Inde,Asia,2021-06-25,37.225
+IND,Inde,Asia,2021-06-26,36.378
+IND,Inde,Asia,2021-06-27,35.622
+IND,Inde,Asia,2021-06-28,35.097
+IND,Inde,Asia,2021-06-29,34.59
+IND,Inde,Asia,2021-06-30,34.043
+IND,Inde,Asia,2021-07-01,33.52
+IND,Inde,Asia,2021-07-02,33.045
+IND,Inde,Asia,2021-07-03,32.324
+IND,Inde,Asia,2021-07-04,31.666
+IND,Inde,Asia,2021-07-05,31.37
+IND,Inde,Asia,2021-07-06,31.14
+IND,Inde,Asia,2021-07-07,30.841
+IND,Inde,Asia,2021-07-08,30.507
+IND,Inde,Asia,2021-07-09,30.368
+IND,Inde,Asia,2021-07-10,30.206
+IND,Inde,Asia,2021-07-11,29.932
+IND,Inde,Asia,2021-07-12,26.34
 IDN,Indonésie,Asia,2021-01-01,26.727
 IDN,Indonésie,Asia,2021-01-02,26.969
 IDN,Indonésie,Asia,2021-01-03,27.151
@@ -755,192 +960,200 @@ IDN,Indonésie,Asia,2021-07-05,92.878
 IDN,Indonésie,Asia,2021-07-06,98.478
 IDN,Indonésie,Asia,2021-07-07,105.044
 IDN,Indonésie,Asia,2021-07-08,112.124
-GBR,Royaume-Uni,Europe,2021-01-01,677.064
-GBR,Royaume-Uni,Europe,2021-01-02,725.601
-GBR,Royaume-Uni,Europe,2021-01-03,773.294
-GBR,Royaume-Uni,Europe,2021-01-04,810.043
-GBR,Royaume-Uni,Europe,2021-01-05,826.482
-GBR,Royaume-Uni,Europe,2021-01-06,852.402
-GBR,Royaume-Uni,Europe,2021-01-07,845.579
-GBR,Royaume-Uni,Europe,2021-01-08,876.585
-GBR,Royaume-Uni,Europe,2021-01-09,881.309
-GBR,Royaume-Uni,Europe,2021-01-10,881.034
-GBR,Royaume-Uni,Europe,2021-01-11,854.418
-GBR,Royaume-Uni,Europe,2021-01-12,821.928
-GBR,Royaume-Uni,Europe,2021-01-13,790.586
-GBR,Royaume-Uni,Europe,2021-01-14,782.204
-GBR,Royaume-Uni,Europe,2021-01-15,756.306
-GBR,Royaume-Uni,Europe,2021-01-16,717.017
-GBR,Royaume-Uni,Europe,2021-01-17,682.598
-GBR,Royaume-Uni,Europe,2021-01-18,664.364
-GBR,Royaume-Uni,Europe,2021-01-19,638.703
-GBR,Royaume-Uni,Europe,2021-01-20,620.458
-GBR,Royaume-Uni,Europe,2021-01-21,597.674
-GBR,Royaume-Uni,Europe,2021-01-22,564.922
-GBR,Royaume-Uni,Europe,2021-01-23,548.558
-GBR,Royaume-Uni,Europe,2021-01-24,530.547
-GBR,Royaume-Uni,Europe,2021-01-25,498.211
-GBR,Royaume-Uni,Europe,2021-01-26,470.251
-GBR,Royaume-Uni,Europe,2021-01-27,441.583
-GBR,Royaume-Uni,Europe,2021-01-28,422.294
-GBR,Royaume-Uni,Europe,2021-01-29,398.776
-GBR,Royaume-Uni,Europe,2021-01-30,377.202
-GBR,Royaume-Uni,Europe,2021-01-31,358.429
-GBR,Royaume-Uni,Europe,2021-02-01,350.903
-GBR,Royaume-Uni,Europe,2021-02-02,344.041
-GBR,Royaume-Uni,Europe,2021-02-03,331.091
-GBR,Royaume-Uni,Europe,2021-02-04,314.094
-GBR,Royaume-Uni,Europe,2021-02-05,293.174
-GBR,Royaume-Uni,Europe,2021-02-06,282.575
-GBR,Royaume-Uni,Europe,2021-02-07,271.451
-GBR,Royaume-Uni,Europe,2021-02-08,261.918
-GBR,Royaume-Uni,Europe,2021-02-09,252.522
-GBR,Royaume-Uni,Europe,2021-02-10,239.605
-GBR,Royaume-Uni,Europe,2021-02-11,224.473
-GBR,Royaume-Uni,Europe,2021-02-12,216.043
-GBR,Royaume-Uni,Europe,2021-02-13,205.504
-GBR,Royaume-Uni,Europe,2021-02-14,195.165
-GBR,Royaume-Uni,Europe,2021-02-15,185.986
-GBR,Royaume-Uni,Europe,2021-02-16,182.188
-GBR,Royaume-Uni,Europe,2021-02-17,181.521
-GBR,Royaume-Uni,Europe,2021-02-18,178.474
-GBR,Royaume-Uni,Europe,2021-02-19,171.952
-GBR,Royaume-Uni,Europe,2021-02-20,165.845
-GBR,Royaume-Uni,Europe,2021-02-21,163.413
-GBR,Royaume-Uni,Europe,2021-02-22,165.271
-GBR,Royaume-Uni,Europe,2021-02-23,160.824
-GBR,Royaume-Uni,Europe,2021-02-24,154.905
-GBR,Royaume-Uni,Europe,2021-02-25,150.538
-GBR,Royaume-Uni,Europe,2021-02-26,143.15
-GBR,Royaume-Uni,Europe,2021-02-27,136.845
-GBR,Royaume-Uni,Europe,2021-02-28,128.89
-GBR,Royaume-Uni,Europe,2021-03-01,117.954
-GBR,Royaume-Uni,Europe,2021-03-02,113.51
-GBR,Royaume-Uni,Europe,2021-03-03,106.088
-GBR,Royaume-Uni,Europe,2021-03-04,98.983
-GBR,Royaume-Uni,Europe,2021-03-05,93.588
-GBR,Royaume-Uni,Europe,2021-03-06,90.77
-GBR,Royaume-Uni,Europe,2021-03-07,89.097
-GBR,Royaume-Uni,Europe,2021-03-08,87.752
-GBR,Royaume-Uni,Europe,2021-03-09,86.612
-GBR,Royaume-Uni,Europe,2021-03-10,85.772
-GBR,Royaume-Uni,Europe,2021-03-11,86.174
-GBR,Royaume-Uni,Europe,2021-03-12,87.563
-GBR,Royaume-Uni,Europe,2021-03-13,86.508
-GBR,Royaume-Uni,Europe,2021-03-14,85.32
-GBR,Royaume-Uni,Europe,2021-03-15,85.966
-GBR,Royaume-Uni,Europe,2021-03-16,84.901
-GBR,Royaume-Uni,Europe,2021-03-17,84.421
-GBR,Royaume-Uni,Europe,2021-03-18,83.362
-GBR,Royaume-Uni,Europe,2021-03-19,79.549
-GBR,Royaume-Uni,Europe,2021-03-20,79.596
-GBR,Royaume-Uni,Europe,2021-03-21,80.987
-GBR,Royaume-Uni,Europe,2021-03-22,81.57
-GBR,Royaume-Uni,Europe,2021-03-23,81.683
-GBR,Royaume-Uni,Europe,2021-03-24,81.332
-GBR,Royaume-Uni,Europe,2021-03-25,81.216
-GBR,Royaume-Uni,Europe,2021-03-26,84.084
-GBR,Royaume-Uni,Europe,2021-03-27,80.444
-GBR,Royaume-Uni,Europe,2021-03-28,77.479
-GBR,Royaume-Uni,Europe,2021-03-29,76.165
-GBR,Royaume-Uni,Europe,2021-03-30,73.333
-GBR,Royaume-Uni,Europe,2021-03-31,70.153
-GBR,Royaume-Uni,Europe,2021-04-01,66.551
-GBR,Royaume-Uni,Europe,2021-04-02,60.631
-GBR,Royaume-Uni,Europe,2021-04-03,59.61
-GBR,Royaume-Uni,Europe,2021-04-04,56.366
-GBR,Royaume-Uni,Europe,2021-04-05,52.258
-GBR,Royaume-Uni,Europe,2021-04-06,48.75
-GBR,Royaume-Uni,Europe,2021-04-07,45.976
-GBR,Royaume-Uni,Europe,2021-04-08,42.944
-GBR,Royaume-Uni,Europe,2021-04-09,25.669
-GBR,Royaume-Uni,Europe,2021-04-10,24.173
-GBR,Royaume-Uni,Europe,2021-04-11,22.752
-GBR,Royaume-Uni,Europe,2021-04-12,24.552
-GBR,Royaume-Uni,Europe,2021-04-13,24.764
-GBR,Royaume-Uni,Europe,2021-04-14,24.2
-GBR,Royaume-Uni,Europe,2021-04-15,23.447
-GBR,Royaume-Uni,Europe,2021-04-16,39.427
-GBR,Royaume-Uni,Europe,2021-04-17,38.502
-GBR,Royaume-Uni,Europe,2021-04-18,38.826
-GBR,Royaume-Uni,Europe,2021-04-19,37.496
-GBR,Royaume-Uni,Europe,2021-04-20,37.548
-GBR,Royaume-Uni,Europe,2021-04-21,37.327
-GBR,Royaume-Uni,Europe,2021-04-22,37.327
-GBR,Royaume-Uni,Europe,2021-04-23,37.216
-GBR,Royaume-Uni,Europe,2021-04-24,36.898
-GBR,Royaume-Uni,Europe,2021-04-25,36.58
-GBR,Royaume-Uni,Europe,2021-04-26,34.613
-GBR,Royaume-Uni,Europe,2021-04-27,34.964
-GBR,Royaume-Uni,Europe,2021-04-28,34.347
-GBR,Royaume-Uni,Europe,2021-04-29,33.701
-GBR,Royaume-Uni,Europe,2021-04-30,32.95
-GBR,Royaume-Uni,Europe,2021-05-01,32.506
-GBR,Royaume-Uni,Europe,2021-05-02,32.382
-GBR,Royaume-Uni,Europe,2021-05-03,31.446
-GBR,Royaume-Uni,Europe,2021-05-04,29.945
-GBR,Royaume-Uni,Europe,2021-05-05,29.996
-GBR,Royaume-Uni,Europe,2021-05-06,30.33
-GBR,Royaume-Uni,Europe,2021-05-07,30.526
-GBR,Royaume-Uni,Europe,2021-05-08,30.831
-GBR,Royaume-Uni,Europe,2021-05-09,31.033
-GBR,Royaume-Uni,Europe,2021-05-10,32.515
-GBR,Royaume-Uni,Europe,2021-05-11,33.579
-GBR,Royaume-Uni,Europe,2021-05-12,33.876
-GBR,Royaume-Uni,Europe,2021-05-13,33.971
-GBR,Royaume-Uni,Europe,2021-05-14,33.356
-GBR,Royaume-Uni,Europe,2021-05-15,33.365
-GBR,Royaume-Uni,Europe,2021-05-16,33.693
-GBR,Royaume-Uni,Europe,2021-05-17,32.883
-GBR,Royaume-Uni,Europe,2021-05-18,22.672
-GBR,Royaume-Uni,Europe,2021-05-19,22.357
-GBR,Royaume-Uni,Europe,2021-05-20,22.433
-GBR,Royaume-Uni,Europe,2021-05-21,23.506
-GBR,Royaume-Uni,Europe,2021-05-22,24.482
-GBR,Royaume-Uni,Europe,2021-05-23,24.834
-GBR,Royaume-Uni,Europe,2021-05-24,25.627
-GBR,Royaume-Uni,Europe,2021-05-25,35.684
-GBR,Royaume-Uni,Europe,2021-05-26,37.462
-GBR,Royaume-Uni,Europe,2021-05-27,38.903
-GBR,Royaume-Uni,Europe,2021-05-28,41.685
-GBR,Royaume-Uni,Europe,2021-05-29,43.194
-GBR,Royaume-Uni,Europe,2021-05-30,45.343
-GBR,Royaume-Uni,Europe,2021-05-31,47.287
-GBR,Royaume-Uni,Europe,2021-06-01,48.729
-GBR,Royaume-Uni,Europe,2021-06-02,51.408
-GBR,Royaume-Uni,Europe,2021-06-03,55.189
-GBR,Royaume-Uni,Europe,2021-06-04,59.638
-GBR,Royaume-Uni,Europe,2021-06-05,64.718
-GBR,Royaume-Uni,Europe,2021-06-06,69.16
-GBR,Royaume-Uni,Europe,2021-06-07,74.006
-GBR,Royaume-Uni,Europe,2021-06-08,80.048
-GBR,Royaume-Uni,Europe,2021-06-09,86.483
-GBR,Royaume-Uni,Europe,2021-06-10,90.814
-GBR,Royaume-Uni,Europe,2021-06-11,94.636
-GBR,Royaume-Uni,Europe,2021-06-12,98.628
-GBR,Royaume-Uni,Europe,2021-06-13,103.066
-GBR,Royaume-Uni,Europe,2021-06-14,107.325
-GBR,Royaume-Uni,Europe,2021-06-15,110.736
-GBR,Royaume-Uni,Europe,2021-06-16,113.869
-GBR,Royaume-Uni,Europe,2021-06-17,121.412
-GBR,Royaume-Uni,Europe,2021-06-18,126.308
-GBR,Royaume-Uni,Europe,2021-06-19,131.62
-GBR,Royaume-Uni,Europe,2021-06-20,135.288
-GBR,Royaume-Uni,Europe,2021-06-21,141.279
-GBR,Royaume-Uni,Europe,2021-06-22,149.513
-GBR,Royaume-Uni,Europe,2021-06-23,164.522
-GBR,Royaume-Uni,Europe,2021-06-24,176.899
-GBR,Royaume-Uni,Europe,2021-06-25,187.604
-GBR,Royaume-Uni,Europe,2021-06-26,204.166
-GBR,Royaume-Uni,Europe,2021-06-27,215.858
-GBR,Royaume-Uni,Europe,2021-06-28,241.647
-GBR,Royaume-Uni,Europe,2021-06-29,260.068
-GBR,Royaume-Uni,Europe,2021-06-30,280.538
-GBR,Royaume-Uni,Europe,2021-07-01,303.561
-GBR,Royaume-Uni,Europe,2021-07-02,327.739
-GBR,Royaume-Uni,Europe,2021-07-03,341.457
-GBR,Royaume-Uni,Europe,2021-07-04,360.95
-GBR,Royaume-Uni,Europe,2021-07-05,370.173
-GBR,Royaume-Uni,Europe,2021-07-06,387.782
-GBR,Royaume-Uni,Europe,2021-07-07,401.231
-GBR,Royaume-Uni,Europe,2021-07-08,410.596
+IDN,Indonésie,Asia,2021-07-09,118.545
+IDN,Indonésie,Asia,2021-07-10,122.296
+IDN,Indonésie,Asia,2021-07-11,126.977
+IDN,Indonésie,Asia,2021-07-12,132.556
+ZAF,Afrique du Sud,Africa,2021-01-01,218.055
+ZAF,Afrique du Sud,Africa,2021-01-02,226.365
+ZAF,Afrique du Sud,Africa,2021-01-03,232.043
+ZAF,Afrique du Sud,Africa,2021-01-04,244.431
+ZAF,Afrique du Sud,Africa,2021-01-05,256.065
+ZAF,Afrique du Sud,Africa,2021-01-06,265.993
+ZAF,Afrique du Sud,Africa,2021-01-07,273.217
+ZAF,Afrique du Sud,Africa,2021-01-08,285.872
+ZAF,Afrique du Sud,Africa,2021-01-09,301.779
+ZAF,Afrique du Sud,Africa,2021-01-10,315.177
+ZAF,Afrique du Sud,Africa,2021-01-11,321.066
+ZAF,Afrique du Sud,Africa,2021-01-12,317.923
+ZAF,Afrique du Sud,Africa,2021-01-13,310.029
+ZAF,Afrique du Sud,Africa,2021-01-14,304.017
+ZAF,Afrique du Sud,Africa,2021-01-15,286.915
+ZAF,Afrique du Sud,Africa,2021-01-16,268.53
+ZAF,Afrique du Sud,Africa,2021-01-17,256.115
+ZAF,Afrique du Sud,Africa,2021-01-18,241.576
+ZAF,Afrique du Sud,Africa,2021-01-19,233.567
+ZAF,Afrique du Sud,Africa,2021-01-20,219.488
+ZAF,Afrique du Sud,Africa,2021-01-21,202.334
+ZAF,Afrique du Sud,Africa,2021-01-22,194.821
+ZAF,Afrique du Sud,Africa,2021-01-23,190.721
+ZAF,Afrique du Sud,Africa,2021-01-24,180.797
+ZAF,Afrique du Sud,Africa,2021-01-25,170.057
+ZAF,Afrique du Sud,Africa,2021-01-26,161.051
+ZAF,Afrique du Sud,Africa,2021-01-27,147.466
+ZAF,Afrique du Sud,Africa,2021-01-28,137.275
+ZAF,Afrique du Sud,Africa,2021-01-29,123.738
+ZAF,Afrique du Sud,Africa,2021-01-30,106.939
+ZAF,Afrique du Sud,Africa,2021-01-31,98.215
+ZAF,Afrique du Sud,Africa,2021-02-01,93.39
+ZAF,Afrique du Sud,Africa,2021-02-02,85.22
+ZAF,Afrique du Sud,Africa,2021-02-03,77.965
+ZAF,Afrique du Sud,Africa,2021-02-04,69.778
+ZAF,Afrique du Sud,Africa,2021-02-05,64.016
+ZAF,Afrique du Sud,Africa,2021-02-06,58.927
+ZAF,Afrique du Sud,Africa,2021-02-07,53.892
+ZAF,Afrique du Sud,Africa,2021-02-08,51.069
+ZAF,Afrique du Sud,Africa,2021-02-09,48.885
+ZAF,Afrique du Sud,Africa,2021-02-10,46.719
+ZAF,Afrique du Sud,Africa,2021-02-11,43.677
+ZAF,Afrique du Sud,Africa,2021-02-12,41.345
+ZAF,Afrique du Sud,Africa,2021-02-13,39.414
+ZAF,Afrique du Sud,Africa,2021-02-14,37.749
+ZAF,Afrique du Sud,Africa,2021-02-15,37.089
+ZAF,Afrique du Sud,Africa,2021-02-16,35.808
+ZAF,Afrique du Sud,Africa,2021-02-17,33.787
+ZAF,Afrique du Sud,Africa,2021-02-18,33.399
+ZAF,Afrique du Sud,Africa,2021-02-19,31.304
+ZAF,Afrique du Sud,Africa,2021-02-20,29.637
+ZAF,Afrique du Sud,Africa,2021-02-21,28.878
+ZAF,Afrique du Sud,Africa,2021-02-22,28.131
+ZAF,Afrique du Sud,Africa,2021-02-23,27.621
+ZAF,Afrique du Sud,Africa,2021-02-24,26.517
+ZAF,Afrique du Sud,Africa,2021-02-25,24.949
+ZAF,Afrique du Sud,Africa,2021-02-26,24.33
+ZAF,Afrique du Sud,Africa,2021-02-27,23.745
+ZAF,Afrique du Sud,Africa,2021-02-28,23.116
+ZAF,Afrique du Sud,Africa,2021-03-01,22.572
+ZAF,Afrique du Sud,Africa,2021-03-02,22.23
+ZAF,Afrique du Sud,Africa,2021-03-03,21.23
+ZAF,Afrique du Sud,Africa,2021-03-04,20.575
+ZAF,Afrique du Sud,Africa,2021-03-05,19.754
+ZAF,Afrique du Sud,Africa,2021-03-06,19.224
+ZAF,Afrique du Sud,Africa,2021-03-07,18.487
+ZAF,Afrique du Sud,Africa,2021-03-08,18.66
+ZAF,Afrique du Sud,Africa,2021-03-09,18.985
+ZAF,Afrique du Sud,Africa,2021-03-10,19.058
+ZAF,Afrique du Sud,Africa,2021-03-11,19.226
+ZAF,Afrique du Sud,Africa,2021-03-12,19.014
+ZAF,Afrique du Sud,Africa,2021-03-13,19.771
+ZAF,Afrique du Sud,Africa,2021-03-14,20.118
+ZAF,Afrique du Sud,Africa,2021-03-15,20.057
+ZAF,Afrique du Sud,Africa,2021-03-16,19.918
+ZAF,Afrique du Sud,Africa,2021-03-17,20.048
+ZAF,Afrique du Sud,Africa,2021-03-18,20.024
+ZAF,Afrique du Sud,Africa,2021-03-19,20.594
+ZAF,Afrique du Sud,Africa,2021-03-20,20.202
+ZAF,Afrique du Sud,Africa,2021-03-21,20.31
+ZAF,Afrique du Sud,Africa,2021-03-22,20.276
+ZAF,Afrique du Sud,Africa,2021-03-23,19.258
+ZAF,Afrique du Sud,Africa,2021-03-24,18.094
+ZAF,Afrique du Sud,Africa,2021-03-25,18.311
+ZAF,Afrique du Sud,Africa,2021-03-26,18.441
+ZAF,Afrique du Sud,Africa,2021-03-27,18.463
+ZAF,Afrique du Sud,Africa,2021-03-28,18.256
+ZAF,Afrique du Sud,Africa,2021-03-29,18.133
+ZAF,Afrique du Sud,Africa,2021-03-30,18.725
+ZAF,Afrique du Sud,Africa,2021-03-31,19.626
+ZAF,Afrique du Sud,Africa,2021-04-01,19
+ZAF,Afrique du Sud,Africa,2021-04-02,18.415
+ZAF,Afrique du Sud,Africa,2021-04-03,16.945
+ZAF,Afrique du Sud,Africa,2021-04-04,15.736
+ZAF,Afrique du Sud,Africa,2021-04-05,15.505
+ZAF,Afrique du Sud,Africa,2021-04-06,14.736
+ZAF,Afrique du Sud,Africa,2021-04-07,13.132
+ZAF,Afrique du Sud,Africa,2021-04-08,13.306
+ZAF,Afrique du Sud,Africa,2021-04-09,13.291
+ZAF,Afrique du Sud,Africa,2021-04-10,14.515
+ZAF,Afrique du Sud,Africa,2021-04-11,15.642
+ZAF,Afrique du Sud,Africa,2021-04-12,16.131
+ZAF,Afrique du Sud,Africa,2021-04-13,17.119
+ZAF,Afrique du Sud,Africa,2021-04-14,19.149
+ZAF,Afrique du Sud,Africa,2021-04-15,19.164
+ZAF,Afrique du Sud,Africa,2021-04-16,19.542
+ZAF,Afrique du Sud,Africa,2021-04-17,19.638
+ZAF,Afrique du Sud,Africa,2021-04-18,20.019
+ZAF,Afrique du Sud,Africa,2021-04-19,20.233
+ZAF,Afrique du Sud,Africa,2021-04-20,20.248
+ZAF,Afrique du Sud,Africa,2021-04-21,20.175
+ZAF,Afrique du Sud,Africa,2021-04-22,20.274
+ZAF,Afrique du Sud,Africa,2021-04-23,20.787
+ZAF,Afrique du Sud,Africa,2021-04-24,20.932
+ZAF,Afrique du Sud,Africa,2021-04-25,20.961
+ZAF,Afrique du Sud,Africa,2021-04-26,21.213
+ZAF,Afrique du Sud,Africa,2021-04-27,21.279
+ZAF,Afrique du Sud,Africa,2021-04-28,20.51
+ZAF,Afrique du Sud,Africa,2021-04-29,19.722
+ZAF,Afrique du Sud,Africa,2021-04-30,19.812
+ZAF,Afrique du Sud,Africa,2021-05-01,20.407
+ZAF,Afrique du Sud,Africa,2021-05-02,20.698
+ZAF,Afrique du Sud,Africa,2021-05-03,20.814
+ZAF,Afrique du Sud,Africa,2021-05-04,21.553
+ZAF,Afrique du Sud,Africa,2021-05-05,23.535
+ZAF,Afrique du Sud,Africa,2021-05-06,26.096
+ZAF,Afrique du Sud,Africa,2021-05-07,27.498
+ZAF,Afrique du Sud,Africa,2021-05-08,23.567
+ZAF,Afrique du Sud,Africa,2021-05-09,30.183
+ZAF,Afrique du Sud,Africa,2021-05-10,30.742
+ZAF,Afrique du Sud,Africa,2021-05-11,31.612
+ZAF,Afrique du Sud,Africa,2021-05-12,33.264
+ZAF,Afrique du Sud,Africa,2021-05-13,35.846
+ZAF,Afrique du Sud,Africa,2021-05-14,37.978
+ZAF,Afrique du Sud,Africa,2021-05-15,44.602
+ZAF,Afrique du Sud,Africa,2021-05-16,41.268
+ZAF,Afrique du Sud,Africa,2021-05-17,42.781
+ZAF,Afrique du Sud,Africa,2021-05-18,44.725
+ZAF,Afrique du Sud,Africa,2021-05-19,46.563
+ZAF,Afrique du Sud,Africa,2021-05-20,47.574
+ZAF,Afrique du Sud,Africa,2021-05-21,48.034
+ZAF,Afrique du Sud,Africa,2021-05-22,51.614
+ZAF,Afrique du Sud,Africa,2021-05-23,52.358
+ZAF,Afrique du Sud,Africa,2021-05-24,53.866
+ZAF,Afrique du Sud,Africa,2021-05-25,48.193
+ZAF,Afrique du Sud,Africa,2021-05-26,58.274
+ZAF,Afrique du Sud,Africa,2021-05-27,60.155
+ZAF,Afrique du Sud,Africa,2021-05-28,63.147
+ZAF,Afrique du Sud,Africa,2021-05-29,63.828
+ZAF,Afrique du Sud,Africa,2021-05-30,56.857
+ZAF,Afrique du Sud,Africa,2021-05-31,66.887
+ZAF,Afrique du Sud,Africa,2021-06-01,75.592
+ZAF,Afrique du Sud,Africa,2021-06-02,70.956
+ZAF,Afrique du Sud,Africa,2021-06-03,73.215
+ZAF,Afrique du Sud,Africa,2021-06-04,75.85
+ZAF,Afrique du Sud,Africa,2021-06-05,78.093
+ZAF,Afrique du Sud,Africa,2021-06-06,90.312
+ZAF,Afrique du Sud,Africa,2021-06-07,82.455
+ZAF,Afrique du Sud,Africa,2021-06-08,83.888
+ZAF,Afrique du Sud,Africa,2021-06-09,91.353
+ZAF,Afrique du Sud,Africa,2021-06-10,100.474
+ZAF,Afrique du Sud,Africa,2021-06-11,106.14
+ZAF,Afrique du Sud,Africa,2021-06-12,115.459
+ZAF,Afrique du Sud,Africa,2021-06-13,121.683
+ZAF,Afrique du Sud,Africa,2021-06-14,127.134
+ZAF,Afrique du Sud,Africa,2021-06-15,137.315
+ZAF,Afrique du Sud,Africa,2021-06-16,147.829
+ZAF,Afrique du Sud,Africa,2021-06-17,154.14
+ZAF,Afrique du Sud,Africa,2021-06-18,160.138
+ZAF,Afrique du Sud,Africa,2021-06-19,170.389
+ZAF,Afrique du Sud,Africa,2021-06-20,183.632
+ZAF,Afrique du Sud,Africa,2021-06-21,192.333
+ZAF,Afrique du Sud,Africa,2021-06-22,198.733
+ZAF,Afrique du Sud,Africa,2021-06-23,208.962
+ZAF,Afrique du Sud,Africa,2021-06-24,219.346
+ZAF,Afrique du Sud,Africa,2021-06-25,239.223
+ZAF,Afrique du Sud,Africa,2021-06-26,249.775
+ZAF,Afrique du Sud,Africa,2021-06-27,254.306
+ZAF,Afrique du Sud,Africa,2021-06-28,261.682
+ZAF,Afrique du Sud,Africa,2021-06-29,267.111
+ZAF,Afrique du Sud,Africa,2021-06-30,271.96
+ZAF,Afrique du Sud,Africa,2021-07-01,285.222
+ZAF,Afrique du Sud,Africa,2021-07-02,298.489
+ZAF,Afrique du Sud,Africa,2021-07-03,319.033
+ZAF,Afrique du Sud,Africa,2021-07-04,322.764
+ZAF,Afrique du Sud,Africa,2021-07-05,323.465
+ZAF,Afrique du Sud,Africa,2021-07-06,328.651
+ZAF,Afrique du Sud,Africa,2021-07-07,333.278
+ZAF,Afrique du Sud,Africa,2021-07-08,336.472
+ZAF,Afrique du Sud,Africa,2021-07-09,332.066
+ZAF,Afrique du Sud,Africa,2021-07-10,320.324
+ZAF,Afrique du Sud,Africa,2021-07-11,319.642
+ZAF,Afrique du Sud,Africa,2021-07-12,316.436
